@@ -1102,7 +1102,7 @@ transcript_column.plot(kind="hist",bins=50)
 # bins: refers to the number of bars that appear (configures the histogram resolution)
 ```
 What are bins?
-the sets that youuse in order to classify the data so one bin would be chunks of values so lump all from 0 to 5 together then all from 6 to 10
+the sets that you use in order to classify the data so one bin would be chunks of values so lump all from 0 to 5 together then all from 6 to 10
 
 ### Sorting
 
@@ -1112,3 +1112,97 @@ we use a method
 # sorting DataFrame, by the number of transcripts of each gene, in descending order
 df.sort_values('transcript_count', ascending=False).head(10)
 ```
+
+### More advanced query processing
+
+# L4-3
+
+The file we work with is the transcript tabe.txt
+
+We start with statistics
+
+## Conditional calculations
+
+`df[  df.transcript_length>2433      ]`
+this will return the whole column list you get the rowsthat match the if in the brackets
+
+```python
+print("Statistics for transcript length")
+print("\tMinimum CDS length: ", df.cds_length[df.cds_length!=0].min()) # != means NOT
+```
+
+While here i get the one row in the column if the if is true and that is why we use the cds length twice
+
+You have to look and see the rest yourself
+because we are going to do the exercise now
+
+`.groupby`
+pick a column
+take a specific value
+and the give me some statistic of another row for those factors
+
+
+```python
+#result = df.groupby('transcript_biotype').aggregate(pd.DataFrame.mean)['transcript_length']
+result = df.groupby('transcript_biotype')['transcript_length'].mean()
+print(result)
+```
+
+# EX3
+
+### Selex seq vs chip seq lab method
+
+we use selex
+
+we take oligonucleotides then if the transcriotpsion factor recognizes we throw the ones that are nt relevant to the binding and we take them and we sequecne them
+
+We categorizse the nucleotides and the contents that tthe transcription factor recognises
+
+The PFM (How many times does that nucleotide appear in the position x for all sequences)
+This is not very useful
+
+We want probaliblity matrixes
+
+You divide the positions number with the sum of the column (That sum we saw)
+
+Usually you add pseudocounts to the matrix
+(Avoids some problems downstram)
+
+Meaning
+```python
+def matrix(array) -> dict:
+    """Returns a dictionary with the position frequency matrix of a list of sequences"""
+    # Creating a data structure to help formatting
+    # Getting the length of the sequences
+    positions = len(array[0])
+    # Making a list for each nucleotide that contains the amount in the positions that relates to the index of the list
+    indecies = {"A": [1]*positions, "T": [1]*positions, "G": [1]*positions, "C": [1]*positions}
+    # Iterating sequences (plural)
+    for seq in array:
+        # Iterating sequence (singular)
+        for position, nuc in enumerate(seq):
+            indecies[nuc.upper()][position] += 1
+    return indecies
+
+# initiate an empty list to hold the information that we will load from the file
+sequences_as_list_of_lists = list()
+
+# open a connection to the file and attach it to a file handle
+with open(sequences_file, 'r') as file:
+    # use the file handle as a proxy to loop through the lines of the file one-by-one
+    for sequence in file.readlines():
+        sequences_as_list_of_lists.append(sequence.strip()) # remove the newline character from the end of the string
+
+result = matrix(sequences_as_list_of_lists)
+
+print(result)
+
+print(sequences_as_list_of_lists)
+
+```
+
+Background probility = chance to find  the nucleotide in the position by chance
+25%
+
+The objective is to read sequences from a file and calculate pfms probabliity matrix and the
+add the pseudocounts
