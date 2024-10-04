@@ -939,7 +939,7 @@ The index will stay the same if you call the dropna for all the things that aren
 correlations
 
 ```python
-
+data.corr()
 ```
 
 Waht does it mean 
@@ -948,7 +948,7 @@ but its close
 
 
 ```python
- import numpy as np
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -961,7 +961,6 @@ plt.ylabel("Price")
 plt.title("Construction Year vs Price")
 plt.scatter(data['constructionyear'], data['price'])
 plt.show()
-# ...
 ```
 
 This gives you clusters 
@@ -999,7 +998,6 @@ or `iloc[]`
 # retrieving DataFrame row by row index
 print("Row with label 11 of DataFrame:")
 print(df.loc[11])
-
 ```
 
 if i want to retriev dataframe rows iwth the index
@@ -1008,7 +1006,6 @@ if i want to retriev dataframe rows iwth the index
 
 ```python
 print(df.loc[12])
-
 ```
 
 We need two version because I can change the numbers and add my own
@@ -1031,7 +1028,6 @@ It may be the case that i want to return rows using the index
 
 Now i use `iloc[start:stop:step]`
 
-
 ```python
 
 # using a slice in iloc, returns the part of the DataFrame, indexed by the numbers in the slice
@@ -1046,7 +1042,7 @@ because they can change the indexes
 ```python
 df.index += 10
 ```
- 
+
 This command will change all indexes by 10
 
 This means that whatever is displayed is for `loc[]` and the literal index (irregardless of the print) is for `iloc[]`
@@ -1074,6 +1070,7 @@ print(df.get('gene-name', 'No column was found'))
  # retrieving multiple columns of a DataFrame
 print(df[['gene_name', 'strand','transcript_count']])
 ```
+
 You give a list (inside the list)
 
 ### Iterating
@@ -1141,7 +1138,6 @@ pick a column
 take a specific value
 and the give me some statistic of another row for those factors
 
-
 ```python
 #result = df.groupby('transcript_biotype').aggregate(pd.DataFrame.mean)['transcript_length']
 result = df.groupby('transcript_biotype')['transcript_length'].mean()
@@ -1198,7 +1194,6 @@ result = matrix(sequences_as_list_of_lists)
 print(result)
 
 print(sequences_as_list_of_lists)
-
 ```
 
 Background probility = chance to find  the nucleotide in the position by chance
