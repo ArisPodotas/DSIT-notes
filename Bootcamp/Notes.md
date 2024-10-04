@@ -8,7 +8,7 @@ Python 2 or 3 it wont matter for the bootcamp it's only simple stuff
 
 # Why Python
 
-* easy 
+* easy
 * Dynamc ( you dont need ot define your variables in the beginning
 * cross platform
 
@@ -19,7 +19,7 @@ Python 2 or 3 it wont matter for the bootcamp it's only simple stuff
     - Pandaas
     - Tnesor flow
 
-Major disadvantage 
+Major disadvantage
 
 - slow
     Because of the interpreter (as opposed to a compiler)
@@ -33,11 +33,11 @@ Major disadvantage
 ## Variables and Data types
 
 They are containers for storing values
-You reserve memory when you declarte a variable 
+You reserve memory when you declarte a variable
 
 Usually in programming languages
-* int 
-* float 
+* int
+* float
 * str
 * bool
 * NoneType
@@ -50,7 +50,7 @@ The type is determined at run time
 
 ## Is this an advantage ?
 
-Python will guess it at runtime and thats slow 
+Python will guess it at runtime and thats slow
 it can be harder to debug the program since its easy to see whats happening if all the variables are at the start of the file
 
 # Memory managment
@@ -161,7 +161,7 @@ Maybe some little things about specific functions just like the del keyword
 
 Normally I would have doen this already but i cant connect they might have removed my account in the system from the sbi
 
-# Functions 
+# Functions
 
 It's considered bad practicce to use the global and nonloacl keywords
 
@@ -200,7 +200,7 @@ Multiplication table example
 Write a function that return the factorial of a number
 ```python
 def factorial(n):
-    result = 1 
+    result = 1
     for i in range(1, n + 1):
         result = i * result
     return result
@@ -223,7 +223,7 @@ Sometimes you might not want to be fast.
 * Ordered
 * Different data types
 * Defined by square brackets []
-* You may create lists from other lists 
+* You may create lists from other lists
 
 - example : list([1,2,3])
 
@@ -269,12 +269,12 @@ abcs|e
 
 ### Question about sort vs sorted
 
-Tere are two issues here 
+Tere are two issues here
 when you sort you can sort in differetn ways
 "I'm not sure what this sort uses"
 now this sort method when you apply it in the variable it affects the variable if you dont want to affect you can just copy the variable to another and then sort it
 
-sorted is a function 
+sorted is a function
 sort is a method
 ### Questin about the negative indexing
 
@@ -288,7 +288,7 @@ Basically the intro to sets
 
 Example 1 I'll just skip it for now since you know what the conversion does
 
-Example 2 
+Example 2
 Write a program that creates the first 10 squares
 
 <!--Go read about list multiplicatiuon-->
@@ -296,14 +296,14 @@ Read syntax [0]*10 # a list with 10 elements each is 0
 
 Otherr option is to init as a empty list and use the append method instead of writing over it
 
-What is the problem here 
+What is the problem here
 With a empty list you cannot use indexing to identify positions
 Pre allocated memory
 
 What does []*10 do
  #Nothing
 
-Short hand syntax forl ists with comprehentions 
+Short hand syntax forl ists with comprehentions
 
 ```python
 list(range(1,11))
@@ -342,12 +342,12 @@ Test about execution times of different data types
 List append time
 0.0128
 
-Tuple 
+Tuple
 ```python
 mytuple = ()
 x = range(100000)
 start = time.pref_counter()
-for item in x: 
+for item in x:
 
     mytuple = mytuple + (item,) # the comma helps the language tell the computer its a tuple
 print("Tuple: ")
@@ -356,11 +356,11 @@ Time: 12.1
 
 The issue with the tuple
 the "=" is an assignment
-you cant assign a tuple 
+you cant assign a tuple
 it creates a copy
 and it assumes the type
 ergo slow
-around 100 times slower 
+around 100 times slower
 
 ```python
 a = [1,3,5,7]
@@ -385,7 +385,7 @@ No a reutrn list will not give a tuple
 
 ### Question about a, b = b, a
 
-Why not both 10 after 
+Why not both 10 after
 python magic
 essentialy two variable switching like the exercise i had done look in software/exercises there is an example <!--Sorry to anyone who isnt Ari but this is a local thing oops-->
 
@@ -398,8 +398,8 @@ and unpacking
 
 The concept of key value pairs
 
-Very fast lookups 
-because its very easy to ask for a key to get the value 
+Very fast lookups
+because its very easy to ask for a key to get the value
 
 * {}
 * get method (seems to have a second parameter for erros if the key is not in the list)
@@ -435,14 +435,14 @@ Or even the stat.average method like
 The pythonian way
 Rafail is gonna be so mad he didn't say pythonic
 
-Create a simple phone book program using a dictionary that allows adding, delelting and looking up phone numbers 
+Create a simple phone book program using a dictionary that allows adding, delelting and looking up phone numbers
 
-### deleting a entry in a list 
+### deleting a entry in a list
 
 del dict[key]
 Note use a if key in dict:
 
-### Note 
+### Note
 
 we like else when it is un nessaccary for printing for debugging reasons
 
@@ -465,7 +465,7 @@ def count_contents(self):
     return counts[1]
 ```
 
-# Sets 
+# Sets
 
 * union( | )
 * intersection ( & )
@@ -507,9 +507,9 @@ it has access to your local files
 ```python
 # Reading from a file
 # ...
-#### Start 
+#### Start
 file = open('sample.txt', 'r')
-content = file.read() 
+content = file.read()
 print("File content: ", content)
 file.close()
 ```
@@ -538,10 +538,10 @@ file.close()
 
 ### Problem with the above
 
-If i just call the read method and the file is huge 
+If i just call the read method and the file is huge
 we leave a huge amount of your memory stuck
 * In real applications this is a pain in the neck
-    what we do especially in files that are structured 
+    what we do especially in files that are structured
     we read the file line by line
 
 ### The With statement from python
@@ -614,7 +614,7 @@ with open('sample.txt', 'r') as file:
         chunk = file.read(10)
 ```
 
-If you run it the words are cut 
+If you run it the words are cut
 Because usually you use this for binary files
 
 Exercises: File I/O Operations
@@ -646,7 +646,7 @@ with open('numbers.txt', 'r') as file:
 
 ## Frequency of occurence of sequences
 
-I'm taking it form my solution 
+I'm taking it form my solution
 its the same but the data is in a file
 We will use the solution from the previous lecture
 I will make a little modification for file reading in the solution i gave
@@ -730,7 +730,7 @@ gata3 is the name of the protein
 
 There is malleability to the sequence the transcription factor will notice
 
-We want the motif so we aggregate the sequences the transcription factor binds to 
+We want the motif so we aggregate the sequences the transcription factor binds to
 We want to find the frequency of each nucleotide in every position
 
 Position frequency matrix is what we call that matrix
@@ -777,7 +777,7 @@ print(sequences_as_list_of_lists)
 Their solution was obviously a little different
 
 What is a safe application
-We might have erors in the sequences 
+We might have erors in the sequences
 The way we write the if and else statment will add to the wron point if the nuc is a error
 
 C like string formating
@@ -786,7 +786,7 @@ then we did the at/gc content that requires you have done the previous the same 
 
 Get from rafail
 
-For rafil notes 
+For rafil notes
 
 ### Why is the if elif not safe?
 
@@ -834,7 +834,7 @@ import random
 def my_string_generator(numberOfLines, lengthOfLine, filename):
     chars=['A','T','G','C']
 # 0 for A, 1 for T, 2 for G and 3 for C
-# generate a random number X from the set [0,1,2,3], 
+# generate a random number X from the set [0,1,2,3],
 # and get the character by using chars[3]
 
 outputFile=open(filename,'w') # open in order to write
@@ -845,10 +845,270 @@ for line in range (numberOfLines):
         key = random.randint(0,3)
         randomLine += chars[key]
     randomLine+='\n'
-    outputFile.write(randomLine)  
+    outputFile.write(randomLine)
 outputFile.close()
 ```
 
-You get two strings and you have to find the minimum number of operations to make the first like the second and the only things you are allowed to do is change a letter and append and delete one 
+You get two strings and you have to find the minimum number of operations to make the first like the second and the only things you are allowed to do is change a letter and append and delete one
 This is the Levenshtein distance
 
+# Lesson 4 ありがとうガイロー
+
+## Pands dataframe
+
+It's a 2d matrix
+
+Most of the time what you have to process is a csv file
+
+we work with house prices.csv
+(jupyter opens a txt like file)
+
+you cna use pandas to load a datafarame
+
+apparently pandas has some powerfull methods for the data frame
+
+(execute queries)
+
+You can very easily ask a dataframe for rows where the hous price is higher than a value
+
+You need to import it
+
+Why do we need numpy?
+
+We will also be using matplot lib
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("houseprices.csv", sep=',') # you get a dataframe!!!
+
+# print the first lines of data
+data.head()
+```
+Head is a function that prints some line from the data frame
+It prints out the first 5
+for the first impression of wha the data set contains
+
+You get a idea of what is inside the dataframe
+
+How does the dataframe know the names of the columns
+normally the first line in a csv is supposed to contain the names of the columns
+
+If you want to get an overview of the data characteristics that the data frames contains and some statistical values There is a describe() method
+
+I see a 
+* count 
+* mean
+* std
+* min
+* 25 %
+* 50%
+* 75%
+* max
+
+We have a discrepancy of the balues in count
+Some values are missing
+
+We count how many rows have null in the price field or in the area.....
+
+```python
+# count how many rows have null in price field
+data['price'].isnull().sum() # retruns 0
+data['area'].isnull().sum() # -> return 5
+```
+
+isnull returns a boolian
+
+Drop all rows with null values
+
+```python
+data.dropna()
+
+```
+
+The data fram still contains 189 not 184
+
+it only displayed it on the variable 
+the content of the variable hasnt changed
+the file is the same
+This is for viewing
+The index will stay the same if you call the dropna for all the things that arent dropped so the last element if not null will remain the last with the same index
+
+correlations
+
+```python
+
+```
+
+Waht does it mean 
+it's not quite that for every 1 incriment in 1 the other incriments by 0.5
+but its close
+
+
+```python
+ import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#%matplotlib inline
+
+# print some scatter plots
+
+plt.xlabel("Construction Year")
+plt.ylabel("Price")
+plt.title("Construction Year vs Price")
+plt.scatter(data['constructionyear'], data['price'])
+plt.show()
+# ...
+```
+
+This gives you clusters 
+you can see where most houses were built
+you can see their prices per year
+you can do a regression
+
+## Onto the l4-2
+
+Gene data
+
+gene_table.txt
+
+data "form" "shape"
+
+df.shape
+0 for row and 1 for columns
+
+```python
+print("DataFrame dimensions: ", df.shape)
+print("DataFrame dimensions: ", df.shape[0])
+print("DataFrame dimensions: ", df.shape[1])
+```
+
+So you have a dataframe and you want to extract a certain subset of row
+
+`loc[]`
+or `iloc[]`
+*methods*
+* they use [] brackets no ()
+`loc()` can be use for the row label as index
+`iloc()` is for rows using the index
+
+```python
+# retrieving DataFrame row by row index
+print("Row with label 11 of DataFrame:")
+print(df.loc[11])
+
+```
+
+if i want to retriev dataframe rows iwth the index
+(0 indexed)
+`iloc()` is for rows using the index
+
+```python
+print(df.loc[12])
+
+```
+
+We need two version because I can change the numbers and add my own
+
+So this gives me choice its like a dict and a list in one
+
+### Slicing a dataframe
+
+Retrieving multiple rows
+
+In `loc[]` inside the "[]" we define a slice
+
+```python
+ # using a slice in 'loc', returns the part of the DataFrame, between the rows given in the slice
+print("Displaying rows between label 8 and 11")
+print(df.loc[8:11])
+```
+
+It may be the case that i want to return rows using the index
+
+Now i use `iloc[start:stop:step]`
+
+
+```python
+
+# using a slice in iloc, returns the part of the DataFrame, indexed by the numbers in the slice
+# (same idea as in Python lists)
+print("Displaying rows whose index>=8  and index<11:")
+print(df.iloc[8: 11])
+```
+
+Be careful when you use `loc[]` and `iloc[]`
+because they can change the indexes
+
+```python
+df.index += 10
+```
+ 
+This command will change all indexes by 10
+
+This means that whatever is displayed is for `loc[]` and the literal index (irregardless of the print) is for `iloc[]`
+after
+```python
+df.index += 10
+```
+
+`iloc[10]` gives you `loc[19]`
+
+### Picking columns
+
+```python
+# retrieving gene_name as a key value
+print(df['gene_name'])
+```
+
+### Multiple columns
+
+```python
+print(df.get('gene-name', 'No column was found'))
+```
+
+```python
+ # retrieving multiple columns of a DataFrame
+print(df[['gene_name', 'strand','transcript_count']])
+```
+You give a list (inside the list)
+
+### Iterating
+
+`for loop in dataframe:`
+
+```python
+#get first 3 rows of the dataframe
+tinydf = df.iloc[0:3] # 0, 1, 2
+#iterate over each row
+# iterrows returns an index and a panda series
+for rowlabel, rowdata in tinydf.iterrows():
+    print("Row label: ", rowlabel)
+    print("Row dat: ", rowdata)
+    print("=======")
+```
+
+### Doing statistics
+
+You can use `.attribute` for the indexes of the dataframe like `df[attribute]`
+
+A histogram is a plot with bars that shows the distribution
+
+```python
+transcript_column.plot(kind="hist",bins=50)
+# bins: refers to the number of bars that appear (configures the histogram resolution)
+```
+What are bins?
+the sets that youuse in order to classify the data so one bin would be chunks of values so lump all from 0 to 5 together then all from 6 to 10
+
+### Sorting
+
+we use a method
+
+```python
+# sorting DataFrame, by the number of transcripts of each gene, in descending order
+df.sort_values('transcript_count', ascending=False).head(10)
+```
