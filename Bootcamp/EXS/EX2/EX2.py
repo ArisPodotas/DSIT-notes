@@ -23,7 +23,7 @@ from Levenshtein import distance as dist
 import matplotlib.pyplot as plt
 from os import remove
 import random
-from time import time
+from time import time, perf_counter
 
 def timeit(func):
     """Wrapper function definition for printing how long a function took to run"""
@@ -55,6 +55,7 @@ def generator(lines, length, filename, mode):
 @timeit
 def caller(times, x, filename, mode):
     """Calls the generator function with a algorythm for the requirements"""
+    factors = [] # To keep the values for the plot in the later question
     for batch in range(times):
         if batch == 0: # Base case
             factor = 1
@@ -63,16 +64,20 @@ def caller(times, x, filename, mode):
         else: # For every odd loop
             factor *= 5 # Modify the factor such that the line length is correct
         characters = factor * x # Taking the function input and the factor multiplication and defining the line legth
+        factors.append(characters)
         generator(lines = 5, length = characters, filename = filename, mode = mode) # Calling generator with all the new parameters
+    return factors
 
 # Initializng files (also to empty them)
+
 with open('file1.txt', 'w') as file:
     pass
 with open('file2.txt', 'w') as file:
     pass
+# Making the script a little more interactive
 inp1 = int(input(f'How many characters should the first line have?'))
 inp2 = int(input(f'How many batches do you want written?'))
-caller(x = inp1, times = inp2, filename = "file1.txt", mode = 'a')
+sizes = caller(x = inp1, times = inp2, filename = "file1.txt", mode = 'a')
 caller(x = inp1, times = inp2, filename = "file2.txt", mode = 'a')
 
 # •	Measure the execution time of Levenshtein.distance() for string pairs: one string from file1.txt and one from file2.txt as follows: 1st line of file1.txt with 1st line of file2.txt, 2nd line of file1.txt with 2nd line of file2.txt, 3rd line of file1.txt with 3rd line of file2.txt etc...
@@ -86,14 +91,24 @@ def measure():
     element = requery.readlines()
     size = len(element)
     table = [0.0]*size # Initialize a data structure that fits the length of the files in lines
+    pairs = [0.0]*size # Initialize a data structure that fits the length of the files in lines
     # Calculating distances
     for index, line in enumerate(query.readlines()):
         sequence = element[index]
-        start = time()
-        dist(line.strip(), sequence.strip()) # Levenstein distance (look at imports)
-        stop = time()
+        start = perf_counter()
+        holder = dist(line.strip(), sequence.strip()) # Levenstein distance (look at imports)
+        stop = perf_counter()
+        pairs[index] = holder
         table[index] = stop - start
-    return table
+    return table, pairs
+
+# Checking output
+
+times, values = measure()
+print(times)
+print(len(times))
+print(values)
+print(len(values))
 
 # •	Calculate average (AVG) execution time for strings of same length.
 
@@ -103,19 +118,21 @@ def average(data):
         sum += thing
     return sum / len(data)
 
-times = measure()
-print(times)
-entries = int(len(times)/5)
-averages = [0.0]*entries
+entries = len(times)
+averages = [0.0]*int(entries/5)
 for i in range(0, entries, 5):
     slice = times[i:i + 5:]
     averages[int(i / 5)] = average(slice)
 
-print(averages)
-
 # •	Plot a graph (see Lab 3) to show the performance: AVG execution time (Y-axis) vs string length (X-axis). Check here for a nice plot tutorial: https://matplotlib.org/stable/tutorials/pyplot.html
+# Notes                           visual = plt.plot(sizes, averages, marker = 'o')
 
-# Notes
+plt.plot(sizes, averages, marker = 'o')
+plt.ylabel('Average time')
+plt.title('Levenstein distances')
+plt.xlabel("String size")
+plt.show()
+
 # ●	Questions only in our Teams channel.
 # ●	Prepare only one notebook + the txt files, and send them to dalamag@athenarc.gr and ggeorgakilas@athenarc.gr using the subject in the exact form: PYTHON BOOTCAMP 2024 EX2 LASTNAME FIRSTNAME 
 # ●	Explain your code/solutions with markdown text/comments inside the notebook. No markdown/comments, no pass. In any case, your notebook should work like a charm!
