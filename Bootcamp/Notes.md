@@ -854,7 +854,7 @@ This is the Levenshtein distance
 
 # Lesson 4 ありがとうガイロー
 
-## Pands dataframe
+## Pandas dataframe
 
 It's a 2d matrix
 
@@ -1114,14 +1114,13 @@ df.sort_values('transcript_count', ascending=False).head(10)
 
 # L4-3
 
-The file we work with is the transcript tabe.txt
+The file we work with is the transcript table.txt
 
 We start with statistics
 
 ## Conditional calculations
 
-`df[  df.transcript_length>2433      ]`
-this will return the whole column list you get the rowsthat match the if in the brackets
+`df[df.transcript_length>2433]`-> this will return the whole column list you get the rows that match the if in the brackets
 
 ```python
 print("Statistics for transcript length")
@@ -1162,7 +1161,7 @@ We want probaliblity matrixes
 You divide the positions number with the sum of the column (That sum we saw)
 
 Usually you add pseudocounts to the matrix
-(Avoids some problems downstram)
+(Avoids some problems down stream)
 
 Meaning
 ```python
