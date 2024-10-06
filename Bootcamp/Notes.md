@@ -1153,7 +1153,7 @@ we take oligonucleotides then if the transcriotpsion factor recognizes we throw 
 
 We categorizse the nucleotides and the contents that tthe transcription factor recognises
 
-The PFM (How many times does that nucleotide appear in the position x for all sequences)
+### The PFM (Position Frequency Matrices) (How many times does that nucleotide appear in the position x for all sequences)
 This is not very useful
 
 Meaning
@@ -1189,16 +1189,25 @@ print(sequences_as_list_of_lists)
 ```
 
 We want probaliblity matrixes
-The equation we use is $M_{ij}=\frac{1}{N}\sum_{i=1}^NI(x_i)$
 
-You divide the positions number with the sum of the column (That sum we saw)
+### PPMS (Position Probability Matrices)
+
+> The equation we use for PPMS is $\displaystyle M_{kj}=\frac{1}{N}\sum_{i=1}^NI(X_{i,j}=k)$
+>
+> Meaning you divide the positions number with the sum of the column (That sum we saw)
 
 Usually you add pseudocounts to the matrix
 (Avoids some problems down stream)
-
+I did this by adding 1 to the data structure to begin with
 
 Background probility = chance to find  the nucleotide in the position by chance
 25%
+
+### We use background probability to get the PWMS (Position Weight Matices)
+
+> Equation:
+>
+> $\displaystyle M_{kj}=\log_2{\left(\frac{M_{kj}}{b_k}\right)}$
 
 The objective is to read sequences from a file and calculate pfms probabliity matrix and the
 add the pseudocounts
