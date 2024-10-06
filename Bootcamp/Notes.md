@@ -1156,13 +1156,6 @@ We categorizse the nucleotides and the contents that tthe transcription factor r
 The PFM (How many times does that nucleotide appear in the position x for all sequences)
 This is not very useful
 
-We want probaliblity matrixes
-
-You divide the positions number with the sum of the column (That sum we saw)
-
-Usually you add pseudocounts to the matrix
-(Avoids some problems down stream)
-
 Meaning
 ```python
 def matrix(array) -> dict:
@@ -1194,6 +1187,15 @@ print(result)
 
 print(sequences_as_list_of_lists)
 ```
+
+We want probaliblity matrixes
+The equation we use is $M_{ij}=\frac{1}{N}\sum_{i=1}^NI(x_i)$
+
+You divide the positions number with the sum of the column (That sum we saw)
+
+Usually you add pseudocounts to the matrix
+(Avoids some problems down stream)
+
 
 Background probility = chance to find  the nucleotide in the position by chance
 25%
