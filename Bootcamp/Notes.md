@@ -862,7 +862,7 @@ It's a 2d matrix
 >
 > $\displaystyle M_{kj}=\frac{1}{N}\sum_{i=1}^NI(X_{i,j}=k)$
 >
-> $\displaystyle P_{i,j} = \left[\right]$
+> $\displaystyle P_{i,j} = \left[\begin{matrix} \end{matrix}\right]$
 >
 
 Most of the time what you have to do is process a csv file
