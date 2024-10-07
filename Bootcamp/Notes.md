@@ -860,7 +860,7 @@ It's a 2d matrix
 
 > See linear algebra
 >
->\[\mathrm{P}_{i,j} = \left[\begin{matrix} \mathrm{P}_{0,0} & \mathrm{P}_{0,1} & \dots & \mathrm{P}_{0,j} \\ \mathrm{P}_{1,0} & \mathrm{P}_{1,1}  & \dots & \mathrm{P}_{1,j} \\ \dots & \dots & \dots & \dots \\ \mathrm{P}_{i,0} & \mathrm{P}_{i,1} & \dots & \mathrm{P}_{i,j} \end{matrix}\right]
+>\[\mathrm{P}_{i,j} = \left[\begin{matrix} \mathrm{P}_{0,0} & \mathrm{P}_{0,1} & \dots & \mathrm{P}_{0,j} \\ \mathrm{P}_{1,0} & \mathrm{P}_{1,1}  & \dots & \mathrm{P}_{1,j} \\ \dots & \dots & \dots & \dots \\ \mathrm{P}_{i,0} & \mathrm{P}_{i,1} & \dots & \mathrm{P}_{i,j} \end{matrix}\right]\]
 >
 
 Most of the time what you have to do is process a csv file
@@ -871,7 +871,7 @@ you can use pandas to load a datafarame
 
 apparently pandas has some powerfull methods for the data frame (execute queries)
 
-> [!Example]
+> [Example]
 You can very easily ask a dataframe for rows where the "house price" is higher than a value
 
 You need to import it
@@ -1101,7 +1101,7 @@ transcript_column.plot(kind="hist",bins=50)
 # bins: refers to the number of bars that appear (configures the histogram resolution)
 ```
 
-> [!Question]
+> [Question]
 > What are bins?
 >
 
