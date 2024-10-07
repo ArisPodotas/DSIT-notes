@@ -862,8 +862,13 @@ It's a 2d matrix
 >
 > $\displaystyle M_{kj}=\frac{1}{N}\sum_{i=1}^NI(X_{i,j}=k)$
 >
-> $\displaystyle P_{i,j} = \Big[\Big]$
->
+> \usepackage{asmath}
+> \[\mathrm{P}_{i,j} = \left[\begin{matrix}
+\mathrm{P}_{0,0} & \mathrm{P}_{0,1} & \dots & \mathrm{P}_{0,j} \\
+\mathrm{P}_{1,0} & \mathrm{P}_{1,1}  & \dots & \mathrm{P}_{1,j} \\ 
+\dots & \dots & \dots & \dots \\
+\mathrm{P}_{i,0} & \mathrm{P}_{i,1} & \dots & \mathrm{P}_{i,j}
+\end{matrix}\right]\]
 
 Most of the time what you have to do is process a csv file
 
@@ -930,7 +935,6 @@ Drop all rows with null values
 
 ```python
 data.dropna()
-
 ```
 
 The data frame still contains 189 not 184
@@ -986,6 +990,9 @@ print("DataFrame dimensions: ", df.shape)
 print("DataFrame dimensions: ", df.shape[0])
 print("DataFrame dimensions: ", df.shape[1])
 ```
+
+> Example
+> (3,2)
 
 So you have a dataframe and you want to extract a certain subset of rows
 
