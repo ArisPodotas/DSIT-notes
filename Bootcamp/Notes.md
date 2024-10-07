@@ -860,7 +860,9 @@ It's a 2d matrix
 
 > See linear algebra
 >
-> ${P}_{i,j} = \left[\begin{matrix} {P}_{0,0} & {P}_{0,1} & \dots & {P}_{0,j} \\ {P}_{1,0} & {P}_{1,1} & \dots & {P}_{1,j} \\ \dots & \dots & \dots & \dots \\ {P}_{i,0} & {P}_{i,1} & \dots & {P}_{i,j} \end{matrix}\right]$
+> $\displaystyle M_{kj}=\frac{1}{N}\sum_{i=1}^NI(X_{i,j}=k)$
+>
+> $P_{i,j} = \left[\begin{matrix} {P}_{0,0} & {P}_{0,1} & \dots & {P}_{0,j} \\ {P}_{1,0} & {P}_{1,1} & \dots & {P}_{1,j} \\ \dots & \dots & \dots & \dots \\ {P}_{i,0} & {P}_{i,1} & \dots & {P}_{i,j} \end{matrix}\right]$
 >
 
 Most of the time what you have to do is process a csv file
