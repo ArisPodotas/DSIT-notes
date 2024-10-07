@@ -862,8 +862,7 @@ It's a 2d matrix
 >
 > $\displaystyle M_{kj}=\frac{1}{N}\sum_{i=1}^NI(X_{i,j}=k)$
 >
-> $\usepackage{asmath}$
-> \[\mathrm{P}_{i,j} = \left[\begin{matrix}
+> \[\usepackage{asmath} \mathrm{P}_{i,j} = \left[\begin{matrix}
 \mathrm{P}_{0,0} & \mathrm{P}_{0,1} & \dots & \mathrm{P}_{0,j} \\
 \mathrm{P}_{1,0} & \mathrm{P}_{1,1}  & \dots & \mathrm{P}_{1,j} \\ 
 \dots & \dots & \dots & \dots \\
