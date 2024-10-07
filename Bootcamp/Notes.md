@@ -858,22 +858,25 @@ This is the Levenshtein distance
 
 It's a 2d matrix
 
-Most of the time what you have to process is a csv file
+> See linear algebra
+>
+>\[\mathrm{P}_{i,j} = \left[\begin{matrix} \mathrm{P}_{0,0} & \mathrm{P}_{0,1} & \dots & \mathrm{P}_{0,j} \\ \mathrm{P}_{1,0} & \mathrm{P}_{1,1}  & \dots & \mathrm{P}_{1,j} \\ \dots & \dots & \dots & \dots \\ \mathrm{P}_{i,0} & \mathrm{P}_{i,1} & \dots & \mathrm{P}_{i,j} \end{matrix}\right]
+>
 
-we work with house prices.csv
-(jupyter opens a txt like file)
+Most of the time what you have to do is process a csv file
 
-you cna use pandas to load a datafarame
+we work with the file `houseprices.csv` (jupyter opens a txt like file)
 
-apparently pandas has some powerfull methods for the data frame
+you can use pandas to load a datafarame
 
-(execute queries)
+apparently pandas has some powerfull methods for the data frame (execute queries)
 
-You can very easily ask a dataframe for rows where the hous price is higher than a value
+> [!Example]
+You can very easily ask a dataframe for rows where the "house price" is higher than a value
 
 You need to import it
 
-Why do we need numpy?
+<!-- Why do we need numpy? -->
 
 We will also be using matplot lib
 
@@ -919,7 +922,7 @@ data['price'].isnull().sum() # retruns 0
 data['area'].isnull().sum() # -> return 5
 ```
 
-isnull returns a boolian
+isnull returns a boolian (I assume it returns a list of bools)
 
 Drop all rows with null values
 
@@ -928,13 +931,13 @@ data.dropna()
 
 ```
 
-The data fram still contains 189 not 184
+The data frame still contains 189 not 184
 
-it only displayed it on the variable 
-the content of the variable hasnt changed
-the file is the same
-This is for viewing
-The index will stay the same if you call the dropna for all the things that arent dropped so the last element if not null will remain the last with the same index
+It only displayed it on the variable 
+
+The content of the variable hasnt changed, the file is the same.
+
+This is for viewing. The index will stay the same if you call the dropna for all the things that arent dropped so the last element if not null will remain the last with the same index
 
 correlations
 
@@ -942,10 +945,7 @@ correlations
 data.corr()
 ```
 
-Waht does it mean 
-it's not quite that for every 1 incriment in 1 the other incriments by 0.5
-but its close
-
+What does it mean? It's not quite that for every 1 incriment in 1 the other incriments by 0.5 but its close
 
 ```python
 import numpy as np
@@ -963,9 +963,10 @@ plt.scatter(data['constructionyear'], data['price'])
 plt.show()
 ```
 
-This gives you clusters 
-you can see where most houses were built
+This gives you clusters. You can see where most houses were built
+
 you can see their prices per year
+
 you can do a regression
 
 ## Onto the l4-2
@@ -974,10 +975,9 @@ Gene data
 
 gene_table.txt
 
-data "form" "shape"
+data "form" "shape" = `df.shape`
 
-df.shape
-0 for row and 1 for columns
+> 0 for rows and 1 for columns
 
 ```python
 print("DataFrame dimensions: ", df.shape)
@@ -985,14 +985,15 @@ print("DataFrame dimensions: ", df.shape[0])
 print("DataFrame dimensions: ", df.shape[1])
 ```
 
-So you have a dataframe and you want to extract a certain subset of row
+So you have a dataframe and you want to extract a certain subset of rows
 
-`loc[]`
-or `iloc[]`
-*methods*
+`loc[]` or `iloc[]` *methods*
+
 * they use [] brackets no ()
-`loc()` can be use for the row label as index
-`iloc()` is for rows using the index
+
+`loc[]` can be use for the row label as an index (key)
+
+`iloc[]` is for rows using the index
 
 ```python
 # retrieving DataFrame row by row index
@@ -1000,9 +1001,9 @@ print("Row with label 11 of DataFrame:")
 print(df.loc[11])
 ```
 
-if i want to retriev dataframe rows iwth the index
-(0 indexed)
-`iloc()` is for rows using the index
+If i want to retrieve dataframe rows with the index (0 indexed)
+
+`iloc[]` is for rows using the index
 
 ```python
 print(df.loc[12])
@@ -1010,7 +1011,7 @@ print(df.loc[12])
 
 We need two version because I can change the numbers and add my own
 
-So this gives me choice its like a dict and a list in one
+So this gives me choice, it's like a dict and a list in one
 
 ### Slicing a dataframe
 
@@ -1026,7 +1027,7 @@ print(df.loc[8:11])
 
 It may be the case that i want to return rows using the index
 
-Now i use `iloc[start:stop:step]`
+Now, I use `iloc[start:stop:step]`
 
 ```python
 
@@ -1036,8 +1037,7 @@ print("Displaying rows whose index>=8  and index<11:")
 print(df.iloc[8: 11])
 ```
 
-Be careful when you use `loc[]` and `iloc[]`
-because they can change the indexes
+Be careful when you use `loc[]` and `iloc[]`, because they can change the indexes
 
 ```python
 df.index += 10
@@ -1045,8 +1045,10 @@ df.index += 10
 
 This command will change all indexes by 10
 
-This means that whatever is displayed is for `loc[]` and the literal index (irregardless of the print) is for `iloc[]`
-after
+This means that whatever is displayed, is for `loc[]` and the literal index (irregardless of the print) is for `iloc[]`
+
+Afterwards:
+
 ```python
 df.index += 10
 ```
@@ -1098,8 +1100,12 @@ A histogram is a plot with bars that shows the distribution
 transcript_column.plot(kind="hist",bins=50)
 # bins: refers to the number of bars that appear (configures the histogram resolution)
 ```
-What are bins?
-the sets that you use in order to classify the data so one bin would be chunks of values so lump all from 0 to 5 together then all from 6 to 10
+
+> [!Question]
+> What are bins?
+>
+
+The sets that you use in order to classify the data. So one bin would be chunks of values, so lump all from 0 to 5 together then all from 6 to 10
 
 ### Sorting
 
@@ -1114,28 +1120,25 @@ df.sort_values('transcript_count', ascending=False).head(10)
 
 # L4-3
 
-The file we work with is the transcript table.txt
+The file we work with is the `transcript table.txt`
 
 We start with statistics
 
 ## Conditional calculations
 
-`df[df.transcript_length>2433]`-> this will return the whole column list you get the rows that match the if in the brackets
+`df[df.transcript_length>2433]`-> this will return the whole column list, you get the rows that match the if in the brackets
 
 ```python
 print("Statistics for transcript length")
 print("\tMinimum CDS length: ", df.cds_length[df.cds_length!=0].min()) # != means NOT
 ```
 
-While here i get the one row in the column if the if is true and that is why we use the cds length twice
+While here I get the one row in the column if the if is true and that is why we use the cds length twice
 
-You have to look and see the rest yourself
-because we are going to do the exercise now
+You have to look and see the rest yourself because we are going to do the exercise now
 
 `.groupby`
-pick a column
-take a specific value
-and the give me some statistic of another row for those factors
+pick a column, take a specific value and the give me some statistic of another row for those factors
 
 ```python
 #result = df.groupby('transcript_biotype').aggregate(pd.DataFrame.mean)['transcript_length']
@@ -1147,9 +1150,9 @@ print(result)
 
 ### Selex seq vs chip seq lab method
 
-we use selex
+We use selex
 
-we take oligonucleotides then if the transcriotpsion factor recognizes we throw the ones that are nt relevant to the binding and we take them and we sequecne them
+We take oligonucleotides then if the transcriotpsion factor recognizes we throw the ones that are nt relevant to the binding and we take them and we sequecne them
 
 We categorizse the nucleotides and the contents that tthe transcription factor recognises
 
@@ -1196,12 +1199,11 @@ We want probaliblity matrixes
 >
 > Meaning you divide the positions number with the sum of the column (That sum we saw)
 
-Usually you add pseudocounts to the matrix
-(Avoids some problems down stream)
+Usually you add pseudocounts to the matrix (Avoids some problems down stream)
+
 I did this by adding 1 to the data structure to begin with
 
-Background probility = chance to find  the nucleotide in the position by chance
-25%
+Background probility = chance to find the nucleotide in the position by chance (25%)
 
 ### We use background probability to get the PWMS (Position Weight Matices)
 
@@ -1209,5 +1211,5 @@ Background probility = chance to find  the nucleotide in the position by chance
 >
 > $\displaystyle M_{kj}=\log_2{\left(\frac{M_{kj}}{b_k}\right)}$
 
-The objective is to read sequences from a file and calculate pfms probabliity matrix and the
-add the pseudocounts
+The objective is to read sequences from a file and calculate pfms probabliity matrix and the add the pseudocounts
+
