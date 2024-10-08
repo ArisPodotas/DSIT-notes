@@ -102,8 +102,9 @@ We can combine a lot of single units to make an **-ome** sytem.
 \[\mathrm{E} = m\times{c^2}\]
 
 Refactored to biology
-E is evolution
-I didnt manage to listen to the other two factors.
+$\displaystyle \mathrm{E}$ is evolution
+$\displaystyle \mathrm{m}$ mutation
+$\displaystyle \mathrm{c^2}$ is for cell squared
 
 > Whose genome was completed?
 
