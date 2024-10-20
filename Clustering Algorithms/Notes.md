@@ -63,7 +63,7 @@ MATLAB
 or octave whicch is a free matlab but it does not have everytihing it senought for us
 
 > Can we do any other programming language for the lab?
-> No
+> No (octive the free matlab)
 
 ```matlab
 for x in 
@@ -77,8 +77,7 @@ for x in
 
 Input: A set *E* of entities
 
-DEF:
-Grouping of the entities into "sensible" clusters (groups) so that more similar entities belong to similar clusters and less similar entities belong to different cluster. He asked us if we are ok with this definition.
+Definition: Grouping of the entities into "sensible" clusters (groups) so that more similar entities belong to similar clusters and less similar entities belong to different cluster. He asked us if we are ok with this definition.
 
 Why do we do clustering?
 We are surrouded by a wealth of information. The human brain is unable to study all of them.
@@ -87,7 +86,7 @@ We are surrouded by a wealth of information. The human brain is unable to study 
 
 ### Sun and human skin example
 
-You could take ever person on earth and get the knowledge for everyone - impossible
+You could take every person on earth and get the knowledge for everyone - impossible
 So we cluster *similar entities* into groups and we study the groups.
 
 <hr>
@@ -97,23 +96,19 @@ He returns to the definition.
 He asks is it rigorous?
 No not really
 When we say sensible different people understand different things.
-What kind of entities.
-Clusters?
+What kind of *entities*, clusters?
 
-In order to define what is sensible I have to define a criteria and define more and less similar.
-
+In order to define what sensible is I have to define a criteria and define the terms more and less similar. By the end of the lecture these will be defined.
 
 ## Entities
 
-They are application-dependant.
-It could be anything really...
+They are application-dependant. It could be anything really...
 
-An important issue is about how we represent the entities. Usually we use numbers, we select a set of $l$ quantities (measurements - features), the same for all entities. 
+An important issue is about how we represent the *entities*. Usually we use numbers, we select a set of $l$ quantities (measurements - features), the same for all *entities*. 
 
-### Cell exampole
+### Cell example
 
-I could use the area
-How spheriacal it is
+I could use the area of a cell to represent the *entity*, the how spheriacal it is.
 .
 .
 .
@@ -122,20 +117,13 @@ How spheriacal it is
 
 By doing this we associate a $l$ identity vector.
 
-We can say that a entity is a point in a vector space.
+We can say that a *entity* is a point in a vector space.
 
 ### Eye example
 
+We can define:
 1 = Blue
 0 = black
-
-Athlete 1 
-
-the axis are 
-weight 
-height 
-eye color
-
 
 ### Image example
 
@@ -153,12 +141,14 @@ Say 200 bands. Each pixel can be represented in a 200 dimentional space.
 
 The key in all cases is how we select the appropriate featrures.
 
-## Similar
+## Similarity
 
 I need to define a measure of proximity to talk about similarity.
+> [!NOTE]
+> This is not a definition of what more and less similar means we do that later
 
 There are two kinds of proximity
-* similarity, The more similar the closer the vecros and the larger s($x$,$y$) the values.
+* similarity, The more similar the closer the vecros and the larger s($x$,$y$) is.
 * dis-similarity, The more dissimilar the farther and larger the values of d($x$,$y$).
 
 Entities belong in the same cluster when highly similar and in different clusters when hight in dissimilarity.
@@ -181,13 +171,13 @@ The process of clustering in this sense is the identification of aggregations of
 
 ### Non-parametric representation
 
-The ponts themselvces represent the cluster, in this way to know how far something is I need to check all the points.
+The ponts themselves represent the cluster, in this way to know how far something is I need to check all the points.
 
 ### Parametric representation
 
-Pick a point and represent everything in relation to it. Now i only need the distance from the representative of the class.
+Pick a point and represent everything in relation to it. Now I only need the distance from the representative of the class.
 
-In general a cluster may be represented by a point, a plaine, a hyperplain in more than 3d.
+In general a cluster may be represented by a point, a plaine, a hyperplain in more than 3D.
 
 > In the first case (point)
 > The mean of these points
@@ -196,41 +186,40 @@ In general a cluster may be represented by a point, a plaine, a hyperplain in mo
 This has a big problem in that a point defines infinite circles.
 This only works around ***compact groups*** (classes).
 
+    A point is used for a compact cluster in ANY dimention.
+
 > in the second case (line)
 
 The accuracy is defined by the distance to the representative of all ponts.
 
-
-    A point is used for a compact cluster in ANY dimention.
-
-## Sensible
+## Sensiblility
 
 This needs a criterion
 
 This is expressed in a cost function or a set of rules
 
-# Clustering an ill posed problem
+# Clustering, an ill posed problem
 
-consider the sequcne of real nubmer 
+Consider the sequcne of real numbers:
 
 $1,4,9,16,25,...$
 
-could be $a_n = n^2$ and $ b_n = n^2 +(n-1) \times \dots \times (n-n+1)$
+This could be $a_n = n^2$ and $ b_n = n^2 +(n-1) \times \dots \times (n-n+1)$
 
 The selection of the **law** is subjective.
-We facor the simplest solution (not the lowest number be careful its different)
+We favor the simplest solution (not the lowest number be careful its different)
 
-example
+Example:
 
 \[\sum_{j = 1}^m \sum_{x_i \in c_j} \Arrowvert x_i -w_j\Arrowvert ^{2}\]
 
-in another case the selection fo the law will be subjective as to how many clusters.
+in another case the selection of the law will be subjective as to how many clusters.
 
 <hr>
 
 If there is so much subjectivty in clustering why do we use it?
 
-The result must be interpreted by an expert in the fiels of application.
+The result must be interpreted by an expert in the field of application.
 
 # Clustering stages
 
@@ -240,40 +229,66 @@ The result must be interpreted by an expert in the fiels of application.
 
 ## Clustering algorithm
 
-we need a proximity measure and a clustering criterion
+This requires a *proximity* measure and a ***clustering criterion***.
 
-The clustering algorithm tries to reaveal the clustering data for the vectors based on the similarity measure andthe adopted clustring criterion.
+The clustering algorithm tries to reaveal the clustering data for the vectors based on the similarity measure and the adopted clustring criterion.
 
-then we send for interpretation by a expert.
+Then we send the results for interpretation by a expert.
 
-## Example of doctor snow
+## Example of doctor Snow
 
-he plotted the location of cholera deaths on a map in the 1850's.
+He plotted the location of *V. cholera* deaths on a map in the 1850's.
 
 He noticed the locations where in points around polluted wells.
 
 Before we move on, what are the entities? Death locations. How are they represented? By coordinates. Pick any distance. What is the form of the clusters? They seem to be compact.
 
-Thus I use a clustering criterion able to reveal compact clusters.
+Thus I use a clustering criterion able to reveal compact clusters. (more on that later)
 
 <hr>
 
 ## What can we do with clustering? 
-* Data reduction. That is to represent all the entities in a certain cluster C by a set of properties that are shared by the majority of entities in C.
-* We can do hypothesis generation, meaning that we form a rule. This does not probe the rule. 
-* We can use clustering for hypothesis testing, this is the opposite of hypothesis generation. Assume we want to ttest hte hypothesis that large compaines have activites aborad, consider a set of companies, each one represetned by its size, its ise degree of acitvites abrad it sability to complertr successful reseach projects . 
+
+* Data reduction. That is to represent all the entities in a certain cluster $C$ by a set of properties that are shared by the majority of entities in $C$.
+* We can do hypothesis generation, meaning that we form a rule. This does not prove the rule. 
+* We can use clustering for hypothesis testing, this is the opposite of hypothesis generation. Assume we want to test the hypothesis that large compaines have activites aborad, consider a set of companies, each one represented by its size, it's use degree of acitvites abroad. It's ability to complete successful reseach projects then is indicative of more activity abroad.
 * We can use clustering to make predictions about groups. Example movie recommendations system.
 
 # Clustering definitions
 
-Various clustering definitions (meaning more than one meaning there is no one accepted one)
+Various clustering definitions (meaning more than one, meaning there is no one accepted one)
 
-We split X into m clusters.
-## A: Hard clustering case: each pont belong exclusivly to a single cluster. A set of mathematical formulations that must occur.
+We split $N$ occurences or *entities* from a vector space $X$: $X = \{x_1, x_2, \dots, x_N\}$ into $m$ clusters, named $R$ (for all cases essentially).
 
-B (still A): A set of m function each one corresponds to a cluster (sums)
-if I add all the values they must sum to one. No cluster is empty.
-### Example for B
+## A: Hard clustering case:
+
+Each pont belong exclusivly to a single cluster.
+
+### Rules
+
+The set of mathematical formulations that must occur. These rules stem directly from the way we just defined hard clustering.
+
+\[1. \quad C_i \neq \varnothing, \; i = 1,2,\dots,N\]
+
+\[2. \quad \bigcup_{i=1}^{m} C_i = X \qquad \]
+
+\[3. \quad Ci \cap Cj = \varnothing, \; i \neq j, \; i,j = 1, 2, \dots, m\]
+
+\[\begin{cases} 1. & \qquad \text{ No cluster is empty} \\ 2. & \qquad \text{ All the elements inside all the clusters equate to X the set of all the entities. Meaning that there is no unclustered entity} \\ 3. & \qquad \text{ There is no comminality between the clusters, any } x_i \text{ belongs to only one cluster} \end{cases}\]
+
+### Alternative definition
+
+B: A set of m function each one corresponds to a cluster (sums). If I add all the values they must sum to one. No cluster is empty.
+
+\[1. \qquad u_j: x \to \{0,1\}, \qquad j=1,\dots,m\]
+
+\[2. \quad \sum_{j=1}^{m} u_j(x_i) = 1, \qquad i = 1, \dots, N \]
+
+\[3. \quad 0 < \sum_{i = 1}^{N} u_j(x_i) < N, \qquad j = 1, 2, \dots, m \]
+
+\[\begin{cases} 1. & \qquad \text{ $u_j(x)$ is a membership funcion for one cluster, like a boolean operation. Outputs true or false (1, 0)} \\ 2. & \qquad \text{ For one } x \text{ if you use all the cluster's membership function only one will be 1 and the others 0. } x \text{ belongs to one cluster} \\ 3. & \qquad \text{ For one clusters } u_j, \text{ the sum of all } x \text{'s in the function is less than the whole set. Each cluster is then not empty and we have more than one cluster} \end{cases}\]
+
+The only thing that existed in the previous definition that we dont have here is that the union of all the clusters is $X$.
 
 $x_1, x_2, x_3, x_4, x_5$
 clusters: $C_1 = [x_1, x_2, x_3],\; C_2 = [x_4, x_5]$
@@ -284,32 +299,64 @@ thus $u_1(x_1) = 1$ and $u_2(x_1) = 0$ ... and so on to make a table.
 | u1 | 1 | 1 | 1 | 0 | 0 |
 | u2 | 0 | 0 | 0 | 1 | 1 |
 
+If I go to a column and I add all the values it must sum to one is what the first rule said.
+The secondcond rule said that rows must be summed to more than 0 and less that 5 (number of entities) $\Rightarrow$ True
+If the $u_i(x_i) = 1$ the cluster belongs to that group
 
-if i go to a column and i add all the values it must sum to one si what the first constraint said.
-The secondconstarint said that rows must be summed to more thatn 0 and less that 5 (number of entities) $\Rightarrow$ True
-if the $u_i(x_i) = 1$ the cluster belongs to that group
+## B: Probabilistic clustering:
 
-## A1: Probabilistic clustering: Each point belongs to a singel cluster, however, we are not certain to which cluster a adata pont belongs. Our ignorance is modified by a probabilistic framework.
+Each point belongs to a single cluster, however, we are not certain to which cluster a data ponit belongs. Our ignorance is modified by a probabilistic framework.
+
+### Rules
+
+\[1. \quad \sum_{j=1}^{m} P_j(x_i) = 1, \qquad i = 1, \dots, N \]
+
+\[2. \quad 0 < \sum_{i = 1}^{N} P_j(x_i) < N, \qquad j = 1, 2, \dots, m \]
+
+\[\begin{cases} 1. & \qquad \text{ For one } x \text{ if you use all the cluster's P function they sum to all of x. } x \text{ is completly covered} \\ 2. & \qquad \text{ For one clusters } u_j, \text{ the sum of all } x \text{'s in the function is less than the whole set. Each cluster is then not empty and we have more than one cluster} \end{cases}\]
 
 No cluster is empty, the sum of the columns is 1
-but instead of $u$ i have $P$ and the values of the table will be 0.2 and 0.3
+but instead of $u$ I have $P$ and the values of the table will be 0.2 and 0.3
 
-| 0 | x1 | x2 | x3 | x4 | x5 |
+| Cluster\Entity | x1 | x2 | x3 | x4 | x5 |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | 
 | P1 | 0,7 | 0.2 | 0.5 | 0.3 | 0.2 |
 | P2 | 0.3 | 0.8 | 0.5 | 0.7 | 0.8 |
 
+## C: Fuzzy cluster:
 
-B: the fuzzy cluster: each point is allowed to be in more than one cluster up to some degree.
+Each point is allowed to be in more than one cluster up to some degree.
 
 Suppose you have a box with 10 balls 5 black and 5 white and we pick a ball. We do not know in advance what the color will be, we know it will have a color. This is the probabilistic case
 
 Suppose two colors b, w. You create a grey color 60/40. This is a fuzzy color.
 
-C: Possibilistic clustering: the notion of belonging is gone: We measure the degree to which each point is compatible to a cluster.
+### Rules
 
-We have a functionthat measures the compatibility.
+\[1. \qquad u_j: x \to [0,1], \qquad j=1,\dots,m\]
+
+\[2. \quad \sum_{j=1}^{m} u_j(x_i) = 1, \qquad i = 1, \dots, N \]
+
+\[3. \quad 0 < \sum_{i = 1}^{N} u_j(x_i) < N, \qquad j = 1, 2, \dots, m \]
+
+\[\begin{cases} 1. & \qquad \text{ $u_j(x)$ is a belonging funcion for one cluster, outputs a degree of belonging.} \\ 2. & \qquad \text{ For one } x \text{ if you use all the cluster's membership function only one will be 1 and the others 0. } x \text{ belongs to one cluster} \\ 3. & \qquad \text{ For one clusters } u_j, \text{ the sum of all } x \text{'s in the function is less than the whole set. Each cluster is then not empty and we have more than one cluster} \end{cases}\]
+
+## D: Possibilistic clustering:
+
+The notion of belonging is gone: We measure the degree to which each point is compatible to a cluster.
+
+We have a function that measures the compatibility.
 Now they do not need to sum to one
+
+### Rules
+
+\[1. \qquad u_j: x \to (0,1], \qquad j=1,\dots,m\]
+
+\[2. \quad 0 < \sum_{i = 1}^{N} u_j(x_i) < N, \qquad j = 1, 2, \dots, m \]
+
+\[\begin{cases} 1. & \qquad \text{ $u_j(x)$ is a membership funcion for one cluster, like a boolean operation. Outputs true or false (1, 0)} \\ 3. & \qquad \text{ For one clusters } u_j, \text{ the sum of all } x \text{'s in the function is less than the whole set. Each cluster is then not empty and we have more than one cluster} \end{cases}\]
+
+u outputs a degree of compatibility.
 
 <hr>
 
@@ -332,7 +379,7 @@ With respect ot the realtive significance of the values they take.
     Ratio scaled (no negative values)
 
 
-## Defining similarity and not
+## Defining Dis-similarity
 
 1. dissimilarity measure in term of a vector
 
@@ -343,4 +390,113 @@ there needs to be a non negative bound of the lowest value.
 \[x = \left[\begin{matrix} a \\ b \end{matrix}\right]\] \[y = \left[\begin{matrix} a \\ b \end{matrix}\right]\]
 \[d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2}\]
 
-$d(x,y)\geqq 0 = d_0$
+\[d(x,y)\geq 0 = d_0\]
+
+# Lesson 2
+
+We will proceed with some other basic ideas before we go to the main issue (the clusterin algorithm)
+
+Little reminder that in clustering we alsway have in mind a set of entities represented by a $l$ dimentional vector. The function that takes as input a pair of vectors and returns a numver is the dissimilarity measure we defined last time.
+
+## Defining similarity
+
+The function that takes vector pairs and returns a number
+
+### Criteria
+
+It must have the following properties
+
+1. \[\]
+
+Examples inner product, cosine similarity...
+
+#### Exercise for at home
+
+Do
+
+## Within set proximity measure
+
+We always have a set of data points and we consider all possible subsets of $x$ $\text{let} D_i subset X, i = 1, \dots , k and U = \{D_1 \dots, D_K\}$ (find the symbol for subset)
+
+In ordert odefine the proximity between sets we should first define the proximity between a point and a set.
+
+For this we have
+
+1. The non parametric way (all the sets points)
+2. The parametric case (you use a representative of the set). Meaning:
+    * Mean vector
+    * Mean cetner 
+    * Median center
+
+So here we go
+
+The first case
+
+All the points of the set (cluster)
+
+We define a max, min and average function for the data points and we look at what they would look like for similarity and disimilarity together
+
+\[\]
+
+the mean vector case
+
+\[m_p = \frac{1}{n_c} \sum_{y\in C} y\]
+
+you take the average of all the x's and the average of all the y's and that is the coordinates of the representative
+
+<hr>
+
+The mean center case
+
+\[m_c \in C : \sum_{y \in C} d(m_c, y) \leq \sum_{y \in C} d(z, y), \forall z \in C\]
+
+For each data point the sum from the data point to all others
+
+<hr>
+
+The meadian center
+
+\[M_{med} \in C: med(d(m_{med}, y | y \in C) \leq med(d(z,y)|y \in C), \forall z \in C\]
+
+For each data point the distances from all others. Meaning you do the calculation fro mteh mean center and write them increasing and find the meadian
+
+<hr>
+
+Discreet features are more fitted to mean center and meadian. We want both in cases where we have outcast entities. It's just like statistical analysis.
+
+Non discreet (continous) are more fitted to the mean vector.
+
+<hr>
+
+### Linear shaped clusters
+
+In this case a hyperplane is a better representation. For a hyperplane
+
+\[\sum_{j=1}^l a_jx_j + a_0 = a^Tx+a_0 = 0\]
+
+<hr>
+
+### Hyperspherical clusters
+
+The representative is a circle
+
+\[(x-c)^T\times (x-c) = r^2\]
+
+The distance form a point to a circle is the distance of the point to the center minus the radious if outside the cirle and r-d() for inside it (absolute)
+
+<hr>
+
+Thus back to the original question
+
+Distance of a set and a set.
+
+Non parametric:
+We define the same 3 functions
+
+For the max if d(D1, D2) = 0 then we have 1 point, otherwise it's $\neq 0$
+For the min d(D1,D2) = 0 means they have at leas 1 common point
+
+Parametric
+Point representatives then the distance of the sets is the distance of the representatives
+We take the cardinalitty
+

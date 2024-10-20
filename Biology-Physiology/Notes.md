@@ -93,7 +93,7 @@ Forget chemistry our job is to understand why one contains ... and the other ...
 TC = pyrimidines
 AG = purines
 
-#### Pars
+#### Pairs
 
 dyoxi - ribose
 
@@ -184,7 +184,7 @@ The DNA is dynamic, communicating with the enviroment.
 
 After the break
 
-### ENSEMBLE system
+### ENSEMBL system
 
 Dalle tried to illustrate the dna in his art. DNA is the most popular molecule ever (cap).
 
@@ -293,5 +293,157 @@ Dominant negative effect
 
 proteins that can dimerize and thus inactivate one another.
 
+    He will talk about the nucleosome he said hes gonna ask us in the exams.
 
-    He will talk about the nucleosome he said hes gonna aks u inthe exams.
+# Lesson 2
+
+More on the mechanisms (not too analytical).
+
+    I see alot of histones in the slides while hes flicking throught (maybe that was another class)
+
+Yeah Histones
+
+## Histones
+
+The histone is the protein that the DNA  wraps around in the nucleus of eukaryotes that helps the packing of the DNA. The physical DNA length is 2 meters and we need to pack it in a 10 micro meter nucleus. 
+
+The histone is positivly charged we haeb
+
+* H2a
+* H2b
+* H3
+* H4
+
+In to talt we have 8 since they are all in two copies in the complex. The complex in question is the *nucleosome*. DNA does two turns around it (2 models one with a 1.8 turn and one with a 2 turn).
+
+This complex is stable but ever more stable when the H1 histone is present. It comes and closes the complex from the outside.
+
+It offers:
+* Pompact
+* Protection
+* Regulation
+
+50 billion dollars have been invested to find it's role in cancer.
+
+We must not look over the histone tails of the complex of the nucleosome.
+
+    Q: How are histones made since the DNA makes proteins and the histone is aprotein that wraps the DNA.
+    A: They were made when the cell was by its precursor, and the precursors were made by it's precursor all the way back.
+
+Really all such question fall back to a question of when it was first made from the abiogenetic start of life.
+
+We do a digression into ribosimes and the first enzyme.
+He says that he does not care about evolution practically but he prefers the zygote the beginning of a new life.
+
+Back to histone tails
+Each histone has a tail that protrudes out of the complex of the nucleosome. These work like a thiumb they are the gripper on the DNA.
+
+If you leave DNA alone it has a property to make a fold around by itself. Meaning that the histone is a enzyme in a way
+
+Now we talk about levels of density
+
+* Naked dan 2nm 20 A
+* Nucleosome, upon the 6th nucleosome the linearity becaome a hexagon and they flip flop (inter nucleosomal area) (10nm)
+* Different levels can be prolongued and parallelized in the solinoid form (multiple solinoids in a linear row or line)
+* these attach to the scaffold (300nm)
+* The scaffold makes helxes of itself (700nm)
+* Then I have a chromosome
+
+We see a video explaining DNA condensation.
+
+The more condensed the DNA gets the smaller the inter nucleosomal space is closed and the less the transcription can take place. The more differentiation the cell gets the less open it is.
+Questions around the what nucelotides are easier to make a nucleosome. (AT)
+Q: about transcription.
+Q: Where does the solinoid bind to the scaffold SAR and MAR(scaffold attachment region)(Matrix attachment region)
+
+### Regulation part of the histone lecture
+
+Methilation adn meta transaltional changes onto the histones and the affect it has on the structure and gene regulatiuon.
+
+Example of the K and the charge of the amino acid in the postion of the methilation or other.
+HATs and DACs histone acetylation.
+
+HDs histone deacetylation.
+
+DAC inhihitors (trichostatin
+
+Acetylation is a process that throught portein add acetyl gropus to histone and helps transcription to start.
+
+For an example we do XIST  and the second X chromosome silencing
+
+We get into the determination of these subjects because we do not like the answer that it's random.
+
+Central subparts of hte histone complex
+
+we can identify a central part H3, H3 + H4, H4 and the left and right parts HA + HB respectivly thus 2 of each in total.
+How many parts does a nucleosome contain (central left and right)
+
+are there sequence preferences for nucleosomes to interact with? Consider genes that are transcibed alot, they must be open all the time and their histone recognition must be lower.
+Idea for the xist things - could be that the xist is produced from both but the xist rna has a set sequence andthe one that has a better match will be the one to be deactivated in one cell line and the the other is determined after it.
+
+## Replication of DNA
+
+We do the non lariat structure co polymerization version.
+
+dna polymerace theta was found to have reverse transcriptase function
+
+WE have 6
+helicase
+primase
+singale strand binding
+polymerase 3 
+the one that replaces the okazaki fragment (polymerase 1)
+ligase
+
+## Transcripion (looking at mechanisma)
+
+Transcription stages
+
+* Initiation (crutial)
+* Elongation (Easy)
+* Termination (Easy)
+
+TSS: Transcription start site
+
+RNA polymerase 2 does not need primers, multiple proteins can wark on the same gene simultaniously (signal amplification). The only thing is the start where getting the RNA polymerase on the sequence is a little hard.
+
+The RNA needs to be modified (splicing, polyA tail, 5'cap {methilation ofthe first base})
+These modifications are very important for the half life time of the transcript.
+
+### Promoter elemets
+
+-25 position: TATTAA box
+
+polymerase I II and III
+I: Nucleolus and makes the rRNA
+II: nucleus required for mRNA (focus)
+III: tRNA ,snRNA,
+
+Interferons and viral defense to showcase different transcription amount
+Mutagen and dna repair for the purposes of showing the effect on transcription. (we use p21)
+
+Lac Operon example
+
+The trp operon that works the other way around
+In presense of trp the operon is off
+
+tbp tata binding protein
+tf2d the larger complex of tbp
+tf2a, binds on the complex
+tf2b binds to that complex
+the rna polymerase 2 binds
+tf2f, e, h. H is the last component that starts transcription it anneals the strands and phosphorilates rna pol 2
+
+some of these are made from tata less genes tbp is a tataless gene needs no tbp for its transcription. these genes havce a base transcription rate that if no tata activation exists it just happens slow
+
+### Enchancers
+
+Overactivation of transcription. Sequences that are far away from promoters that through chromatin bending will enahance transcription.
+
+The opoposite of silencers.
+
+and insulators.
+
+This is a good point, there are proteins that help bind the enhancers by bending the dna in the region that will need to bend.
+
+

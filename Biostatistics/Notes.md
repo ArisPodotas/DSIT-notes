@@ -45,7 +45,7 @@ Same for ever first lesson
 
 > Examination
 > 
-> Usually if the sturdents do a set of exercises during the year the first (first 3 month) and the second second 3 months
+> Usually if the sturdents do a set of exercises during the year the first (first 3 month) and the second in the second 3 months
 > There is no final exam
 > He asked us if we want to give a final exam and he is willign to do it at the end anyway.
 

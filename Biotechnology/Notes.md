@@ -351,3 +351,78 @@ It does a traditional sequencing where we add a specific nucleotide one at a tim
 For the reactions
 * Hydrogen bonds = recognition
 * Covalent bonds = stability
+
+# Lesson 2
+
+Online chapters
+
+Smeagol in the slides what da hell. diddy in the slides what da hell.
+
+We discuss the importance of genetic variation which used to be defined as genetic polymorphism
+
+everyone has two eyes one mouth yet still we have so many differences phenotipically.
+
+Polymorphism is single nucleotide changes.
+
+They are very important for disease predisposition. This has a lot to do with the cure we can provide people
+
+## The functional asciciation between a drug response and the genetic variation in the human genome
+
+SNP: For one single position the nucleotide can differ from one person to another
+
+We have almost 1,5 million snp's per genome.
+
+60.000 in Exons. The rest outside. This is around 1 snp per 5000 base pairs.
+
+A link SNP is outside the regulatory and coding section of a gene and have no effect.
+
+Causitive SNP: in the gene or to some degree in the regulatory system.
+Then they can also be:
+* Non-coding: in a regulatory part | no aminoacid change
+* Coding: changes the sequence, these are:
+    0. ? Silent, same aminoacid coded essentially non coding
+    1. Synonimous: similar aminoacid
+    2. Non-Synonymous: different functionally
+        Missence: different structure
+        Nonsense: Stop codon
+
+SNP's role in disease
+
+We have ascociated a cohourts of snps with specific diseases
+
+These are not mutations they are snps that cna be asciciated with specific diseases and increased risks but not causal chains.
+
+This gets worse when we consider the drugs you can give someone for a target therapy.
+
+We see a atp7a,b exporters and copper to attack cancer cells. cycplatin the protein and neutralisation
+
+Glutatheone sytems are able to change the chemical structure of systatin (not cycplatin). If natural cells can fight the taxic effect of systatin then they will be fine
+
+if ctr1 or ctr2 is expressed systatin cant enter
+
+if a cancer cells expresses alot of atp7a,b then systatin cant stay in the cell.
+
+if sytatin is neutralized byt hte glutatheone systam it wont be functional.
+
+If none of this is true but it causes mutations that are easily repaired then its as if there is no effect.
+
+Kidney transplants and glycoprotein b. 3 conditions: the gene resposible for glycoprotein p production (mdr1): allele snps and differential production. T acrolymous will be able to go into the blood vessil better. then the kidney transplant is accepted.
+
+You should sequence everything before going forward with any medication.
+
+Now we provide medicine from a genetic profile, unlike back in the day when the graft was a littel less determined.
+
+DNA Microarrays, little chips with glass and wells.
+
+You can glue dna strands on glass areas. In a robotc system we can subdivide the wells even further, a microarray with a array in each well.
+
+We watch a video. The idea is to in a defined way imobilise and glue sequences fo my preference on a1, a2, ... in a sertain position on  a disc collection mamking a small librabry of small nucleotides. There is a component that stops the nucleotide from binding onto the glass, we cover everything, then we remove the cap from the unmasked positions, then you add the nucleotide (you just poure over the chip), redo for as many steps.
+Why are you doing this, say someone has a infection, waiting 2 to 3 weeks to get a diagnosis is painful. I take some dna immobilise it in the poisitions for all the differetnt diseases i think it could be, then i hynridize and find the one it actually is.
+
+we go over cDNA
+
+A tumor is heterogenious, a small island does not represent the whole cancer
+
+fluresent detection dna chip
+
+We do polymerisation witht taq

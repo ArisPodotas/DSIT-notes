@@ -429,11 +429,123 @@ I get a iso-linear curve to y meaning that y is the same all along the curve. In
 
 ## Probability and Statistics
 
-For lesson 2 he said
+    From lesson 2
+
+There is utility in representing the vectors and data as probabilities Little reminder section from the mathematical prerequisites:
+
+In porobability we have *events*. I toss a coind and I have two events. The probability of A:
+
+\[P(A) = \lim\limits_{trials \to \infty}\frac{\text{# Occurence of }A}{\text{# trials}}\]
+
+\[0\leq P(A)\leq1\]
+
+Conditional probability:
+
+\[P(A|B) =\frac{P(A \cap B)}{P(B)}\]
+
+$P(A|B)$ Means the probability of $A$ given $B$.
+From this we can get to:
+
+\[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+
+This is called Bayes rule
+
+1. These are muttually exclusive
+2. Their probabilities add up to 1
+
+\[P(B) = P(A_1 \cap B) + P(A_2 \cap B) + \dots + P(A_n \cap B) = P(B|A_1)\times P(A_1) + \dots + P(B|A_n)P(A_n) \Leftrightarrow P(B) = \sum \]
+
+#### Example of unfair coins
+
+\[\begin{cases} \text{C = 1, C = 2} & \text{A priori probabilities:} \\ P(A = H | C = 1) = 0.6 & P(C=1) =0.7\\
+PA=H|C-2) = 0.4 & P(C =2) = 0.3 \end{cases}\]
+
+Now someone says (aposteriori) that I tossed a coin and I got heads, can I find what coind he used? I have:
+
+\[P(C=1|A=H) = \frac{P(A=H|C-1)P(C=1)}{P(A=H|C-1)P(C=1) + P(A=H|C=2)P(C-2)}\]
+
+Thus I have $\frac{0.42}{0.42+0.12} \simeq 0.77$
+
+coin 1 is likeley to have been used because $0.77>0.5$
+
+<hr>
+
+### Random variables
+
+Discreet random variables are capital letters
+Continuous ones are with small letters
+
+\[\begin{cases} \mathbb{Z} = \text{Outcome of throwing a die} & \quad \text{Discreet} \\ x: \text{Height of a person} & \quad \text{Continous} \end{cases}\]
+
+What we like for these values is the probability density (bellcurve). This is denoted with small letters $p(x)$.
+
+Let's look at bayes rule
+
+\[p(x|A)P(A) = P(A|x)p(x)\]
+
+### Total probability:
+
+\[p(x) = \sum_{i} p(x|A_i)P(A_i)\]
+
+Then:
+
+\[P(A) = \int P(A|x)p(x)\mathrm{d}x\]
+
+### Expectation value:
+
+Discrete: $m=E[Z] = \sum_i P(Z_i)Z_i$
+
+Continous: $m=E[x] = \int p(x)x\mathrm{d}x$
+
+\[a>0 \quad E[aZ] = aE[Z]\]
+\[E[Z_1 + Z_2] = E[Z_1] + E[Z_2]\]
+
+Standard deviation:
+
+Everything: $\sigma = \sqrt{E[(x-m)^2]}$ This is a measure of how dispersed my random distribution is. The square of $\sigma$ is the variance $\sigma^2$.
+
+Discrete: $\sigma = \sqrt{\sum P(Z_i)$ (didnt write it all)
+
+<hr>
+
+### Gaussian (Normal) distribution:
+
+In one dimention $p(x) = \frac{1}{\sigma} \sqrt{2\pi}\times e^{-\frac{1}{Z}\frac{(x - m)^2}{\sigma^2}}$ (its not p its exp()
+
+Muli dmentional Gaussian: 
+
+Good luck look at the slides
+\[p(x) = \frac{1}{(2\pi)^{l/2}} \frac{1}{(det \sigma)^{l/2}}\]
 
 <hr>
 
 ## Optimization
+
+From lesson 2
+
+Weather otpimizing means max aor min is up to the second derivative.
+
+Optimizing $f(x)$ of some vector $x$. The optimum is the $\frac{df(x)}{dx} = 0$  This gives the $x$ whrer the optimuym lies and the x it's at, assume $f(x)$ is continous and differentiable
+
+Constained version:
+
+Optimize $f(x)$ subject to : $g(x) = 0$
+
+You find the lagrandian
+
+The $x$ lies on the tangent of the two curve function
+Meaning that hte gradiaent of f and g is perpendicular meaning they are colinear thus
+
+$df/dx +\lambda dg/dx = 0$
+
+the lagrangian is $l(x, \lambda) = f+\lambda g$
+then the partial derivative of the lagrangian is 0 for all factors x and $\lambda$.
+and the opimal points is a saddle point of the lagrangian
+
+with may constaints
+the lagrangian will just contain the sum of all the constaints
+
+if the constaint is a inequality
 
 <hr>
 
@@ -472,3 +584,56 @@ Example of gripper that cant open
 Offencise food finding
 
 Example of math problems to chatgpt
+
+# Lesson 2
+
+Expect backtracking to [Probability](#probability-and-statistics) 
+
+We had 3 topics, vector analysis, linear algebra, probability and statistics
+
+    After the math
+
+## Parametric modeling in learning
+
+We have to adopt a specific functional form, linear quadratic ...We should be able to decide on the foarm before anything else. This is where you have to make assumptions.
+
+If your $y$\s are discreet you have a , if they are you have a regression problem.
+
+We define a loss function and a ascosiated cost function for finding the best fit.
+
+the quadratic loss function
+
+\[L(y, f \theta (x)) = (y-f \theta (x))^2\]
+
+Cost function:
+
+\[J(\theta) = \sum_{n=1}^N (y_n -f \theta (x_n))^2\]
+
+The method is the least squares method from more that 2 centuries ago from Gauss.
+Advantages of LS
+* The minimization leads to a uniques solution
+* The solution of the linear system is the solution (Easy)
+
+For a linear model
+
+$y = \theta_0 + \theta_1x_1 + \dots + \theta_lx_l + h = \theta_0 +\theta^T x + h = [\theta^T, \theta_0] \left[\begin{matrix} x \\ 1\end{matrix}\right] + h$
+
+$y = \theta^Tx + h$
+
+from the training data i foarm my cost function (substiture the above)
+Now I will minimize the cost function
+
+We explain how this regresses to:
+solve \[\left(\sum_{n=1}^N x_nx_n^T\right) \theta = \sum_{n=1}^N x_n y_n\]
+
+Big noise variance give me a big variance in my solution
+
+## Discriminative learning
+
+* Fast
+
+## Generative learning
+
+Estimate the distribution of each seperate class of the training set( fitst) and take them into account when doing the classification. This was we can generate more point if we want them.
+
+* More expenssive
