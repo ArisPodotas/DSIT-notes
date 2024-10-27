@@ -621,7 +621,7 @@ $y = \theta_0 + \theta_1x_1 + \dots + \theta_lx_l + h = \theta_0 +\theta^T x + h
 $y = \theta^Tx + h$
 
 from the training data i foarm my cost function (substiture the above)
-Now I will minimize the cost function
+Now I will minimize the cost function (take the derivative for theta and set to 0)
 
 We explain how this regresses to:
 solve \[\left(\sum_{n=1}^N x_nx_n^T\right) \theta = \sum_{n=1}^N x_n y_n\]
@@ -637,3 +637,133 @@ Big noise variance give me a big variance in my solution
 Estimate the distribution of each seperate class of the training set( fitst) and take them into account when doing the classification. This was we can generate more point if we want them.
 
 * More expenssive
+
+<hr>
+
+# Lesson 3
+
+Bro said he's going slow
+
+Mein bruder
+
+Last time we did regression. We need to do classification once done in the same way
+The goal currently is the regressions and getting from the simple general to the difficult specific.
+
+    All the following for regression
+
+## The question of bias
+
+\[\mathbb{E}[\hat{\theta} = \theta_0\]
+
+The MSE for parameter vectors around the tru value $ \theta_0$ is defined as 
+
+\[\mathbb{E}[(\hat{\theta} - \theta_0)^T(\hat{\theta} = \theta_0)]\]
+
+The MSE for a parameter is the sum of the MSE for the components
+
+### Example
+
+suppose we are in 1d and have a theta we want to estimate
+
+The estimator
+
+\[\hat{\theta}_b = (1+a)\hat{\theta}_{MVAE}\]
+
+We will manipulate by multiplying by a constant $a$
+
+\[\mathbb{E}[\hat{\theta}_b] = (1+a)\mathbb{E}[\hat{\theta_{MVUE}} = (1+a)\theta_0\]
+We solve for MSE
+
+He deines mse he replaces the component that we just derived with a and finds the mse of theta infused within the expantion so we have allthe terms in the sum
+
+Thus we get the mse of the new estimator in terms of the mse of the previous estimator, now we compare them
+What i want is the new bias to be smaller than the last (progress)
+
+We write the inequality and find that we can factor a out and take cases for the values of $a$ in the case that 
+
+\[\begin{cases} a > 0 & No \\ a < 0 , a (x + \theta_0^2 ) + 2x > 0 , a > -\frac{2x}{x_\theta_0^2} & better \end{cases}\]
+
+We prove that $\absolute{1+a} < 1$. This is significant becasue i shrunk the absolute values of my estimator to get a biased one that is better. The equivalen in more dimentions is the same as shrinking the norm of my parameter vector.
+
+Can i find the best $a$, well if i take the new estimator MSE and take the derivative set to 0. There is a catch, you dont know theta 0 that it depends on. We know whta the best estimatro would be should i have the best theta. Because of this we need more than one training set to compare and find the best we can. We produce more training sets from [cross validation](#cross-validation)
+
+Generally the least squares method is a unbiased estimator.
+
+<hr>
+
+<hr>
+
+## Regularizaton
+
+In gaussian white noise we assume the noise on each axis is unrelated to the other dimentions.
+
+we know we can shrinking the [norm](#the-question-of-bias). In general refularization is imposing more a-priori information on the solution.
+
+We add a term to the least squares cost function, i need a compromise between how close my points are to the desired output and on the other had how small the norm of my parameter is
+
+
+\[L(\theta, ) = \sum_{n=1}^N (y_n - \theta^Tx_n)^2 + \lambda \theta\]
+
+In the derivative there will be a $\lambda$ added. This biases the new solution away from the LS solution applying regularization. The Ridge regression method is what we call it. (invented in the 70s)
+
+### Example
+
+This is in the slides of the mathematical prerequisites i guess
+
+full explanations of derivative = 0 expectation value mse
+
+<hr>
+
+There will always be a $\lambda$ that is a better estimator than the least squares method.
+
+<hr>
+
+## The general mean seuqre error estimation
+
+Say my equation is now $y = g(x) + h$
+
+Now I need to find the function by the minimization of the expectation value and finding the function that gives the minimum. Suppose you know the joint distribution of x and y.
+
+This come out to:
+\[\hat{g(x)} = \mathbb{E}[y|x] :=  \int\limits_{-\infty}^{\infty} yp(y|x)dy\]
+But we have not proved it yet so we will do toy problems to derive this.
+Something very similar will happend for classification
+
+In the first toy problem we see that the minimum is the expectation value of y. When its not dependant of x that is.
+
+In the more general toy problem we do it with the dependance of x.
+
+\[\mathbb{E}\left[(y-f(x))^2\right] = \mathbb{E} \left[(y-\mathb{E}[y|x])^2\right] + (\mathbb{E}[y|x] - f(x))^2\]
+
+### Bias variance tradeoff
+
+From the results of hte general mean square error estimation we cant have a small variance and a small bias at the same time.
+
+#### Occam's Razor
+
+Use the least complex, sufficiently complex solution that will describe the output.
+
+<hr>
+
+<hr>
+
+So how big should the training data be? This depends highly on the dimentionality of the inputs. It's an exponential funciton with each dimention.
+
+We see an example where the 2d space has more space between the points due to it's dimentionality.
+
+We can represent the data in less dimentions than it comes in for it to simplify the data like a projection.
+
+## Cross validation
+
+Say we have one training set, we want to produce new data somehow to get a better estimate in the end. 
+
+* Partitioning
+* Bootstrapping
+
+In partitioning we should partition the data into sets and then proceed with testing random subsets of the data. The partion is a random selection not a linear one (thogh every box will have the same number of points). The LOO (Leave One Out method).
+
+<hr>
+
+## Cross validation
+
+<hr>

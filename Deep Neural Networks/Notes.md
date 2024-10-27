@@ -288,3 +288,57 @@ A new $w$ looks like this. same position of the line last $w$ used to make the n
 Every iteration is called a new epoch.
 
 To get the derivative for each w. We calculate the derivatives of the cost function (loss function) then the derivative of the sigmoid and then the derivative of the line for each of its w's.
+
+# Lab 2
+
+Never add source code in your report.
+
+The description of thedatt if possible should contain statistincs and not just images of the data.
+
+Try more than one model for comparing the networks you make in the project
+
+Fliping images works as making a new image for the neural network
+
+The baseline model does not need to be a neural network.
+
+## Basic ml intro
+
+You already knwo about features.
+
+You already know about supervised learning.
+
+We learn the sklearn library for machine learning that contains lots of already knwosn mathematical and science packages like numpy
+
+there are basic command like
+
+```python
+from sklearn import datasets
+datasets.lead_iris()
+datasets.load_digits()
+datasets.data(()
+```
+
+You just import the thing you want to use and the documentation is realy good so you will not need to know the things by heart.
+
+steps
+* import sklearn 
+* read data
+* import the model (clf)
+* clf.fit()
+* clf.predicts()
+
+Make sure you get the data in the form of freatures / targets.
+
+There is a evaluation method.
+
+YOu get to pick whaterver for your project like supervised or not.
+You always have to split the data in to feateres and vectors.
+We partition the data into 3 sets
+
+Te validation set
+the test set and the training data
+We never use the test in the training process
+You pick a model run the trining data cvalidate on the validation adn tweak the result until you feel like it is fine.
+MLP classifier multi layer perceptor.
+
+

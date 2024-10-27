@@ -285,3 +285,40 @@ We use one such virtual machine that we use one such ssh
 go to the eclass files and paste your generated public key and they will add you
 
 Exercise 2 on eclass
+
+# Lesson 3
+
+if the ssh keys require the key twice it means that it has not kept you in the datbase for the keys
+
+## SSH
+
+ssh user#@genomics-lab.fleming.gr
+
+scp user#@genomics-lab.fleming.gr:
+scp user#@genomics-lab.fleming.gr:/tmp
+
+if you wanna send files use filezilla
+
+The screen command for the gui and running things when the connection is off
+I like screen use it alot
+
+screen -rx for viewing the command line at the same time from different pc's.
+
+----------
+
+## R
+
+Is a programming language based on GNU/S that is not open source and is interpreted.
+
+This interpretation fo the files means that the lines are capable of being run one at a time.
+
+Why R?
+
+* It's free
+* large user community
+* Flexible
+* Graphics
+* Fast
+* Interface with office excel
+* Can program almost anything and save and repeat
+

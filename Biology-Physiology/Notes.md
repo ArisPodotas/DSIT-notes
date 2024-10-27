@@ -438,7 +438,7 @@ some of these are made from tata less genes tbp is a tataless gene needs no tbp 
 
 ### Enchancers
 
-Overactivation of transcription. Sequences that are far away from promoters that through chromatin bending will enahance transcription.
+Overactivation of transcription. Sequences that are far away from promoters that through chromatin bending will enhance transcription.
 
 The opoposite of silencers.
 
@@ -446,4 +446,104 @@ and insulators.
 
 This is a good point, there are proteins that help bind the enhancers by bending the dna in the region that will need to bend.
 
+<hr>
 
+Note for tomorrow - Ask about his opinion on memes and this paper https://pmc.ncbi.nlm.nih.gov/articles/PMC8282340/
+
+EMBO course last speaker is one he knows and he speaks of the virome in the microbiome. nikos kirpidis berkley.
+
+# Lesson 3
+
+A major problem for the cells is to tarnslate the sequence of the mrna to a transcript of protein function.
+
+He said ribosome is a "organel" with the quotes.
+
+## Translation
+
+On the mrna sequence there is a complementary seqment for each aminoacitds trna tha is called the anti codon. This is for the binding of the trna onto the strand with the aminoacid. The enzyme that will add the aminoacid to the trna is called aminoacyltrnasynthetase.
+
+    E,P, A, site on the ribosime and the order (a re ari A P E from the site where they come in so from left to right E P A) A: acceptor E: Exit P: Priming?
+
+How does the system know that the next trna to enter the ribosome should be the one that matches the codon? Don't really know.
+
+How it stops, the stop codon means terminate synthesis since there is no trna, a releasing factor does notice this and rf1,2,3 will recognise the stop codons and synthesis will stop. trna is releqased mrna is released.
+
+the subunit sizes bacterial
+16s 
+
+aminoacyl trna synthetase -> proper trna -> anticodon loading -> exit
+
+The ribosome has to be deassbmled to start transcritption
+Initiator factor 1, 3 will decompose the ribosome by binding to the small subunit. The subunits release. now the mrna is ready to accomedate the rna subunits. Then for the first methionine needs to come but we have to make sure its the initiation methiodnin. This is done by a upstream sequence called the shine dalgano sequence that will signal the start methionine and not a internal one, this is for bacteria in eukaryotes its the kozack sequence and does the same thing. if2 will carry the first trna to the first atg, the first methionine has a sequence that differantiaties it form the internal one, this accomodates the first trna if2 and gtp, this loads the trna if3 gets kicked away by if2 grp will hydrolize if1 will be release nad the ribosome will be assembled. now the ribosome opens and the next trna can come do a similar structure.
+
+eftu elongation factor helps the transfer of the next trnas in the right places and checks that the pair is matched to the codon. it comes with gtp, gtp is given to the trna, hydrolised for the binding efrs will re apply a gtp to the eftu for re cycling.
+
+The operon does not have the ribosome de binding sequences and the ribosome will do the whole thing in one go and the stop codon will only de bind t he protein from the molecule. We have internal ribosome binding sequences.
+
+In reality the trna is a wobbly if you acetylate the U prior to the anticodon then the third base of the anticodon will act different.
+
+The sequence of moves that happen at the end:
+* rf1 find the stop
+* gtp and rf3 will be ontop of it
+* one water hydrolized the aminoacid from the trna and is released
+* the gtp is hydrolized and the system cannot bind
+* as soon as there is no trn on the peptide if1 and if3 separate the subunits
+
+We identify different bioinformatics problems in each lesson for us.
+
+Macgill rangusis, oikonomopoylos spyros.
+petsalaki evagkelia
+
+<hr>
+
+## JAK/STAT
+
+Signalosome
+
+Receptors are proteins that can interact with specificity and high affinity with cytokines (signaling molecules).
+
+A signal molecule usually has a kinase inside the cell and upon interaction they can dimerize and activate the kinase. Usually a waterfall fo reactions takes place in the cells from the original cytokine.
+
+When the kinases onthe receptor dimerisas it can makethe two kinases phosphorilise eachother.
+
+The monomeric receptors on the cell membrane will be broguyth together by the recceptor moelcule and the receptors will dimerize, if each has a kinase then the kinases will come in close proximity too they can be other kinases but now they can act on eachother.
+
+Ther eceptor itself can be phosphorilated to play a role in this.
+
+### Architecture of a kinase
+
+the kinase domain has a KEYY sequence in it (aminoacids) that this second tyrosine when phosphorilated itself will 50 fold the output of the kinase function.
+
+<hr>
+
+jak phosporilates stat that is a transcription factor.
+
+stat has a dna binding domain and a critical tyrosine near the end that will activate the molecule upon phosphorilation.
+
+sh2 and phosphotyrosine are motifs that like eachother.
+
+the phosphotyrosine of one molecule of stat will interact with the sh2 of the other stat molecule
+
+Notice how the regionality of the phosphotyrosine and the sh2 domain stops it from interacting with itself on one molecule.
+
+The quesiton is how far do i go to find self inhibition.
+
+This ecample path is for interferone gamma.
+
+The stat dimer will bind dna by makinga scicor to the sequence, we see the hand example.
+
+All the binding sequences bind on similar sequences.
+
+    Remember the jak stat looking waterfall of reactions and the intricacy of the steps the way they look not the names
+
+q jak2 is what -> kinase
+
+what is stat 5 -> transctiption factor binds to dna.
+
+jak2 dependant and jak2 independant paths
+
+this has negative regualtion becuase socc will be a stat target gene taht will come and supress jak.
+
+<hr>
+
+<hr>

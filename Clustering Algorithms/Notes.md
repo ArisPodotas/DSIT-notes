@@ -500,3 +500,174 @@ Parametric
 Point representatives then the distance of the sets is the distance of the representatives
 We take the cardinalitty
 
+----------
+
+# Lesson 3
+
+> [!NOTE]
+> Remember last lecture that the distances were defined from points and sets and all combinations.
+> The representativbe of a cluster and all the different ways to redefine them.
+
+We had only gone over 2 of the 3 discreet proximity measures
+
+## More distances
+
+### Between vectors, for mixed valued vectors.
+
+> This is defined as some of the features being discreet and some being real continous values
+
+In this case what we do is:
+* Simply adopt a measure that is suitable for continous values and treet the discreet values as continous.
+* Map the continous values to discreet ones and use a discreet measure
+* Ration scaled
+
+For ratio scaled we define a $w_k$ for 0 and 1 outputs where if atleast one of the $x_k$ and $y_k$ is undefined we set 0.
+
+* Non ordinal case $\begin{cases} 1, \text{if } x_k = y_k = 1 \text{ (or } x_k = y_k \text{ )} \\ 0, \text{otherwise} \end{cases}$
+* Ordinal case$\begin{cases} 1, \text{if } x_k = y_k = 1 \text{ (or } x_k = y_k \text{ )} \\ 0, \text{otherwise} \end{cases}$
+* Continous case $ 1 - \frac{|x_k - y_k|}{r_k}$ $r_k$ is the distance from the max and the min in the frature.
+
+This is coherent becuase the values are from 0 to 1.
+
+If one was unavailable then the values of the numerator will be the same but he denomenator will change and we cannot compare their sizes
+
+----------
+
+### Fuzzy measures
+
+A l dimentional unit space is considered and we do not have measurements we have degree of compatibility.
+
+In this case we define the s() and the distance of a vector to itself relies other than just on itself on the distance from the center. Look at the slides.
+
+----------
+
+### Dynamic similarity measures
+
+This is for vectors that have different lengths. (words)
+Or even... sequences
+
+----------
+
+### The missing data case
+
+Some of my coordinates are unknown.
+
+* Discard all vectors with missing values
+* Take the average of the features at that position and substitute that value with the mean
+* Do something like the mixed values, no discard but look at only the available features. This means adding a weight for specific features.
+* sum the proximity of the available values and use their average.
+
+----------
+
+# Clustering algorithm
+
+The question is, in how many ways can i assign the values of the data set to $m$ groups?
+
+> [!NOTE]
+> Conclusion: it is essentially impossible to go over all the possible solutions for even trivially small cases.
+
+> [!NOTE]
+> The answer to this problem is: Do not consider all possible clusterings
+
+Thus we will look for sensible clusterings 
+
+Thus the clustering algorithm is a learning process
+
+> [!NOTE]
+> The word clustering means {c1, c2} = {{x1, x2}, {x3, x4}}
+
+## Categorizations
+
+A major categorization is impossible however
+
+Roughly
+
+### Sequential
+
+These produce a single clustering. In order to do this they pass over the data one or a few times. The $m$ is not known a priori
+
+> [!NOTE]
+> We define a $\theta$ that is a cutoff for the distance to be within a cluster.
+
+#### Basic Sequential Clustering Algorithm
+
+```matlab
+m=1 \{number of cluseter}\
+Ck = {x1} 
+for i = 2 to N 
+    find Ck d(xi, Ck) = min d(i, Cj)
+    if (d(xi,Ck)>theta) AND(m<q) then 
+        m = m+1
+        Cm = {xi}
+    else
+    ck = ck \cup {xi}
+    if there is a representative of the cluster re compute it
+```
+
+Look at slides (lesson 3)
+
+At the time of xi being put into a cluster if i have y clusters then it will be assignted to one where if later another cluster appears then it could have been the case that should that cluster have existed before the xi was clustered then xi would have ended up in that new cluster.
+
+BSAS
+
+----------
+
+#### Modified Basic Sequential Clustering Algorithm
+
+This is simple, in the initial run do not assign the point xi into the cluster it belogns to. After you find the clusters assign in a extra run.
+
+MBSAS
+
+----------
+
+Sequential
+
+----------
+
+### Hierarchical
+
+These do not produce one clustering, they produce a sequence of nested clusterings.
+
+#### Agglomerative
+
+I begin witha a clustering where all points belogn to a single cluster and merge cluster up to the case where i have a 1 clustering
+
+Agglomerative
+
+----------
+
+#### Devisive
+
+This works in the opposite direction of the [Agglomerative](#agglomerative) ones.
+
+Devisive
+
+----------
+
+#### Combinations
+
+Combinations
+
+----------
+
+Hierarchical
+
+----------
+
+We have 4 chategories:
+* Cost function optimization
+* Probabilistic clustering
+* Fuzzy clustering
+* Possibilistic
+* Other
+
+Categotization
+
+----------
+
+Clustering
+
+----------
+
+> [!NOTE]
+> Do the example in matlab 1 on paper

@@ -426,3 +426,69 @@ A tumor is heterogenious, a small island does not represent the whole cancer
 fluresent detection dna chip
 
 We do polymerisation witht taq
+
+# lesson 3
+
+We talk about wet lab. Technical stufff techniques principles
+
+## Souther blot 
+
+Was invented by Southern, he manipulated DNA  and he wanted to find the structure of a gene based in this techinique
+
+Video:
+Eppendorfs with dDNA in a buffer are pre loaded and with a pippette you add a enzymes that cut DNA, (restriction enzymes) they digest the DNA. The new take some of the cleaved DNA, and add it to a electrophoresis gel. Small fragments move faster bigger ones move slower. You ideally want to load the product of multiple different restriction enzyme profiles in different wells form different pipettes. The DNA moves throught the gel and based on its end position you can find its size. We dont have a visual yet other than a dye we have added that moves the fastest (it's purpose is to show us when to stop the electrophoresis). You take the gel and add ethidium bromide. Under uv this will glow and my positions will be visible in the gel. I want to now know the sequence of each zone. I make a tank with the gel I denature the DNA in situ (if you add hcl in the buffer for 10 mins the Guanines will be removed and i want this becasue its the biggest and the largest fragments will be easier to see since they move from the top where they are unable to be differentiated). If it's too complex I can't blot well. To make the blot you neutralise in saline, and add a plastic membrane PVDFS that absords the denatured dna on to the membrane. (Why? I can't work with agarose) Now we re hybridize it to something we know about. Once done we add radiactive material to visualize. Now I take whatever i suspect is in the restriction ezyme profile and i hybridize it to see if or not its within the solution i started with. In order to know what part was natured wit hthe radiolabel i use a film that hte radiation will burn onto.
+
+## Cloning
+
+The plasmid with a new gene you want to insert. That old thing.
+
+Applications:
+(Watson strand is the 5'3' in that order in the view Crick is the other one)
+Plasmids: We go throught the whole plasmid recombination.
+
+
+Differences wit hpcr
+
+For pcr i need primers so if i dont know the sequence then i cant do pcr however the cloning does not need primers and i can do that first
+I can play bakc and fourth. You can freeze repopulate and others for cloning while sequencing is a little stable you only sequence ti after a pcr.
+
+Different vectors
+
+plasmid 5-10kb accomidate small fragments <5000kb
+Bacteriophage l 50kb, Linear, accomodate 15000kb
+Cosmid, accomidates 40kb 
+BAC Bacterial aritificail chormosome
+
+Note to only clone back the cDNA because introns cannot be removed.
+
+Knock in: change something leave tha gene intact
+Knock out: change and deactivate the gene
+Knock down: Didnt say
+
+RFLPs
+restricton fragment length plymorphism
+When a polymorphism makes a restriction enzyme sequence in the middle of a sequence that in general does not have that cut.
+be careful of false positives in rflps in the sickle cell anemia example
+Huntingtons example
+
+## Northern blot Rna hybridisation
+
+
+
+## Westeren blot
+
+Antigenifcally cahracterise a protein.
+
+This time we use polyacrilamide not agarsoe remember
+
+Video:
+Output regulation of genes in a way, Destroyed cells with all their components in the solution get loaded in the gel after being SDS processed and boiled. This denatures and unfolds the porteins so that they can move based on their weight and not their charge. Let them run. Blot the gel with a higly sensitive antibody assay that recognises the protein of preference. Remember that the loading happens ontop the membrane this time instead of the memebrane on the gel because diffudion would take forever so we add an electric field. Porteins will be renaturated in the second electrophoresis (doubt). Slow blots are better as a result (with methanol). Add bovine serum alvumin to cover non specific sites and the nature with the antibody 1. Come back wash the blot and bind the second anitbody (the antibody antibody with the enzyme).
+
+This helps find meta translational changes like ubuquitination.
+
+Reminder taht resolution limit is a thing and that any band might be more than 1.
+
+After the blot you can take the proteins form a line and cut with tripsin and run MLML liquid chromatography mass spectrometry tandem.
+ip western immuno percipitation.
+
+
