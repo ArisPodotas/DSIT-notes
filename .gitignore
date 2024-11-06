@@ -4,4 +4,7 @@
 *.png
 tests/
 enrolling/
+*.docx
+*.mp4
+*.mp3
 

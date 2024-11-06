@@ -13,3 +13,7 @@ Or make your branch where all the files are yours and thus dont need a name for 
 > We use *markdown* with *LaTeX* in the documents
 > Take note that the latex wont import moduels in the github document viewing section
 > If you want to view the documents properly use a native compiler for *markdown* and *LaTeX* 
+
+
+# Templates
+
