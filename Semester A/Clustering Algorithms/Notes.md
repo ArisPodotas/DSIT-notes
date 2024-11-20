@@ -723,7 +723,86 @@ However we notice a issue with the cost function minimization, since $u$ is disc
 
 This requires a-priori knwledge of the number of clusters.
 
+You'll need to look at the slides nad the data form the first few exercises since the code has been given to us.
+
+In all this form we only did partial optimization based on differential calculus. Because if you recall we did not use a gradient since we had discreet values.
+
+We close with some remarks about he k-means algorithm and how it is popular and it's old, from around the 60's.
+
+The ke means is sensitive to the outliers and noicse and it does not suite data with categorical coordinates
+
+The solution is the [k meadoid algorithms](#k-meadoid) 
+
+###### The issue with CFO algorithms
+
+Look at the slides of the k means algorithm and notice that there is a problem in one of the k menas clusterings since it is a cost function optimization and not a  clustering algorithm. It find the positions of the four representatives so that the sum is as small as possible.
+
 ----------
+
+###### K meadoid
+
+The cluster will have a meadoid which is acutally one of the points in the data set for its representative.
+
+We only deal with point representatives becasue the representative is a point itself.
+
+Then we define some values to describe this new idea that we have introduced
+
+* $\theta$
+\[X={x_1, x_2, \dots, x_100}
+\theta = {x_1, x_10, x_35}
+I_{\theta} = {1, 10 , 35}
+I_{x-\theta} = {1, 10 , 35}\]
+
+Notice that the cost function has the point and not the $\theta$ but we have the medoid. (comparison with [k means](#k-means) 
+
+The question is how can we find the representatives. Since we dont have the exact calculus scheme, we need a discreet optimization procedure.
+
+What is the benefit of usi9ng meadoids instead of means. Example below (in the slides).
+
+Because the medoid for discreet values can be inter preted but the mean cant
+If I had a outlier then it would not represent the cluster with the mean however the meadian will.
+
+> [!NOTE]
+> The follwing are algorithms within the meadoids set
+
+###### PAM
+
+Partitioning around medoids
+
+Two sets of medoids each consisting of m elements if they have m-1 elements in common then we say that these medoids are neighorts.
+
+Then each medoid can have $m(N-m)$ neighbors. This proof is easy, take an example with 3 medoids.
+
+Let us define then $\theta_{ij}$ the neighbor of $\theta$ that results if $x_j$ replaces $x_i$ ( I got this wrong look at the slides)
+
+We also define then the difference in the cost functiojn fo the $\theta_{ij}$ function from $\theta$
+if the difference is negative then the new $\theta$ is a better clustering
+
+Then we say the code for the algorithm
+
+Thus it gets stuck in local minimum since the algortihm staerts fro ma abstract $\theta$.
+
+###### CLARA
+
+The problem we had with [PAM](#pam) is with the computations
+
+You reduce the dataset randomly and use [PAM](#pam) 
+
+This is just a [PAM](#pam) heuristic to remove some of the computations. You sort of hinge on the fact of their being no small clusters. 
+
+###### CLARANS
+
+Another [PAM](#pam) heuristic
+
+Two discounts this time. First of all in pam if you remember if I have a $\theta$ to consider all its neighbnors. In this heuristic i find the $\theta$ that is simply better than the previous and not the optimal better one.
+
+Consider that this time you run the heuristic multiple times because it's a heuristic.
+
+----------
+
+And thus concludes the hard clustering.
+
+
 
 > [!NOTE]
 > Do the example in matlab 1 on paper
@@ -747,3 +826,38 @@ We do a little retake of the last lecture
 [TTSAS](#TTSAS) 
 [maxmin](#maxmin) 
 [CFO's](#cost-function-optimization-cfo-algorithms) 
+
+# Lesson 5
+
+Little recap from last time
+
+I'll add the hyperlinks here I guess to all the new things we do.
+[k means rehash](#k-means) 
+
+We are still doing the cost function optimization algrotihms scheme.
+[Issues with CFO's](#the-issue-with-CFO-algorithms) 
+[k meadoid](#k-meadoid) 
+[Partitioning around medoids](#pam) 
+[CLARA](#clara) 
+[CLARANS](#clarans) 
+We colcuded the hard clustering case
+
+## Probabilistic clustering
+
+We do a little intro to the probability theorey
+
+A random vector is a collection of random variables
+
+Since we are talking about random variables we must define a probability dnesity function of the random vector. The joint rpobability density function of its constituants
+
+Then a covariance matrix is a matrix of variance of individuals points of the vector and of the pairs.
+
+### EM algorithm
+
+You need prior knowledge of the number of clusters 
+
+keep in mind that this is the start of the probabilistic and all the probability density functionas and their respecrive features are assumedto be known at this point.
+
+The aim is to move the probability densities to the points dense in data.
+
+? Unimodal distribution?
