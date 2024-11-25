@@ -1,10 +1,16 @@
-*.pdf
-*.xlsx
-*.txt
-*.png
+Admitees list.pdf
+Basic_Math.pdf
+LaTeX-Math-Symbols.pdf
+algebra-book-gr.pdf
+mml-book.pdf
+Ακαδημαϊκό-Ημερολόγιο-2024-25.pdf
+Linear algebra definitions.png
+bnw unit.png
+bnw.png
+template.tex
+ects.xlsx
 tests/
 enrolling/
-*.docx
-*.mp4
 *.mp3
+*.mp4
 

@@ -1,0 +1,1919 @@
+RID: GM6UGYYA013	
+Job Title:outbreak15				
+Program: BLASTN 
+Database: core_nt Core nucleotide BLAST database
+Query #1: outbreak15 Query ID: lcl|Query_2363807 Length: 101
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Vibrio cholerae strain CNRVC190247 genome assembly, chromosome: 1 Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3095527    OW443150.1       
+Vibrio cholerae strain 2015V-1118 chromosome 1, complete sequence Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2927934    CP046749.1       
+Vibrio cholerae strain 2010V-1116 chromosome 1                    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3018407    CP051124.1       
+Vibrio cholerae strain E1 chromosome 1, complete sequence         Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2971001    CP110188.1       
+Vibrio cholerae strain 2011V-1043 chromosome 1, complete sequence Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3034533    CP046837.1       
+Vibrio cholerae strain GXFL1-4 chromosome 2, complete sequence    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3079090    CP090387.1       
+Vibrio cholerae strain 3566-06 chromosome 1, complete sequence    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3057992    CP046740.1       
+Vibrio cholerae O77 RIMD 2214315 DNA, chromosome 1, complete...   Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3064657    AP023383.1       
+Vibrio cholerae strain LK-18 chromosome 1, complete sequence      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2895335    CP142014.1       
+Vibrio cholerae strain 2011EL-1271 chromosome 1, complete...      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3073750    CP046839.1       
+Vibrio cholerae O5 RIMD 2214243 DNA, chromosome 1, complete...    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2952352    AP023377.1       
+Vibrio cholerae strain Amazonia isolate 3509 pathogenicity...     Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  49240      EU272902.1       
+Vibrio cholerae strain 3528-08 chromosome 1, complete sequence    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3101042    CP046736.1       
+Vibrio cholerae strain 2015V-1126 chromosome 1, complete sequence Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2883085    CP046737.1       
+Vibrio cholerae strain 20000 chromosome 1, complete sequence      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2942340    CP036499.1       
+Vibrio cholerae LMA3894-4 chromosome I, complete sequence         Vibrio chole... NA              935297     75.2   75.2  71%   1e-09 81.94  2791729    CP002555.1       
+Vibrio cholerae O51 RIMD 2214289 DNA, chromosome 1, complete...   Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2967527    AP023379.1       
+Vibrio cholerae strain PS-4 chromosome I, complete sequence       Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2784636    CP077197.1       
+Vibrio cholerae strain FORC_073 chromosome 1, complete sequence   Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3031091    CP024082.1       
+Vibrio cholerae strain RFB16 chromosome 1, complete sequence      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2948589    CP043554.1       
+Vibrio cholerae strain SP6G chromosome 1, complete sequence       Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2947818    CP053806.1       
+Vibrio cholerae strain 3566-08 chromosome 1, complete sequence    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3108402    CP046745.1       
+Vibrio cholerae strain Colony94 chromosome 1                      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  743577     CP078721.1       
+Vibrio cholerae V130003 DNA, chromosome 1, complete sequence      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3070648    AP024967.1       
+Vibrio metoecus strain 2011V-1169 chromosome 1, complete sequence Vibrio metoecus NA              1481663    75.2   75.2  71%   1e-09 81.94  2905724    CP035686.1       
+Vibrio cholerae strain 10432-62, complete genome                  Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  4077462    CP010812.1       
+Vibrio cholerae strain SA3G chromosome 1, complete sequence       Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3020084    CP053744.1       
+Vibrio cholerae strain SL6Y chromosome 1, complete sequence       Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2900064    CP053804.1       
+Vibrio cholerae O17 RIMD 2214255 DNA, chromosome 1, complete...   Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2939341    AP023371.1       
+Vibrio cholerae strain 1587 chromosome 1, complete sequence       Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3020579    CP137097.1       
+Vibrio cholerae O45 RIMD 2214283 DNA, chromosome 1, complete...   Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3021501    AP023375.1       
+Vibrio cholerae strain CNCTC 6536 chromosome 1, complete sequence Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  2954495    CP147726.1       
+Vibrio cholerae strain 3541-04 chromosome 1, complete sequence    Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3065919    CP046747.1       
+Vibrio cholerae strain Colony98 chromosome 1                      Vibrio cholerae NA              666        75.2   75.2  71%   1e-09 81.94  3149584    CP078719.1       
+Vibrio cholerae strain Sa5Y chromosome 1, complete sequence       Vibrio cholerae NA              666        73.4   73.4  70%   4e-09 81.69  2955400    CP028892.1       
+Vibrio cholerae strain SL5Y chromosome 1, complete sequence       Vibrio cholerae NA              666        73.4   73.4  70%   4e-09 81.69  2947299    CP053798.1       
+Vibrio cholerae strain SL4G chromosome 1, complete sequence       Vibrio cholerae NA              666        73.4   73.4  70%   4e-09 81.69  2954462    CP053796.1       
+Vibrio cholerae strain 2010EL-1786 chromosome 1                   Vibrio cholerae NA              666        71.6   71.6  71%   1e-08 80.56  3051680    CP038178.2       
+Vibrio cholerae strain SO5Y chromosome 1, complete sequence       Vibrio cholerae NA              666        71.6   71.6  69%   1e-08 81.43  2947270    CP053800.1       
+Vibrio cholerae strain DRC187 chromosome 1, complete sequence     Vibrio cholerae NA              666        71.6   71.6  69%   1e-08 81.43  2959192    CP132190.1       
+Vibrio cholerae O1 biovar El Tor strain E7946 chromosome 1,...    Vibrio chole... NA              686        70.7   70.7  71%   5e-08 80.56  3011453    CP047303.1       
+Vibrio cholerae strain VC9 chromosome 1                           Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3056188    CP168301.1       
+Vibrio cholerae strain CTMA_1829 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3092953    CP160478.1       
+Vibrio cholerae O1 biovar El Tor strain C6709 chromosome 1,...    Vibrio chole... NA              686        70.7   70.7  71%   5e-08 80.56  3020257    CP047297.1       
+Vibrio cholerae strain CTMA_1951 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3101295    CP160414.1       
+Vibrio cholerae strain CTMA_1872 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3085946    CP160314.1       
+Vibrio cholerae strain BY369 chromosome 1, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3026998    CP090378.1       
+Vibrio cholerae strain CTMA_2008 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3065443    CP161835.1       
+Vibrio cholerae strain VIC11-A chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3049826    CP134058.1       
+Vibrio cholerae strain PanChol chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2994890    CP090399.1       
+Vibrio cholerae strain CMUL 009 chromosome 1, complete sequence   Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3041262    CP134060.1       
+Vibrio cholerae strain F9993 chromosome 1, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3082401    CP046840.1       
+Vibrio cholerae strain A1552 chromosome 1, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3015094    CP028894.1       
+Vibrio cholerae BCH-01536 DNA, chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3040126    AP024547.1       
+Vibrio cholerae man9 DNA, chromosome 1, complete sequence         Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2927104    AP026558.1       
+Vibrio cholerae strain CTMA_1832 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3072464    CP160420.1       
+Vibrio cholerae strain CTMA_1733 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3074133    CP161833.1       
+Vibrio cholerae IDH-00113 DNA, chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2991699    AP024549.1       
+Vibrio cholerae O1 biovar El Tor str. N16961 genome assembly,...  Vibrio chole... NA              243277     70.7   70.7  71%   5e-08 80.56  2961182    LT906614.1       
+Vibrio mimicus strain Y4 chromosome II, complete sequence         Vibrio mimicus  NA              674        70.7   70.7  71%   5e-08 80.56  3256425    CP077426.1       
+Vibrio cholerae strain CTMA_1831 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3074629    CP160320.1       
+Vibrio cholerae strain VC1374 chromosome 1, complete sequence     Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3039067    CP040172.1       
+Vibrio cholerae strain DRC052 chromosome 1, complete sequence     Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3063607    CP132187.1       
+Vibrio cholerae strain 3569-08 chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2969890    CP046744.1       
+Vibrio cholerae IDH-02387 DNA, chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3117466    AP024551.1       
+Vibrio cholerae strain CTMA_1711 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3093197    CP161831.1       
+Vibrio cholerae strain MAK757 chromosome 1, complete sequence     Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2908252    CP159790.1       
+Vibrio cholerae C6706 chromosome 1, complete sequence             Vibrio chole... NA              948564     70.7   70.7  71%   5e-08 80.56  3019938    CP046844.1       
+Vibrio cholerae V52 chromosome 1, complete sequence               Vibrio chole... NA              345076     70.7   70.7  71%   5e-08 80.56  2975778    CP137135.1       
+Vibrio cholerae V060002 DNA, complete genome                      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  4057041    AP018677.1       
+Vibrio cholerae MO10 chromosome 1, complete sequence              Vibrio chole... NA              345072     70.7   70.7  71%   5e-08 80.56  3035563    CP072849.1       
+Vibrio cholerae MO10 chromosome 1                                 Vibrio chole... NA              345072     70.7   70.7  71%   5e-08 80.56  3102462    CP060094.1       
+Vibrio cholerae C6706 chromosome I, complete sequence             Vibrio chole... NA              948564     70.7   70.7  71%   5e-08 80.56  3015051    CP064350.1       
+Vibrio cholerae strain CTMA_1912 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3086563    CP160418.1       
+Vibrio cholerae strain DRC072 chromosome 1, complete sequence     Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3060728    CP132182.1       
+Vibrio cholerae strain CTMA_1846 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3092908    CP160480.1       
+Vibrio cholerae strain CTMA_1873 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3089965    CP160316.1       
+Vibrio cholerae strain CTMA_2017 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3064595    CP161829.1       
+Vibrio cholerae O1 biovar El Tor strain DRC-193A chromosome 1,... Vibrio chole... NA              686        70.7   70.7  71%   5e-08 80.56  3058772    CP047301.1       
+Vibrio cholerae strain N16961 chromosome 1, complete sequence     Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2975504    CP028827.1       
+Vibrio cholerae strain ICDC-VC3741 chromosome 1, complete...      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3007795    CP080465.1       
+Vibrio cholerae strain DRC193A chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3058770    CP132180.1       
+Vibrio cholerae C6706 chromosome 1, complete sequence             Vibrio chole... NA              948564     70.7   70.7  71%   5e-08 80.56  3015077    CP047295.1       
+Vibrio cholerae IDH-03329 DNA, chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3047641    AP024553.1       
+Vibrio cholerae strain N1252 chromosome 1, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3046907    CP102927.1       
+Vibrio cholerae strain CTMA_1965 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3073077    CP160416.1       
+Vibrio cholerae O1 biovar El Tor strain P27459 chromosome 1,...   Vibrio chole... NA              686        70.7   70.7  71%   5e-08 80.56  2962956    CP047299.1       
+Vibrio cholerae isolate CTMA_1441 chromosome 1, complete sequence Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2983109    CP047059.1       
+Vibrio cholerae strain Sudan_2019_18 chromosome 1, complete...    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3023903    CP152071.1       
+Vibrio cholerae strain CTMA_1905 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3082338    CP160318.1       
+Vibrio cholerae strain CTMA_2005 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3060903    CP162008.1       
+Vibrio cholerae strain MS84A chromosome I, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  2962973    CP077060.1       
+Vibrio cholerae O37 strain ATCC 25872 chromosome 1, complete...   Vibrio chole... NA              185332     70.7   70.7  71%   5e-08 80.56  2945491    CP047305.1       
+Vibrio cholerae strain CNRVC190243 genome assembly, chromosome: 1 Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3046494    OW443147.1       
+Vibrio cholerae strain CTMA_1964 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3072562    CP160476.1       
+Vibrio cholerae strain A1552 chromosome 1, complete sequence      Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3016351    CP072847.1       
+Vibrio cholerae O1 strain AAS91 chromosome 1, complete sequence   Vibrio chole... NA              127906     70.7   70.7  71%   5e-08 80.56  2961008    CP042299.1       
+Vibrio cholerae IDH-03506 DNA, chromosome 1, complete sequence    Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3026055    AP024555.1       
+Vibrio cholerae strain CTMA_1974 chromosome I, complete sequence  Vibrio cholerae NA              666        70.7   70.7  71%   5e-08 80.56  3081846    CP160678.1       
+Vibrio cholerae O1 biovar El Tor strain Inaba chromosome 1,...    Vibrio chole... NA              686        70.7   70.7  71%   5e-08 80.56  2905436    CP093426.1       
+
+
+Alignments:
+
+>Vibrio cholerae strain CNRVC190247 genome assembly, chromosome: 1
+Sequence ID: OW443150.1 Length: 3095527
+Range 1: 1280401 to 1280461
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1280461  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1280413
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1280412  ATTTAAGGATAG  1280401
+
+
+
+
+>Vibrio cholerae strain 2015V-1118 chromosome 1, complete sequence
+Sequence ID: CP046749.1 Length: 2927934
+Range 1: 1694970 to 1695030
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1694970  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1695018
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1695019  ATTTAAGGATAG  1695030
+
+
+
+
+>Vibrio cholerae strain 2010V-1116 chromosome 1
+Sequence ID: CP051124.1 Length: 3018407
+Range 1: 54896 to 54956
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30     AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+              ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  54956  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  54908
+
+Query  90     ATTTAAGGATAG  101
+              ||||||||||||
+Sbjct  54907  ATTTAAGGATAG  54896
+
+
+
+
+>Vibrio cholerae strain E1 chromosome 1, complete sequence
+Sequence ID: CP110188.1 Length: 2971001
+Range 1: 1201808 to 1201868
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1201868  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1201820
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1201819  ATTTAAGGATAG  1201808
+
+
+
+
+>Vibrio cholerae strain 2011V-1043 chromosome 1, complete sequence
+Sequence ID: CP046837.1 Length: 3034533
+Range 1: 2256134 to 2256194
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  2256194  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  2256146
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2256145  ATTTAAGGATAG  2256134
+
+
+
+
+>Vibrio cholerae strain GXFL1-4 chromosome 2, complete sequence
+Sequence ID: CP090387.1 Length: 3079090
+Range 1: 1185484 to 1185544
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1185544  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1185496
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1185495  ATTTAAGGATAG  1185484
+
+
+
+
+>Vibrio cholerae strain 3566-06 chromosome 1, complete sequence
+Sequence ID: CP046740.1 Length: 3057992
+Range 1: 1236373 to 1236433
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1236433  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1236385
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1236384  ATTTAAGGATAG  1236373
+
+
+
+
+>Vibrio cholerae O77 RIMD 2214315 DNA, chromosome 1, complete genome
+Sequence ID: AP023383.1 Length: 3064657
+Range 1: 1423445 to 1423505
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1423505  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1423457
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1423456  ATTTAAGGATAG  1423445
+
+
+
+
+>Vibrio cholerae strain LK-18 chromosome 1, complete sequence
+Sequence ID: CP142014.1 Length: 2895335
+Range 1: 1154270 to 1154330
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1154330  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1154282
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1154281  ATTTAAGGATAG  1154270
+
+
+
+
+>Vibrio cholerae strain 2011EL-1271 chromosome 1, complete sequence
+Sequence ID: CP046839.1 Length: 3073750
+Range 1: 130287 to 130347
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  130347  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  130299
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  130298  ATTTAAGGATAG  130287
+
+
+
+
+>Vibrio cholerae O5 RIMD 2214243 DNA, chromosome 1, complete genome
+Sequence ID: AP023377.1 Length: 2952352
+Range 1: 1198888 to 1198948
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1198948  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1198900
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1198899  ATTTAAGGATAG  1198888
+
+
+
+
+>Vibrio cholerae strain Amazonia isolate 3509 pathogenicity island VPI-2, complete sequence
+Sequence ID: EU272902.1 Length: 49240
+Range 1: 1329 to 1389
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30    AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+             ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1329  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1377
+
+Query  90    ATTTAAGGATAG  101
+             ||||||||||||
+Sbjct  1378  ATTTAAGGATAG  1389
+
+
+
+
+>Vibrio cholerae strain 3528-08 chromosome 1, complete sequence
+Sequence ID: CP046736.1 Length: 3101042
+Range 1: 1789857 to 1789917
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1789917  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1789869
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1789868  ATTTAAGGATAG  1789857
+
+
+
+
+>Vibrio cholerae strain 2015V-1126 chromosome 1, complete sequence
+Sequence ID: CP046737.1 Length: 2883085
+Range 1: 998651 to 998711
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  998651  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  998699
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  998700  ATTTAAGGATAG  998711
+
+
+
+
+>Vibrio cholerae strain 20000 chromosome 1, complete sequence
+Sequence ID: CP036499.1 Length: 2942340
+Range 1: 2016053 to 2016113
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  2016113  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  2016065
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2016064  ATTTAAGGATAG  2016053
+
+
+
+
+>Vibrio cholerae LMA3894-4 chromosome I, complete sequence
+Sequence ID: CP002555.1 Length: 2791729
+Range 1: 1761227 to 1761287
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1761227  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1761275
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1761276  ATTTAAGGATAG  1761287
+
+
+
+
+>Vibrio cholerae O51 RIMD 2214289 DNA, chromosome 1, complete genome
+Sequence ID: AP023379.1 Length: 2967527
+Range 1: 1244656 to 1244716
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1244716  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1244668
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1244667  ATTTAAGGATAG  1244656
+
+
+
+
+>Vibrio cholerae strain PS-4 chromosome I, complete sequence
+Sequence ID: CP077197.1 Length: 2784636
+Range 1: 1113080 to 1113140
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1113140  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1113092
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1113091  ATTTAAGGATAG  1113080
+
+
+
+
+>Vibrio cholerae strain FORC_073 chromosome 1, complete sequence
+Sequence ID: CP024082.1 Length: 3031091
+Range 1: 1229628 to 1229688
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1229688  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1229640
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1229639  ATTTAAGGATAG  1229628
+
+
+
+
+>Vibrio cholerae strain RFB16 chromosome 1, complete sequence
+Sequence ID: CP043554.1 Length: 2948589
+Range 1: 1153428 to 1153488
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1153488  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1153440
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1153439  ATTTAAGGATAG  1153428
+
+
+
+
+>Vibrio cholerae strain SP6G chromosome 1, complete sequence
+Sequence ID: CP053806.1 Length: 2947818
+Range 1: 1209506 to 1209566
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1209566  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1209518
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1209517  ATTTAAGGATAG  1209506
+
+
+
+
+>Vibrio cholerae strain 3566-08 chromosome 1, complete sequence
+Sequence ID: CP046745.1 Length: 3108402
+Range 1: 2062275 to 2062335
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  2062335  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  2062287
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2062286  ATTTAAGGATAG  2062275
+
+
+
+
+>Vibrio cholerae strain Colony94 chromosome 1
+Sequence ID: CP078721.1 Length: 743577
+Range 1: 433828 to 433888
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  433888  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  433840
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  433839  ATTTAAGGATAG  433828
+
+
+
+
+>Vibrio cholerae V130003 DNA, chromosome 1, complete sequence
+Sequence ID: AP024967.1 Length: 3070648
+Range 1: 1241346 to 1241406
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1241406  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1241358
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1241357  ATTTAAGGATAG  1241346
+
+
+
+
+>Vibrio metoecus strain 2011V-1169 chromosome 1, complete sequence
+Sequence ID: CP035686.1 Length: 2905724
+Range 1: 977391 to 977451
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  977451  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  977403
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  977402  ATTTAAGGATAG  977391
+
+
+
+
+>Vibrio cholerae strain 10432-62, complete genome
+Sequence ID: CP010812.1 Length: 4077462
+Range 1: 2616256 to 2616316
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  2616256  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  2616304
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2616305  ATTTAAGGATAG  2616316
+
+
+
+
+>Vibrio cholerae strain SA3G chromosome 1, complete sequence
+Sequence ID: CP053744.1 Length: 3020084
+Range 1: 1214336 to 1214396
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1214396  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1214348
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1214347  ATTTAAGGATAG  1214336
+
+
+
+
+>Vibrio cholerae strain SL6Y chromosome 1, complete sequence
+Sequence ID: CP053804.1 Length: 2900064
+Range 1: 1194786 to 1194846
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1194846  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1194798
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1194797  ATTTAAGGATAG  1194786
+
+
+
+
+>Vibrio cholerae O17 RIMD 2214255 DNA, chromosome 1, complete genome
+Sequence ID: AP023371.1 Length: 2939341
+Range 1: 1750002 to 1750062
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1750002  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1750050
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1750051  ATTTAAGGATAG  1750062
+
+
+
+
+>Vibrio cholerae strain 1587 chromosome 1, complete sequence
+Sequence ID: CP137097.1 Length: 3020579
+Range 1: 1769747 to 1769807
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1769747  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1769795
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1769796  ATTTAAGGATAG  1769807
+
+
+
+
+>Vibrio cholerae O45 RIMD 2214283 DNA, chromosome 1, complete genome
+Sequence ID: AP023375.1 Length: 3021501
+Range 1: 1246123 to 1246183
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1246183  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1246135
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1246134  ATTTAAGGATAG  1246123
+
+
+
+
+>Vibrio cholerae strain CNCTC 6536 chromosome 1, complete sequence
+Sequence ID: CP147726.1 Length: 2954495
+Range 1: 1234987 to 1235047
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1235047  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1234999
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1234998  ATTTAAGGATAG  1234987
+
+
+
+
+>Vibrio cholerae strain 3541-04 chromosome 1, complete sequence
+Sequence ID: CP046747.1 Length: 3065919
+Range 1: 2566051 to 2566111
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  2566111  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  2566063
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2566062  ATTTAAGGATAG  2566051
+
+
+
+
+>Vibrio cholerae strain Colony98 chromosome 1
+Sequence ID: CP078719.1 Length: 3149584
+Range 1: 1770153 to 1770213
+
+Score:75.2 bits(82), Expect:1e-09, 
+Identities:59/72(82%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1770213  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1770165
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1770164  ATTTAAGGATAG  1770153
+
+
+
+
+>Vibrio cholerae strain Sa5Y chromosome 1, complete sequence
+Sequence ID: CP028892.1 Length: 2955400
+Range 1: 1191879 to 1191938
+
+Score:73.4 bits(80), Expect:4e-09, 
+Identities:58/71(82%),  Gaps:11/71(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1191938  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1191890
+
+Query  90       ATTTAAGGATA  100
+                |||||||||||
+Sbjct  1191889  ATTTAAGGATA  1191879
+
+
+
+
+>Vibrio cholerae strain SL5Y chromosome 1, complete sequence
+Sequence ID: CP053798.1 Length: 2947299
+Range 1: 1188681 to 1188740
+
+Score:73.4 bits(80), Expect:4e-09, 
+Identities:58/71(82%),  Gaps:11/71(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1188740  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1188692
+
+Query  90       ATTTAAGGATA  100
+                |||||||||||
+Sbjct  1188691  ATTTAAGGATA  1188681
+
+
+
+
+>Vibrio cholerae strain SL4G chromosome 1, complete sequence
+Sequence ID: CP053796.1 Length: 2954462
+Range 1: 1190854 to 1190913
+
+Score:73.4 bits(80), Expect:4e-09, 
+Identities:58/71(82%),  Gaps:11/71(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  1190913  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  1190865
+
+Query  90       ATTTAAGGATA  100
+                |||||||||||
+Sbjct  1190864  ATTTAAGGATA  1190854
+
+
+
+
+>Vibrio cholerae strain 2010EL-1786 chromosome 1
+Sequence ID: CP038178.2 Length: 3051680
+Range 1: 2570668 to 2570727
+
+Score:71.6 bits(78), Expect:1e-08, 
+Identities:58/72(81%),  Gaps:12/72(16%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2570727  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT-----------GCAGAATGGG  2570680
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2570679  ATTTAAGGATAG  2570668
+
+
+
+
+>Vibrio cholerae strain SO5Y chromosome 1, complete sequence
+Sequence ID: CP053800.1 Length: 2947270
+Range 1: 1193361 to 1193419
+
+Score:71.6 bits(78), Expect:1e-08, 
+Identities:57/70(81%),  Gaps:11/70(15%), Strand: Plus/Minus
+
+Query  32       GTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGGAT  91
+                ||||||||||| ||||||| ||||||||| |||||||          |||||||||||||
+Sbjct  1193419  GTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGGAT  1193371
+
+Query  92       TTAAGGATAG  101
+                ||||||||||
+Sbjct  1193370  TTAAGGATAG  1193361
+
+
+
+
+>Vibrio cholerae strain DRC187 chromosome 1, complete sequence
+Sequence ID: CP132190.1 Length: 2959192
+Range 1: 147595 to 147653
+
+Score:71.6 bits(78), Expect:1e-08, 
+Identities:57/70(81%),  Gaps:11/70(15%), Strand: Plus/Plus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||          |||||||||||
+Sbjct  147595  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTT----------AGCAGAATGGG  147643
+
+Query  90      ATTTAAGGAT  99
+               ||||||||||
+Sbjct  147644  ATTTAAGGAT  147653
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor strain E7946 chromosome 1, complete sequence
+Sequence ID: CP047303.1 Length: 3011453
+Range 1: 1218416 to 1218476
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1218476  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1218428
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1218427  ATTTAAGGATAG  1218416
+
+
+
+
+>Vibrio cholerae strain VC9 chromosome 1
+Sequence ID: CP168301.1 Length: 3056188
+Range 1: 173820 to 173880
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  173880  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  173832
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  173831  ATTTAAGGATAG  173820
+
+
+
+
+>Vibrio cholerae strain CTMA_1829 chromosome I, complete sequence
+Sequence ID: CP160478.1 Length: 3092953
+Range 1: 1148848 to 1148908
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1148908  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1148860
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1148859  ATTTAAGGATAG  1148848
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor strain C6709 chromosome 1, complete sequence
+Sequence ID: CP047297.1 Length: 3020257
+Range 1: 1190512 to 1190572
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1190572  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1190524
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1190523  ATTTAAGGATAG  1190512
+
+
+
+
+>Vibrio cholerae strain CTMA_1951 chromosome I, complete sequence
+Sequence ID: CP160414.1 Length: 3101295
+Range 1: 1978677 to 1978737
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1978737  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1978689
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1978688  ATTTAAGGATAG  1978677
+
+
+
+
+>Vibrio cholerae strain CTMA_1872 chromosome I, complete sequence
+Sequence ID: CP160314.1 Length: 3085946
+Range 1: 1380263 to 1380323
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1380323  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1380275
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1380274  ATTTAAGGATAG  1380263
+
+
+
+
+>Vibrio cholerae strain BY369 chromosome 1, complete sequence
+Sequence ID: CP090378.1 Length: 3026998
+Range 1: 2000451 to 2000511
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2000451  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2000499
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2000500  ATTTAAGGATAG  2000511
+
+
+
+
+>Vibrio cholerae strain CTMA_2008 chromosome I, complete sequence
+Sequence ID: CP161835.1 Length: 3065443
+Range 1: 2442539 to 2442599
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2442599  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2442551
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2442550  ATTTAAGGATAG  2442539
+
+
+
+
+>Vibrio cholerae strain VIC11-A chromosome 1, complete sequence
+Sequence ID: CP134058.1 Length: 3049826
+Range 1: 2372908 to 2372968
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2372908  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2372956
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2372957  ATTTAAGGATAG  2372968
+
+
+
+
+>Vibrio cholerae strain PanChol chromosome 1, complete sequence
+Sequence ID: CP090399.1 Length: 2994890
+Range 1: 1178476 to 1178536
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1178536  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1178488
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1178487  ATTTAAGGATAG  1178476
+
+
+
+
+>Vibrio cholerae strain CMUL 009 chromosome 1, complete sequence
+Sequence ID: CP134060.1 Length: 3041262
+Range 1: 1180895 to 1180955
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1180955  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1180907
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1180906  ATTTAAGGATAG  1180895
+
+
+
+
+>Vibrio cholerae strain F9993 chromosome 1, complete sequence
+Sequence ID: CP046840.1 Length: 3082401
+Range 1: 2867240 to 2867300
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2867300  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2867252
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2867251  ATTTAAGGATAG  2867240
+
+
+
+
+>Vibrio cholerae strain A1552 chromosome 1, complete sequence
+Sequence ID: CP028894.1 Length: 3015094
+Range 1: 1673113 to 1673173
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1673113  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1673161
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1673162  ATTTAAGGATAG  1673173
+
+
+
+
+>Vibrio cholerae BCH-01536 DNA, chromosome 1, complete sequence
+Sequence ID: AP024547.1 Length: 3040126
+Range 1: 1471041 to 1471101
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1471101  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1471053
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1471052  ATTTAAGGATAG  1471041
+
+
+
+
+>Vibrio cholerae man9 DNA, chromosome 1, complete sequence
+Sequence ID: AP026558.1 Length: 2927104
+Range 1: 1353430 to 1353490
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1353430  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1353478
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1353479  ATTTAAGGATAG  1353490
+
+
+
+
+>Vibrio cholerae strain CTMA_1832 chromosome I, complete sequence
+Sequence ID: CP160420.1 Length: 3072464
+Range 1: 1701091 to 1701151
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1701151  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1701103
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1701102  ATTTAAGGATAG  1701091
+
+
+
+
+>Vibrio cholerae strain CTMA_1733 chromosome I, complete sequence
+Sequence ID: CP161833.1 Length: 3074133
+Range 1: 1147152 to 1147212
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1147152  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1147200
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1147201  ATTTAAGGATAG  1147212
+
+
+
+
+>Vibrio cholerae IDH-00113 DNA, chromosome 1, complete sequence
+Sequence ID: AP024549.1 Length: 2991699
+Range 1: 1478701 to 1478761
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1478761  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1478713
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1478712  ATTTAAGGATAG  1478701
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor str. N16961 genome assembly, chromosome: 1
+Sequence ID: LT906614.1 Length: 2961182
+Range 1: 1897043 to 1897103
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1897043  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1897091
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1897092  ATTTAAGGATAG  1897103
+
+
+
+
+>Vibrio mimicus strain Y4 chromosome II, complete sequence
+Sequence ID: CP077426.1 Length: 3256425
+Range 1: 1273150 to 1273210
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1273210  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1273162
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1273161  ATTTAAGGATAG  1273150
+
+
+
+
+>Vibrio cholerae strain CTMA_1831 chromosome I, complete sequence
+Sequence ID: CP160320.1 Length: 3074629
+Range 1: 1889880 to 1889940
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1889880  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1889928
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1889929  ATTTAAGGATAG  1889940
+
+
+
+
+>Vibrio cholerae strain VC1374 chromosome 1, complete sequence
+Sequence ID: CP040172.1 Length: 3039067
+Range 1: 1147941 to 1148001
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1148001  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1147953
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1147952  ATTTAAGGATAG  1147941
+
+
+
+
+>Vibrio cholerae strain DRC052 chromosome 1, complete sequence
+Sequence ID: CP132187.1 Length: 3063607
+Range 1: 1873007 to 1873067
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1873007  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1873055
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1873056  ATTTAAGGATAG  1873067
+
+
+
+
+>Vibrio cholerae strain 3569-08 chromosome 1, complete sequence
+Sequence ID: CP046744.1 Length: 2969890
+Range 1: 487835 to 487895
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  487895  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  487847
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  487846  ATTTAAGGATAG  487835
+
+
+
+
+>Vibrio cholerae IDH-02387 DNA, chromosome 1, complete sequence
+Sequence ID: AP024551.1 Length: 3117466
+Range 1: 1306386 to 1306446
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1306386  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1306434
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1306435  ATTTAAGGATAG  1306446
+
+
+
+
+>Vibrio cholerae strain CTMA_1711 chromosome I, complete sequence
+Sequence ID: CP161831.1 Length: 3093197
+Range 1: 2677132 to 2677192
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2677192  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2677144
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2677143  ATTTAAGGATAG  2677132
+
+
+
+
+>Vibrio cholerae strain MAK757 chromosome 1, complete sequence
+Sequence ID: CP159790.1 Length: 2908252
+Range 1: 1165544 to 1165604
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1165604  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1165556
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1165555  ATTTAAGGATAG  1165544
+
+
+
+
+>Vibrio cholerae C6706 chromosome 1, complete sequence
+Sequence ID: CP046844.1 Length: 3019938
+Range 1: 1502438 to 1502498
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1502438  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1502486
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1502487  ATTTAAGGATAG  1502498
+
+
+
+
+>Vibrio cholerae V52 chromosome 1, complete sequence
+Sequence ID: CP137135.1 Length: 2975778
+Range 1: 1058470 to 1058530
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1058530  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1058482
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1058481  ATTTAAGGATAG  1058470
+
+
+
+
+>Vibrio cholerae V060002 DNA, complete genome
+Sequence ID: AP018677.1 Length: 4057041
+Range 1: 2292051 to 2292111
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2292111  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2292063
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2292062  ATTTAAGGATAG  2292051
+
+
+
+
+>Vibrio cholerae MO10 chromosome 1, complete sequence
+Sequence ID: CP072849.1 Length: 3035563
+Range 1: 1147992 to 1148052
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1148052  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1148004
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1148003  ATTTAAGGATAG  1147992
+
+
+
+
+>Vibrio cholerae MO10 chromosome 1
+Sequence ID: CP060094.1 Length: 3102462
+Range 1: 1484486 to 1484546
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1484546  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1484498
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1484497  ATTTAAGGATAG  1484486
+
+
+
+
+>Vibrio cholerae C6706 chromosome I, complete sequence
+Sequence ID: CP064350.1 Length: 3015051
+Range 1: 1626967 to 1627027
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1626967  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1627015
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1627016  ATTTAAGGATAG  1627027
+
+
+
+
+>Vibrio cholerae strain CTMA_1912 chromosome I, complete sequence
+Sequence ID: CP160418.1 Length: 3086563
+Range 1: 1289628 to 1289688
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1289688  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1289640
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1289639  ATTTAAGGATAG  1289628
+
+
+
+
+>Vibrio cholerae strain DRC072 chromosome 1, complete sequence
+Sequence ID: CP132182.1 Length: 3060728
+Range 1: 1235340 to 1235400
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1235400  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1235352
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1235351  ATTTAAGGATAG  1235340
+
+
+
+
+>Vibrio cholerae strain CTMA_1846 chromosome I, complete sequence
+Sequence ID: CP160480.1 Length: 3092908
+Range 1: 2224323 to 2224383
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2224323  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2224371
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2224372  ATTTAAGGATAG  2224383
+
+
+
+
+>Vibrio cholerae strain CTMA_1873 chromosome I, complete sequence
+Sequence ID: CP160316.1 Length: 3089965
+Range 1: 176733 to 176793
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  176733  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  176781
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  176782  ATTTAAGGATAG  176793
+
+
+
+
+>Vibrio cholerae strain CTMA_2017 chromosome I, complete sequence
+Sequence ID: CP161829.1 Length: 3064595
+Range 1: 1398361 to 1398421
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1398421  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1398373
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1398372  ATTTAAGGATAG  1398361
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor strain DRC-193A chromosome 1, complete sequence
+Sequence ID: CP047301.1 Length: 3058772
+Range 1: 1182483 to 1182543
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1182543  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1182495
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1182494  ATTTAAGGATAG  1182483
+
+
+
+
+>Vibrio cholerae strain N16961 chromosome 1, complete sequence
+Sequence ID: CP028827.1 Length: 2975504
+Range 1: 1185323 to 1185383
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1185383  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1185335
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1185334  ATTTAAGGATAG  1185323
+
+
+
+
+>Vibrio cholerae strain ICDC-VC3741 chromosome 1, complete sequence
+Sequence ID: CP080465.1 Length: 3007795
+Range 1: 2031250 to 2031310
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2031250  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2031298
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2031299  ATTTAAGGATAG  2031310
+
+
+
+
+>Vibrio cholerae strain DRC193A chromosome 1, complete sequence
+Sequence ID: CP132180.1 Length: 3058770
+Range 1: 1868136 to 1868196
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1868136  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1868184
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1868185  ATTTAAGGATAG  1868196
+
+
+
+
+>Vibrio cholerae C6706 chromosome 1, complete sequence
+Sequence ID: CP047295.1 Length: 3015077
+Range 1: 1185347 to 1185407
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1185407  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1185359
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1185358  ATTTAAGGATAG  1185347
+
+
+
+
+>Vibrio cholerae IDH-03329 DNA, chromosome 1, complete sequence
+Sequence ID: AP024553.1 Length: 3047641
+Range 1: 1215876 to 1215936
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1215936  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1215888
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1215887  ATTTAAGGATAG  1215876
+
+
+
+
+>Vibrio cholerae strain N1252 chromosome 1, complete sequence
+Sequence ID: CP102927.1 Length: 3046907
+Range 1: 1180903 to 1180963
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1180963  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1180915
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1180914  ATTTAAGGATAG  1180903
+
+
+
+
+>Vibrio cholerae strain CTMA_1965 chromosome I, complete sequence
+Sequence ID: CP160416.1 Length: 3073077
+Range 1: 1271975 to 1272035
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1271975  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1272023
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1272024  ATTTAAGGATAG  1272035
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor strain P27459 chromosome 1, complete sequence
+Sequence ID: CP047299.1 Length: 2962956
+Range 1: 1179579 to 1179639
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1179639  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1179591
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1179590  ATTTAAGGATAG  1179579
+
+
+
+
+>Vibrio cholerae isolate CTMA_1441 chromosome 1, complete sequence
+Sequence ID: CP047059.1 Length: 2983109
+Range 1: 1182467 to 1182527
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1182527  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1182479
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1182478  ATTTAAGGATAG  1182467
+
+
+
+
+>Vibrio cholerae strain Sudan_2019_18 chromosome 1, complete sequence
+Sequence ID: CP152071.1 Length: 3023903
+Range 1: 31065 to 31125
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30     AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+              ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  31125  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  31077
+
+Query  90     ATTTAAGGATAG  101
+              ||||||||||||
+Sbjct  31076  ATTTAAGGATAG  31065
+
+
+
+
+>Vibrio cholerae strain CTMA_1905 chromosome I, complete sequence
+Sequence ID: CP160318.1 Length: 3082338
+Range 1: 440134 to 440194
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  440134  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  440182
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  440183  ATTTAAGGATAG  440194
+
+
+
+
+>Vibrio cholerae strain CTMA_2005 chromosome I, complete sequence
+Sequence ID: CP162008.1 Length: 3060903
+Range 1: 45493 to 45553
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30     AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+              ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  45553  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  45505
+
+Query  90     ATTTAAGGATAG  101
+              ||||||||||||
+Sbjct  45504  ATTTAAGGATAG  45493
+
+
+
+
+>Vibrio cholerae strain MS84A chromosome I, complete sequence
+Sequence ID: CP077060.1 Length: 2962973
+Range 1: 1186637 to 1186697
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1186697  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1186649
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1186648  ATTTAAGGATAG  1186637
+
+
+
+
+>Vibrio cholerae O37 strain ATCC 25872 chromosome 1, complete sequence
+Sequence ID: CP047305.1 Length: 2945491
+Range 1: 1185571 to 1185631
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1185631  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1185583
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1185582  ATTTAAGGATAG  1185571
+
+
+
+
+>Vibrio cholerae strain CNRVC190243 genome assembly, chromosome: 1
+Sequence ID: OW443147.1 Length: 3046494
+Range 1: 1180883 to 1180943
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1180943  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1180895
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1180894  ATTTAAGGATAG  1180883
+
+
+
+
+>Vibrio cholerae strain CTMA_1964 chromosome I, complete sequence
+Sequence ID: CP160476.1 Length: 3072562
+Range 1: 695409 to 695469
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30      AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+               ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  695409  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  695457
+
+Query  90      ATTTAAGGATAG  101
+               ||||||||||||
+Sbjct  695458  ATTTAAGGATAG  695469
+
+
+
+
+>Vibrio cholerae strain A1552 chromosome 1, complete sequence
+Sequence ID: CP072847.1 Length: 3016351
+Range 1: 1674372 to 1674432
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1674372  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1674420
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1674421  ATTTAAGGATAG  1674432
+
+
+
+
+>Vibrio cholerae O1 strain AAS91 chromosome 1, complete sequence
+Sequence ID: CP042299.1 Length: 2961008
+Range 1: 1408157 to 1408217
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1408157  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1408205
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1408206  ATTTAAGGATAG  1408217
+
+
+
+
+>Vibrio cholerae IDH-03506 DNA, chromosome 1, complete sequence
+Sequence ID: AP024555.1 Length: 3026055
+Range 1: 1893997 to 1894057
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1894057  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1894009
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1894008  ATTTAAGGATAG  1893997
+
+
+
+
+>Vibrio cholerae strain CTMA_1974 chromosome I, complete sequence
+Sequence ID: CP160678.1 Length: 3081846
+Range 1: 2590403 to 2590463
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Minus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  2590463  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  2590415
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  2590414  ATTTAAGGATAG  2590403
+
+
+
+
+>Vibrio cholerae O1 biovar El Tor strain Inaba chromosome 1, complete sequence
+Sequence ID: CP093426.1 Length: 2905436
+Range 1: 1799532 to 1799592
+
+Score:70.7 bits(77), Expect:5e-08, 
+Identities:58/72(81%),  Gaps:11/72(15%), Strand: Plus/Plus
+
+Query  30       AGGTACCCACCGANTCTGAAAACCGCTAATANAGCACTTTAAAAATAAGAGCAGAATGGG  89
+                ||||||||||||| ||||||| ||||||||| |||||||           ||||||||||
+Sbjct  1799532  AGGTACCCACCGATTCTGAAA-CCGCTAATAAAGCACTTG----------GCAGAATGGG  1799580
+
+Query  90       ATTTAAGGATAG  101
+                ||||||||||||
+Sbjct  1799581  ATTTAAGGATAG  1799592
+
+
+
+
+
+
+
+		
+
+
