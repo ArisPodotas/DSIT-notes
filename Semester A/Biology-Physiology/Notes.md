@@ -565,3 +565,56 @@ It's still her she uploads her shit so like
 # Lecture 6
 
 > Valakos files
+
+# The lecture form the american professor done online at the biology department.
+
+> Professor George Kalliolas
+
+## Immunology
+
+Overview of the immunological respose.
+
+This is a review of the human immune system. But before he gets to the human immune system we do an overview of working with big data with an example of two papers one year apart that have completly opposite conclustion since they have interpreted the data in a different way. The second paper provides and explanation for why this might be the case. In general this does not seem like a surprising thing to him.
+
+This lecture is split into two thematic parts
+
+## Part A
+
+> Note
+> The immune system has an innate nad a adaptive system.
+
+He said he considers the innate to be a more primitive version, and then he talked about the volution of these mechanisms suffic e to say i am inot satisfied with the things said becuase they bias the was he talk with a sense of superior and inferior.
+
+The unique system that allows the adaptive sytem to be such a good system is that it has a memory sytem.
+
+Innate immunity comes first. In a way ther begin the adaptive response that follows.
+
+Actually he said that now with the new omics data that has been added we have better chategorization of the cells. (Becasue if you remeber the Iosinophiles were characterized by the way they will gain a color in a pigment. Suffice to say that now that we do single cell barcoding we can do the characterization better.
+
+Now we go into the specifics of each system of immunity and not a cell overview.
+
+the adaptive immune sytem has a $10^8$th figure fo different things it can recognize.
+
+The innate immune system has a soffisticated way of recognizing different antigens that\s called Toll (recognization system)?
+
+Neutrophiles are the very first line of defence.
+
+Neuytosis is the suicide bombing of neutrophiles that spit out dna that surrounds the bacterium.
+
+# Lesson for the immune system
+
+The official one not the extra one that we did.
+
+this lecture starts with the single cellular and multi cellular difference.
+
+What is sytem biology its the model of how complex the systems and networks interact with eachoter.
+
+The idea is that the phenotype is determined by networks and not by genes.
+
+This sounds a little idealistic in that they want to see the whole cascade of results from a single change into the system. the quesiton is where should this start at.
+
+First we talk aobut the innate immunity. I didnt rememer that the immune system comes from a blood stem cell aimopoitic cell.
+
+An inflamed area will not work at all.
+
+

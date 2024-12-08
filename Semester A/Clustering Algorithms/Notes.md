@@ -861,3 +861,9 @@ keep in mind that this is the start of the probabilistic and all the probability
 The aim is to move the probability densities to the points dense in data.
 
 ? Unimodal distribution?
+
+# Lab 1
+
+# Lesson 6 Ish
+
+ Pay attention to the algomerative algorithm with the min distance.
