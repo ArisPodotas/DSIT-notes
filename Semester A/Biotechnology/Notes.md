@@ -517,3 +517,11 @@ adding a synthetic sequence to the end of the primers
 improves yield
 
 A new type of graph in phylogenetics that representa time and each individuals life is a specific elongated length that can overlap on their track other familiy tree rules apply
+
+# Lecture 6
+
+> The same teacher
+
+Little reminder from last time.
+
+Applicatons today (which is why he does his little reminder) 

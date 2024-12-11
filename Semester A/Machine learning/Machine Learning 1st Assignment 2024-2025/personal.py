@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 # Initializing variables
 N = 20 # The number of points
 degree = 5 # The polynomial degree
+actual = np.array([-1, 0.9, 0.7, 0, -0.2, 0.2]) # The actual theta values
 
-def regressor(theta, x, noise, degree):
+def regressor(theta, x, noise, degree) -> np.ndarray:
     """Takes variables and forms the  y's of a linear function"""
     line = theta[-1] + noise
     for power in range(degree):
@@ -19,7 +20,7 @@ def regressor(theta, x, noise, degree):
 # In any case we will use this to implement some of the visualizations for our data and to understand whe it is that the code has done
 def loss(y, f):
     """Implements the loss fucntion of the regression"""
-    # output = (y - f)**2 
+    # output = (y - f)**2
     # return output
     pass
 
@@ -28,13 +29,13 @@ def loss(y, f):
 # In any case we will use this to implement some of the visualizations for our data and to understand whe it is that the code has done
 def cost(theta):
     """Implements the cost fucntion of the regression"""
-    # output = 
+    # output =
     # for input in range(N):
         # output += loss()
     #     pass
     pass
 
-def estimate(x: np.ndarray, y: np.ndarray, degree)-> np.ndarray:
+def estimate(x: np.ndarray, y: np.ndarray, degree) -> np.ndarray:
     """Uses in place operations on theta to update the estimates with the matrix of matrices"""
     # Create the design matrix X with polynomial terms up to `degree`
     X = np.vstack([x**i for i in range(1, degree + 1)] + [np.ones(len(x))]).T
@@ -79,8 +80,6 @@ def training(points: int, degree: int, exclude: int | None = None, theta: np.nda
     # noise distribution of 0 mean and 0.05 variance
     if noise is None:
         noise = np.random.normal(0, sqrt(0.05), points)
-    # The real theta values
-    actual = np.array([-1, 0.9, 0.7, 0, -0.2, 0.2])
 
     # Creating y with a loop that adds as many factors as the degree using the theta we decided for initialization
     y = regressor(theta, x, noise, degree)
@@ -99,6 +98,7 @@ def training(points: int, degree: int, exclude: int | None = None, theta: np.nda
     line = regressor(theta, reg, 0, degree)
     plt.plot(reg, line, label="Regression", color="green")
     # Actual output with the real theta
+    global actual
     ideal = regressor(actual, x, 0, 5)
     plt.plot(x, ideal, label="f(x) 0 noise", color="purple")
 
@@ -111,7 +111,8 @@ def training(points: int, degree: int, exclude: int | None = None, theta: np.nda
     return theta
 
 # Test set
-def testing(degree, theta, experiments: int, noise: np.ndarray | None = None):
+def testing(points, degree, theta, experiments: int, noise: np.ndarray | None = None) -> None:
+    """The function that will generate the test set and find the regression for that data"""
     for experiment in range(experiments):
         test = np.random.uniform(0, 2, N)
         if noise is None:
@@ -122,8 +123,8 @@ def testing(degree, theta, experiments: int, noise: np.ndarray | None = None):
         line = regressor(theta, reg, 0, degree)
         plt.plot(reg, line, label="Regression", color="green")
         # Actual output
+        global actual
         a = np.linspace(0, 2, N)
-        actual = np.array([-1, 0.9, 0.7, 0, -0.2, 0.2])
         equation = regressor(actual, a, 0, 5)
         plt.plot(a, equation, label="f(x)", color="red")
         plt.title(f"Test set {experiment + 1}")
@@ -137,15 +138,4 @@ def testing(degree, theta, experiments: int, noise: np.ndarray | None = None):
 output = training(N, degree, exclude = 4)
 
 # Using model
-testing(degree = degree, experiments = 1, theta = output)
-
-# Second degree
-biased = training(N, degree = 2)
-
-testing(degree = 2, experiments = 100, theta = biased)
-
-# Tenth degree
-varianced = training(N, degree = 10)
-
-testing(degree = 10, experiments = 100, theta = varianced)
-
+testing(N, degree = degree, experiments = 1, theta = output)
