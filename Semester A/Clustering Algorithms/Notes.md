@@ -867,3 +867,23 @@ The aim is to move the probability densities to the points dense in data.
 # Lesson 6 Ish
 
  Pay attention to the algomerative algorithm with the min distance.
+
+# Lesson 7 Ish
+
+After the agglomerativ ve algorithms and the introduction to matrix theorey and graph theorey.
+
+For the Agglomerative clustering algorithms what happenes when we have a tie in the proximity matrix. Actually in the sinlge link algorithm the order will have little effect in a tie, so if a tie exists in the porximity matrix then the order in which we consider these 2 entries does not matter.
+
+When you consider the complete link however, the choice matters alot.
+
+We will postpone the discussion of the cophonetic matrix to the last lecture. (Because clsuter and clustering validity)
+
+And with this we move to the devicive algorithms.
+
+## Divisive scheme
+
+> [!NOTE]
+> This is the scheme where the whole dataset is inside the first cluster and we move down to individual clsuters of one feature vector.
+
+The ROCK heuristic
+

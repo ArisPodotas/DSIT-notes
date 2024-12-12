@@ -618,3 +618,17 @@ First we talk aobut the innate immunity. I didnt rememer that the immune system 
 An inflamed area will not work at all.
 
 
+# Second lesson for Immune system
+
+We are going to talk about new disorders today.
+
+* Autoimmune dieseases and sars cov 2.
+* Little bit aobut vaccines.
+
+One of the most probminent killers is tuberculosis.
+
+Immune evasion by viruses (hepatitis C)
+
+h1n1 family has antigenic drift. Meaning that the replication process makes mistakes.
+
+Antigenic shitft is when you get infected from two different viruses at the same time.
