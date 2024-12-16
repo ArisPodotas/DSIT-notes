@@ -310,38 +310,6 @@ function cluster(sheet, clusters)
     % Possibilistic
     eta = ones(1, clusters);
     [U, theta] = possibi(sheet.Countrydata', clusters, eta,1,73,1,0.01);
-    [N, m] = size(theta);
-    for i=1:(N/3)
-        figure(90 + i + 3*N/3), hold on
-        figure(90 + i + 3*N/3), grid on
-        for j=1:m
-            figure(90 + i + 3*N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
-        end
-        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(U>0.6,i), sheet.Countrydata(U>0.6, i+ 1), sheet.Countrydata(U>0.6,i+2), 'ro')
-        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
-        for k = 1:l
-            text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
-        end
-        if i == 1
-            title('Possibilistic c-means first 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        elseif i==2
-            title('Possibilistic c-means second 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        else
-            title('Possibilistic clustering algorithm final 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        end
-    end
-
 end
 
 cluster(xcopy, 4);
