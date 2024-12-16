@@ -28,41 +28,41 @@ for k=1:N
         missing(:, k) = 1;
     end
     % 1 will be a non missing field
-    figure(k)
+    % figure(k)
     % Using the Sturges Rule
     % Otherwise the bins used were 20
-    optimal = ceil(log2(N)+1);
+    % optimal = ceil(log2(N)+1);
     % I use the same number of bins ofr all the graphs to be consistent
-    histogram(x.Countrydata(:,k), optimal)
-    if k==1
-        title('Histogram of Child mortality (Sturges Rule)')
-        % saveas(k, 'Histogram of Child mortality (Sturges Rule).png')
-    elseif k==2
-        title('Histogram of Exports (Sturges Rule)') 
-        % saveas(k, 'Histogram of Exports (Sturges Rule).png')
-    elseif k==3
-        title('Histogram of Health (Sturges Rule)')
-        % saveas(k, 'Histogram of Health (Sturges Rule).png')
-    elseif k==4
-        title('Histogram of Imports (Sturges Rule)')
-        % saveas(k, 'Histogram of Imports (Sturges Rule).png')
-    elseif k==5 
-        title('Histogram of Income (Sturges Rule)')
-        % saveas(k, 'Histogram of Income (Sturges Rule).png')
-    elseif k==6
-        title('Histogram of Inflation (Sturges Rule)')
-        % saveas(k, 'Histogram of Inflation (Sturges Rule).png')
-    elseif k==7
-        title('Histogram of Life expectancy (Sturges Rule)')
-        % saveas(k, 'Histogram of Life expectancy (Sturges Rule).png')
-    elseif k==8
-        title('Histogram of Total fertility (Sturges Rule)')
-        % saveas(k, 'Histogram of Total fertility (Sturges Rule).png')
-    elseif k==9
-        title('Histogram of GDPP (Sturges Rule)')
-        % saveas(k, 'Histogram of GDPP (Sturges Rule).png')
-    end
-    clear optimal
+    % histogram(x.Countrydata(:,k), optimal)
+    % if k==1
+    %     title('Histogram of Child mortality (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Child mortality (Sturges Rule).png')
+    % elseif k==2
+    %     title('Histogram of Exports (Sturges Rule)') 
+    %     % saveas(k, 'Histogram of Exports (Sturges Rule).png')
+    % elseif k==3
+    %     title('Histogram of Health (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Health (Sturges Rule).png')
+    % elseif k==4
+    %     title('Histogram of Imports (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Imports (Sturges Rule).png')
+    % elseif k==5 
+    %     title('Histogram of Income (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Income (Sturges Rule).png')
+    % elseif k==6
+    %     title('Histogram of Inflation (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Inflation (Sturges Rule).png')
+    % elseif k==7
+    %     title('Histogram of Life expectancy (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Life expectancy (Sturges Rule).png')
+    % elseif k==8
+    %     title('Histogram of Total fertility (Sturges Rule)')
+    %     % saveas(k, 'Histogram of Total fertility (Sturges Rule).png')
+    % elseif k==9
+    %     title('Histogram of GDPP (Sturges Rule)')
+    %     % saveas(k, 'Histogram of GDPP (Sturges Rule).png')
+    % end
+    % clear optimal
 end
 
 % Showing if we have missing data or not
@@ -78,15 +78,15 @@ posterior_relations = corrcoef(normalization.Countrydata);
 % the prior and posterior end up the same
 clear prior_relations
 
-% Making a figure for each of the pairs
-for i=1:N
-   for j=1:N
-       figure(i*9+j)
-       scatter(x.Countrydata(:,i), x.Countrydata(:,j))
-       title(sprintf('Correlation between features %.0f, %.0f', i, j)) 
-       % saveas(i*9+j, sprintf('Correlation between features %.0f, %.0f.png', i, j))
-   end
-end
+% % Making a figure for each of the pairs
+% for i=1:N
+%    for j=1:N
+%        figure(i*9+j)
+%        scatter(x.Countrydata(:,i), x.Countrydata(:,j))
+%        title(sprintf('Correlation between features %.0f, %.0f', i, j)) 
+%        % saveas(i*9+j, sprintf('Correlation between features %.0f, %.0f.png', i, j))
+%    end
+% end
 
 % We will keep the total features and the selected ones seperatly. Applying the following on both sets of data.
 
@@ -169,7 +169,7 @@ function theta = generate(sheet, number)
     for i=1:number
         for j=1:N
             % Normalized random initial value in the range [min, max]
-            theta(i,j) = (max(data(1)))*(randn()) + min(data(2));
+            theta(i,j) = (max(data(1,j)))*(randn()) + min(data(2,j));
         end
     end
 end
@@ -204,108 +204,108 @@ function cluster(sheet, clusters)
     theta = generate(sheet, clusters);
     % k-means
     % Note we need to transpose since our data vectors are on rows
-    [theta,bel,J] = k_means(sheet.Countrydata', theta');
-    [N, m] = size(theta);
-    for i=1:(N/3)
-        figure(90 + i), hold on
-        figure(90 + i), grid on
-        for j=1:m
-            figure(90 + i), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
-        end
-        figure(90 + i), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
-        figure(90 + i), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        figure(90 + i), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        figure(90 + i), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
-        for k = 1:l
-            text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
-        end
-        if i == 1
-            title('k-means first 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        elseif i==2
-            title('k-means second 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        else
-            title('k-means final 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        end
-    end
+    % [theta,bel,J] = k_means(sheet.Countrydata', theta');
+    % [N, m] = size(theta);
+    % for i=1:(N/3)
+    %     figure(90 + i), hold on
+    %     figure(90 + i), grid on
+    %     for j=1:m
+    %         figure(90 + i), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
+    %     end
+    %     figure(90 + i), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
+    %     figure(90 + i), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
+    %     figure(90 + i), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
+    %     figure(90 + i), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
+    %     for k = 1:l
+    %         text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
+    %     end
+    %     if i == 1
+    %         title('k-means first 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     elseif i==2
+    %         title('k-means second 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     else
+    %         title('k-means final 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     end
+    % end
 
-    close all
+    % close all
     % k-medoids
-    [bel,cost,theta,a] = k_medoids(sheet.Countrydata', clusters, 72);
-    [N, m] = size(theta);
-    for i=1:(N/3)
-        figure(90 + i + N/3), hold on
-        figure(90 + i + N/3), grid on
-        for j=1:m
-            figure(90 + i + N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
-        end
-        figure(90 + i + N/3), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
-        figure(90 + i + N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        figure(90 + i + N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        figure(90 + i + N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
-        for k = 1:l
-            text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 6, 'HorizontalAlignment', 'left')
-        end
-        if i == 1
-            title('k-medoids first 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        elseif i==2
-            title('k-medoids second 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        else
-            title('k-medoids final 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        end
-    end
-
-    % k-medians
-    theta = generate(sheet, clusters);
-    [theta,bel,J] = k_medians(sheet.Countrydata', theta');
-    [N, m] = size(theta);
-    for i=1:(N/3)
-        figure(90 + i + 2*N/3), hold on
-        figure(90 + i + 2*N/3), grid on
-        for j=1:m
-            figure(90 + i + 2*N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
-        end
-        figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
-        figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
-        for k = 1:l
-            text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
-        end
-        if i == 1
-            title('k-medians first 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        elseif i==2
-            title('k-medians second 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        else
-            title('k-medians final 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        end
-    end
+    % [bel,cost,theta,a] = k_medoids(sheet.Countrydata', clusters, 72);
+    % [N, m] = size(theta);
+    % for i=1:(N/3)
+    %     figure(90 + i + N/3), hold on
+    %     figure(90 + i + N/3), grid on
+    %     for j=1:m
+    %         figure(90 + i + N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
+    %     end
+    %     figure(90 + i + N/3), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
+    %     figure(90 + i + N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
+    %     figure(90 + i + N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
+    %     figure(90 + i + N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
+    %     for k = 1:l
+    %         text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 6, 'HorizontalAlignment', 'left')
+    %     end
+    %     if i == 1
+    %         title('k-medoids first 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     elseif i==2
+    %         title('k-medoids second 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     else
+    %         title('k-medoids final 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     end
+    % end
+    %
+    % % k-medians
+    % theta = generate(sheet, clusters);
+    % [theta,bel,J] = k_medians(sheet.Countrydata', theta');
+    % [N, m] = size(theta);
+    % for i=1:(N/3)
+    %     figure(90 + i + 2*N/3), hold on
+    %     figure(90 + i + 2*N/3), grid on
+    %     for j=1:m
+    %         figure(90 + i + 2*N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
+    %     end
+    %     figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
+    %     figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
+    %     figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
+    %     figure(90 + i + 2*N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
+    %     for k = 1:l
+    %         text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
+    %     end
+    %     if i == 1
+    %         title('k-medians first 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     elseif i==2
+    %         title('k-medians second 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     else
+    %         title('k-medians final 3 features')
+    %         xlabel('x')
+    %         ylabel('y')
+    %         zlabel('z')
+    %     end
+    % end
 
     % Possibilistic
     eta = ones(1, clusters);
@@ -317,10 +317,10 @@ function cluster(sheet, clusters)
         for j=1:m
             figure(90 + i + 3*N/3), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
         end
-        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
-        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
+        figure(90 + i + 3*N/3), plot3(sheet.Countrydata(U>0.6,i), sheet.Countrydata(U>0.6, i+ 1), sheet.Countrydata(U>0.6,i+2), 'ro')
+        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
+        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
+        % figure(90 + i + 3*N/3), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
         for k = 1:l
             text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
         end

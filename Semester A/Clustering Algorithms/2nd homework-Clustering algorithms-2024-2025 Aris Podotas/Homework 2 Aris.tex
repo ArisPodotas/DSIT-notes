@@ -1586,10 +1586,19 @@ Notice that we re initialize the $\theta$'s between clustering algorithms.
 
 \section{Re-evaluation}
 
-After the lecture done on the 12/12/2024 a discussion occured that said that representations of higher dimensional data actually take away aspects of the data themselves (the features). Due to this a little re evaluation of the previous resutls has been added. It would seem wrong to remove the previous results and write over them the new evalution since we would like to contrasta the results with previous.
+After the lecture done on the 12/12/2024 a discussion occured that said that representations of higher dimensional data actually take away aspects of the data themselves (the features). Due to this a re-evaluation of the previous resutls has been added. It would seem wrong to remove the previous results and write over them the new evalution since we would like to contrast the results with previous.
 \newline
 
-The only aspect of the previous analysis that need re-evaluation is the selection of the clustering algorithms and everything affected by this choice.
+Previously, cluster 1 (red) contained three countries out of $167$ total. This cluster is sensible because of its separation to the others however a cluster with three countries in total is not so sensible. One of the main aspects to re-evaluate will be the bounds of this cluster.
+\newline
+
+The only aspect of the previous analysis that need re-evaluation is the selection of the clustering algorithms and everything affected by this choice. To a degree the clustering algorithms that have a dependance on the initialization of the clusters have worse results, due to the positions we initialize in so let us re-write the function that generates the $\theta$ values upon initialization.
+
+\begin{lstlisting}
+    lstlisting
+\end{lstlisting}
+
+One of the assumptions made was that the possibilistic algorithms should output more realistic results because of the continuity of featreus between countries, thus we will focus on more attempts for the possibilistic algorithms.
 
 \section{Citations}
 
