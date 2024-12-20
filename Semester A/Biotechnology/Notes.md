@@ -525,3 +525,11 @@ A new type of graph in phylogenetics that representa time and each individuals l
 Little reminder from last time.
 
 Applicatons today (which is why he does his little reminder) 
+
+# Lecutre 7 
+
+the extra lesson of the student professor
+
+17 of january for the next one.
+
+

@@ -887,3 +887,16 @@ And with this we move to the devicive algorithms.
 
 The ROCK heuristic
 
+# Lesson 8 ish
+
+Right after chameleon.
+
+We are past the hierarchical phase then.
+
+and now th ealgorithms that are essentially idea specific.
+
+## Graph theore
+
+These are not hierarchical just were we start.
+
+The minimum spanning tree based algorithm.
