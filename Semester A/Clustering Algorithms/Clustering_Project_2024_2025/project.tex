@@ -18,7 +18,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
     pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
@@ -86,37 +86,42 @@ National and Kapodistrian University of Athens}
     \tableofcontents
 \end{titlepage}
 
-\section{Feeling the data}
+\section{Preface}
 
-Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with a file named $main.m$ that implements the Matlab code that generates all the solutions and a file named $holder.pdf$ that contains this report. It is advised that one looks at the $main.m$ file before runnning it and commenting out segments that are time consuming when trying to consider just one part of the output.
+Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with a file named $main.m$ that implements the Matlab code that generates all the solutions and a file named $holder.pdf$ that contains this report.
+\newline
+
+The $main.m$ file will also contain comments explaining what goal each function has.
+
+\section{Feeling the data}
 
 \subsection{Missing data}
 
-It is stated in the description of the project that ().
+It is stated in the description of the project that: Only the pixels with nonzero class label will be taken into consideration in this project. This will be considered a form of missing data.
 \newline
 
-Identifying if missing data exists and where it exists if it does has been done with the following matlab code:
-\begin{lstlisting}[language=Matlab, label=lst:missing, caption=Identifying missing data.]
-% Loading the data
-\end{lstlisting}
+How will we handle this missing data? This dataset is adequately large for pruning of missing values to occur. A variable that copies the original data and is then filtered for missing data will be made. The missing data needs to be handled first in this analysis since it is explicitly stated that missing values will not be considered and thus any representation of the data before removing these values will be improper.
+\newline
 
-How will we handle missing data?
+An interesting note is that the output is $13.908$ data vectors. The full data had $22.500$ which means that we had missing data for $8.592$ feature vectors (zero label missing data).
+\newline
+
+Is this the only missing data in our sample? Not necessarily, because values for the features could contain \textbf{\textit{NaN}} or \textbf{\textit{missing}}. Once we remove the missing data we know we have (zero labels) we apply a check for other missing data and handle it. Our approach for other missing data should be different than before (zero label) since zero label missing data is explicitly stated for removal, however with other missing data values we can imploy other missing data handling. In this dataset there are no \textbf{\textit{NaN, missing}} fields (see appropriate function in the $main.m$ file). Should there have been we would know that the missing values would have been within one of the \textit{spectral bands} and we could have handled it with substitution of the \textit{mean} or \textit{median} of the feature that was missing so as to not remove the whole data vector. Both the labels and the values were checked.
 
 \subsection{Data type}
 
-This segment is about the values our data takes (discreet or continous). There is no good way to represent this in matlab code, so we will take a look at the loeaded variable, the values it takes for all featrues and the features themselves.
+This segment is about the values our data takes (discreet or continuous). Actually we cannot look at the data itself for, large datasets like the one provided do not get visualized in the variable previewer. The way this will be overcome is by utilizing the knowledge of the dataset. We have a-priori knowledge for the features of the dataset due to the nature of the problem. Each feature takes continuous values within a \textit{spectral band}.
 \newline
 
-Input data:
+It is generally a good idea to view the distributions of the data and the features. This will not be possible because of visualization issues associated with the number of features.
+\newline
 
-\begin{figure}
-    \begin{center}
-        \includegraphics[width=0.95\textwidth]{figures/pending.png}
-    \end{center}
-    \caption{}\label{fig:data}
-\end{figure}
+Actually the problem of representation plagues this dataset because none of the outputs would fit neatly into a format on the page so all outputs are only available withing the varibale browser in Matlab.
+\newline
 
-From Figure \ref{fig:data} we can see that our features are ().
+\subsection{Cross corelation}
+
+Representing multiple features with just one that correlates to a high degree would reduce the computational complexity of the data clustering to a great degree.
 
 \section{Feature selection/transformation}
 

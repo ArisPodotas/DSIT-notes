@@ -9,12 +9,64 @@
 % each pixel).
 
 % Getting data input
-labels = load('Labels_Salinas.mat');
-data = load('Salinas_Data.mat');
+x = struct('labels', load('Labels_Salinas.mat').Labelsinit, 'data', load('Salinas_Data.mat').Salinas_Image);
 
-% Dealing with the zeros
-function filter = missing(data)
+% Before we begin we should equate aspects of this data to
+% common values within clustering algorithms. With this we
+% mean that we should identify what dimension corresponds
+% to our data what dimension corresponds to the features.
+% Actually we notice that our data vectors correspond to 
+% the M, N dimensions, where each coordinate (M, N) is o-
+% ne data vector of length L features along the L axis.
+% In this way we re-phrase our problem to one that has
+% M times N data vectors of length L featrues.
 
+% Removing vectors with zeros in the labels
+function output = filter(object)
+    % Generating a matrix of boolians that has a true value
+    % for all non-missing labels
+    missing = find(object.labels~=0);
+    % Using the matrix of boolians to remove false values
+    output = struct('labels', object.labels(missing), 'data', object.data(missing));
+end
+
+% Testing to see if any more missing data exists
+% If nothing appears in the terminal up to this point
+% then we know we don't have missing data.
+function evaluate(object)
+    if find(isnan(object.data))
+        output = 'Missing data in the data field'
+    elseif find(ismissing(object.data))
+        output = 'Missing data in the data field'
+    elseif find(isnan(object.labels))
+        output = 'Missing data in the label field'
+    elseif find(ismissing(object.labels))
+        output = 'Missing data in the label field'
+    end
+end
+
+% One issue with this function is that the find funtion will
+% output in a format of reduced dimensionality.
+evaluate(x);
+filtered = filter(x);
+
+% Feeling the data
+function stats = values(object)
+    stats= [mean(object.data);
+    max(object.data);
+    min(object.data);
+    std(object.data);];
+end
+
+x.stats = values(x);
+
+% Visualizing the distributions of the data
+function visualize()
+    for k=1:0
+        figure(k)
+        optimal = ceil(log2(N)+1);
+        histogram(x.Countrydata(:,k), optimal)
+    end
 end
 
 % Prerequisite functions
@@ -59,7 +111,7 @@ function amount(sheet, seed)
 end
 
 % Number of clusters
-amount(x, 4);
+% amount(x, 4);
 % All the below are problematic figures mentioned in the report
 % amount(xcopy, 62);
 % amount(normalization, 102);

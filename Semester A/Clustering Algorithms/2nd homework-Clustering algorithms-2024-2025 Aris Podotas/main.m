@@ -28,12 +28,12 @@ for k=1:N
         missing(:, k) = 1;
     end
     % 1 will be a non missing field
-    % figure(k)
+    figure(k)
     % Using the Sturges Rule
     % Otherwise the bins used were 20
-    % optimal = ceil(log2(N)+1);
+    optimal = ceil(log2(N)+1);
     % I use the same number of bins ofr all the graphs to be consistent
-    % histogram(x.Countrydata(:,k), optimal)
+    histogram(x.Countrydata(:,k), optimal)
     % if k==1
     %     title('Histogram of Child mortality (Sturges Rule)')
     %     % saveas(k, 'Histogram of Child mortality (Sturges Rule).png')
