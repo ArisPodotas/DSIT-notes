@@ -1,5 +1,5 @@
 % This is the file that implements the changes made for the project
-% By Aris Podotas for DIT , Clustering Algorithms.
+% By Aris Podotas for DSIT , Clustering Algorithms.
 
 % NOTE: Only the pixels with nonzero class label will be taken into consideration in this
 % project.
@@ -45,31 +45,39 @@ function evaluate(object)
     end
 end
 
-% One issue with this function is that the find funtion will
-% output in a format of reduced dimensionality.
 evaluate(x);
 filtered = filter(x);
+% Thus concludes the missing data
 
 % Feeling the data
-function stats = values(object)
-    stats= [mean(object.data);
+function values(object)
+    object.stats= [mean(object.data);
     max(object.data);
     min(object.data);
     std(object.data);];
 end
 
-x.stats = values(x);
+values(x);
 
 % Visualizing the distributions of the data
-function visualize()
-    for k=1:0
-        figure(k)
-        optimal = ceil(log2(N)+1);
-        histogram(x.Countrydata(:,k), optimal)
-    end
+% 204 histograms seem a little excesive for inside
+% the report so enable this optionally.
+function visualize(object)
+    [~, ~, L] = size(object.data);
+    % Using Struge's rule
+    optimal = ceil(log2(L)+1);
+    figure(1)
+    histogram(object.data(:,:,1), optimal)
 end
 
-% Prerequisite functions
+visualize(x);
+
+% Cross correlation
+function compare(object)
+    object.relations = corrcoef(object.data);
+end
+
+compare(x);
 
 % Implementing a function to generate for theta values
 function theta = generate(sheet, number)
