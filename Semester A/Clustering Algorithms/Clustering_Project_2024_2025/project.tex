@@ -114,23 +114,266 @@ Is this the only missing data in our sample? Not necessarily, because values for
 This segment is about the values our data takes (discreet or continuous). Actually we cannot look at the data itself for, large datasets like the one provided do not get visualized in the variable previewer. The way this will be overcome is by utilizing the knowledge of the dataset. We have a-priori knowledge for the features of the dataset due to the nature of the problem. Each feature takes continuous values within a \textit{spectral band}.
 \newline
 
-It is generally a good idea to view the distributions of the data and the features. This will not be possible because of visualization issues associated with the number of features.
+It is generally a good idea to view the distributions of the data and the features. All histograms have been made in a folder (Images) created by the $main.m$ file. All zero label fields have been removed.
 \newline
 
-Actually the problem of representation plagues this dataset because none of the outputs would fit neatly into a format on the page so all outputs are only available withing the varibale browser in Matlab.
+\begin{figure}
+    \begin{tabular}{ccccccccc}
+        \subfloat[Feature 1 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 1 histogram.png}} &
+        \subfloat[Feature 2 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 2 histogram.png}} &
+        \subfloat[Feature 3 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 3 histogram.png}} &
+        \subfloat[Feature 4 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 4 histogram.png}} &
+        \subfloat[Feature 5 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 5 histogram.png}} &
+        \subfloat[Feature 6 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 6 histogram.png}} &
+        \subfloat[Feature 7 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 7 histogram.png}} &
+        \subfloat[Feature 8 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 8 histogram.png}} &
+        \subfloat[Feature 9 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 9 histogram.png}} \\
+        \subfloat[Feature 10 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 10 histogram.png}} &
+        \subfloat[Feature 11 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 11 histogram.png}} &
+        \subfloat[Feature 12 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 12 histogram.png}} &
+        \subfloat[Feature 13 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 13 histogram.png}} &
+        \subfloat[Feature 14 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 14 histogram.png}} &
+        \subfloat[Feature 15 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 15 histogram.png}} &
+        \subfloat[Feature 16 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 16 histogram.png}} &
+        \subfloat[Feature 17 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 17 histogram.png}} &
+        \subfloat[Feature 18 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 18 histogram.png}} \\
+        \subfloat[Feature 19 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 19 histogram.png}} &
+        \subfloat[Feature 20 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 20 histogram.png}} &
+        \subfloat[Feature 21 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 21 histogram.png}} &
+        \subfloat[Feature 22 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 22 histogram.png}} &
+        \subfloat[Feature 23 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 23 histogram.png}} &
+        \subfloat[Feature 24 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 24 histogram.png}} &
+        \subfloat[Feature 25 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 25 histogram.png}} &
+        \subfloat[Feature 26 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 26 histogram.png}} &
+        \subfloat[Feature 27 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 27 histogram.png}} \\
+        \subfloat[Feature 28 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 28 histogram.png}} &
+        \subfloat[Feature 29 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 29 histogram.png}} &
+        \subfloat[Feature 30 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 30 histogram.png}} &
+        \subfloat[Feature 31 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 31 histogram.png}} &
+        \subfloat[Feature 32 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 32 histogram.png}} &
+        \subfloat[Feature 33 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 33 histogram.png}} &
+        \subfloat[Feature 34 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 34 histogram.png}} &
+        \subfloat[Feature 35 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 35 histogram.png}} &
+        \subfloat[Feature 36 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 36 histogram.png}} \\
+        \subfloat[Feature 37 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 37 histogram.png}} &
+        \subfloat[Feature 38 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 38 histogram.png}} &
+        \subfloat[Feature 39 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 39 histogram.png}} &
+        \subfloat[Feature 40 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 40 histogram.png}} &
+        \subfloat[Feature 41 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 41 histogram.png}} &
+        \subfloat[Feature 42 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 42 histogram.png}} &
+        \subfloat[Feature 43 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 43 histogram.png}} &
+        \subfloat[Feature 44 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 44 histogram.png}} &
+        \subfloat[Feature 45 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 45 histogram.png}} \\
+        \subfloat[Feature 46 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 46 histogram.png}} &
+        \subfloat[Feature 47 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 47 histogram.png}} &
+        \subfloat[Feature 48 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 48 histogram.png}} &
+        \subfloat[Feature 49 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 49 histogram.png}} &
+        \subfloat[Feature 50 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 50 histogram.png}} &
+        \subfloat[Feature 51 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 51 histogram.png}} &
+        \subfloat[Feature 52 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 52 histogram.png}} &
+        \subfloat[Feature 53 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 53 histogram.png}} &
+        \subfloat[Feature 54 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 54 histogram.png}} \\
+        \subfloat[Feature 55 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 55 histogram.png}} &
+        \subfloat[Feature 56 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 56 histogram.png}} &
+        \subfloat[Feature 57 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 57 histogram.png}} &
+        \subfloat[Feature 58 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 58 histogram.png}} &
+        \subfloat[Feature 59 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 59 histogram.png}} &
+        \subfloat[Feature 60 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 60 histogram.png}} &
+        \subfloat[Feature 61 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 61 histogram.png}} &
+        \subfloat[Feature 62 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 62 histogram.png}} &
+        \subfloat[Feature 63 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 63 histogram.png}} \\
+        \subfloat[Feature 64 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 64 histogram.png}} &
+        \subfloat[Feature 65 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 65 histogram.png}} &
+        \subfloat[Feature 66 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 66 histogram.png}} &
+        \subfloat[Feature 67 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 67 histogram.png}} &
+        \subfloat[Feature 68 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 68 histogram.png}} &
+        \subfloat[Feature 69 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 69 histogram.png}} &
+        \subfloat[Feature 70 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 70 histogram.png}} &
+        \subfloat[Feature 71 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 71 histogram.png}} &
+        \subfloat[Feature 72 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 72 histogram.png}} \\
+        \subfloat[Feature 73 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 73 histogram.png}} &
+        \subfloat[Feature 74 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 74 histogram.png}} &
+        \subfloat[Feature 75 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 75 histogram.png}} &
+        \subfloat[Feature 76 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 76 histogram.png}} &
+        \subfloat[Feature 77 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 77 histogram.png}} &
+        \subfloat[Feature 78 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 78 histogram.png}} &
+        \subfloat[Feature 79 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 79 histogram.png}} &
+        \subfloat[Feature 80 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 80 histogram.png}} &
+        \subfloat[Feature 81 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 81 histogram.png}} \\
+        \subfloat[Feature 82 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 82 histogram.png}} &
+        \subfloat[Feature 83 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 83 histogram.png}} &
+        \subfloat[Feature 84 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 84 histogram.png}} &
+        \subfloat[Feature 85 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 85 histogram.png}} &
+        \subfloat[Feature 86 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 86 histogram.png}} &
+        \subfloat[Feature 87 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 87 histogram.png}} &
+        \subfloat[Feature 88 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 88 histogram.png}} &
+        \subfloat[Feature 89 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 89 histogram.png}} &
+        \subfloat[Feature 90 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 90 histogram.png}} \\
+        \subfloat[Feature 91 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 91 histogram.png}} &
+        \subfloat[Feature 92 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 92 histogram.png}} &
+        \subfloat[Feature 93 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 93 histogram.png}} &
+        \subfloat[Feature 94 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 94 histogram.png}} &
+        \subfloat[Feature 95 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 95 histogram.png}} &
+        \subfloat[Feature 96 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 96 histogram.png}} &
+        \subfloat[Feature 97 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 97 histogram.png}} &
+        \subfloat[Feature 98 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 98 histogram.png}} &
+        \subfloat[Feature 99 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 99 histogram.png}} \\
+        \subfloat[Feature 100 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 100 histogram.png}} &
+        \subfloat[Feature 101 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 101 histogram.png}} &
+        \subfloat[Feature 102 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 102 histogram.png}} &
+        \subfloat[Feature 103 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 103 histogram.png}} &
+        \subfloat[Feature 104 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 104 histogram.png}} &
+        \subfloat[Feature 105 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 105 histogram.png}} &
+        \subfloat[Feature 106 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 106 histogram.png}} &
+        \subfloat[Feature 107 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 107 histogram.png}} &
+        \subfloat[Feature 108 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 108 histogram.png}} \\
+        \subfloat[Feature 109 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 109 histogram.png}} &
+        \subfloat[Feature 110 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 110 histogram.png}} &
+        \subfloat[Feature 111 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 111 histogram.png}} &
+        \subfloat[Feature 112 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 112 histogram.png}} &
+        \subfloat[Feature 113 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 113 histogram.png}} &
+        \subfloat[Feature 114 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 114 histogram.png}} &
+        \subfloat[Feature 115 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 115 histogram.png}} &
+        \subfloat[Feature 116 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 116 histogram.png}} &
+        \subfloat[Feature 117 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 117 histogram.png}} \\
+        \subfloat[Feature 118 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 118 histogram.png}} &
+        \subfloat[Feature 119 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 119 histogram.png}} &
+        \subfloat[Feature 120 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 120 histogram.png}} &
+        \subfloat[Feature 121 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 121 histogram.png}} &
+        \subfloat[Feature 122 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 122 histogram.png}} &
+        \subfloat[Feature 123 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 123 histogram.png}} &
+        \subfloat[Feature 124 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 124 histogram.png}} &
+        \subfloat[Feature 125 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 125 histogram.png}} &
+        \subfloat[Feature 126 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 126 histogram.png}} \\
+        \subfloat[Feature 127 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 127 histogram.png}} &
+        \subfloat[Feature 128 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 128 histogram.png}} &
+        \subfloat[Feature 129 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 129 histogram.png}} &
+        \subfloat[Feature 130 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 130 histogram.png}} &
+        \subfloat[Feature 131 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 131 histogram.png}} &
+        \subfloat[Feature 132 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 132 histogram.png}} &
+        \subfloat[Feature 133 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 133 histogram.png}} &
+        \subfloat[Feature 134 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 134 histogram.png}} &
+        \subfloat[Feature 135 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 135 histogram.png}} \\
+        \subfloat[Feature 136 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 136 histogram.png}} &
+        \subfloat[Feature 137 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 137 histogram.png}} &
+        \subfloat[Feature 138 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 138 histogram.png}} &
+        \subfloat[Feature 139 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 139 histogram.png}} &
+        \subfloat[Feature 140 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 140 histogram.png}} &
+        \subfloat[Feature 141 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 141 histogram.png}} &
+        \subfloat[Feature 142 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 142 histogram.png}} &
+        \subfloat[Feature 143 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 143 histogram.png}} &
+        \subfloat[Feature 144 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 144 histogram.png}} \\
+        \subfloat[Feature 145 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 145 histogram.png}} &
+        \subfloat[Feature 146 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 146 histogram.png}} &
+        \subfloat[Feature 147 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 147 histogram.png}} &
+        \subfloat[Feature 148 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 148 histogram.png}} &
+        \subfloat[Feature 149 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 149 histogram.png}} &
+        \subfloat[Feature 150 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 150 histogram.png}} &
+        \subfloat[Feature 151 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 151 histogram.png}} &
+        \subfloat[Feature 152 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 152 histogram.png}} &
+        \subfloat[Feature 153 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 153 histogram.png}} \\
+        \subfloat[Feature 154 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 154 histogram.png}} &
+        \subfloat[Feature 155 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 155 histogram.png}} &
+        \subfloat[Feature 156 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 156 histogram.png}} &
+        \subfloat[Feature 157 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 157 histogram.png}} &
+        \subfloat[Feature 158 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 158 histogram.png}} &
+        \subfloat[Feature 159 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 159 histogram.png}} &
+        \subfloat[Feature 160 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 160 histogram.png}} &
+        \subfloat[Feature 161 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 161 histogram.png}} &
+        \subfloat[Feature 162 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 162 histogram.png}} \\
+        \subfloat[Feature 163 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 163 histogram.png}} &
+        \subfloat[Feature 164 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 164 histogram.png}} &
+        \subfloat[Feature 165 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 165 histogram.png}} &
+        \subfloat[Feature 166 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 166 histogram.png}} &
+        \subfloat[Feature 167 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 167 histogram.png}} &
+        \subfloat[Feature 168 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 168 histogram.png}} &
+        \subfloat[Feature 169 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 169 histogram.png}} &
+        \subfloat[Feature 170 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 170 histogram.png}} &
+        \subfloat[Feature 171 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 171 histogram.png}} \\
+        \subfloat[Feature 172 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 172 histogram.png}} &
+        \subfloat[Feature 173 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 173 histogram.png}} &
+        \subfloat[Feature 174 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 174 histogram.png}} &
+        \subfloat[Feature 175 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 175 histogram.png}} &
+        \subfloat[Feature 176 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 176 histogram.png}} &
+        \subfloat[Feature 177 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 177 histogram.png}} &
+        \subfloat[Feature 178 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 178 histogram.png}} &
+        \subfloat[Feature 179 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 179 histogram.png}} &
+        \subfloat[Feature 180 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 180 histogram.png}} \\
+        \subfloat[Feature 181 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 181 histogram.png}} &
+        \subfloat[Feature 182 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 182 histogram.png}} &
+        \subfloat[Feature 183 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 183 histogram.png}} &
+        \subfloat[Feature 184 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 184 histogram.png}} &
+        \subfloat[Feature 185 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 185 histogram.png}} &
+        \subfloat[Feature 186 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 186 histogram.png}} &
+        \subfloat[Feature 187 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 187 histogram.png}} &
+        \subfloat[Feature 188 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 188 histogram.png}} &
+        \subfloat[Feature 189 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 189 histogram.png}} \\
+        \subfloat[Feature 190 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 190 histogram.png}} &
+        \subfloat[Feature 191 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 191 histogram.png}} &
+        \subfloat[Feature 192 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 192 histogram.png}} &
+        \subfloat[Feature 193 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 193 histogram.png}} &
+        \subfloat[Feature 194 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 194 histogram.png}} &
+        \subfloat[Feature 195 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 195 histogram.png}} &
+        \subfloat[Feature 196 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 196 histogram.png}} &
+        \subfloat[Feature 197 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 197 histogram.png}} &
+        \subfloat[Feature 198 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 198 histogram.png}} \\
+        \subfloat[Feature 199 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 199 histogram.png}} &
+        \subfloat[Feature 200 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 200 histogram.png}} &
+        \subfloat[Feature 201 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 201 histogram.png}} &
+        \subfloat[Feature 202 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 202 histogram.png}} &
+        \subfloat[Feature 203 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 203 histogram.png}} &
+        \subfloat[Feature 204 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 204 histogram.png}} &
+    \end{tabular}
+    \caption{}\label{fig:}
+\end{figure}
+
+Actually the problem of representation plagues this dataset because none of the outputs would fit neatly into a format on the page so all outputs are only available withing the varibale browser in Matlab (for instance the mean).
 \newline
 
-\subsection{Cross corelation}
+\subsection{Cross correlation} \label{cross}
+
+We actually cannot take the cross correlation terms using the $corrcoef$ function in matlab for this dataset since the dimenstions of the data are not congruent with the function. A sort of cross correlation will happen when we do the principaled component analysis.
 
 \section{Feature selection/transformation}
 
-Representing multiple features with just one that correlates to a high degree would reduce the computational complexity of the data clustering to a great degree. Simultaniously we have already removed a large set of the images because of the zero label pruning.
+\subsection{Selection}
+
+Representing multiple features with just one that correlates to a high degree would reduce the computational complexity of the data clustering to a significant degree. Simultaniously we have already removed a large set of the images because of the zero label pruning. Actually removing one feature removes more data from the sample than removing one data vector (since $150\times150>204$). All of this is to say that we should choose features to remove conservativly. The method of finding and removing features in previous exercises has been based on the cross correlation (\ref{cross}), where values less than a cutoff and over a second cutoff are removed. This wont be possible here since the cross correlation cannot be taken.
+\newline
+
+\subsubsection{Principal Component Analysis}
+
+The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". After the analysis we have:
+\newline
+
+
+
+\subsection{Transformation}
+
+Since there is a-priori knowledge of the data, we know that it is expected features differ from eachother in a regular fashion.
 
 \section{Selection of the clustering algorithm}
 
 \subsection{Assumptions}
 
+\subsection{Project goals}
+
+Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category.
+\newline
+
+One question that arises is how will we know how each compares in order to cross compare them? Since we do not actually know the output of the real clustering of this data.
+
 \section{Execution of the algorithms}
+
+\subsection{Cluster Representative Initialization}
+
+The initialization of the cluster representatices occurs in the correctponding function in the $main.m$ file. The method employed is to initialize them all within the bounds of the maximum and the minimum value along each feature randomly.
+
+\[\theta_i \in \left[\text{min}_i \text{, max}_i\right]\]
+
+\subsection{Number of clusters}
+
+Each clustering algorithm will have its own function to determine the number of clusters before the results. Multiple runs of each will need to be considered.
 
 \section{Characterization of the clusters}
 
