@@ -89,7 +89,7 @@ National and Kapodistrian University of Athens}
 
 \section{Preface}
 
-Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with a file named $main.m$ that implements the Matlab code that generates all the solutions and a file named $holder.pdf$ that contains this report.
+Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from prevous homework and a file named $main.m$ that implements the Matlab code that generates all the solutions and a file named $holder.pdf$ that contains this report. It is reccomended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
 \newline
 
 The $main.m$ file will also contain comments explaining what goal each function has.
@@ -324,15 +324,46 @@ It is generally a good idea to view the distributions of the data and the featur
         \subfloat[Feature 203 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 203 histogram.png}} &
         \subfloat[Feature 204 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 204 histogram.png}} &
     \end{tabular}
-    \caption{}\label{fig:}
+    \caption{Histograms of all features without the zero label data}\label{fig:histograms}
 \end{figure}
 
+The number of bins is deterined using Sturge's rule
+
+\[\text{Bins $b$ should be } b = \lceil log_2(N) + 1\rceil, \quad \text{Sturges (1926)}\]
+
 Actually the problem of representation plagues this dataset because none of the outputs would fit neatly into a format on the page so all outputs are only available withing the varibale browser in Matlab (for instance the mean).
+\newline
+
+From Figure~\ref{fig:histograms} we see that there is a wide range of distributions within different features, most are not Gaussian. As a result the median of the features will be useful and has been calculated before in the corresponding funciton in the $main.m$ file. Despite this, from all the histograms one can see features that follow a similar distribution, and most features seem to be within some distribution grouping.
+\newline
+
+This function (call) will be commented out in the provided $main.m$ file for time efficiency further down the analysis and since only one run of the funciton is required to prodce the above images so it can be omited when viewing the report along side the $main.m$ file.
 \newline
 
 \subsection{Cross correlation} \label{cross}
 
 We actually cannot take the cross correlation terms using the $corrcoef$ function in matlab for this dataset since the dimenstions of the data are not congruent with the function. A sort of cross correlation will happen when we do the principaled component analysis.
+\newline
+
+Before moving to the Feature selection/transformation, out of curiosity we visualize the data using the indexes of the values. For details on exactly what is being represented read the corresponding $main.m$ funciton. This function is very computationally demanding for all features so only the first feature was visualized since the rest would contain the same zero label data in a different range.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Overview of images.png}
+    \end{center}
+    \caption{Overview of pixels with non zero label data}\label{fig:overview}
+\end{figure}
+
+and in a little higher resolution but stopped early.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Overview of images HR.png}
+    \end{center}
+    \caption{Overview of pixels with non zero label data with a higher resolution but smaller bounding area of the image (cropped due to time efficiency of the function)}\label{fig:overview hd}
+\end{figure}
+
+Notice that this is the same image that was provided in the project description for the Salinas valley rotated. The function that produces this figure has been commented out for time complexity sake and since it only needs to be ran once to produce this output, thus it is unnecessary to re run when viewing this report along side the $main.m$ file.
 
 \section{Feature selection/transformation}
 
@@ -343,14 +374,17 @@ Representing multiple features with just one that correlates to a high degree wo
 
 \subsubsection{Principal Component Analysis}
 
-The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". After the analysis we have:
+The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". Before calling the funciton we will need to bring our data in to the form that the documentation says, that being "X: lxN matrix whose columns are the data vectors". In order to do this we will need to transform our $(M)\times (N)\times (L)$ matrix to a $(M\times N) \times L)$ matrix, essentially turning our pixel grid to a pixel line (this includes the labels if we dont plan on undoing the transformation afterwards). After the analysis we have:
 \newline
 
 
 
 \subsection{Transformation}
 
-Since there is a-priori knowledge of the data, we know that it is expected features differ from eachother in a regular fashion.
+When we took the statistics of the features we end up with a $L\times1$ dimensional vector with the value of each feature. In order to know if the data should be transformed we will look at the range of each feature and compare it to the others. Particularly the maximum of all the feature maximums and the minimum of all the feature maximums, the maximum of all the feature minimums and the maximum of all the feature minimums. Look to the corresponding funciton in the $main.m$ file.
+\newline
+
+Since we see that the values range from $$ to $$ we know that we should do some data transformation.
 
 \section{Selection of the clustering algorithm}
 
@@ -358,10 +392,11 @@ Since there is a-priori knowledge of the data, we know that it is expected featu
 
 \subsection{Project goals}
 
-Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category.
+Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category. The comparison will need to have a time complexiy segment and in order to do this we will run the code without any of the clustering algorithms to determine the average runtime for everythin up till this point, then we ill subtract this common runtime from the test using the algorithms.
 \newline
 
-One question that arises is how will we know how each compares in order to cross compare them? Since we do not actually know the output of the real clustering of this data.
+In order to compare these algorithms on accuracy we will need to reference the image of the true ground classes mentioned in the project description. Actually since the runtime is already a little long in the $main.m$ file we will make files for the different algorithms and use the time each file takes with and without the algorithm to determine how long only the algorithm took.
+\newline
 
 \section{Execution of the algorithms}
 
@@ -378,5 +413,8 @@ Each clustering algorithm will have its own function to determine the number of 
 \section{Characterization of the clusters}
 
 \section{Citations}
+
+Sturges, H. A. (1926). The Choice of a Class Interval. Journal of the American Statistical Association, 21(153), 65–66. https://doi.org/10.1080/01621459.1926.10502161
+\newline
 
 \end{document}

@@ -11,6 +11,9 @@
 
 % Getting data input
 x = struct('labels', load('Labels_Salinas.mat').Labelsinit, 'data', load('Salinas_Data.mat').Salinas_Image);
+% editors note: honestly with the amount of times we call
+% the size(x) function I was considering adding it to the
+% struct itself.
 
 % Before we begin we should equate aspects of this data to
 % common values within clustering algorithms. With this we
@@ -51,19 +54,34 @@ function evaluate(object)
 end
 
 evaluate(x);
-filtered = filter(x);
 % Thus concludes the missing data
 
 % Data type
-
-function values(object)
-    object.stats= [mean(object.data(object.labels ~= 0));
-    max(object.data(object.labels ~= 0));
-    min(object.data(object.labels ~= 0));
-    std(object.data(object.labels ~= 0));];
+function output = values(object)
+    % I'm supposed to end up with a L dimensional vector
+    % one dimension for each feature.
+    [~,~,L] = size(object.data);
+    object.mean = zeros(L, 1);
+    object.median = zeros(L, 1);
+    object.max = zeros(L, 1); 
+    object.min = zeros(L, 1); 
+    object.std = zeros(L, 1); 
+    for i=1:L
+        % Not sure why but the syntax
+        % function(object.data(object.labels ~=0, i)) wont work
+        % and calling the function without the loop wont output
+        % in the format I need the data while removing zero label data.
+        holder = object.data(:,:,i);
+        object.mean(i) = mean(holder(object.labels ~= 0));
+        object.median(i) = median(holder(object.labels ~= 0));
+        object.max(i) = max(holder(object.labels ~= 0));
+        object.min(i) = min(holder(object.labels ~= 0));
+        object.std(i) = std(holder(object.labels ~= 0));
+    end
+    output = object;
 end
 
-values(x);
+x = values(x);
 
 % Visualizing the distributions of the data
 % 204 histograms seem a little excesive for inside
@@ -75,7 +93,8 @@ function visualize(object, autoclose, save)
     % Using Sturge's rule
     % Writing this made me realise I had used the rule wrong last time
     optimal = ceil(log2(M*N-c)+1);
-    mkdir('./Images')
+    % Hushing warning for already made folder
+    [~, ~, ~] = mkdir('./Images/');
     for i=1:L
         fig = figure(i);
         % Not sure why but the syntax
@@ -94,17 +113,85 @@ end
 
 % Change autoclose and save to your preference.
 % They only need to be on the first time.
-visualize(x, 1, 0);
+% Current function call is autoclose on and save off
+% Commented out for time complexity
+% visualize(x, 1, 0);
+
+% Before going to the feature selection
+% I want to visualise the data in the way
+% it was provided in the project description file
+% and see what I can from the hyperspectral images themselves.
+% To do this, I will visualize a 3d plot using the index
+% of a pixel and the color of the feature at that location.
+function images(object, resolution)
+    figure(3000);
+    hold on
+    grid on
+    [M,N,~] = size(object.data);
+    for j=1:resolution:N
+        for k=1:resolution:M
+            if object.labels(k, j)~= 0
+                figure(3000), scatter3(k, j, 1, 'ro');
+            end
+        end
+    end
+    saveas(3000, './Images/Overview of images.png')
+end
+
+% Change the resolution for more speed
+% Higher values are faster
+% Commented out for time complexity
+% images(x, 10);
 
 % Feature selection
 
-% Principal componenet analysis from the provided file
+% Principal componenet analysis
+
+% Transforming data from (M)x(N)x(L) to (MxN)xL
+% Essentiallly we need a funciton that turns the indexes
+% 150, 1 -> 150
+% 1, 2 -> 151
+% 2, 2 -> 152
+% .
+% .
+% 
+% M + 150*(N-1)
+% Keep in mind the labels should also be transformed
+% if we dont undo the transformation of the data after the
+% pca.
+function unwind(object)
+    [M, N, L] = size(object)
+    copy = object
+    for i=1:M
+        for j=1:N
+            copy.data(M + 150*(N-1),:) = object.data(M, N,:);
+            copy.labels(M + 150*(N-1),:) = object.labels(M,N,:);
+        end
+    end
+end
+
+unwind(x)
 
 % Determining m
 
-pca_fun(x)
+[x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x, 50);
+
+% undoing the transform
+function rewind(object)
+
+end
 
 % Feature transformations
+
+% Determining if we need to do a data transform
+function range(object)
+    max(object.max)
+    min(object.max)
+    max(object.min)
+    min(object.min)
+end
+
+range(x)
 
 function transform(object)
 
@@ -130,26 +217,26 @@ function theta = generate(object, number)
     for i=1:number
         for j=1:L
             % Normalized random initial value in the range [min, max]
-            theta(i,j) = (max(data(1)))*(randn()) + min(data(2));
+            theta(i,j) = (object.max(i))*(randn()) + object.min(i);
         end
     end
 end
 
 % Implementing a function to find the number of clusters
-function amount(sheet, seed)
+function amount(object, seed)
     figure(seed)
-    costs = ones(1,10);
-    for j = 2:10
+    costs = ones(1,30);
+    for j = 2:30
         theta = generate(sheet, j);
-        [theta,bel,J] = k_means(sheet.Countrydata', theta');
+        [theta,bel,J] = k_means(object.data(object.labels~=0), theta);
         costs(:,j-1) = J;
     end
-    plot(1:10, costs)
+    plot(1:30, costs)
     xlabel('Number of clusters')
     ylabel('Cost function')
 end
 
-function cluster(sheet, clusters)
+function cluster(object, clusters)
     [l, N] = size(sheet.Countrydata); % Keep in mind that this N is variable
     theta = generate(sheet, clusters);
     % k-means
