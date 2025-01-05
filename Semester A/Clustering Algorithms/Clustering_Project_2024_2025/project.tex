@@ -89,7 +89,7 @@ National and Kapodistrian University of Athens}
 
 \section{Preface}
 
-Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from prevous homework and a file named $main.m$ that implements the Matlab code that generates all the solutions and a file named $holder.pdf$ that contains this report. It is reccomended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
+Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from prevous homework and a file named $main.m$ that implements the Matlab code that generates all the data transformations a file named $process.mat$ for saved final data after all transformations were considered, a file $tests.m$ that has the trials done for the timing and comparisson of the clustering algorithsm with eachother and a file named $report.pdf$ that contains this report. It is reccomended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
 \newline
 
 The $main.m$ file will also contain comments explaining what goal each function has.
@@ -374,28 +374,27 @@ Representing multiple features with just one that correlates to a high degree wo
 
 \subsubsection{Principal Component Analysis}
 
-The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". Before calling the funciton we will need to bring our data in to the form that the documentation says, that being "X: lxN matrix whose columns are the data vectors". In order to do this we will need to transform our $(M)\times (N)\times (L)$ matrix to a $(M\times N) \times L)$ matrix, essentially turning our pixel grid to a pixel line (this includes the labels if we dont plan on undoing the transformation afterwards). After the analysis we have:
+The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". Before calling the funciton we will need to bring our data in to the form that the documentation says, that being "X: lxN matrix whose columns are the data vectors". In order to do this we will need to transform our $(M)\times (N)\times (L)$ matrix to a $(M\times N) \times L)$ matrix, essentially turning our pixel grid to a pixel line (this includes the labels if we dont plan on undoing the transformation afterwards).
 \newline
-
-
 
 \subsection{Transformation}
 
 When we took the statistics of the features we end up with a $L\times1$ dimensional vector with the value of each feature. In order to know if the data should be transformed we will look at the range of each feature and compare it to the others. Particularly the maximum of all the feature maximums and the minimum of all the feature maximums, the maximum of all the feature minimums and the maximum of all the feature minimums. Look to the corresponding funciton in the $main.m$ file.
 \newline
 
-Since we see that the values range from $$ to $$ we know that we should do some data transformation.
+We see that the values range from (min(min)) $-9$ to (max(max)) $8374$ with (max(min)) $2343$ (min(max)) $35$. We also see that the max and min median and mean values do not differ too greatly. The spatial resolution probided would change if the data was transformed, till now the dataset has been kept in the order (view the $main.m$ file) of the original data to ensure compatibility when discussing results to the 8 ground truth classes. For these reasons we will not transform the data any further.
 
 \section{Selection of the clustering algorithm}
+
+The begining of this section marks the end of the execution of the $main.m$ file, now the individual files for the clustering will be considered.
+
+Before moving to the criteria to select the clustering algorithms, let us notice that the $main.m$ file has become crouded. We will take the final struct that we created and save it for importint without needing to use the whole pipline made thus far.
 
 \subsection{Assumptions}
 
 \subsection{Project goals}
 
-Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category. The comparison will need to have a time complexiy segment and in order to do this we will run the code without any of the clustering algorithms to determine the average runtime for everythin up till this point, then we ill subtract this common runtime from the test using the algorithms.
-\newline
-
-In order to compare these algorithms on accuracy we will need to reference the image of the true ground classes mentioned in the project description. Actually since the runtime is already a little long in the $main.m$ file we will make files for the different algorithms and use the time each file takes with and without the algorithm to determine how long only the algorithm took.
+Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category.
 \newline
 
 \section{Execution of the algorithms}

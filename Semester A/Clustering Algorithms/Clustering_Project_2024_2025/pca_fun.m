@@ -46,7 +46,7 @@ eigenvec=V(:,ind);
 
 explain=eigenval/sum(eigenval); % λ1/(λ1+λ2) και για τη 2η λ2/(λ1+λ2)
 % Keeping the first m eigenvaules/eigenvectors
-eigenval=eigenval(1:m);  %diatirisis megaluteru variance stis m diastaseis
+eigenval=eigenval(1:m); %diatirisis megaluteru variance stis m diastaseis
 eigenvec=eigenvec(:,1:m);
 
 % Computing the transformation matrix

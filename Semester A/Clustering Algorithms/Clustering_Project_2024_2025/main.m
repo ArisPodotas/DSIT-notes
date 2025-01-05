@@ -1,4 +1,3 @@
- 
 % This is the file that implements the changes made for the project
 % By Aris Podotas for DSIT , Clustering Algorithms.
 
@@ -57,6 +56,8 @@ evaluate(x);
 % Thus concludes the missing data
 
 % Data type
+
+% Standard statistical values
 function output = values(object)
     % I'm supposed to end up with a L dimensional vector
     % one dimension for each feature.
@@ -147,38 +148,83 @@ end
 
 % Principal componenet analysis
 
-% Transforming data from (M)x(N)x(L) to (MxN)xL
+% Transforming data from (M)x(N)x(L) (3d) to (MxN)xL (2d)
 % Essentiallly we need a funciton that turns the indexes
 % 150, 1 -> 150
 % 1, 2 -> 151
 % 2, 2 -> 152
+% 3, 2 -> 153
+% 4, 2 -> 154
 % .
 % .
-% 
-% M + 150*(N-1)
+% .
+% i, j -> i + N*(j-1)
 % Keep in mind the labels should also be transformed
 % if we dont undo the transformation of the data after the
 % pca.
-function unwind(object)
-    [M, N, L] = size(object)
-    copy = object
+function copy = unwind(object)
+    [M, N, L] = size(object.data);
+    copy = object;
+    % This might seem excesive but the index 151 would
+    % map to index (1,2) in the (M),(N),(L) matrix
+    % and because of that we need to define the shape and then the values
+    copy.linear = ones(M*N,L);
+    copy.linlabels= ones(M*N,1);
     for i=1:M
         for j=1:N
-            copy.data(M + 150*(N-1),:) = object.data(M, N,:);
-            copy.labels(M + 150*(N-1),:) = object.labels(M,N,:);
+            copy.linear(i + (150*(j-1)),:) = object.data(i, j,:);
+            copy.linlabels(i + (150*(j-1))) = object.labels(i,j);
         end
     end
 end
 
-unwind(x)
+x = unwind(x);
 
 % Determining m
+function optimal = search(object)
 
-[x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x, 50);
+end
 
+% Using m
+% [x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x.linear, 50);
+
+% Using dimension transformation
+
+
+
+% Just a note since the following seems useless
+% initially the unwind funciton would change the
+% data and label variables of the struc
 % undoing the transform
-function rewind(object)
-
+% 1 -> 1, 1
+% 2 -> 2, 1
+% 150 -> 150, 1
+% 151 -> 1, 2
+% 152 -> 2, 2
+% .
+% .
+% .
+% 
+% i -> i - N*(j-1), j += 1 if i % 150 == 0
+% and % means modulo in the above equation
+function copy = rewind(object)
+    [M, L] = size(object.data);
+    copy = object;
+    N = 150;
+    copy.data = ones(N,N,L);
+    copy.labels = ones(N,N);
+    j = 1;
+    for i=1:M
+        copy.data(i - (150*(j-1)),j,:) = object.data(i,:);
+        copy.labels(i - (150*(j-1)),j) = object.labels(i);
+        % Why are we updating j after the iteration?
+        % Because it I update it at the start
+        % index 300 will have a j of 2
+        % and a i - 150*j-1 of 0
+        if mod(i, 150) == 0
+            j = j + 1;
+        end
+    end
 end
 
 % Feature transformations
@@ -186,91 +232,24 @@ end
 % Determining if we need to do a data transform
 function range(object)
     max(object.max)
-    min(object.max)
     max(object.min)
+    max(object.mean)
+    max(object.median)
+
+    min(object.max)
     min(object.min)
+    min(object.mean)
+    min(object.median)
 end
 
-range(x)
+range(x);
 
-function transform(object)
+% The verdict was no
 
-end
+% saving data after all pre-processing of the data to use
+% without delays for the clustering files
 
-% Clustering
+% Saving data
 
-% Implementing a function to generate theta values
-function theta = generate(object, number)
-    % This is going to need to return values within the convex hull
-    % Example theta that could be output
-    % theta = [0, 20, 0, 20;
-    %          0, 0, 20, 20;
-    %          1, 5, 20, 20;
-    %          0, 0, 20, 20;
-    %          0, 0, 20, 20;
-    %          0, 0, 20, 20;
-    %          0, 0, 20, 20;
-    %          0, 0, 20, 20;
-    %          0, 0, 20, 20;];
-    [~,~,L] = size(object.data);
-    theta = ones(number, L);
-    for i=1:number
-        for j=1:L
-            % Normalized random initial value in the range [min, max]
-            theta(i,j) = (object.max(i))*(randn()) + object.min(i);
-        end
-    end
-end
-
-% Implementing a function to find the number of clusters
-function amount(object, seed)
-    figure(seed)
-    costs = ones(1,30);
-    for j = 2:30
-        theta = generate(sheet, j);
-        [theta,bel,J] = k_means(object.data(object.labels~=0), theta);
-        costs(:,j-1) = J;
-    end
-    plot(1:30, costs)
-    xlabel('Number of clusters')
-    ylabel('Cost function')
-end
-
-function cluster(object, clusters)
-    [l, N] = size(sheet.Countrydata); % Keep in mind that this N is variable
-    theta = generate(sheet, clusters);
-    % k-means
-    [theta,bel,J] = k_means(sheet.Countrydata', theta');
-    [N, m] = size(theta);
-    for i=1:(N/3)
-        figure(90 + i), hold on
-        figure(90 + i), grid on
-        for j=1:m
-            figure(90 + i), plot3(theta(i,j), theta(i + 1,j), theta(i + 2,j), 'k+')
-        end
-        figure(90 + i), plot3(sheet.Countrydata(bel==1,i), sheet.Countrydata(bel==1, i+ 1), sheet.Countrydata(bel==1,i+2), 'ro')
-        figure(90 + i), plot3(sheet.Countrydata(bel==2,i), sheet.Countrydata(bel==2, i+ 1), sheet.Countrydata(bel==2,i+2), 'g*')
-        figure(90 + i), plot3(sheet.Countrydata(bel==3,i), sheet.Countrydata(bel==3, i+ 1), sheet.Countrydata(bel==3,i+2), 'b.')
-        figure(90 + i), plot3(sheet.Countrydata(bel==4,i), sheet.Countrydata(bel==4, i+ 1), sheet.Countrydata(bel==4,i+2), 'ys')
-        for k = 1:l
-            text(sheet.Countrydata(k,i),sheet.Countrydata(k,i+1) ,sheet.Countrydata(k,i+2) , sheet.country(k), 'FontSize', 8, 'HorizontalAlignment', 'left')
-        end
-        if i == 1
-            title('k-means first 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        elseif i==2
-            title('k-means second 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        else
-            title('k-means final 3 features')
-            xlabel('x')
-            ylabel('y')
-            zlabel('z')
-        end
-    end
-end
+save("process.mat","x", '-v7.3')
 
