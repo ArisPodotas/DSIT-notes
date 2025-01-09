@@ -90,7 +90,7 @@ National and Kapodistrian University of Athens}
 
 \section{Preface}
 
-Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from prevous homework and a file named $main.m$ that implements the Matlab code that generates all the data transformations a file named $process.mat$ for saved final data after all transformations were considered, a file $tests.m$ that has the trials done for the timing and comparisson of the clustering algorithsm with eachother and a file named $report.pdf$ that contains this report. It is reccomended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
+Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from previous homework and a file named $main.m$ that implements the Matlab code that generates all the data transformations a file named $process.mat$ for saved final data after all transformations were considered, a file $tests.m$ that has the trials done for the timing and comparison of the clustering algorithsm with eachother, a file named $clustered.mat$ that hold the variables after the whole analysis including average times of algorithm executions, a file named $Fuzzy.m$ for the implementation of the Fuzzy algorithms, a file named $prob.m$ for the implementation of the probabilistic algorithms and a file named $report.pdf$ that contains this report. It is recommended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
 \newline
 
 The $main.m$ file will also contain comments explaining what goal each function has.
@@ -119,6 +119,7 @@ It is generally a good idea to view the distributions of the data and the featur
 \newline
 
 \begin{figure}[H]
+    \centering
     \begin{tabular}{ccccccccc}
         \subfloat[Feature 1 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 1 histogram.png}} &
         \subfloat[Feature 2 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 2 histogram.png}} &
@@ -176,6 +177,7 @@ It is generally a good idea to view the distributions of the data and the featur
 \end{figure}
 
 \begin{figure}[H]
+    \centering
     \begin{tabular}{ccccccccc}
         \subfloat[Feature 51 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 51 histogram.png}} &
         \subfloat[Feature 52 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 52 histogram.png}} &
@@ -233,6 +235,7 @@ It is generally a good idea to view the distributions of the data and the featur
 \end{figure}
 
 \begin{figure}[H]
+    \centering
     \begin{tabular}{ccccccccc}
         \subfloat[Feature 101 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 101 histogram.png}} &
         \subfloat[Feature 102 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 102 histogram.png}} &
@@ -290,6 +293,7 @@ It is generally a good idea to view the distributions of the data and the featur
 \end{figure}
 
 \begin{figure}[H]
+    \centering
     \begin{tabular}{ccccccccc}
         \subfloat[Feature 151 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 151 histogram.png}} &
         \subfloat[Feature 152 histogram]{\includegraphics[width = 0.1\textwidth]{./Images/Feature 152 histogram.png}} &
@@ -351,25 +355,25 @@ It is generally a good idea to view the distributions of the data and the featur
 \end{figure}
 
 
-The number of bins is deterined using Sturge's rule
+The number of bins is determined using Sturge's rule
 
 \[\text{Bins $b$ should be } b = \lceil log_2(N) + 1\rceil, \quad \text{Sturges (1926)}\]
 
 Actually the problem of representation plagues this dataset because none of the outputs would fit neatly into a format on the page so all outputs are only available withing the varibale browser in Matlab (for instance the mean).
 \newline
 
-From Figure \ref{fig:histograms1} to \ref{fig:histograms4} we see that there is a wide range of distributions within different features, most are not Gaussian. As a result the median of the features will be useful and has been calculated before in the corresponding funciton in the $main.m$ file. Despite this, from all the histograms one can see features that follow a similar distribution, and most features seem to be within some distribution grouping.
+From Figure \ref{fig:histograms1} to \ref{fig:histograms4} we see that there is a wide range of distributions within different features, most are not Gaussian. As a result the median of the features will be useful and has been calculated before in the corresponding function in the $main.m$ file. Despite this, from all the histograms one can see features that follow a similar distribution, and most features seem to be within some distribution grouping.
 \newline
 
-This function (call) will be commented out in the provided $main.m$ file for time efficiency further down the analysis and since only one run of the funciton is required to prodce the above images so it can be omited when viewing the report along side the $main.m$ file.
+This function (call) will be commented out in the provided $main.m$ file for time efficiency further down the analysis and since only one run of the function is required to prodce the above images so it can be omitted when viewing the report along side the $main.m$ file.
 \newline
 
 \subsection{Cross correlation} \label{cross}
 
-We actually cannot take the cross correlation terms using the $corrcoef$ function in matlab for this dataset since the dimenstions of the data are not congruent with the function. A sort of cross correlation will happen when we do the principaled component analysis.
+We actually cannot take the cross correlation terms using the $corrcoef$ function in matlab for this dataset since the dimensions of the data are not congruent with the function. A sort of cross correlation will happen when we do the principaled component analysis.
 \newline
 
-Before moving to the Feature selection/transformation, out of curiosity we visualize the data using the indexes of the values. For details on exactly what is being represented read the corresponding $main.m$ funciton. This function is very computationally demanding for all features so only the first feature was visualized since the rest would contain the same zero label data in a different range.
+Before moving to the Feature selection/transformation, out of curiosity we visualize the data using the indexes of the values. For details on exactly what is being represented read the corresponding $main.m$ function. This function is very computationally demanding for all features so only the first feature was visualized since the rest would contain the same zero label data in a different range.
 \newline
 
 \begin{figure}[H]
@@ -395,48 +399,83 @@ Notice that this is the same image that was provided in the project description 
 
 \subsection{Selection}
 
-Representing multiple features with just one that correlates to a high degree would reduce the computational complexity of the data clustering to a significant degree. Simultaniously we have already removed a large set of the images because of the zero label pruning. Actually removing one feature removes more data from the sample than removing one data vector (since $150\times150>204$). All of this is to say that we should choose features to remove conservativly. The method of finding and removing features in previous exercises has been based on the cross correlation (\ref{cross}), where values less than a cutoff and over a second cutoff are removed. This wont be possible here since the cross correlation cannot be taken.
+Representing multiple features with just one that correlates to a high degree would reduce the computational complexity of the data clustering to a significant degree. Simultaneously we have already removed a large set of the images because of the zero label pruning. Actually removing one feature removes more data from the sample than removing one data vector (since $150\times150>204$). All of this is to say that we should choose features to remove conservatively. The method of finding and removing features in previous exercises has been based on the cross correlation (\ref{cross}), where values less than a cutoff and over a second cutoff are removed. This wont be possible here since the cross correlation cannot be taken.
 \newline
 
 \subsubsection{Principal Component Analysis}
 
-The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the funciton which is the "number of the most significant principal components that are taken in to account". Before calling the funciton we will need to bring our data in to the form that the documentation says, that being "X: lxN matrix whose columns are the data vectors". In order to do this we will need to transform our $(M)\times (N)\times (L)$ matrix to a $(M\times N) \times L)$ matrix, essentially turning our pixel grid to a pixel line (this includes the labels if we dont plan on undoing the transformation afterwards).
+The way we will reduce dimensionality this time is via principaled component analysis. There is a builtin way of doing this provided with the project files. We will need to define the $m$ variable input to the function which is the "number of the most significant principal components that are taken in to account". Before calling the function we will need to bring our data in to the form that the documentation says, that being "X: lxN matrix whose columns are the data vectors". In order to do this we will need to transform our $(M)\times (N)\times (L)$ matrix to a $((M\times N) \times L)$ matrix, essentially turning our pixel grid to a pixel line (this includes the labels if we don't plan on undoing the transformation afterwards).
 \newline
+
+To choose a value of $m$ we should notice that the number of principal components is in the range of $[8,204]$. If we pick a value $8<a<204$ that sufficiently explains the data (cutoff explain value) but might not be the optimal one then we can say that we do not need to consider the values $\in[a,204]$ further. We will determine values of $a$ to begin with and adjust accordingly until we end up with a qualitatively sufficient result.
+\newline
+
+We begin with a $a$ of $50$ and end up using a final value of $4$. Actually this was apparent from the first trial since the output of the $pca_fun.m$ file is one that has "l-dimensional column vector, whose $i^{th}$ element is the percentage of the total variance explained by the $i^{th}$ principal component", were we see that $4$ components explain more than $99\%$.
 
 \subsection{Transformation}
 
-When we took the statistics of the features we end up with a $L\times1$ dimensional vector with the value of each feature. In order to know if the data should be transformed we will look at the range of each feature and compare it to the others. Particularly the maximum of all the feature maximums and the minimum of all the feature maximums, the maximum of all the feature minimums and the maximum of all the feature minimums. Look to the corresponding funciton in the $main.m$ file.
+When we took the statistics of the features we end up with a $L\times1$ dimensional vector with the value of each feature. In order to know if the data should be transformed we will look at the range of each feature and compare it to the others. Particularly the maximum of all the feature maximums and the minimum of all the feature maximums, the maximum of all the feature minimums and the maximum of all the feature minimums. Look to the corresponding function in the $main.m$ file.
 \newline
 
-We see that the values range from (min(min)) $-9$ to (max(max)) $8374$ with (max(min)) $2343$ (min(max)) $35$. We also see that the max and min median and mean values do not differ too greatly. The spatial resolution probided would change if the data was transformed, till now the dataset has been kept in the order (view the $main.m$ file) of the original data to ensure compatibility when discussing results to the 8 ground truth classes. For these reasons we will not transform the data any further.
+We see that the values range from (min(min)) $-9$ to (max(max)) $8374$ with (max(min)) $2343$ (min(max)) $35$. We also see that the max and min median and mean values do not differ too greatly. The spatial resolution provided would change if the data was transformed, till now the dataset has been kept in the order (view the $main.m$ file) of the original data to ensure compatibility when discussing results to the 8 ground truth classes. For these reasons we will not transform the data any further.
 
 \section{Selection of the clustering algorithm}
 
-The begining of this section marks the end of the execution of the $main.m$ file, now the individual files for the clustering will be considered.
-\newline
-
-Before moving to the criteria to select the clustering algorithms, let us notice that the $main.m$ file has become crouded. We will take the final struct that we created and save it for importint without needing to use the whole pipline made thus far.
+Before moving to the criteria to select the clustering algorithms, let us notice that the $main.m$ file has become crouded. We will take the final struct that we created and save it for importing without needing to use the whole pipeline made thus far. For this section the $tests.m$ file will be considered.
 
 \subsection{Assumptions}
+
+There are two fields of assumptions to make, along the axis of accuracy and along the axis of time complexity.
+\newline
+
+We will reference this in the respective chapter but since the algorithms are initialized with the correct number of clusters we should expect that most algorithms will perform well on accuracy metrics (at least the algorithms that rely on input for the number of clusters).
+\newline
+
+We know the clusters form hard clusters, algorithms that leave room to interpret the bounds of the clusters will perform worse or equal to hard clusterings depending on our interpretation.
 
 \subsection{Project goals}
 
 Since there is an explicit statement that we will want to focus on the difference between hierarchical and CFO clustering algorithms we must choose a few from each category.
 \newline
 
+\subsection{Selections}
+
+Actually, we are explicitly told what algorithms to choose.
+
+\begin{table}[H]
+    \caption{Algorithms to use}\label{tab:choices}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \hline
+            \textbf{CFO Clustering} & \textbf{Hierarchical Clustering} \\
+            \hline
+            K-means & Complete-link \\
+            Fuzzy c-means & WPGMC \\
+            Possibilistic c-means & Ward algorithms \\
+            Probabilistic \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+
 \section{Execution of the algorithms}
 
 \subsection{Cluster Representative Initialization}
 
-The initialization of the cluster representatices occurs in the correctponding function in the $main.m$ file. The method employed is to initialize them all within the bounds of the maximum and the minimum value along each feature randomly.
+The initialization of the cluster representatives occurs in the corresponding function in the $main.m$ file. The method employed is to initialize them all within the bounds of the maximum and the minimum value along each feature randomly.
 
 \[\theta_i \in \left[\text{min}_i \text{, max}_i\right]\]
 
 \subsection{Number of clusters}
 
-We actually already know the number of clusters that should be found from the project description. Out of interest we will look at some of the methods we have for determining the number of clusters to see if the results line up with the a-priori knowledge.
+We actually already know the number of clusters that should be found from the project description.%Out of interest we will look at some of the methods we have for determining the number of clusters to see if the results line up with the a-priori knowledge.
 
-\section{Characterization of the clusters}
+\section{Results}
+
+\subsection{Times}
+
+\subsection{Accuracy}
 
 \section{Citations}
 

@@ -128,6 +128,8 @@ function images(object, resolution)
     figure(3000);
     hold on
     grid on
+    % Actually there is a better way to do this that I might implement
+    % Later in the tests.m file
     [M,N,~] = size(object.data);
     for j=1:resolution:N
         for k=1:resolution:M
@@ -180,52 +182,9 @@ end
 
 x = unwind(x);
 
-% Determining m
-function optimal = search(object)
-
-end
-
 % Using m
-% [x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x.linear, 50);
+[x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x.linear, 4);
 
-% Using dimension transformation
-
-
-
-% Just a note since the following seems useless
-% initially the unwind funciton would change the
-% data and label variables of the struc
-% undoing the transform
-% 1 -> 1, 1
-% 2 -> 2, 1
-% 150 -> 150, 1
-% 151 -> 1, 2
-% 152 -> 2, 2
-% .
-% .
-% .
-% 
-% i -> i - N*(j-1), j += 1 if i % 150 == 0
-% and % means modulo in the above equation
-function copy = rewind(object)
-    [M, L] = size(object.data);
-    copy = object;
-    N = 150;
-    copy.data = ones(N,N,L);
-    copy.labels = ones(N,N);
-    j = 1;
-    for i=1:M
-        copy.data(i - (150*(j-1)),j,:) = object.data(i,:);
-        copy.labels(i - (150*(j-1)),j) = object.labels(i);
-        % Why are we updating j after the iteration?
-        % Because it I update it at the start
-        % index 300 will have a j of 2
-        % and a i - 150*j-1 of 0
-        if mod(i, 150) == 0
-            j = j + 1;
-        end
-    end
-end
 
 % Feature transformations
 
@@ -235,7 +194,6 @@ function range(object)
     max(object.min)
     max(object.mean)
     max(object.median)
-
     min(object.max)
     min(object.min)
     min(object.mean)
@@ -252,4 +210,10 @@ range(x);
 % Saving data
 
 save("process.mat","x", '-v7.3')
+
+% Some mistakes are bound to be ones made in previous
+% assignments and the pushback of the deadlines has
+% made it so no feedback has been provided.
+% An example is the use of Sturges rule that was incorrect
+% and that I realised whilest doing this assignment.
 

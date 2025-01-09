@@ -25,10 +25,10 @@ y=L(existed_L); % The class labels
 [px,nx]=size(X); % px= no. of rows (pixels) and nx=no. of columns (bands)
 
 % Here is the code for the clustering algorithm
- Z = linkage(X,'ward','euclidean');
- cl_label = cluster(Z,'maxclust',7);
- cr_tab=crosstab(cl_label,y)
- dendrogram(Z)
+Z = linkage(X,'ward','euclidean');
+cl_label = cluster(Z,'maxclust',7);
+cr_tab=crosstab(cl_label,y)
+dendrogram(Z)
 
 % The following code can be used after the execution of an algorithm 
 % Let "cl_label" be the px-dimensional vector, whose i-th element is the label
