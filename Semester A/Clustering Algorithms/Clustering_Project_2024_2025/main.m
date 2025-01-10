@@ -170,37 +170,37 @@ function copy = unwind(object)
     % This might seem excesive but the index 151 would
     % map to index (1,2) in the (M),(N),(L) matrix
     % and because of that we need to define the shape and then the values
-    copy.linear = ones(M*N,L);
-    copy.linlabels= ones(M*N,1);
+    copy.linear = -10 * ones(M*N,L);
+    copy.linlabels= zeros(M*N,1);
     for i=1:M
         for j=1:N
-            copy.linear(i + (150*(j-1)),:) = object.data(i, j,:);
-            copy.linlabels(i + (150*(j-1))) = object.labels(i,j);
+            if object.labels(i,j) ~= 0
+                copy.linear(i + (150*(j-1)),:) = object.data(i, j,:);
+                copy.linlabels(i + (150*(j-1))) = object.labels(i,j);
+            end
         end
     end
 end
 
 x = unwind(x);
 
-% Using m
-[x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x.linear, 4);
-
+[x.eigenval,x.eigenvec,x.explain,x.Y,x.mean_vec] = pca_fun(x.linear(x.linlabels~=0, :)', 3);
 
 % Feature transformations
 
 % Determining if we need to do a data transform
-function range(object)
-    max(object.max)
+function output = range(object)
+    output = [max(object.max)
     max(object.min)
     max(object.mean)
     max(object.median)
     min(object.max)
     min(object.min)
     min(object.mean)
-    min(object.median)
+    min(object.median)];
 end
 
-range(x);
+output = range(x);
 
 % The verdict was no
 

@@ -90,10 +90,10 @@ National and Kapodistrian University of Athens}
 
 \section{Preface}
 
-Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from previous homework and a file named $main.m$ that implements the Matlab code that generates all the data transformations a file named $process.mat$ for saved final data after all transformations were considered, a file $tests.m$ that has the trials done for the timing and comparison of the clustering algorithsm with eachother, a file named $clustered.mat$ that hold the variables after the whole analysis including average times of algorithm executions, a file named $Fuzzy.m$ for the implementation of the Fuzzy algorithms, a file named $prob.m$ for the implementation of the probabilistic algorithms and a file named $report.pdf$ that contains this report. It is recommended to read this report with the $main.m$ file open along side to look at the corresponding matlab code for each step.
+Before any of the further analysis a look at the files provided in the report are all the files that were originally sent with the description along with files from previous homework and a file named $main.m$ that implements the Matlab code that generates all the data transformations, a folder named $Images$ with all produced figures, a file named $process.mat$ for saved final data after all transformations were considered, a file $tests.m$ that has the trials done for the timing and comparison of the clustering algorithsm with eachother, a file named $clustered.mat$ that hold the variables after the whole analysis including average times of algorithm executions, a file named $fuzzy\_c\_means.m$ (Theodoridis \textit{et. al.,} 2010) for the implementation of the Fuzzy algorithms, a file named $GMDAS.m$ (Theodoridis \textit{et. al.,} 2010) for the implementation of the probabilistic algorithms and a file named $report.pdf$ that contains this report. It is recommended to read this report with the $main.m, tests.m$ files open along side to look at the corresponding matlab code for each step. We operate starting from the $main.m$ file for all data transformations but since the output of this file will be provided one can just go straight to the $tests.m$ file.
 \newline
 
-The $main.m$ file will also contain comments explaining what goal each function has.
+The files will also contain comments explaining what goal each function has and the method used.
 
 \section{Feeling the data}
 
@@ -410,7 +410,7 @@ The way we will reduce dimensionality this time is via principaled component ana
 To choose a value of $m$ we should notice that the number of principal components is in the range of $[8,204]$. If we pick a value $8<a<204$ that sufficiently explains the data (cutoff explain value) but might not be the optimal one then we can say that we do not need to consider the values $\in[a,204]$ further. We will determine values of $a$ to begin with and adjust accordingly until we end up with a qualitatively sufficient result.
 \newline
 
-We begin with a $a$ of $50$ and end up using a final value of $4$. Actually this was apparent from the first trial since the output of the $pca_fun.m$ file is one that has "l-dimensional column vector, whose $i^{th}$ element is the percentage of the total variance explained by the $i^{th}$ principal component", were we see that $4$ components explain more than $99\%$.
+We begin with a $a$ of $50$ and end up using a final value of $3$. Actually this was apparent from the first trial since the output of the $pca_fun.m$ file is one that has "l-dimensional column vector, whose $i^{th}$ element is the percentage of the total variance explained by the $i^{th}$ principal component", were we see that $3$ components explain more than $99\%$.
 
 \subsection{Transformation}
 
@@ -480,6 +480,9 @@ We actually already know the number of clusters that should be found from the pr
 \section{Citations}
 
 Sturges, H. A. (1926). The Choice of a Class Interval. Journal of the American Statistical Association, 21(153), 65–66. https://doi.org/10.1080/01621459.1926.10502161
+\newline
+
+Theodoridis, S., Pikrakis, A., Koutroumbas, K., & Cavouras, D. (2010). Introduction to pattern recognition: a matlab approach. Academic Press.
 \newline
 
 \end{document}

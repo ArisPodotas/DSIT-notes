@@ -900,3 +900,7 @@ and now th ealgorithms that are essentially idea specific.
 These are not hierarchical just were we start.
 
 The minimum spanning tree based algorithm.
+
+# Pre last lesson
+
+With the additional annealing algorithms
