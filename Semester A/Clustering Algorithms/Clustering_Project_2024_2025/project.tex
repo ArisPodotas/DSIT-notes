@@ -411,6 +411,33 @@ To choose a value of $m$ we should notice that the number of principal component
 \newline
 
 We begin with a $a$ of $50$ and end up using a final value of $3$. Actually this was apparent from the first trial since the output of the $pca_fun.m$ file is one that has "l-dimensional column vector, whose $i^{th}$ element is the percentage of the total variance explained by the $i^{th}$ principal component", were we see that $3$ components explain more than $99\%$.
+\newline
+
+After the PCA the data in the Y field looks as follows
+\newline
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/PCA result.png}
+    \end{center}
+    \caption{Overview of pixels with non zero label data}\label{fig:pcares}
+\end{figure}
+
+At this points we must mention that thougth the ground truch classes are $8$ one could easily see $9$ clusters in the image of the valey.
+\newline
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Salinas truth.png}
+    \end{center}
+    \caption{Overview of pixels with non zero label data}\label{fig:nine}
+\end{figure}
+
+It might be worth exploting the 9 clustering of the data, then conjoining two clsuters in the same ground truth class.
+\newline
+
+We mention this here since in the three dimensional representation result of the principal component analysis we can still see this $9$ compact cluster form of the data.
+\newline
 
 \subsection{Transformation}
 

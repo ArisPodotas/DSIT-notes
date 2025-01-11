@@ -85,8 +85,8 @@ end
 x = values(x);
 
 % Visualizing the distributions of the data
-% 204 histograms seem a little excesive for inside
-% the report so enable this optionally.
+% 204 histograms seem a little excesive
+% enable this optionally.
 function visualize(object, autoclose, save)
     [M, N, L] = size(object.data);
     % Removing zero labels
@@ -124,7 +124,7 @@ end
 % and see what I can from the hyperspectral images themselves.
 % To do this, I will visualize a 3d plot using the index
 % of a pixel and the color of the feature at that location.
-function images(object, resolution)
+function images(object, resolution, seed)
     figure(3000);
     hold on
     grid on
@@ -138,13 +138,13 @@ function images(object, resolution)
             end
         end
     end
-    saveas(3000, './Images/Overview of images.png')
+    saveas(3000, sprintf('./Images/Overview of images %.0f.png', seed))
 end
 
 % Change the resolution for more speed
 % Higher values are faster
 % Commented out for time complexity
-% images(x, 10);
+% images(x, 5, 0);
 
 % Feature selection
 
@@ -203,6 +203,22 @@ end
 output = range(x);
 
 % The verdict was no
+
+% Visualising remaining data
+
+function peek(object, seed)
+    figure(seed)
+    hold on
+    grid on
+    figure(seed), scatter3(object.Y(1,:), object.Y(2,:), object.Y(3,:))
+    figure(seed), title('Salinas valley')
+    figure(seed), xlabel('Component 1')
+    figure(seed), ylabel('Component 2')
+    figure(seed), zlabel('Component 3')
+    saveas(seed, './Images/PCA result.png')
+end
+
+peek(x, 7);
 
 % saving data after all pre-processing of the data to use
 % without delays for the clustering files

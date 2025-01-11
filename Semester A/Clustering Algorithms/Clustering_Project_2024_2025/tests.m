@@ -1,37 +1,5 @@
 load('./process.mat');
 
-% undoing a unwinding
-% 1 -> 1, 1
-% 2 -> 2, 1
-% 150 -> 150, 1
-% 151 -> 1, 2
-% 152 -> 2, 2
-% .
-% .
-% .
-% 
-% i -> i - N*(j-1), j += 1 if i % 150 == 0
-% and % means modulo in the above equation
-function copy = rewind(object, size)
-    [M, L] = size(object.data);
-    copy = object;
-    N = size;
-    copy.data = ones(N,N,L);
-    copy.labels = ones(N,N);
-    j = 1;
-    for i=1:M
-        copy.data(i - (size*(j-1)),j,:) = object.data(i,:);
-        copy.labels(i - (size*(j-1)),j) = object.labels(i);
-        % Why are we updating j after the iteration?
-        % Because if I update it at the start
-        % index 300 will have a j of 2
-        % and a i - 150*j-1 of 0
-        if mod(i, size) == 0
-            j = j + 1;
-        end
-    end
-end
-
 function images(object, resolution)
     figure(3000);
     hold on
@@ -46,6 +14,7 @@ function images(object, resolution)
     end
     saveas(3000, './Images/Overview of images.png')
 end
+
 % Clustering
 
 % Implementing a function to generate theta values
@@ -62,11 +31,27 @@ function theta = generate(object, number, consider)
     %          0, 0, 20, 20;
     %          0, 0, 20, 20;];
     theta = ones(number, consider);
+    % Getting max and min of Y
+    % I'm supposed to end up with a L dimensional vector
+    % one dimension for each feature.
+    [L,M] = size(object.Y);
+    meany = zeros(L, 1);
+    mediany = zeros(L, 1);
+    maxy = zeros(L, 1); 
+    miny = zeros(L, 1); 
+    stdy = zeros(L, 1); 
+    for i=1:L
+        meany(i) = mean(object.Y(i,:));
+        mediany(i) = median(object.Y(i,:));
+        stdy(i) = std(object.Y(i,:));
+        maxy(i) = max(object.Y(i,:));
+        miny(i) = min(object.Y(i,:));
+    end
     for i=1:number
         for j=1:consider
             % Normalized random initial value in the range [min, max]
             % for feature j
-            theta(i,j) = (object.max(j))*(randn()) + object.min(j);
+            theta(i,j) = (max(j))*(randn()) + min(j);
         end
     end
 end
@@ -77,31 +62,33 @@ function copy = clust(object, clusters, trials)
     % make a matrix that holds all the times values for the algorithms
     % This matrix will need to me (trials)x(algorithms)
     object.times = ones(trials, 9);
-    % These next variables are for the outputs of the algorithms
-    % so essentially the clusterings
-    % Each matrix will have (trials)x(outputs)
-    % We use multiple matrices because we cant
-    % have rows with different widths
-    object.means = ones(trials, 3);
-    object.possibi= ones(trials, 2);
-    object.fuzzy= ones(trials, 3);
-    object.prob= ones(trials, 6);
-    object.slinkg= ones(trials, 9);
-    object.clinkg= ones(trials, 9);
-    object.ward= ones(trials, 9);
-    object.wpgmc= ones(trials, 9);
     eta = ones(1, clusters);
     for i=1:trials
         % We would like to use the same initial theta values for all algorithms
         % that take cluster initialization positions
         init_theta = generate(object, clusters, 3);
+        figure(9), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
         % k-means
         tic;
         [theta,bel,J] = k_means(object.Y, init_theta');
-        object.means(i, 1) = theta;
-        object.means(i, 2) = bel;
-        object.means(i, 3) = J;
         object.times(i, 1) = toc;
+        figure(10)
+        hold on
+        grid on
+        figure(10), scatter3(object.Y(1,bel==1), object.Y(2,bel==1), object.Y(3,bel==1), 'ro')
+        figure(10), scatter3(object.Y(1,bel==2), object.Y(2,bel==2), object.Y(3,bel==2), 'b*')
+        figure(10), scatter3(object.Y(1,bel==3), object.Y(2,bel==3), object.Y(3,bel==3), 'g+')
+        figure(10), scatter3(object.Y(1,bel==4), object.Y(2,bel==4), object.Y(3,bel==4), 'y.')
+        figure(10), scatter3(object.Y(1,bel==5), object.Y(2,bel==5), object.Y(3,bel==5), 'ro')
+        figure(10), scatter3(object.Y(1,bel==6), object.Y(2,bel==6), object.Y(3,bel==6), 'ro')
+        figure(10), scatter3(object.Y(1,bel==7), object.Y(2,bel==7), object.Y(3,bel==7), 'ro')
+        figure(10), scatter3(object.Y(1,bel==8), object.Y(2,bel==8), object.Y(3,bel==8), 'ro')
+        figure(10), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(10), title('K-means clustering')
+        figure(10), xlabel('Component 1')
+        figure(10), ylabel('Component 2')
+        figure(10), zlabel('Component 3')
+        saveas(10, './Images/k-means.png')
         % Possibilistic
         tic;
         [U, theta] = possibi(object.Y, clusters, eta, 1, 73, 1, 0.0001);
