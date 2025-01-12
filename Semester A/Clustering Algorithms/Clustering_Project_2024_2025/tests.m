@@ -84,6 +84,7 @@ function copy = clust(object, clusters, trials)
         figure(10), scatter3(object.Y(1,bel==7), object.Y(2,bel==7), object.Y(3,bel==7), 'ro')
         figure(10), scatter3(object.Y(1,bel==8), object.Y(2,bel==8), object.Y(3,bel==8), 'ro')
         figure(10), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(10), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
         figure(10), title('K-means clustering')
         figure(10), xlabel('Component 1')
         figure(10), ylabel('Component 2')
@@ -92,26 +93,48 @@ function copy = clust(object, clusters, trials)
         % Possibilistic
         tic;
         [U, theta] = possibi(object.Y, clusters, eta, 1, 73, 1, 0.0001);
-        object.possibi(i, 1) = theta;
-        object.possibi(i, 2) = U;
-        object.times(i,3) = toc;
+        object.times(i,2) = toc;
+        figure(11)
+        hold on
+        grid on
+        figure(11), scatter3()
+        figure(11), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(11), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(11), title('Possibilistic clustering')
+        figure(11), xlabel('Component 1')
+        figure(11), ylabel('Component 2')
+        figure(11), zlabel('Component 3')
+        saveas(11, './Images/k-means.png')
         % Fuzzy
         tic;
         [theta, U, obj_fun] = fuzzy_c_means(object.Y, 8, 1);
-        object.fuzzy(i, 1) = theta;
-        object.fuzzy(i, 2) = U;
-        object.fuzzy(i, 3) = obj_fun;
-        object.times(i,4) = toc;
+        object.times(i,3) = toc;
+        figure(12)
+        hold on
+        grid on
+        figure(12), scatter3()
+        figure(12), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(12), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(12), title('Possibilistic clustering')
+        figure(12), xlabel('Component 1')
+        figure(12), ylabel('Component 2')
+        figure(12), zlabel('Component 3')
+        saveas(12, './Images/k-means.png')
         % Probabilistic
         tic;
         [ap, cp, mv, mc, iter, diffvec] = GMDAS(object.Y, clusters, eta, 1, 73, 1, 59);
-        object.prob(i, 1) = ap;
-        object.prob(i, 2) =  cp;
-        object.prob(i, 3) =  mv;
-        object.prob(i, 4) =  mc;
-        object.prob(i, 5) =  iter;
-        object.prob(i, 6) =  diffvec;
-        object.times(i,5) = toc;
+        object.times(i,4) = toc;
+        figure(13)
+        hold on
+        grid on
+        figure(13), scatter3()
+        figure(13), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(13), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(13), title('Possibilistic clustering')
+        figure(13), xlabel('Component 1')
+        figure(13), ylabel('Component 2')
+        figure(13), zlabel('Component 3')
+        saveas(13, './Images/k-means.png')
         % single link
         tic
         % Here is the code for the clustering algorithm
@@ -120,6 +143,17 @@ function copy = clust(object, clusters, trials)
         cr_tab=crosstab(cl_label,y);
         dendrogram(Z)
         object.times(i, 6) = toc;
+        figure(14)
+        hold on
+        grid on
+        figure(14), scatter3()
+        figure(14), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(14), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(14), title('Possibilistic clustering')
+        figure(14), xlabel('Component 1')
+        figure(14), ylabel('Component 2')
+        figure(14), zlabel('Component 3')
+        saveas(14, './Images/k-means.png')
         % complete link
         tic
         Z = linkage(X,'ward','euclidean');
@@ -127,6 +161,17 @@ function copy = clust(object, clusters, trials)
         cr_tab=crosstab(cl_label,y);
         dendrogram(Z)
         object.times(i, 7) = toc;
+        figure(15)
+        hold on
+        grid on
+        figure(15), scatter3()
+        figure(15), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(15), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(15), title('Possibilistic clustering')
+        figure(15), xlabel('Component 1')
+        figure(15), ylabel('Component 2')
+        figure(15), zlabel('Component 3')
+        saveas(15, './Images/k-means.png')
         % WPGMC
         tic
         Z = linkage(X,'ward','euclidean');
@@ -134,6 +179,17 @@ function copy = clust(object, clusters, trials)
         cr_tab=crosstab(cl_label,y);
         dendrogram(Z)
         object.times(i, 8) = toc;
+        figure(16)
+        hold on
+        grid on
+        figure(16), scatter3()
+        figure(16), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(16), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(16), title('Possibilistic clustering')
+        figure(16), xlabel('Component 1')
+        figure(16), ylabel('Component 2')
+        figure(16), zlabel('Component 3')
+        saveas(16, './Images/k-means.png')
         % Ward
         tic
         Z = linkage(X,'ward','euclidean');
@@ -141,6 +197,17 @@ function copy = clust(object, clusters, trials)
         cr_tab=crosstab(cl_label,y);
         dendrogram(Z)
         object.times(i, 9) = toc;
+        figure(17)
+        hold on
+        grid on
+        figure(17), scatter3()
+        figure(17), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
+        figure(17), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
+        figure(17), title('Possibilistic clustering')
+        figure(17), xlabel('Component 1')
+        figure(17), ylabel('Component 2')
+        figure(17), zlabel('Component 3')
+        saveas(17, './Images/k-means.png')
     end
     % time averages
     object.finals = [mean(object.times(1));
