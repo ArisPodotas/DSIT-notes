@@ -13,10 +13,6 @@ enrolling/
 *.mp3
 *.mp4
 Semester A/Bioinformatics/EX6/*
-Semester A/Bioinformatics/Project/SRR452931/
-Semester A/Bioinformatics/Project/SRR524934/
-Semester A/Bioinformatics/Project/SRR524936/
-Semester A/Bioinformatics/Project/SRR524939/
 Semester A/Bioinformatics/Project/unin
 Semester A/Bioinformatics/Project/install.sh
 Semester A/Bioinformatics/Project/hg18.chrom.sizes.txt
@@ -25,6 +21,8 @@ Semester A/Bioinformatics/Project/hg18.1.ebwt
 Semester A/Bioinformatics/Project/hg18.2.ebwt
 Semester A/Bioinformatics/Project/hg18.3.ebwt
 Semester A/Bioinformatics/Project/hg18.4.ebwt
+Semester A/Bioinformatics/Project/*.sra
+Semester A/Bioinformatics/Project/*.fastq
 Semester A/Bioinformatics/Project/hg18.fa
 Semester A/Bioinformatics/Project/bioinfproj.py
 Semester A/Bioinformatics/Project/SRR452931.fastq.gz
