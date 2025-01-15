@@ -505,7 +505,7 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \includegraphics[width=0.95\textwidth]{./Images/Time trials.png}
     \end{center}
-    \caption{Result of k-means algorithm}\label{fig:Times}
+    \caption{Time - Algorithm scatter plot}\label{fig:Times}
 \end{figure}
 
 \begin{table}[H]
@@ -513,7 +513,7 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \begin{tabular}{l|l}
             \hline
-            \textbf{Clustering} & \textbf{Average of 100 trials} \\
+            \textbf{Clustering} & \textbf{Average of 100 trials (seconds)} \\
             \hline
                 % 1
                 K-means & 0.0802 \\
@@ -531,12 +531,28 @@ We actually already know the number of clusters that should be found from the pr
                 WPGMC & 0.0419 \\
                 % 9
                 Ward algorithms & 0.0477 \\
+                % Oops
             \hline
         \end{tabular}
     \end{center}
 \end{table}
 
+This initailly seems false, since while the execution of the algorithms occured the stalling would happend at the probabilistic algorithmns not the k-means. This also seems false since the execution of the $tests.m$ file takes a couple of hours and not $(0.0802 + 0.0416 + 0.0362 + 0.0418 + 0.0420 + 0.0427 + 0.0419 + 0.0477) * 100$. No error can be found as of the deadline for this project (especially considering that each execution takes around $6$ hours and the dealine is in $2$ days).
+\newline
+
+One explanation of the average times could be that some of the implementations might be more wasteful computationally. For instance all the hierarchichal clustering algorithms are implemented in the same funciton and their average times are neglegably different. We cannot assume this explains the differences in the algorithm execution times for the great variance steps from algorithms implemented by the same people. This does not in and of itself mean that the fault is not of the implementation but looking at the files the implementations have such commonalities that one cannot find any trace of implementation leading to time waste between them.
+\newline
+
+The table \ref{tab:Times} seems to indicate that the hierarchical clustering algorithms have "won" over the cost funciton optimization algorithms, time wise atleast. However all algorithms have a very practical runtime escpecially considering the size of the input data. This does not negate the fact that an algorithm is never the best and only per application the one optimal to the problem. One thing to note is that the statistical significance of each result is not listed, one can imagine that the differences between the hierarchical algorithms is neglegable and leads to no significance between average runtimes.
+\newline
+
 \subsection{Accuracy}
+
+\textbf{Note: } The following is only a two dimensional representaiton of three dimensional graphs that are produced.
+\newline
+
+\textbf{Note: } The following is only of one run and not of an average.
+\newline
 
 % K-means
 \begin{figure}[H]
@@ -575,7 +591,7 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \begin{tabular}{cc}
             \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Single link.png}} &
-            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Single link tree.png}} 
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Single link tree.png}} 
         \end{tabular}
     \end{center}
     \caption{Result of the Single link algorithm}\label{fig:sing}
@@ -586,7 +602,7 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \begin{tabular}{cc}
             \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Complete link.png}} &
-            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Complete link tree.png}} 
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Complete link tree.png}} 
         \end{tabular}
     \end{center}
     \caption{Result of the Complete link algorithm}\label{fig:comp}
@@ -597,7 +613,7 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \begin{tabular}{cc}
             \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC.png}} &
-            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC tree.png}} 
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC tree.png}} 
         \end{tabular}
     \end{center}
     \caption{Result of WPGMC algorithm}\label{fig:wpgmc}
@@ -608,13 +624,20 @@ We actually already know the number of clusters that should be found from the pr
     \begin{center}
         \begin{tabular}{cc}
             \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Ward.png}} &
-            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Ward tree.png}} 
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Ward tree.png}} 
         \end{tabular}
     \end{center}
     \caption{Result of Ward algorithms}\label{fig:ward}
 \end{figure}
 
+Results depend on initialization of the representatives to a high degree for clustering algorithms subject to initializations.
+
+The Single link is the least accurate to the actual ground truth classes of all algorithms.
+
+Upon runtime Matlab outputs a warning for the WPGMC algorithm that the algorithm might not be the optimal one for our dataset.
 \newline
+
+\subsection{In total}
 
 \section{Citations}
 
