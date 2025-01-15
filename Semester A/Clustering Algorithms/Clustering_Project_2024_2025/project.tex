@@ -485,7 +485,6 @@ Actually, we are explicitly told what algorithms to choose.
     \end{center}
 \end{table}
 
-
 \section{Execution of the algorithms}
 
 \subsection{Cluster Representative Initialization}
@@ -502,7 +501,111 @@ We actually already know the number of clusters that should be found from the pr
 
 \subsection{Times}
 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Time trials.png}
+    \end{center}
+    \caption{Result of k-means algorithm}\label{fig:Times}
+\end{figure}
+
+\begin{table}[H]
+    \caption{Algorithms to use}\label{tab:Times}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \hline
+            \textbf{Clustering} & \textbf{Average of 100 trials} \\
+            \hline
+                K-means & \\
+                Fuzzy c-means & \\
+                Possibilistic c-means & \\
+                Probabilistic & \\
+                Complete-link & \\
+                WPGMC & \\
+                Ward algorithms & \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
 \subsection{Accuracy}
+
+% K-means
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/k-means.png}
+    \end{center}
+    \caption{Result of k-means algorithm}\label{fig:means}
+\end{figure}
+
+% Fuzzy
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Fuzzy c-means.png}
+    \end{center}
+    \caption{Result of Fuzzy c-means algorithm}\label{fig:fuzz}
+\end{figure}
+
+% pos
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Possibilistic c-means.png}
+    \end{center}
+    \caption{Result of Possibilistic c-means algorithm}\label{fig:pos}
+\end{figure}
+
+% prob
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Probabilistic c-means.png}
+    \end{center}
+    \caption{Result of Probabilistic c-means algorithm}\label{fig:prob}
+\end{figure}
+
+% Single
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Single link.png}} &
+            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Single link tree.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of the Single link algorithm}\label{fig:sing}
+\end{figure}
+
+% Complete
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Complete link.png}} &
+            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Complete link tree.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of the Complete link algorithm}\label{fig:comp}
+\end{figure}
+
+% WPGMC
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC.png}} &
+            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC tree.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of WPGMC algorithm}\label{fig:wpgmc}
+\end{figure}
+
+% Ward
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Ward.png}} &
+            \subfloar[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Ward tree.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of Ward algorithms}\label{fig:ward}
+\end{figure}
+
+\newline
 
 \section{Citations}
 

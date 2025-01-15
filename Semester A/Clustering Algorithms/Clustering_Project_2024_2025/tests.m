@@ -33,10 +33,21 @@ function copy = clust(object, clusters, trials)
     % make a matrix that holds all the times values for the algorithms
     % This matrix will need to be (trials)x(algorithms)
     object.times = ones(trials, 9);
-    eta = ones(1, clusters);
     % for converting q to a [1,2]
-    % value for the fuzzy algorithm
+    % value for the algorithms
     factor = rand();
+    % value for membership cutoff
+    cutoff = 0.7;
+    % for the probabilistic
+    % We will make diagonal covariance matricies since
+    % they will be estimated anyway
+    % The 3's are from the number of features
+    cov = zeros(3,3,clusters);
+    for z=1:3
+        for k=1:3
+            cov(z,k,:) = 1;
+        end
+    end
     % Time averages
     for i=1:trials
         % We would like to use the same initial theta values for all algorithms
@@ -66,124 +77,160 @@ function copy = clust(object, clusters, trials)
             figure(10), zlabel('Component 3')
             saveas(10, './Images/k-means.png')
         end
-        % Possibilistic
-        tic;
-        [U, theta] = possibi(object.Y, clusters, eta, 1, 73, 1, 0.0001);
-        object.times(i,2) = toc;
-        figure(11)
-        hold on
-        grid on
-        figure(11), scatter3()
-        figure(11), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(11), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(11), title('Possibilistic clustering')
-        figure(11), xlabel('Component 1')
-        figure(11), ylabel('Component 2')
-        figure(11), zlabel('Component 3')
-        saveas(11, './Images/k-means.png')
         % Fuzzy
         tic;
         [theta, U, obj_fun] = fuzzy_c_means(object.Y, 8, 1 + factor);
         object.times(i,3) = toc;
-        figure(12)
-        hold on
-        grid on
-        figure(12), scatter3()
-        figure(12), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(12), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(12), title('Possibilistic clustering')
-        figure(12), xlabel('Component 1')
-        figure(12), ylabel('Component 2')
-        figure(12), zlabel('Component 3')
-        saveas(12, './Images/k-means.png')
+        if i == 1
+            figure(11)
+            hold on
+            grid on
+            figure(11), scatter3(object.Y(1,U(:,1)>=cutoff), object.Y(2,U(:,1)>=cutoff), object.Y(3,U(:,1)>=cutoff), 'ro')
+            figure(11), scatter3(object.Y(1,U(:,2)>=cutoff), object.Y(2,U(:,2)>=cutoff), object.Y(3,U(:,2)>=cutoff), 'b*')
+            figure(11), scatter3(object.Y(1,U(:,3)>=cutoff), object.Y(2,U(:,3)>=cutoff), object.Y(3,U(:,3)>=cutoff), 'g+')
+            figure(11), scatter3(object.Y(1,U(:,4)>=cutoff), object.Y(2,U(:,4)>=cutoff), object.Y(3,U(:,4)>=cutoff), 'y.')
+            figure(11), scatter3(object.Y(1,U(:,5)>=cutoff), object.Y(2,U(:,5)>=cutoff), object.Y(3,U(:,5)>=cutoff), 'c^')
+            figure(11), scatter3(object.Y(1,U(:,6)>=cutoff), object.Y(2,U(:,6)>=cutoff), object.Y(3,U(:,6)>=cutoff), 'm<')
+            figure(11), scatter3(object.Y(1,U(:,7)>=cutoff), object.Y(2,U(:,7)>=cutoff), object.Y(3,U(:,7)>=cutoff), 'kd')
+            figure(11), scatter3(object.Y(1,U(:,8)>=cutoff), object.Y(2,U(:,8)>=cutoff), object.Y(3,U(:,8)>=cutoff), 'rs')
+            figure(11), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
+            figure(11), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+            figure(11), title('Fuzzy clustering')
+            figure(11), xlabel('Component 1')
+            figure(11), ylabel('Component 2')
+            figure(11), zlabel('Component 3')
+            saveas(11, './Images/Fuzzy c-means.png')
+        end
+        % Possibilistic
+        eta = ones(1, clusters);
+        % This version is faster since we want independatn
+        % algorithms to compare meaning that if we use the 
+        % fuzzy to initialize eta here we should add its runtime
+        [~,N] = size(object.Y);
+        beta = 1/N * sum(norm(object.Y-mean(object.Y))^2);
+        for j=1:clusters
+            eta(1,j) = beta/((1+factor) * sqrt(clusters));
+        end
+        tic;
+        [U, theta] = possibi(object.Y, clusters, eta, 1 + factor, 73, 1, 0.0001);
+        object.times(i,2) = toc;
+        if i == 1
+            figure(12)
+            hold on
+            grid on
+            figure(12), scatter3(object.Y(1,U(:,1)>=cutoff), object.Y(2,U(:,1)>=cutoff), object.Y(3,U(:,1)>=cutoff), 'ro')
+            figure(12), scatter3(object.Y(1,U(:,2)>=cutoff), object.Y(2,U(:,2)>=cutoff), object.Y(3,U(:,2)>=cutoff), 'b*')
+            figure(12), scatter3(object.Y(1,U(:,3)>=cutoff), object.Y(2,U(:,3)>=cutoff), object.Y(3,U(:,3)>=cutoff), 'g+')
+            figure(12), scatter3(object.Y(1,U(:,4)>=cutoff), object.Y(2,U(:,4)>=cutoff), object.Y(3,U(:,4)>=cutoff), 'y.')
+            figure(12), scatter3(object.Y(1,U(:,5)>=cutoff), object.Y(2,U(:,5)>=cutoff), object.Y(3,U(:,5)>=cutoff), 'c^')
+            figure(12), scatter3(object.Y(1,U(:,6)>=cutoff), object.Y(2,U(:,6)>=cutoff), object.Y(3,U(:,6)>=cutoff), 'm<')
+            figure(12), scatter3(object.Y(1,U(:,7)>=cutoff), object.Y(2,U(:,7)>=cutoff), object.Y(3,U(:,7)>=cutoff), 'kd')
+            figure(12), scatter3(object.Y(1,U(:,8)>=cutoff), object.Y(2,U(:,8)>=cutoff), object.Y(3,U(:,8)>=cutoff), 'rs')
+            figure(12), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
+            figure(12), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+            figure(12), title('Possibilistic clustering')
+            figure(12), xlabel('Component 1')
+            figure(12), ylabel('Component 2')
+            figure(12), zlabel('Component 3')
+            saveas(12, './Images/Possibilistic c-means.png')
+        end
         % Probabilistic
         tic;
-        [ap, cp, mv, mc, iter, diffvec] = GMDAS(object.Y, clusters, eta, 1, 73, 1, 59);
+        [ap, cp, mv, mc, iter, diffvec] = GMDAS(object.Y, init_theta, cov, 0.0001, 100, 72);
         object.times(i,4) = toc;
-        figure(13)
-        hold on
-        grid on
-        figure(13), scatter3()
-        figure(13), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(13), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(13), title('Possibilistic clustering')
-        figure(13), xlabel('Component 1')
-        figure(13), ylabel('Component 2')
-        figure(13), zlabel('Component 3')
-        saveas(13, './Images/k-means.png')
+        if i == 1
+            figure(13)
+            hold on
+            grid on
+            figure(13), scatter3(object.Y(1,cp(:,1)>=cutoff), object.Y(2,cp(:,1)>=cutoff), object.Y(3,cp(:,1)>=cutoff), 'ro')
+            figure(13), scatter3(object.Y(1,cp(:,2)>=cutoff), object.Y(2,cp(:,2)>=cutoff), object.Y(3,cp(:,2)>=cutoff), 'b*')
+            figure(13), scatter3(object.Y(1,cp(:,3)>=cutoff), object.Y(2,cp(:,3)>=cutoff), object.Y(3,cp(:,3)>=cutoff), 'g+')
+            figure(13), scatter3(object.Y(1,cp(:,4)>=cutoff), object.Y(2,cp(:,4)>=cutoff), object.Y(3,cp(:,4)>=cutoff), 'y.')
+            figure(13), scatter3(object.Y(1,cp(:,5)>=cutoff), object.Y(2,cp(:,5)>=cutoff), object.Y(3,cp(:,5)>=cutoff), 'c^')
+            figure(13), scatter3(object.Y(1,cp(:,6)>=cutoff), object.Y(2,cp(:,6)>=cutoff), object.Y(3,cp(:,6)>=cutoff), 'm<')
+            figure(13), scatter3(object.Y(1,cp(:,7)>=cutoff), object.Y(2,cp(:,7)>=cutoff), object.Y(3,cp(:,7)>=cutoff), 'kd')
+            figure(13), scatter3(object.Y(1,cp(:,8)>=cutoff), object.Y(2,cp(:,8)>=cutoff), object.Y(3,cp(:,8)>=cutoff), 'rs')
+            figure(13), scatter3(mv(1,:), mv(2,:), mv(3,:),'k+')
+            figure(13), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+            figure(13), title('Probabilistic clustering')
+            figure(13), xlabel('Component 1')
+            figure(13), ylabel('Component 2')
+            figure(13), zlabel('Component 3')
+            saveas(13, './Images/Probabilistic c-means.png')
+        end
         % single link
         tic
-        % Here is the code for the clustering algorithm
-        Z = linkage(X,'ward','euclidean');
-        cl_label = cluster(Z,'maxclust',8);
-        cr_tab=crosstab(cl_label,y);
-        dendrogram(Z)
+        Z = linkage(object.Y','single','euclidean');
+        cl_label = cluster(Z,'maxclust',clusters);
         object.times(i, 6) = toc;
-        figure(14)
-        hold on
-        grid on
-        figure(14), scatter3()
-        figure(14), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(14), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(14), title('Possibilistic clustering')
-        figure(14), xlabel('Component 1')
-        figure(14), ylabel('Component 2')
-        figure(14), zlabel('Component 3')
-        saveas(14, './Images/k-means.png')
+        % cr_tab=crosstab(cl_label,y);
+        if i==1
+            dendrogram(Z)
+            figure(14)
+            hold on
+            grid on
+            figure(14), scatter3(object.Y(1,:), object.Y(2,:), object.Y(3,:), 10, cl_label)
+            figure(14), title('Single link clustering')
+            figure(14), xlabel('Component 1')
+            figure(14), ylabel('Component 2')
+            figure(14), zlabel('Component 3')
+            saveas(14, './Images/Single link.png')
+        end
         % complete link
         tic
-        Z = linkage(X,'ward','euclidean');
-        cl_label = cluster(Z,'maxclust',8);
-        cr_tab=crosstab(cl_label,y);
-        dendrogram(Z)
+        Z = linkage(object.Y','complete','euclidean');
+        cl_label = cluster(Z,'maxclust',clusters);
         object.times(i, 7) = toc;
-        figure(15)
-        hold on
-        grid on
-        figure(15), scatter3()
-        figure(15), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(15), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(15), title('Possibilistic clustering')
-        figure(15), xlabel('Component 1')
-        figure(15), ylabel('Component 2')
-        figure(15), zlabel('Component 3')
-        saveas(15, './Images/k-means.png')
+        % cr_tab=crosstab(cl_label,y);
+        if i == 1
+            dendrogram(Z)
+            figure(15)
+            hold on
+            grid on
+            figure(15), scatter3(object.Y(1,:), object.Y(2,:), object.Y(3,:), 10, cl_label)
+            figure(15), title('Complete link clustering')
+            figure(15), xlabel('Component 1')
+            figure(15), ylabel('Component 2')
+            figure(15), zlabel('Component 3')
+            saveas(15, './Images/Complete link.png')
+        end
         % WPGMC
         tic
-        Z = linkage(X,'ward','euclidean');
-        cl_label = cluster(Z,'maxclust',8);
-        cr_tab=crosstab(cl_label,y);
-        dendrogram(Z)
+        Z = linkage(object.Y','median','euclidean');
+        cl_label = cluster(Z,'maxclust',clusters);
         object.times(i, 8) = toc;
-        figure(16)
-        hold on
-        grid on
-        figure(16), scatter3()
-        figure(16), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(16), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(16), title('Possibilistic clustering')
-        figure(16), xlabel('Component 1')
-        figure(16), ylabel('Component 2')
-        figure(16), zlabel('Component 3')
-        saveas(16, './Images/k-means.png')
+        % cr_tab=crosstab(cl_label,y);
+        if i == 1
+            dendrogram(Z)
+            figure(16)
+            hold on
+            grid on
+            figure(16), scatter3(object.Y(1,:), object.Y(2,:), object.Y(3,:), 10, cl_label)
+            figure(16), title('WPGMC clustering')
+            figure(16), xlabel('Component 1')
+            figure(16), ylabel('Component 2')
+            figure(16), zlabel('Component 3')
+            saveas(16, './Images/WPGMC.png')
+        end
         % Ward
         tic
-        Z = linkage(X,'ward','euclidean');
-        cl_label = cluster(Z,'maxclust',8);
-        cr_tab=crosstab(cl_label,y);
-        dendrogram(Z)
+        Z = linkage(object.Y','ward','euclidean');
+        cl_label = cluster(Z,'maxclust',clusters);
         object.times(i, 9) = toc;
-        figure(17)
-        hold on
-        grid on
-        figure(17), scatter3()
-        figure(17), scatter3(theta(:,1)', theta(:,2)', theta(:,3)','kx')
-        figure(17), scatter3(init_theta(:,1)', init_theta(:,2)', init_theta(:,3)','kx')
-        figure(17), title('Possibilistic clustering')
-        figure(17), xlabel('Component 1')
-        figure(17), ylabel('Component 2')
-        figure(17), zlabel('Component 3')
-        saveas(17, './Images/k-means.png')
+        % cr_tab=crosstab(cl_label,y);
+        if i == 1
+            dendrogram(Z)
+            figure(17)
+            hold on
+            grid on
+            figure(17), scatter3(object.Y(1,:), object.Y(2,:), object.Y(3,:), 10, cl_label)
+            figure(17), title('Ward clustering')
+            figure(17), xlabel('Component 1')
+            figure(17), ylabel('Component 2')
+            figure(17), zlabel('Component 3')
+            saveas(17, './Images/Ward.png')
+        end
+        i
     end
     % time averages
     object.finals = [mean(object.times(1));
@@ -199,6 +246,25 @@ function copy = clust(object, clusters, trials)
 end
 
 x = clust(x, 8, 100);
+
+% Making a plot for the average times
+% that will have (x = algorithm, y = average time)
+figure(50)
+hold on
+grid on
+figure(50), scatter(1, x.finals(1,1), 'ro')
+figure(50), scatter(2, x.finals(1,2), 'b*')
+figure(50), scatter(3, x.finals(1,3), 'g+')
+figure(50), scatter(4, x.finals(1,4), 'y.')
+figure(50), scatter(5, x.finals(1,5), 'c^')
+figure(50), scatter(6, x.finals(1,6), 'm<')
+figure(50), scatter(7, x.finals(1,7), 'kd')
+figure(50), scatter(8, x.finals(1,8), 'rs')
+figure(50), scatter(9, x.finals(1,9), 'kx')
+figure(50), title('Average time per algorithm')
+figure(50), xlabel('Algorithm (in order of execution)')
+figure(50), ylabel('Average runtime')
+saveas(50, './Images/Time trials.png')
 
 save("clustered.mat","x", '-v7.3')
 
