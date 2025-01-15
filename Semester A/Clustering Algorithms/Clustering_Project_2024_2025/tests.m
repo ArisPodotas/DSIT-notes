@@ -80,7 +80,7 @@ function copy = clust(object, clusters, trials)
         % Fuzzy
         tic;
         [theta, U, obj_fun] = fuzzy_c_means(object.Y, 8, 1 + factor);
-        object.times(i,3) = toc;
+        object.times(i,2) = toc;
         if i == 1
             figure(11)
             hold on
@@ -113,7 +113,7 @@ function copy = clust(object, clusters, trials)
         end
         tic;
         [U, theta] = possibi(object.Y, clusters, eta, 1 + factor, 73, 1, 0.0001);
-        object.times(i,2) = toc;
+        object.times(i,3) = toc;
         if i == 1
             figure(12)
             hold on
@@ -162,7 +162,7 @@ function copy = clust(object, clusters, trials)
         tic
         Z = linkage(object.Y','single','euclidean');
         cl_label = cluster(Z,'maxclust',clusters);
-        object.times(i, 6) = toc;
+        object.times(i, 5) = toc;
         % cr_tab=crosstab(cl_label,y);
         if i==1
             dendrogram(Z)
@@ -180,7 +180,7 @@ function copy = clust(object, clusters, trials)
         tic
         Z = linkage(object.Y','complete','euclidean');
         cl_label = cluster(Z,'maxclust',clusters);
-        object.times(i, 7) = toc;
+        object.times(i, 6) = toc;
         % cr_tab=crosstab(cl_label,y);
         if i == 1
             dendrogram(Z)
@@ -198,7 +198,7 @@ function copy = clust(object, clusters, trials)
         tic
         Z = linkage(object.Y','median','euclidean');
         cl_label = cluster(Z,'maxclust',clusters);
-        object.times(i, 8) = toc;
+        object.times(i, 7) = toc;
         % cr_tab=crosstab(cl_label,y);
         if i == 1
             dendrogram(Z)
@@ -216,7 +216,7 @@ function copy = clust(object, clusters, trials)
         tic
         Z = linkage(object.Y','ward','euclidean');
         cl_label = cluster(Z,'maxclust',clusters);
-        object.times(i, 9) = toc;
+        object.times(i, 8) = toc;
         % cr_tab=crosstab(cl_label,y);
         if i == 1
             dendrogram(Z)
@@ -240,8 +240,7 @@ function copy = clust(object, clusters, trials)
         mean(object.times(5));
         mean(object.times(6));
         mean(object.times(7));
-        mean(object.times(8));
-        mean(object.times(9))];
+        mean(object.times(8))];
     copy = object;
 end
 
@@ -253,14 +252,13 @@ figure(50)
 hold on
 grid on
 figure(50), scatter(1, x.finals(1,1), 'ro')
-figure(50), scatter(2, x.finals(1,2), 'b*')
-figure(50), scatter(3, x.finals(1,3), 'g+')
-figure(50), scatter(4, x.finals(1,4), 'y.')
-figure(50), scatter(5, x.finals(1,5), 'c^')
-figure(50), scatter(6, x.finals(1,6), 'm<')
-figure(50), scatter(7, x.finals(1,7), 'kd')
-figure(50), scatter(8, x.finals(1,8), 'rs')
-figure(50), scatter(9, x.finals(1,9), 'kx')
+figure(50), scatter(2, x.finals(2,1), 'b*')
+figure(50), scatter(3, x.finals(3,1), 'g+')
+figure(50), scatter(4, x.finals(4,1), 'y.')
+figure(50), scatter(5, x.finals(5,1), 'c^')
+figure(50), scatter(6, x.finals(6,1), 'm<')
+figure(50), scatter(7, x.finals(7,1), 'kd')
+figure(50), scatter(8, x.finals(8,1), 'rs')
 figure(50), title('Average time per algorithm')
 figure(50), xlabel('Algorithm (in order of execution)')
 figure(50), ylabel('Average runtime')
