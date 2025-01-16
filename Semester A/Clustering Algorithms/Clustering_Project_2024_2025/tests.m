@@ -79,7 +79,7 @@ function copy = clust(object, clusters, trials)
         end
         % Fuzzy
         tic;
-        [theta, U, obj_fun] = fuzzy_c_means(object.Y, 8, 1 + factor);
+        [theta, U, obj_fun] = fuzzy_c_means(object.Y, clusters, 1 + factor);
         object.times(i,2) = toc;
         if i == 1
             figure(11)
@@ -230,6 +230,7 @@ function copy = clust(object, clusters, trials)
             figure(17), zlabel('Component 3')
             saveas(17, './Images/Ward.png')
         end
+        % This is left for % done printing
         i
     end
     % time averages
@@ -263,9 +264,172 @@ figure(50), title('Average time per algorithm')
 figure(50), xlabel('Algorithm (in order of execution)')
 figure(50), ylabel('Average runtime')
 saveas(50, './Images/Time trials.png')
-
+%
 save("clustered.mat","x", '-v7.3')
 
 % I think this report has kept a more reasonable emphasis on the subsections of the clustering analysis
 % like what had been mentioned.
+% That being said let's explore the potential 9 clustering
+% One can imagine a smarted clust function
+% but due to it's runtime I will not be attempting to fix it
+
+factor = rand();
+cutoff = 0.7;
+cov = zeros(3,3,9);
+for z=1:3
+    for k=1:3
+        cov(z,k,:) = 1;
+    end
+end
+init_theta = generate(x, 9);
+% k-means
+[theta,bel,J] = k_means(x.Y, init_theta);
+figure(60)
+hold on
+grid on
+figure(60), scatter3(x.Y(1,bel==1), x.Y(2,bel==1), x.Y(3,bel==1), 'ro')
+figure(60), scatter3(x.Y(1,bel==2), x.Y(2,bel==2), x.Y(3,bel==2), 'b*')
+figure(60), scatter3(x.Y(1,bel==3), x.Y(2,bel==3), x.Y(3,bel==3), 'g+')
+figure(60), scatter3(x.Y(1,bel==4), x.Y(2,bel==4), x.Y(3,bel==4), 'y.')
+figure(60), scatter3(x.Y(1,bel==5), x.Y(2,bel==5), x.Y(3,bel==5), 'c^')
+figure(60), scatter3(x.Y(1,bel==6), x.Y(2,bel==6), x.Y(3,bel==6), 'm<')
+figure(60), scatter3(x.Y(1,bel==7), x.Y(2,bel==7), x.Y(3,bel==7), 'kd')
+figure(60), scatter3(x.Y(1,bel==8), x.Y(2,bel==8), x.Y(3,bel==8), 'rs')
+figure(60), scatter3(x.Y(1,bel==9), x.Y(2,bel==9), x.Y(3,bel==9), 's', "MarkerFaceColor","#EDB120")
+figure(60), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
+figure(60), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+figure(60), title('K-means clustering')
+figure(60), xlabel('Component 1')
+figure(60), ylabel('Component 2')
+figure(60), zlabel('Component 3')
+saveas(60, './Images/k-means 9.png')
+% Fuzzy
+% Just look a the report to understand why this is commented out
+% [theta, U, obj_fun] = fuzzy_c_means(x.Y, 9, 1 + factor);
+% figure(61)
+% hold on
+% grid on
+% figure(61), scatter3(x.Y(1,U(:,1)>=cutoff), x.Y(2,U(:,1)>=cutoff), x.Y(3,U(:,1)>=cutoff), 'ro')
+% figure(61), scatter3(x.Y(1,U(:,2)>=cutoff), x.Y(2,U(:,2)>=cutoff), x.Y(3,U(:,2)>=cutoff), 'b*')
+% figure(61), scatter3(x.Y(1,U(:,3)>=cutoff), x.Y(2,U(:,3)>=cutoff), x.Y(3,U(:,3)>=cutoff), 'g+')
+% figure(61), scatter3(x.Y(1,U(:,4)>=cutoff), x.Y(2,U(:,4)>=cutoff), x.Y(3,U(:,4)>=cutoff), 'y.')
+% figure(61), scatter3(x.Y(1,U(:,5)>=cutoff), x.Y(2,U(:,5)>=cutoff), x.Y(3,U(:,5)>=cutoff), 'c^')
+% figure(61), scatter3(x.Y(1,U(:,6)>=cutoff), x.Y(2,U(:,6)>=cutoff), x.Y(3,U(:,6)>=cutoff), 'm<')
+% figure(61), scatter3(x.Y(1,U(:,7)>=cutoff), x.Y(2,U(:,7)>=cutoff), x.Y(3,U(:,7)>=cutoff), 'kd')
+% figure(61), scatter3(x.Y(1,U(:,8)>=cutoff), x.Y(2,U(:,8)>=cutoff), x.Y(3,U(:,8)>=cutoff), 'rs')
+% figure(61), scatter3(x.Y(1,U(:,9)>=cutoff), x.Y(2,U(:,9)>=cutoff), x.Y(3,U(:,9)>=cutoff), 's', "MarkerFaceColor","#EDB120") 
+% figure(61), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
+% figure(61), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+% figure(61), title('Fuzzy clustering')
+% figure(61), xlabel('Component 1')
+% figure(61), ylabel('Component 2')
+% figure(61), zlabel('Component 3')
+% saveas(61, './Images/Fuzzy c-means 9.png')
+% Possibilis
+eta = ones(1, 9);
+% This version is faster since we want independatn
+% algorithms to compare meaning that if we use the 
+% fuzzy to initialize eta here we should add its runtime
+[~,N] = size(x.Y);
+beta = 1/N * sum(norm(x.Y-mean(x.Y))^2);
+for j=1:9
+    eta(1,j) = beta/((1+factor) * sqrt(9));
+end
+[U, theta] = possibi(x.Y, 9, eta, 1 + factor, 73, 1, 0.0001);
+figure(62)
+hold on
+grid on
+figure(62), scatter3(x.Y(1,U(:,1)>=cutoff), x.Y(2,U(:,1)>=cutoff), x.Y(3,U(:,1)>=cutoff), 'ro')
+figure(62), scatter3(x.Y(1,U(:,2)>=cutoff), x.Y(2,U(:,2)>=cutoff), x.Y(3,U(:,2)>=cutoff), 'b*')
+figure(62), scatter3(x.Y(1,U(:,3)>=cutoff), x.Y(2,U(:,3)>=cutoff), x.Y(3,U(:,3)>=cutoff), 'g+')
+figure(62), scatter3(x.Y(1,U(:,4)>=cutoff), x.Y(2,U(:,4)>=cutoff), x.Y(3,U(:,4)>=cutoff), 'y.')
+figure(62), scatter3(x.Y(1,U(:,5)>=cutoff), x.Y(2,U(:,5)>=cutoff), x.Y(3,U(:,5)>=cutoff), 'c^')
+figure(62), scatter3(x.Y(1,U(:,6)>=cutoff), x.Y(2,U(:,6)>=cutoff), x.Y(3,U(:,6)>=cutoff), 'm<')
+figure(62), scatter3(x.Y(1,U(:,7)>=cutoff), x.Y(2,U(:,7)>=cutoff), x.Y(3,U(:,7)>=cutoff), 'kd')
+figure(62), scatter3(x.Y(1,U(:,8)>=cutoff), x.Y(2,U(:,8)>=cutoff), x.Y(3,U(:,8)>=cutoff), 'rs')
+figure(62), scatter3(x.Y(1,U(:,9)>=cutoff), x.Y(2,U(:,9)>=cutoff), x.Y(3,U(:,9)>=cutoff), 's', "MarkerFaceColor","#EDB120") 
+figure(62), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
+figure(62), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+figure(62), title('Possibilis clustering')
+figure(62), xlabel('Component 1')
+figure(62), ylabel('Component 2')
+figure(62), zlabel('Component 3')
+saveas(62, './Images/Possibilis c-means 9.png')
+% Probabilis
+[ap, cp, mv, mc, iter, diffvec] = GMDAS(x.Y, init_theta, cov, 0.0001, 100, 72);
+figure(63)
+hold on
+grid on
+figure(63), scatter3(x.Y(1,cp(:,1)>=cutoff), x.Y(2,cp(:,1)>=cutoff), x.Y(3,cp(:,1)>=cutoff), 'ro')
+figure(63), scatter3(x.Y(1,cp(:,2)>=cutoff), x.Y(2,cp(:,2)>=cutoff), x.Y(3,cp(:,2)>=cutoff), 'b*')
+figure(63), scatter3(x.Y(1,cp(:,3)>=cutoff), x.Y(2,cp(:,3)>=cutoff), x.Y(3,cp(:,3)>=cutoff), 'g+')
+figure(63), scatter3(x.Y(1,cp(:,4)>=cutoff), x.Y(2,cp(:,4)>=cutoff), x.Y(3,cp(:,4)>=cutoff), 'y.')
+figure(63), scatter3(x.Y(1,cp(:,5)>=cutoff), x.Y(2,cp(:,5)>=cutoff), x.Y(3,cp(:,5)>=cutoff), 'c^')
+figure(63), scatter3(x.Y(1,cp(:,6)>=cutoff), x.Y(2,cp(:,6)>=cutoff), x.Y(3,cp(:,6)>=cutoff), 'm<')
+figure(63), scatter3(x.Y(1,cp(:,7)>=cutoff), x.Y(2,cp(:,7)>=cutoff), x.Y(3,cp(:,7)>=cutoff), 'kd')
+figure(63), scatter3(x.Y(1,cp(:,8)>=cutoff), x.Y(2,cp(:,8)>=cutoff), x.Y(3,cp(:,8)>=cutoff), 'rs')
+figure(63), scatter3(x.Y(1,cp(:,9)>=cutoff), x.Y(2,cp(:,9)>=cutoff), x.Y(3,cp(:,9)>=cutoff), 's', "MarkerFaceColor","#EDB120") 
+figure(63), scatter3(mv(1,:), mv(2,:), mv(3,:),'k+')
+figure(63), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
+figure(63), title('Probabilis clustering')
+figure(63), xlabel('Component 1')
+figure(63), ylabel('Component 2')
+figure(63), zlabel('Component 3')
+saveas(63, './Images/Probabilis c-means 9.png')
+% single link
+Z = linkage(x.Y','single','euclidean');
+cl_label = cluster(Z,'maxclust',9);
+% cr_tab=crosstab(cl_label,y);
+dendrogram(Z)
+figure(64)
+hold on
+grid on
+figure(64), scatter3(x.Y(1,:), x.Y(2,:), x.Y(3,:), 10, cl_label)
+figure(64), title('Single link clustering')
+figure(64), xlabel('Component 1')
+figure(64), ylabel('Component 2')
+figure(64), zlabel('Component 3')
+saveas(64, './Images/Single link 9.png')
+% complete link
+Z = linkage(x.Y','complete','euclidean');
+cl_label = cluster(Z,'maxclust',9);
+% cr_tab=crosstab(cl_label,y);
+dendrogram(Z)
+figure(65)
+hold on
+grid on
+figure(65), scatter3(x.Y(1,:), x.Y(2,:), x.Y(3,:), 10, cl_label)
+figure(65), title('Complete link clustering')
+figure(65), xlabel('Component 1')
+figure(65), ylabel('Component 2')
+figure(65), zlabel('Component 3')
+saveas(65, './Images/Complete link 9.png')
+% WPGMC
+Z = linkage(x.Y','median','euclidean');
+cl_label = cluster(Z,'maxclust',9);
+% cr_tab=crosstab(cl_label,y);
+dendrogram(Z)
+figure(66)
+hold on
+grid on
+figure(66), scatter3(x.Y(1,:), x.Y(2,:), x.Y(3,:), 10, cl_label)
+figure(66), title('WPGMC clustering')
+figure(66), xlabel('Component 1')
+figure(66), ylabel('Component 2')
+figure(66), zlabel('Component 3')
+saveas(66, './Images/WPGMC 9.png')
+% Ward
+Z = linkage(x.Y','ward','euclidean');
+cl_label = cluster(Z,'maxclust',9);
+% cr_tab=crosstab(cl_label,y);
+dendrogram(Z)
+figure(67)
+hold on
+grid on
+figure(67), scatter3(x.Y(1,:), x.Y(2,:), x.Y(3,:), 10, cl_label)
+figure(67), title('Ward clustering')
+figure(67), xlabel('Component 1')
+figure(67), ylabel('Component 2')
+figure(67), zlabel('Component 3')
+saveas(67, './Images/Ward 9.png')
 

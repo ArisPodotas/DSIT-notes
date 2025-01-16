@@ -378,16 +378,6 @@ Before moving to the Feature selection/transformation, out of curiosity we visua
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{./Images/Overview of images.png}
-    \end{center}
-    \caption{Overview of pixels with non zero label data}\label{fig:overview}
-\end{figure}
-
-and in a little higher resolution but stopped early.
-\newline
-
-\begin{figure}[H]
-    \begin{center}
         \includegraphics[width=0.95\textwidth]{./Images/Overview of images HR.png}
     \end{center}
     \caption{Overview of pixels with non zero label data with a higher resolution but smaller bounding area of the image (cropped due to time efficiency of the function)}\label{fig:overview hd}
@@ -459,6 +449,10 @@ We will reference this in the respective chapter but since the algorithms are in
 \newline
 
 We know the clusters form hard clusters, algorithms that leave room to interpret the bounds of the clusters will perform worse or equal to hard clusterings depending on our interpretation.
+\newline
+
+The $9$ clustering will perform better than the 8 clustering since the $8$ ground truth categories form 9 clusters.
+\newline
 
 \subsection{Project goals}
 
@@ -554,6 +548,8 @@ The table \ref{tab:Times} seems to indicate that the hierarchical clustering alg
 \textbf{Note: } The following is only of one run and not of an average.
 \newline
 
+\subsubsection{8 clusters}
+
 % K-means
 \begin{figure}[H]
     \begin{center}
@@ -630,14 +626,132 @@ The table \ref{tab:Times} seems to indicate that the hierarchical clustering alg
     \caption{Result of Ward algorithms}\label{fig:ward}
 \end{figure}
 
-Results depend on initialization of the representatives to a high degree for clustering algorithms subject to initializations.
+It seems none of the algorithms have recovered the clusteres as they are. This could be in part that the clustering of the Salinas valley seems to be one of a $9$ clustering and not a 8 clustering as was mentioned previously. Moreso the inaccuracies of the algorithms seem to be on the rightmost part of the plot where there are two clusters that no algorithm seperates properly. Results depend on initialization of the representatives to a high degree for clustering algorithms subject to initializations.
+\newline
 
 The Single link is the least accurate to the actual ground truth classes of all algorithms.
+\newline
 
-Upon runtime Matlab outputs a warning for the WPGMC algorithm that the algorithm might not be the optimal one for our dataset.
+Upon runtime Matlab outputs a warning (see below) for the WPGMC algorithm that the algorithm might not be the optimal one for our dataset.
+\newline
+
+% prob
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/warning.png}
+    \end{center}
+    \caption{Result of Probabilistic c-means algorithm}\label{fig:warn}
+\end{figure}
+
+This is because of the visible negative branch lengths in the dendrogram.
+\newline
+
+\subsubsection{$9$ clusters}
+
+Actually I have intentions of doing a 9 clustering but I am getting this error and I feel I can't resolve it because its out of my control
+\newline
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/error.png}
+    \end{center}
+    \caption{License error}\label{fig:error}
+\end{figure}
+
+In the meanwhile I did get the other algorithm results
+\newline
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/k-means 9.png}
+    \end{center}
+    \caption{Result of k-means algorithm}\label{fig:means2}
+\end{figure}
+
+% pos
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Possibilistic c-means 9.png}
+    \end{center}
+    \caption{Result of Possibilistic c-means algorithm}\label{fig:pos2}
+\end{figure}
+
+% prob
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{./Images/Probabilistic c-means 9.png}
+    \end{center}
+    \caption{Result of Probabilistic c-means algorithm}\label{fig:prob2}
+\end{figure}
+
+% Single
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Single link 9.png}} &
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Single link tree 9.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of the Single link algorithm}\label{fig:sing2}
+\end{figure}
+
+% Complete
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Complete link 9.png}} &
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Complete link tree 9.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of the Complete link algorithm}\label{fig:comp2}
+\end{figure}
+
+% WPGMC
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC 9.png}} &
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC tree 9.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of WPGMC algorithm}\label{fig:wpgmc2}
+\end{figure}
+
+% Ward
+\begin{figure}[H]
+    \begin{center}
+        \begin{tabular}{cc}
+            \subfloat[Clusters]{\includegraphics[width=0.45\textwidth]{./Images/Ward 9.png}} &
+            \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Ward tree 9.png}} 
+        \end{tabular}
+    \end{center}
+    \caption{Result of Ward algorithms}\label{fig:ward2}
+\end{figure}
+
+The algorithms still do not recover the correct patterns however It would seem they got closer upon viewing the three dimensional graphs. Especially the probabilistic algorithm has only one cluster misclassified this time. The idea was to classify two seperate clusters as one since the features have a disconnected shape in the original Salinas valley image but it seems that by increasing the number of clusters what was recovered was more of the other clusters boundaries (one big cluster would be more likley to split into smaller ones).
+\newline
+
+The Complete link did not change at all between the different numbers of clusters.
 \newline
 
 \subsection{In total}
+
+The goal was to compare the sets of cost function optimization algorithms and the hierarchical clustering algorithms, we know before the analysis that algorithms are only comparable in specific application performance, here we have two classes and this will make the distinction even harder considering that there is space for each to vary from algorithm to algorithm within the category. For instance the hierarchical algorithms did well to cluster the data but the relative accuracy increases from each one in a very a-regular way, the single link is the worst but the ward and WPGMC are alot better but still suffer from negative branch lengths. From the cost function optimization algorithms the k-means performs really poorly time wise and the fuzzy c-means is the fastest of all the algorithms. These variances in each category make it nearly impossible to tell what is the best set of algorithms without more metrics to quantify each set as a whole and not per algorithm, as if per algorithm isn't hard enought.
+\newline
+
+In order to make a final decision we will notice that the cost function optimization algorithms have the fastest clustering algorithm and that the probabilistic algorithm is fairly accurate and nuanced in the results that it outputs, if one must choose between the two sets it seems they are to choose the cost function optimization algorithms.
+\newline
+
+\subsection{Assumption validation}
+
+The algorithms despite not getting the optimal clustering have performed quite well with the correct $8$ number of clusters.
+\newline
+
+Actually the asumption that non-hard clustering algorithms will be worse since our interpretation will affect them is pretty much false since the only algorithm subject to problems in interpretation due to our cutoffs is the possibilistic algorithm. It would seem the algorithms are less suseptible to resolution loss using a cutoff than was expected.
+\newline
+
+The $9$ clustering did perform better than the $8$ clustering for algorithms dependant on the number of clusters since they have isolated more of the three clusters at the bottom left of our images. This is not the case to any significant degree.
+\newline
 
 \section{Citations}
 
