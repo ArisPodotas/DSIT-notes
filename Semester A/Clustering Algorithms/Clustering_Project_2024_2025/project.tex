@@ -489,7 +489,7 @@ The initialization of the cluster representatives occurs in the corresponding fu
 
 \subsection{Number of clusters}
 
-We actually already know the number of clusters that should be found from the project description.%Out of interest we will look at some of the methods we have for determining the number of clusters to see if the results line up with the a-priori knowledge.
+We actually already know the number of clusters that should be found from the project description. We will however still try a $9$ clustering of the data despite the $8$ ground truth labels. %Out of interest we will look at some of the methods we have for determining the number of clusters to see if the results line up with the a-priori knowledge.
 
 \section{Results}
 
@@ -648,7 +648,7 @@ This is because of the visible negative branch lengths in the dendrogram.
 
 \subsubsection{$9$ clusters}
 
-Actually I have intentions of doing a 9 clustering but I am getting this error and I feel I can't resolve it because its out of my control
+Actually I have intentions of doing a $9$ clustering but I am getting this error and I feel I can't resolve it because its out of my control
 \newline
 
 \begin{figure}[H]
@@ -665,7 +665,7 @@ In the meanwhile I did get the other algorithm results
     \begin{center}
         \includegraphics[width=0.95\textwidth]{./Images/k-means 9.png}
     \end{center}
-    \caption{Result of k-means algorithm}\label{fig:means2}
+    \caption{Result of k-means algorithm (9 clustering)}\label{fig:means2}
 \end{figure}
 
 % pos
@@ -673,7 +673,7 @@ In the meanwhile I did get the other algorithm results
     \begin{center}
         \includegraphics[width=0.95\textwidth]{./Images/Possibilistic c-means 9.png}
     \end{center}
-    \caption{Result of Possibilistic c-means algorithm}\label{fig:pos2}
+    \caption{Result of Possibilistic c-means algorithm (9 clustering)}\label{fig:pos2}
 \end{figure}
 
 % prob
@@ -681,7 +681,7 @@ In the meanwhile I did get the other algorithm results
     \begin{center}
         \includegraphics[width=0.95\textwidth]{./Images/Probabilistic c-means 9.png}
     \end{center}
-    \caption{Result of Probabilistic c-means algorithm}\label{fig:prob2}
+    \caption{Result of Probabilistic c-means algorithm (9 clustering)}\label{fig:prob2}
 \end{figure}
 
 % Single
@@ -692,7 +692,7 @@ In the meanwhile I did get the other algorithm results
             \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Single link tree 9.png}} 
         \end{tabular}
     \end{center}
-    \caption{Result of the Single link algorithm}\label{fig:sing2}
+    \caption{Result of the Single link algorithm (9 clustering)}\label{fig:sing2}
 \end{figure}
 
 % Complete
@@ -703,7 +703,7 @@ In the meanwhile I did get the other algorithm results
             \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Complete link tree 9.png}} 
         \end{tabular}
     \end{center}
-    \caption{Result of the Complete link algorithm}\label{fig:comp2}
+    \caption{Result of the Complete link algorithm (9 clustering)}\label{fig:comp2}
 \end{figure}
 
 % WPGMC
@@ -714,7 +714,7 @@ In the meanwhile I did get the other algorithm results
             \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/WPGMC tree 9.png}} 
         \end{tabular}
     \end{center}
-    \caption{Result of WPGMC algorithm}\label{fig:wpgmc2}
+    \caption{Result of WPGMC algorithm (9 clustering)}\label{fig:wpgmc2}
 \end{figure}
 
 % Ward
@@ -725,7 +725,7 @@ In the meanwhile I did get the other algorithm results
             \subfloat[Dendrogram]{\includegraphics[width=0.45\textwidth]{./Images/Ward tree 9.png}} 
         \end{tabular}
     \end{center}
-    \caption{Result of Ward algorithms}\label{fig:ward2}
+    \caption{Result of Ward algorithms (9 clustering)}\label{fig:ward2}
 \end{figure}
 
 The algorithms still do not recover the correct patterns however It would seem they got closer upon viewing the three dimensional graphs. Especially the probabilistic algorithm has only one cluster misclassified this time. The idea was to classify two seperate clusters as one since the features have a disconnected shape in the original Salinas valley image but it seems that by increasing the number of clusters what was recovered was more of the other clusters boundaries (one big cluster would be more likley to split into smaller ones).

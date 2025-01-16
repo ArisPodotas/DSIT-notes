@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.9)  15 JAN 2025 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.9)  16 JAN 2025 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
-<~/Documents/masters/bnw unit.png, id=121, 148.30406pt x 191.9672pt>
+<~/Documents/masters/bnw unit.png, id=136, 148.30406pt x 191.9672pt>
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 1
@@ -977,7 +977,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-<./Images/Feature 1 histogram.png, id=130, 421.575pt x 316.0608pt>
+<./Images/Feature 1 histogram.png, id=145, 421.575pt x 316.0608pt>
 File: ./Images/Feature 1 histogram.png Graphic file (type png)
 <use ./Images/Feature 1 histogram.png>
 Package pdftex.def Info: ./Images/Feature 1 histogram.png  used on input line 1
@@ -993,7 +993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \OT1/cmr/m/n/10 ture 1
  []
 
-<./Images/Feature 2 histogram.png, id=131, 421.575pt x 316.0608pt>
+<./Images/Feature 2 histogram.png, id=146, 421.575pt x 316.0608pt>
 File: ./Images/Feature 2 histogram.png Graphic file (type png)
 <use ./Images/Feature 2 histogram.png>
 Package pdftex.def Info: ./Images/Feature 2 histogram.png  used on input line 1
@@ -1009,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \OT1/cmr/m/n/10 ture 2
  []
 
-<./Images/Feature 3 histogram.png, id=132, 421.575pt x 316.0608pt>
+<./Images/Feature 3 histogram.png, id=147, 421.575pt x 316.0608pt>
 File: ./Images/Feature 3 histogram.png Graphic file (type png)
 <use ./Images/Feature 3 histogram.png>
 Package pdftex.def Info: ./Images/Feature 3 histogram.png  used on input line 1
@@ -1025,7 +1025,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 \OT1/cmr/m/n/10 ture 3
  []
 
-<./Images/Feature 4 histogram.png, id=133, 421.575pt x 316.0608pt>
+<./Images/Feature 4 histogram.png, id=148, 421.575pt x 316.0608pt>
 File: ./Images/Feature 4 histogram.png Graphic file (type png)
 <use ./Images/Feature 4 histogram.png>
 Package pdftex.def Info: ./Images/Feature 4 histogram.png  used on input line 1
@@ -1041,7 +1041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--127
 \OT1/cmr/m/n/10 ture 4
  []
 
-<./Images/Feature 5 histogram.png, id=134, 421.575pt x 316.0608pt>
+<./Images/Feature 5 histogram.png, id=149, 421.575pt x 316.0608pt>
 File: ./Images/Feature 5 histogram.png Graphic file (type png)
 <use ./Images/Feature 5 histogram.png>
 Package pdftex.def Info: ./Images/Feature 5 histogram.png  used on input line 1
@@ -1057,7 +1057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 \OT1/cmr/m/n/10 ture 5
  []
 
-<./Images/Feature 6 histogram.png, id=135, 421.575pt x 316.0608pt>
+<./Images/Feature 6 histogram.png, id=150, 421.575pt x 316.0608pt>
 File: ./Images/Feature 6 histogram.png Graphic file (type png)
 <use ./Images/Feature 6 histogram.png>
 Package pdftex.def Info: ./Images/Feature 6 histogram.png  used on input line 1
@@ -1073,7 +1073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 ture 6
  []
 
-<./Images/Feature 7 histogram.png, id=136, 421.575pt x 316.0608pt>
+<./Images/Feature 7 histogram.png, id=151, 421.575pt x 316.0608pt>
 File: ./Images/Feature 7 histogram.png Graphic file (type png)
 <use ./Images/Feature 7 histogram.png>
 Package pdftex.def Info: ./Images/Feature 7 histogram.png  used on input line 1
@@ -1089,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--130
 \OT1/cmr/m/n/10 ture 7
  []
 
-<./Images/Feature 8 histogram.png, id=137, 421.575pt x 316.0608pt>
+<./Images/Feature 8 histogram.png, id=152, 421.575pt x 316.0608pt>
 File: ./Images/Feature 8 histogram.png Graphic file (type png)
 <use ./Images/Feature 8 histogram.png>
 Package pdftex.def Info: ./Images/Feature 8 histogram.png  used on input line 1
@@ -1105,7 +1105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 \OT1/cmr/m/n/10 ture 8
  []
 
-<./Images/Feature 9 histogram.png, id=138, 421.575pt x 316.0608pt>
+<./Images/Feature 9 histogram.png, id=153, 421.575pt x 316.0608pt>
 File: ./Images/Feature 9 histogram.png Graphic file (type png)
 <use ./Images/Feature 9 histogram.png>
 Package pdftex.def Info: ./Images/Feature 9 histogram.png  used on input line 1
@@ -1121,7 +1121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \OT1/cmr/m/n/10 ture 9
  []
 
-<./Images/Feature 10 histogram.png, id=139, 421.575pt x 316.0608pt>
+<./Images/Feature 10 histogram.png, id=154, 421.575pt x 316.0608pt>
 File: ./Images/Feature 10 histogram.png Graphic file (type png)
 <use ./Images/Feature 10 histogram.png>
 Package pdftex.def Info: ./Images/Feature 10 histogram.png  used on input line 
@@ -1137,7 +1137,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--133
 \OT1/cmr/m/n/10 ture 10
  []
 
-<./Images/Feature 11 histogram.png, id=140, 421.575pt x 316.0608pt>
+<./Images/Feature 11 histogram.png, id=155, 421.575pt x 316.0608pt>
 File: ./Images/Feature 11 histogram.png Graphic file (type png)
 <use ./Images/Feature 11 histogram.png>
 Package pdftex.def Info: ./Images/Feature 11 histogram.png  used on input line 
@@ -1153,7 +1153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \OT1/cmr/m/n/10 ture 11
  []
 
-<./Images/Feature 12 histogram.png, id=141, 421.575pt x 316.0608pt>
+<./Images/Feature 12 histogram.png, id=156, 421.575pt x 316.0608pt>
 File: ./Images/Feature 12 histogram.png Graphic file (type png)
 <use ./Images/Feature 12 histogram.png>
 Package pdftex.def Info: ./Images/Feature 12 histogram.png  used on input line 
@@ -1169,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 \OT1/cmr/m/n/10 ture 12
  []
 
-<./Images/Feature 13 histogram.png, id=142, 421.575pt x 316.0608pt>
+<./Images/Feature 13 histogram.png, id=157, 421.575pt x 316.0608pt>
 File: ./Images/Feature 13 histogram.png Graphic file (type png)
 <use ./Images/Feature 13 histogram.png>
 Package pdftex.def Info: ./Images/Feature 13 histogram.png  used on input line 
@@ -1185,7 +1185,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--136
 \OT1/cmr/m/n/10 ture 13
  []
 
-<./Images/Feature 14 histogram.png, id=143, 421.575pt x 316.0608pt>
+<./Images/Feature 14 histogram.png, id=158, 421.575pt x 316.0608pt>
 File: ./Images/Feature 14 histogram.png Graphic file (type png)
 <use ./Images/Feature 14 histogram.png>
 Package pdftex.def Info: ./Images/Feature 14 histogram.png  used on input line 
@@ -1201,7 +1201,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--137
 \OT1/cmr/m/n/10 ture 14
  []
 
-<./Images/Feature 15 histogram.png, id=144, 421.575pt x 316.0608pt>
+<./Images/Feature 15 histogram.png, id=159, 421.575pt x 316.0608pt>
 File: ./Images/Feature 15 histogram.png Graphic file (type png)
 <use ./Images/Feature 15 histogram.png>
 Package pdftex.def Info: ./Images/Feature 15 histogram.png  used on input line 
@@ -1217,7 +1217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \OT1/cmr/m/n/10 ture 15
  []
 
-<./Images/Feature 16 histogram.png, id=145, 421.575pt x 316.0608pt>
+<./Images/Feature 16 histogram.png, id=160, 421.575pt x 316.0608pt>
 File: ./Images/Feature 16 histogram.png Graphic file (type png)
 <use ./Images/Feature 16 histogram.png>
 Package pdftex.def Info: ./Images/Feature 16 histogram.png  used on input line 
@@ -1233,7 +1233,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/cmr/m/n/10 ture 16
  []
 
-<./Images/Feature 17 histogram.png, id=146, 421.575pt x 316.0608pt>
+<./Images/Feature 17 histogram.png, id=161, 421.575pt x 316.0608pt>
 File: ./Images/Feature 17 histogram.png Graphic file (type png)
 <use ./Images/Feature 17 histogram.png>
 Package pdftex.def Info: ./Images/Feature 17 histogram.png  used on input line 
@@ -1249,7 +1249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/10 ture 17
  []
 
-<./Images/Feature 18 histogram.png, id=147, 421.575pt x 316.0608pt>
+<./Images/Feature 18 histogram.png, id=162, 421.575pt x 316.0608pt>
 File: ./Images/Feature 18 histogram.png Graphic file (type png)
 <use ./Images/Feature 18 histogram.png>
 Package pdftex.def Info: ./Images/Feature 18 histogram.png  used on input line 
@@ -1265,7 +1265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \OT1/cmr/m/n/10 ture 18
  []
 
-<./Images/Feature 19 histogram.png, id=148, 421.575pt x 316.0608pt>
+<./Images/Feature 19 histogram.png, id=163, 421.575pt x 316.0608pt>
 File: ./Images/Feature 19 histogram.png Graphic file (type png)
 <use ./Images/Feature 19 histogram.png>
 Package pdftex.def Info: ./Images/Feature 19 histogram.png  used on input line 
@@ -1281,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--142
 \OT1/cmr/m/n/10 ture 19
  []
 
-<./Images/Feature 20 histogram.png, id=149, 421.575pt x 316.0608pt>
+<./Images/Feature 20 histogram.png, id=164, 421.575pt x 316.0608pt>
 File: ./Images/Feature 20 histogram.png Graphic file (type png)
 <use ./Images/Feature 20 histogram.png>
 Package pdftex.def Info: ./Images/Feature 20 histogram.png  used on input line 
@@ -1297,7 +1297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--143
 \OT1/cmr/m/n/10 ture 20
  []
 
-<./Images/Feature 21 histogram.png, id=150, 421.575pt x 316.0608pt>
+<./Images/Feature 21 histogram.png, id=165, 421.575pt x 316.0608pt>
 File: ./Images/Feature 21 histogram.png Graphic file (type png)
 <use ./Images/Feature 21 histogram.png>
 Package pdftex.def Info: ./Images/Feature 21 histogram.png  used on input line 
@@ -1313,7 +1313,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \OT1/cmr/m/n/10 ture 21
  []
 
-<./Images/Feature 22 histogram.png, id=151, 421.575pt x 316.0608pt>
+<./Images/Feature 22 histogram.png, id=166, 421.575pt x 316.0608pt>
 File: ./Images/Feature 22 histogram.png Graphic file (type png)
 <use ./Images/Feature 22 histogram.png>
 Package pdftex.def Info: ./Images/Feature 22 histogram.png  used on input line 
@@ -1329,7 +1329,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--145
 \OT1/cmr/m/n/10 ture 22
  []
 
-<./Images/Feature 23 histogram.png, id=152, 421.575pt x 316.0608pt>
+<./Images/Feature 23 histogram.png, id=167, 421.575pt x 316.0608pt>
 File: ./Images/Feature 23 histogram.png Graphic file (type png)
 <use ./Images/Feature 23 histogram.png>
 Package pdftex.def Info: ./Images/Feature 23 histogram.png  used on input line 
@@ -1345,7 +1345,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--146
 \OT1/cmr/m/n/10 ture 23
  []
 
-<./Images/Feature 24 histogram.png, id=153, 421.575pt x 316.0608pt>
+<./Images/Feature 24 histogram.png, id=168, 421.575pt x 316.0608pt>
 File: ./Images/Feature 24 histogram.png Graphic file (type png)
 <use ./Images/Feature 24 histogram.png>
 Package pdftex.def Info: ./Images/Feature 24 histogram.png  used on input line 
@@ -1361,7 +1361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \OT1/cmr/m/n/10 ture 24
  []
 
-<./Images/Feature 25 histogram.png, id=154, 421.575pt x 316.0608pt>
+<./Images/Feature 25 histogram.png, id=169, 421.575pt x 316.0608pt>
 File: ./Images/Feature 25 histogram.png Graphic file (type png)
 <use ./Images/Feature 25 histogram.png>
 Package pdftex.def Info: ./Images/Feature 25 histogram.png  used on input line 
@@ -1377,7 +1377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \OT1/cmr/m/n/10 ture 25
  []
 
-<./Images/Feature 26 histogram.png, id=155, 421.575pt x 316.0608pt>
+<./Images/Feature 26 histogram.png, id=170, 421.575pt x 316.0608pt>
 File: ./Images/Feature 26 histogram.png Graphic file (type png)
 <use ./Images/Feature 26 histogram.png>
 Package pdftex.def Info: ./Images/Feature 26 histogram.png  used on input line 
@@ -1393,7 +1393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
 \OT1/cmr/m/n/10 ture 26
  []
 
-<./Images/Feature 27 histogram.png, id=156, 421.575pt x 316.0608pt>
+<./Images/Feature 27 histogram.png, id=171, 421.575pt x 316.0608pt>
 File: ./Images/Feature 27 histogram.png Graphic file (type png)
 <use ./Images/Feature 27 histogram.png>
 Package pdftex.def Info: ./Images/Feature 27 histogram.png  used on input line 
@@ -1452,7 +1452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--150
 \OT1/cmr/m/n/10 27 his-
  []
 
-<./Images/Feature 28 histogram.png, id=157, 421.575pt x 316.0608pt>
+<./Images/Feature 28 histogram.png, id=172, 421.575pt x 316.0608pt>
 File: ./Images/Feature 28 histogram.png Graphic file (type png)
 <use ./Images/Feature 28 histogram.png>
 Package pdftex.def Info: ./Images/Feature 28 histogram.png  used on input line 
@@ -1511,7 +1511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--151
 \OT1/cmr/m/n/10 28 his-
  []
 
-<./Images/Feature 29 histogram.png, id=158, 421.575pt x 316.0608pt>
+<./Images/Feature 29 histogram.png, id=173, 421.575pt x 316.0608pt>
 File: ./Images/Feature 29 histogram.png Graphic file (type png)
 <use ./Images/Feature 29 histogram.png>
 Package pdftex.def Info: ./Images/Feature 29 histogram.png  used on input line 
@@ -1570,7 +1570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
 \OT1/cmr/m/n/10 29 his-
  []
 
-<./Images/Feature 30 histogram.png, id=159, 421.575pt x 316.0608pt>
+<./Images/Feature 30 histogram.png, id=174, 421.575pt x 316.0608pt>
 File: ./Images/Feature 30 histogram.png Graphic file (type png)
 <use ./Images/Feature 30 histogram.png>
 Package pdftex.def Info: ./Images/Feature 30 histogram.png  used on input line 
@@ -1629,7 +1629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--153
 \OT1/cmr/m/n/10 30 his-
  []
 
-<./Images/Feature 31 histogram.png, id=160, 421.575pt x 316.0608pt>
+<./Images/Feature 31 histogram.png, id=175, 421.575pt x 316.0608pt>
 File: ./Images/Feature 31 histogram.png Graphic file (type png)
 <use ./Images/Feature 31 histogram.png>
 Package pdftex.def Info: ./Images/Feature 31 histogram.png  used on input line 
@@ -1688,7 +1688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--154
 \OT1/cmr/m/n/10 31 his-
  []
 
-<./Images/Feature 32 histogram.png, id=161, 421.575pt x 316.0608pt>
+<./Images/Feature 32 histogram.png, id=176, 421.575pt x 316.0608pt>
 File: ./Images/Feature 32 histogram.png Graphic file (type png)
 <use ./Images/Feature 32 histogram.png>
 Package pdftex.def Info: ./Images/Feature 32 histogram.png  used on input line 
@@ -1747,7 +1747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \OT1/cmr/m/n/10 32 his-
  []
 
-<./Images/Feature 33 histogram.png, id=162, 421.575pt x 316.0608pt>
+<./Images/Feature 33 histogram.png, id=177, 421.575pt x 316.0608pt>
 File: ./Images/Feature 33 histogram.png Graphic file (type png)
 <use ./Images/Feature 33 histogram.png>
 Package pdftex.def Info: ./Images/Feature 33 histogram.png  used on input line 
@@ -1806,7 +1806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--156
 \OT1/cmr/m/n/10 33 his-
  []
 
-<./Images/Feature 34 histogram.png, id=163, 421.575pt x 316.0608pt>
+<./Images/Feature 34 histogram.png, id=178, 421.575pt x 316.0608pt>
 File: ./Images/Feature 34 histogram.png Graphic file (type png)
 <use ./Images/Feature 34 histogram.png>
 Package pdftex.def Info: ./Images/Feature 34 histogram.png  used on input line 
@@ -1865,7 +1865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--157
 \OT1/cmr/m/n/10 34 his-
  []
 
-<./Images/Feature 35 histogram.png, id=164, 421.575pt x 316.0608pt>
+<./Images/Feature 35 histogram.png, id=179, 421.575pt x 316.0608pt>
 File: ./Images/Feature 35 histogram.png Graphic file (type png)
 <use ./Images/Feature 35 histogram.png>
 Package pdftex.def Info: ./Images/Feature 35 histogram.png  used on input line 
@@ -1924,7 +1924,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--158
 \OT1/cmr/m/n/10 35 his-
  []
 
-<./Images/Feature 36 histogram.png, id=165, 421.575pt x 316.0608pt>
+<./Images/Feature 36 histogram.png, id=180, 421.575pt x 316.0608pt>
 File: ./Images/Feature 36 histogram.png Graphic file (type png)
 <use ./Images/Feature 36 histogram.png>
 Package pdftex.def Info: ./Images/Feature 36 histogram.png  used on input line 
@@ -1983,7 +1983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--159
 \OT1/cmr/m/n/10 36 his-
  []
 
-<./Images/Feature 37 histogram.png, id=166, 421.575pt x 316.0608pt>
+<./Images/Feature 37 histogram.png, id=181, 421.575pt x 316.0608pt>
 File: ./Images/Feature 37 histogram.png Graphic file (type png)
 <use ./Images/Feature 37 histogram.png>
 Package pdftex.def Info: ./Images/Feature 37 histogram.png  used on input line 
@@ -2042,7 +2042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--160
 \OT1/cmr/m/n/10 37 his-
  []
 
-<./Images/Feature 38 histogram.png, id=167, 421.575pt x 316.0608pt>
+<./Images/Feature 38 histogram.png, id=182, 421.575pt x 316.0608pt>
 File: ./Images/Feature 38 histogram.png Graphic file (type png)
 <use ./Images/Feature 38 histogram.png>
 Package pdftex.def Info: ./Images/Feature 38 histogram.png  used on input line 
@@ -2101,7 +2101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--161
 \OT1/cmr/m/n/10 38 his-
  []
 
-<./Images/Feature 39 histogram.png, id=168, 421.575pt x 316.0608pt>
+<./Images/Feature 39 histogram.png, id=183, 421.575pt x 316.0608pt>
 File: ./Images/Feature 39 histogram.png Graphic file (type png)
 <use ./Images/Feature 39 histogram.png>
 Package pdftex.def Info: ./Images/Feature 39 histogram.png  used on input line 
@@ -2160,7 +2160,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--162
 \OT1/cmr/m/n/10 39 his-
  []
 
-<./Images/Feature 40 histogram.png, id=169, 421.575pt x 316.0608pt>
+<./Images/Feature 40 histogram.png, id=184, 421.575pt x 316.0608pt>
 File: ./Images/Feature 40 histogram.png Graphic file (type png)
 <use ./Images/Feature 40 histogram.png>
 Package pdftex.def Info: ./Images/Feature 40 histogram.png  used on input line 
@@ -2219,7 +2219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
 \OT1/cmr/m/n/10 40 his-
  []
 
-<./Images/Feature 41 histogram.png, id=170, 421.575pt x 316.0608pt>
+<./Images/Feature 41 histogram.png, id=185, 421.575pt x 316.0608pt>
 File: ./Images/Feature 41 histogram.png Graphic file (type png)
 <use ./Images/Feature 41 histogram.png>
 Package pdftex.def Info: ./Images/Feature 41 histogram.png  used on input line 
@@ -2278,7 +2278,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--164
 \OT1/cmr/m/n/10 41 his-
  []
 
-<./Images/Feature 42 histogram.png, id=171, 421.575pt x 316.0608pt>
+<./Images/Feature 42 histogram.png, id=186, 421.575pt x 316.0608pt>
 File: ./Images/Feature 42 histogram.png Graphic file (type png)
 <use ./Images/Feature 42 histogram.png>
 Package pdftex.def Info: ./Images/Feature 42 histogram.png  used on input line 
@@ -2337,7 +2337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \OT1/cmr/m/n/10 42 his-
  []
 
-<./Images/Feature 43 histogram.png, id=172, 421.575pt x 316.0608pt>
+<./Images/Feature 43 histogram.png, id=187, 421.575pt x 316.0608pt>
 File: ./Images/Feature 43 histogram.png Graphic file (type png)
 <use ./Images/Feature 43 histogram.png>
 Package pdftex.def Info: ./Images/Feature 43 histogram.png  used on input line 
@@ -2396,7 +2396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--166
 \OT1/cmr/m/n/10 43 his-
  []
 
-<./Images/Feature 44 histogram.png, id=173, 421.575pt x 316.0608pt>
+<./Images/Feature 44 histogram.png, id=188, 421.575pt x 316.0608pt>
 File: ./Images/Feature 44 histogram.png Graphic file (type png)
 <use ./Images/Feature 44 histogram.png>
 Package pdftex.def Info: ./Images/Feature 44 histogram.png  used on input line 
@@ -2455,7 +2455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--167
 \OT1/cmr/m/n/10 44 his-
  []
 
-<./Images/Feature 45 histogram.png, id=174, 421.575pt x 316.0608pt>
+<./Images/Feature 45 histogram.png, id=189, 421.575pt x 316.0608pt>
 File: ./Images/Feature 45 histogram.png Graphic file (type png)
 <use ./Images/Feature 45 histogram.png>
 Package pdftex.def Info: ./Images/Feature 45 histogram.png  used on input line 
@@ -2514,7 +2514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--168
 \OT1/cmr/m/n/10 45 his-
  []
 
-<./Images/Feature 46 histogram.png, id=175, 421.575pt x 316.0608pt>
+<./Images/Feature 46 histogram.png, id=190, 421.575pt x 316.0608pt>
 File: ./Images/Feature 46 histogram.png Graphic file (type png)
 <use ./Images/Feature 46 histogram.png>
 Package pdftex.def Info: ./Images/Feature 46 histogram.png  used on input line 
@@ -2573,7 +2573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \OT1/cmr/m/n/10 46 his-
  []
 
-<./Images/Feature 47 histogram.png, id=176, 421.575pt x 316.0608pt>
+<./Images/Feature 47 histogram.png, id=191, 421.575pt x 316.0608pt>
 File: ./Images/Feature 47 histogram.png Graphic file (type png)
 <use ./Images/Feature 47 histogram.png>
 Package pdftex.def Info: ./Images/Feature 47 histogram.png  used on input line 
@@ -2632,7 +2632,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--170
 \OT1/cmr/m/n/10 47 his-
  []
 
-<./Images/Feature 48 histogram.png, id=177, 421.575pt x 316.0608pt>
+<./Images/Feature 48 histogram.png, id=192, 421.575pt x 316.0608pt>
 File: ./Images/Feature 48 histogram.png Graphic file (type png)
 <use ./Images/Feature 48 histogram.png>
 Package pdftex.def Info: ./Images/Feature 48 histogram.png  used on input line 
@@ -2691,7 +2691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--171
 \OT1/cmr/m/n/10 48 his-
  []
 
-<./Images/Feature 49 histogram.png, id=178, 421.575pt x 316.0608pt>
+<./Images/Feature 49 histogram.png, id=193, 421.575pt x 316.0608pt>
 File: ./Images/Feature 49 histogram.png Graphic file (type png)
 <use ./Images/Feature 49 histogram.png>
 Package pdftex.def Info: ./Images/Feature 49 histogram.png  used on input line 
@@ -2750,7 +2750,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--172
 \OT1/cmr/m/n/10 49 his-
  []
 
-<./Images/Feature 50 histogram.png, id=179, 421.575pt x 316.0608pt>
+<./Images/Feature 50 histogram.png, id=194, 421.575pt x 316.0608pt>
 File: ./Images/Feature 50 histogram.png Graphic file (type png)
 <use ./Images/Feature 50 histogram.png>
 Package pdftex.def Info: ./Images/Feature 50 histogram.png  used on input line 
@@ -2820,7 +2820,7 @@ Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 1
 78.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
 [2]
-<./Images/Feature 51 histogram.png, id=184, 421.575pt x 316.0608pt>
+<./Images/Feature 51 histogram.png, id=199, 421.575pt x 316.0608pt>
 File: ./Images/Feature 51 histogram.png Graphic file (type png)
 <use ./Images/Feature 51 histogram.png>
 Package pdftex.def Info: ./Images/Feature 51 histogram.png  used on input line 
@@ -2836,7 +2836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--182
 \OT1/cmr/m/n/10 ture 51
  []
 
-<./Images/Feature 52 histogram.png, id=185, 421.575pt x 316.0608pt>
+<./Images/Feature 52 histogram.png, id=200, 421.575pt x 316.0608pt>
 File: ./Images/Feature 52 histogram.png Graphic file (type png)
 <use ./Images/Feature 52 histogram.png>
 Package pdftex.def Info: ./Images/Feature 52 histogram.png  used on input line 
@@ -2852,7 +2852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--183
 \OT1/cmr/m/n/10 ture 52
  []
 
-<./Images/Feature 53 histogram.png, id=186, 421.575pt x 316.0608pt>
+<./Images/Feature 53 histogram.png, id=201, 421.575pt x 316.0608pt>
 File: ./Images/Feature 53 histogram.png Graphic file (type png)
 <use ./Images/Feature 53 histogram.png>
 Package pdftex.def Info: ./Images/Feature 53 histogram.png  used on input line 
@@ -2868,7 +2868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--184
 \OT1/cmr/m/n/10 ture 53
  []
 
-<./Images/Feature 54 histogram.png, id=187, 421.575pt x 316.0608pt>
+<./Images/Feature 54 histogram.png, id=202, 421.575pt x 316.0608pt>
 File: ./Images/Feature 54 histogram.png Graphic file (type png)
 <use ./Images/Feature 54 histogram.png>
 Package pdftex.def Info: ./Images/Feature 54 histogram.png  used on input line 
@@ -2884,7 +2884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \OT1/cmr/m/n/10 ture 54
  []
 
-<./Images/Feature 55 histogram.png, id=188, 421.575pt x 316.0608pt>
+<./Images/Feature 55 histogram.png, id=203, 421.575pt x 316.0608pt>
 File: ./Images/Feature 55 histogram.png Graphic file (type png)
 <use ./Images/Feature 55 histogram.png>
 Package pdftex.def Info: ./Images/Feature 55 histogram.png  used on input line 
@@ -2900,7 +2900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 \OT1/cmr/m/n/10 ture 55
  []
 
-<./Images/Feature 56 histogram.png, id=189, 421.575pt x 316.0608pt>
+<./Images/Feature 56 histogram.png, id=204, 421.575pt x 316.0608pt>
 File: ./Images/Feature 56 histogram.png Graphic file (type png)
 <use ./Images/Feature 56 histogram.png>
 Package pdftex.def Info: ./Images/Feature 56 histogram.png  used on input line 
@@ -2916,7 +2916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--187
 \OT1/cmr/m/n/10 ture 56
  []
 
-<./Images/Feature 57 histogram.png, id=190, 421.575pt x 316.0608pt>
+<./Images/Feature 57 histogram.png, id=205, 421.575pt x 316.0608pt>
 File: ./Images/Feature 57 histogram.png Graphic file (type png)
 <use ./Images/Feature 57 histogram.png>
 Package pdftex.def Info: ./Images/Feature 57 histogram.png  used on input line 
@@ -2932,7 +2932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--188
 \OT1/cmr/m/n/10 ture 57
  []
 
-<./Images/Feature 58 histogram.png, id=191, 421.575pt x 316.0608pt>
+<./Images/Feature 58 histogram.png, id=206, 421.575pt x 316.0608pt>
 File: ./Images/Feature 58 histogram.png Graphic file (type png)
 <use ./Images/Feature 58 histogram.png>
 Package pdftex.def Info: ./Images/Feature 58 histogram.png  used on input line 
@@ -2948,7 +2948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--189
 \OT1/cmr/m/n/10 ture 58
  []
 
-<./Images/Feature 59 histogram.png, id=192, 421.575pt x 316.0608pt>
+<./Images/Feature 59 histogram.png, id=207, 421.575pt x 316.0608pt>
 File: ./Images/Feature 59 histogram.png Graphic file (type png)
 <use ./Images/Feature 59 histogram.png>
 Package pdftex.def Info: ./Images/Feature 59 histogram.png  used on input line 
@@ -2964,7 +2964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--190
 \OT1/cmr/m/n/10 ture 59
  []
 
-<./Images/Feature 60 histogram.png, id=193, 421.575pt x 316.0608pt>
+<./Images/Feature 60 histogram.png, id=208, 421.575pt x 316.0608pt>
 File: ./Images/Feature 60 histogram.png Graphic file (type png)
 <use ./Images/Feature 60 histogram.png>
 Package pdftex.def Info: ./Images/Feature 60 histogram.png  used on input line 
@@ -2980,7 +2980,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \OT1/cmr/m/n/10 ture 60
  []
 
-<./Images/Feature 61 histogram.png, id=194, 421.575pt x 316.0608pt>
+<./Images/Feature 61 histogram.png, id=209, 421.575pt x 316.0608pt>
 File: ./Images/Feature 61 histogram.png Graphic file (type png)
 <use ./Images/Feature 61 histogram.png>
 Package pdftex.def Info: ./Images/Feature 61 histogram.png  used on input line 
@@ -2996,7 +2996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--192
 \OT1/cmr/m/n/10 ture 61
  []
 
-<./Images/Feature 62 histogram.png, id=195, 421.575pt x 316.0608pt>
+<./Images/Feature 62 histogram.png, id=210, 421.575pt x 316.0608pt>
 File: ./Images/Feature 62 histogram.png Graphic file (type png)
 <use ./Images/Feature 62 histogram.png>
 Package pdftex.def Info: ./Images/Feature 62 histogram.png  used on input line 
@@ -3012,7 +3012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--193
 \OT1/cmr/m/n/10 ture 62
  []
 
-<./Images/Feature 63 histogram.png, id=196, 421.575pt x 316.0608pt>
+<./Images/Feature 63 histogram.png, id=211, 421.575pt x 316.0608pt>
 File: ./Images/Feature 63 histogram.png Graphic file (type png)
 <use ./Images/Feature 63 histogram.png>
 Package pdftex.def Info: ./Images/Feature 63 histogram.png  used on input line 
@@ -3028,7 +3028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--194
 \OT1/cmr/m/n/10 ture 63
  []
 
-<./Images/Feature 64 histogram.png, id=197, 421.575pt x 316.0608pt>
+<./Images/Feature 64 histogram.png, id=212, 421.575pt x 316.0608pt>
 File: ./Images/Feature 64 histogram.png Graphic file (type png)
 <use ./Images/Feature 64 histogram.png>
 Package pdftex.def Info: ./Images/Feature 64 histogram.png  used on input line 
@@ -3044,7 +3044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--195
 \OT1/cmr/m/n/10 ture 64
  []
 
-<./Images/Feature 65 histogram.png, id=198, 421.575pt x 316.0608pt>
+<./Images/Feature 65 histogram.png, id=213, 421.575pt x 316.0608pt>
 File: ./Images/Feature 65 histogram.png Graphic file (type png)
 <use ./Images/Feature 65 histogram.png>
 Package pdftex.def Info: ./Images/Feature 65 histogram.png  used on input line 
@@ -3060,7 +3060,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--196
 \OT1/cmr/m/n/10 ture 65
  []
 
-<./Images/Feature 66 histogram.png, id=199, 421.575pt x 316.0608pt>
+<./Images/Feature 66 histogram.png, id=214, 421.575pt x 316.0608pt>
 File: ./Images/Feature 66 histogram.png Graphic file (type png)
 <use ./Images/Feature 66 histogram.png>
 Package pdftex.def Info: ./Images/Feature 66 histogram.png  used on input line 
@@ -3076,7 +3076,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \OT1/cmr/m/n/10 ture 66
  []
 
-<./Images/Feature 67 histogram.png, id=200, 421.575pt x 316.0608pt>
+<./Images/Feature 67 histogram.png, id=215, 421.575pt x 316.0608pt>
 File: ./Images/Feature 67 histogram.png Graphic file (type png)
 <use ./Images/Feature 67 histogram.png>
 Package pdftex.def Info: ./Images/Feature 67 histogram.png  used on input line 
@@ -3092,7 +3092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--198
 \OT1/cmr/m/n/10 ture 67
  []
 
-<./Images/Feature 68 histogram.png, id=201, 421.575pt x 316.0608pt>
+<./Images/Feature 68 histogram.png, id=216, 421.575pt x 316.0608pt>
 File: ./Images/Feature 68 histogram.png Graphic file (type png)
 <use ./Images/Feature 68 histogram.png>
 Package pdftex.def Info: ./Images/Feature 68 histogram.png  used on input line 
@@ -3108,7 +3108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/10 ture 68
  []
 
-<./Images/Feature 69 histogram.png, id=202, 421.575pt x 316.0608pt>
+<./Images/Feature 69 histogram.png, id=217, 421.575pt x 316.0608pt>
 File: ./Images/Feature 69 histogram.png Graphic file (type png)
 <use ./Images/Feature 69 histogram.png>
 Package pdftex.def Info: ./Images/Feature 69 histogram.png  used on input line 
@@ -3124,7 +3124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--200
 \OT1/cmr/m/n/10 ture 69
  []
 
-<./Images/Feature 70 histogram.png, id=203, 421.575pt x 316.0608pt>
+<./Images/Feature 70 histogram.png, id=218, 421.575pt x 316.0608pt>
 File: ./Images/Feature 70 histogram.png Graphic file (type png)
 <use ./Images/Feature 70 histogram.png>
 Package pdftex.def Info: ./Images/Feature 70 histogram.png  used on input line 
@@ -3140,7 +3140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--201
 \OT1/cmr/m/n/10 ture 70
  []
 
-<./Images/Feature 71 histogram.png, id=204, 421.575pt x 316.0608pt>
+<./Images/Feature 71 histogram.png, id=219, 421.575pt x 316.0608pt>
 File: ./Images/Feature 71 histogram.png Graphic file (type png)
 <use ./Images/Feature 71 histogram.png>
 Package pdftex.def Info: ./Images/Feature 71 histogram.png  used on input line 
@@ -3156,7 +3156,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \OT1/cmr/m/n/10 ture 71
  []
 
-<./Images/Feature 72 histogram.png, id=205, 421.575pt x 316.0608pt>
+<./Images/Feature 72 histogram.png, id=220, 421.575pt x 316.0608pt>
 File: ./Images/Feature 72 histogram.png Graphic file (type png)
 <use ./Images/Feature 72 histogram.png>
 Package pdftex.def Info: ./Images/Feature 72 histogram.png  used on input line 
@@ -3172,7 +3172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 \OT1/cmr/m/n/10 ture 72
  []
 
-<./Images/Feature 73 histogram.png, id=206, 421.575pt x 316.0608pt>
+<./Images/Feature 73 histogram.png, id=221, 421.575pt x 316.0608pt>
 File: ./Images/Feature 73 histogram.png Graphic file (type png)
 <use ./Images/Feature 73 histogram.png>
 Package pdftex.def Info: ./Images/Feature 73 histogram.png  used on input line 
@@ -3188,7 +3188,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--204
 \OT1/cmr/m/n/10 ture 73
  []
 
-<./Images/Feature 74 histogram.png, id=207, 421.575pt x 316.0608pt>
+<./Images/Feature 74 histogram.png, id=222, 421.575pt x 316.0608pt>
 File: ./Images/Feature 74 histogram.png Graphic file (type png)
 <use ./Images/Feature 74 histogram.png>
 Package pdftex.def Info: ./Images/Feature 74 histogram.png  used on input line 
@@ -3204,7 +3204,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--205
 \OT1/cmr/m/n/10 ture 74
  []
 
-<./Images/Feature 75 histogram.png, id=208, 421.575pt x 316.0608pt>
+<./Images/Feature 75 histogram.png, id=223, 421.575pt x 316.0608pt>
 File: ./Images/Feature 75 histogram.png Graphic file (type png)
 <use ./Images/Feature 75 histogram.png>
 Package pdftex.def Info: ./Images/Feature 75 histogram.png  used on input line 
@@ -3220,7 +3220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--206
 \OT1/cmr/m/n/10 ture 75
  []
 
-<./Images/Feature 76 histogram.png, id=209, 421.575pt x 316.0608pt>
+<./Images/Feature 76 histogram.png, id=224, 421.575pt x 316.0608pt>
 File: ./Images/Feature 76 histogram.png Graphic file (type png)
 <use ./Images/Feature 76 histogram.png>
 Package pdftex.def Info: ./Images/Feature 76 histogram.png  used on input line 
@@ -3236,7 +3236,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--207
 \OT1/cmr/m/n/10 ture 76
  []
 
-<./Images/Feature 77 histogram.png, id=210, 421.575pt x 316.0608pt>
+<./Images/Feature 77 histogram.png, id=225, 421.575pt x 316.0608pt>
 File: ./Images/Feature 77 histogram.png Graphic file (type png)
 <use ./Images/Feature 77 histogram.png>
 Package pdftex.def Info: ./Images/Feature 77 histogram.png  used on input line 
@@ -3295,7 +3295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/10 77 his-
  []
 
-<./Images/Feature 78 histogram.png, id=211, 421.575pt x 316.0608pt>
+<./Images/Feature 78 histogram.png, id=226, 421.575pt x 316.0608pt>
 File: ./Images/Feature 78 histogram.png Graphic file (type png)
 <use ./Images/Feature 78 histogram.png>
 Package pdftex.def Info: ./Images/Feature 78 histogram.png  used on input line 
@@ -3354,7 +3354,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--209
 \OT1/cmr/m/n/10 78 his-
  []
 
-<./Images/Feature 79 histogram.png, id=212, 421.575pt x 316.0608pt>
+<./Images/Feature 79 histogram.png, id=227, 421.575pt x 316.0608pt>
 File: ./Images/Feature 79 histogram.png Graphic file (type png)
 <use ./Images/Feature 79 histogram.png>
 Package pdftex.def Info: ./Images/Feature 79 histogram.png  used on input line 
@@ -3413,7 +3413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--210
 \OT1/cmr/m/n/10 79 his-
  []
 
-<./Images/Feature 80 histogram.png, id=213, 421.575pt x 316.0608pt>
+<./Images/Feature 80 histogram.png, id=228, 421.575pt x 316.0608pt>
 File: ./Images/Feature 80 histogram.png Graphic file (type png)
 <use ./Images/Feature 80 histogram.png>
 Package pdftex.def Info: ./Images/Feature 80 histogram.png  used on input line 
@@ -3472,7 +3472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--211
 \OT1/cmr/m/n/10 80 his-
  []
 
-<./Images/Feature 81 histogram.png, id=214, 421.575pt x 316.0608pt>
+<./Images/Feature 81 histogram.png, id=229, 421.575pt x 316.0608pt>
 File: ./Images/Feature 81 histogram.png Graphic file (type png)
 <use ./Images/Feature 81 histogram.png>
 Package pdftex.def Info: ./Images/Feature 81 histogram.png  used on input line 
@@ -3531,7 +3531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--212
 \OT1/cmr/m/n/10 81 his-
  []
 
-<./Images/Feature 82 histogram.png, id=215, 421.575pt x 316.0608pt>
+<./Images/Feature 82 histogram.png, id=230, 421.575pt x 316.0608pt>
 File: ./Images/Feature 82 histogram.png Graphic file (type png)
 <use ./Images/Feature 82 histogram.png>
 Package pdftex.def Info: ./Images/Feature 82 histogram.png  used on input line 
@@ -3590,7 +3590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--213
 \OT1/cmr/m/n/10 82 his-
  []
 
-<./Images/Feature 83 histogram.png, id=216, 421.575pt x 316.0608pt>
+<./Images/Feature 83 histogram.png, id=231, 421.575pt x 316.0608pt>
 File: ./Images/Feature 83 histogram.png Graphic file (type png)
 <use ./Images/Feature 83 histogram.png>
 Package pdftex.def Info: ./Images/Feature 83 histogram.png  used on input line 
@@ -3649,7 +3649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--214
 \OT1/cmr/m/n/10 83 his-
  []
 
-<./Images/Feature 84 histogram.png, id=217, 421.575pt x 316.0608pt>
+<./Images/Feature 84 histogram.png, id=232, 421.575pt x 316.0608pt>
 File: ./Images/Feature 84 histogram.png Graphic file (type png)
 <use ./Images/Feature 84 histogram.png>
 Package pdftex.def Info: ./Images/Feature 84 histogram.png  used on input line 
@@ -3708,7 +3708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--215
 \OT1/cmr/m/n/10 84 his-
  []
 
-<./Images/Feature 85 histogram.png, id=218, 421.575pt x 316.0608pt>
+<./Images/Feature 85 histogram.png, id=233, 421.575pt x 316.0608pt>
 File: ./Images/Feature 85 histogram.png Graphic file (type png)
 <use ./Images/Feature 85 histogram.png>
 Package pdftex.def Info: ./Images/Feature 85 histogram.png  used on input line 
@@ -3767,7 +3767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \OT1/cmr/m/n/10 85 his-
  []
 
-<./Images/Feature 86 histogram.png, id=219, 421.575pt x 316.0608pt>
+<./Images/Feature 86 histogram.png, id=234, 421.575pt x 316.0608pt>
 File: ./Images/Feature 86 histogram.png Graphic file (type png)
 <use ./Images/Feature 86 histogram.png>
 Package pdftex.def Info: ./Images/Feature 86 histogram.png  used on input line 
@@ -3826,7 +3826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \OT1/cmr/m/n/10 86 his-
  []
 
-<./Images/Feature 87 histogram.png, id=220, 421.575pt x 316.0608pt>
+<./Images/Feature 87 histogram.png, id=235, 421.575pt x 316.0608pt>
 File: ./Images/Feature 87 histogram.png Graphic file (type png)
 <use ./Images/Feature 87 histogram.png>
 Package pdftex.def Info: ./Images/Feature 87 histogram.png  used on input line 
@@ -3885,7 +3885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \OT1/cmr/m/n/10 87 his-
  []
 
-<./Images/Feature 88 histogram.png, id=221, 421.575pt x 316.0608pt>
+<./Images/Feature 88 histogram.png, id=236, 421.575pt x 316.0608pt>
 File: ./Images/Feature 88 histogram.png Graphic file (type png)
 <use ./Images/Feature 88 histogram.png>
 Package pdftex.def Info: ./Images/Feature 88 histogram.png  used on input line 
@@ -3944,7 +3944,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--219
 \OT1/cmr/m/n/10 88 his-
  []
 
-<./Images/Feature 89 histogram.png, id=222, 421.575pt x 316.0608pt>
+<./Images/Feature 89 histogram.png, id=237, 421.575pt x 316.0608pt>
 File: ./Images/Feature 89 histogram.png Graphic file (type png)
 <use ./Images/Feature 89 histogram.png>
 Package pdftex.def Info: ./Images/Feature 89 histogram.png  used on input line 
@@ -4003,7 +4003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/10 89 his-
  []
 
-<./Images/Feature 90 histogram.png, id=223, 421.575pt x 316.0608pt>
+<./Images/Feature 90 histogram.png, id=238, 421.575pt x 316.0608pt>
 File: ./Images/Feature 90 histogram.png Graphic file (type png)
 <use ./Images/Feature 90 histogram.png>
 Package pdftex.def Info: ./Images/Feature 90 histogram.png  used on input line 
@@ -4062,7 +4062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--221
 \OT1/cmr/m/n/10 90 his-
  []
 
-<./Images/Feature 91 histogram.png, id=224, 421.575pt x 316.0608pt>
+<./Images/Feature 91 histogram.png, id=239, 421.575pt x 316.0608pt>
 File: ./Images/Feature 91 histogram.png Graphic file (type png)
 <use ./Images/Feature 91 histogram.png>
 Package pdftex.def Info: ./Images/Feature 91 histogram.png  used on input line 
@@ -4121,7 +4121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--222
 \OT1/cmr/m/n/10 91 his-
  []
 
-<./Images/Feature 92 histogram.png, id=225, 421.575pt x 316.0608pt>
+<./Images/Feature 92 histogram.png, id=240, 421.575pt x 316.0608pt>
 File: ./Images/Feature 92 histogram.png Graphic file (type png)
 <use ./Images/Feature 92 histogram.png>
 Package pdftex.def Info: ./Images/Feature 92 histogram.png  used on input line 
@@ -4180,7 +4180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 \OT1/cmr/m/n/10 92 his-
  []
 
-<./Images/Feature 93 histogram.png, id=226, 421.575pt x 316.0608pt>
+<./Images/Feature 93 histogram.png, id=241, 421.575pt x 316.0608pt>
 File: ./Images/Feature 93 histogram.png Graphic file (type png)
 <use ./Images/Feature 93 histogram.png>
 Package pdftex.def Info: ./Images/Feature 93 histogram.png  used on input line 
@@ -4239,7 +4239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--224
 \OT1/cmr/m/n/10 93 his-
  []
 
-<./Images/Feature 94 histogram.png, id=227, 421.575pt x 316.0608pt>
+<./Images/Feature 94 histogram.png, id=242, 421.575pt x 316.0608pt>
 File: ./Images/Feature 94 histogram.png Graphic file (type png)
 <use ./Images/Feature 94 histogram.png>
 Package pdftex.def Info: ./Images/Feature 94 histogram.png  used on input line 
@@ -4298,7 +4298,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--225
 \OT1/cmr/m/n/10 94 his-
  []
 
-<./Images/Feature 95 histogram.png, id=228, 421.575pt x 316.0608pt>
+<./Images/Feature 95 histogram.png, id=243, 421.575pt x 316.0608pt>
 File: ./Images/Feature 95 histogram.png Graphic file (type png)
 <use ./Images/Feature 95 histogram.png>
 Package pdftex.def Info: ./Images/Feature 95 histogram.png  used on input line 
@@ -4357,7 +4357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/10 95 his-
  []
 
-<./Images/Feature 96 histogram.png, id=229, 421.575pt x 316.0608pt>
+<./Images/Feature 96 histogram.png, id=244, 421.575pt x 316.0608pt>
 File: ./Images/Feature 96 histogram.png Graphic file (type png)
 <use ./Images/Feature 96 histogram.png>
 Package pdftex.def Info: ./Images/Feature 96 histogram.png  used on input line 
@@ -4416,7 +4416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--227
 \OT1/cmr/m/n/10 96 his-
  []
 
-<./Images/Feature 97 histogram.png, id=230, 421.575pt x 316.0608pt>
+<./Images/Feature 97 histogram.png, id=245, 421.575pt x 316.0608pt>
 File: ./Images/Feature 97 histogram.png Graphic file (type png)
 <use ./Images/Feature 97 histogram.png>
 Package pdftex.def Info: ./Images/Feature 97 histogram.png  used on input line 
@@ -4475,7 +4475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--228
 \OT1/cmr/m/n/10 97 his-
  []
 
-<./Images/Feature 98 histogram.png, id=231, 421.575pt x 316.0608pt>
+<./Images/Feature 98 histogram.png, id=246, 421.575pt x 316.0608pt>
 File: ./Images/Feature 98 histogram.png Graphic file (type png)
 <use ./Images/Feature 98 histogram.png>
 Package pdftex.def Info: ./Images/Feature 98 histogram.png  used on input line 
@@ -4534,7 +4534,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \OT1/cmr/m/n/10 98 his-
  []
 
-<./Images/Feature 99 histogram.png, id=232, 421.575pt x 316.0608pt>
+<./Images/Feature 99 histogram.png, id=247, 421.575pt x 316.0608pt>
 File: ./Images/Feature 99 histogram.png Graphic file (type png)
 <use ./Images/Feature 99 histogram.png>
 Package pdftex.def Info: ./Images/Feature 99 histogram.png  used on input line 
@@ -4593,7 +4593,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--230
 \OT1/cmr/m/n/10 99 his-
  []
 
-<./Images/Feature 100 histogram.png, id=233, 421.575pt x 316.0608pt>
+<./Images/Feature 100 histogram.png, id=248, 421.575pt x 316.0608pt>
 File: ./Images/Feature 100 histogram.png Graphic file (type png)
 <use ./Images/Feature 100 histogram.png>
 Package pdftex.def Info: ./Images/Feature 100 histogram.png  used on input line
@@ -4692,7 +4692,7 @@ es/Feature 43 histogram.png (PNG copy)> <./Images/Feature 44 histogram.png (PNG
 togram.png (PNG copy)> <./Images/Feature 47 histogram.png (PNG copy)> <./Images
 /Feature 48 histogram.png (PNG copy)> <./Images/Feature 49 histogram.png (PNG c
 opy)> <./Images/Feature 50 histogram.png (PNG copy)>]
-<./Images/Feature 101 histogram.png, id=291, 421.575pt x 316.0608pt>
+<./Images/Feature 101 histogram.png, id=306, 421.575pt x 316.0608pt>
 File: ./Images/Feature 101 histogram.png Graphic file (type png)
 <use ./Images/Feature 101 histogram.png>
 Package pdftex.def Info: ./Images/Feature 101 histogram.png  used on input line
@@ -4708,7 +4708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--240
 \OT1/cmr/m/n/10 ture 101
  []
 
-<./Images/Feature 102 histogram.png, id=292, 421.575pt x 316.0608pt>
+<./Images/Feature 102 histogram.png, id=307, 421.575pt x 316.0608pt>
 File: ./Images/Feature 102 histogram.png Graphic file (type png)
 <use ./Images/Feature 102 histogram.png>
 Package pdftex.def Info: ./Images/Feature 102 histogram.png  used on input line
@@ -4724,7 +4724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--241
 \OT1/cmr/m/n/10 ture 102
  []
 
-<./Images/Feature 103 histogram.png, id=293, 421.575pt x 316.0608pt>
+<./Images/Feature 103 histogram.png, id=308, 421.575pt x 316.0608pt>
 File: ./Images/Feature 103 histogram.png Graphic file (type png)
 <use ./Images/Feature 103 histogram.png>
 Package pdftex.def Info: ./Images/Feature 103 histogram.png  used on input line
@@ -4740,7 +4740,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/10 ture 103
  []
 
-<./Images/Feature 104 histogram.png, id=294, 421.575pt x 316.0608pt>
+<./Images/Feature 104 histogram.png, id=309, 421.575pt x 316.0608pt>
 File: ./Images/Feature 104 histogram.png Graphic file (type png)
 <use ./Images/Feature 104 histogram.png>
 Package pdftex.def Info: ./Images/Feature 104 histogram.png  used on input line
@@ -4756,7 +4756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--243
 \OT1/cmr/m/n/10 ture 104
  []
 
-<./Images/Feature 105 histogram.png, id=295, 421.575pt x 316.0608pt>
+<./Images/Feature 105 histogram.png, id=310, 421.575pt x 316.0608pt>
 File: ./Images/Feature 105 histogram.png Graphic file (type png)
 <use ./Images/Feature 105 histogram.png>
 Package pdftex.def Info: ./Images/Feature 105 histogram.png  used on input line
@@ -4772,7 +4772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--244
 \OT1/cmr/m/n/10 ture 105
  []
 
-<./Images/Feature 106 histogram.png, id=296, 421.575pt x 316.0608pt>
+<./Images/Feature 106 histogram.png, id=311, 421.575pt x 316.0608pt>
 File: ./Images/Feature 106 histogram.png Graphic file (type png)
 <use ./Images/Feature 106 histogram.png>
 Package pdftex.def Info: ./Images/Feature 106 histogram.png  used on input line
@@ -4788,7 +4788,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--245
 \OT1/cmr/m/n/10 ture 106
  []
 
-<./Images/Feature 107 histogram.png, id=297, 421.575pt x 316.0608pt>
+<./Images/Feature 107 histogram.png, id=312, 421.575pt x 316.0608pt>
 File: ./Images/Feature 107 histogram.png Graphic file (type png)
 <use ./Images/Feature 107 histogram.png>
 Package pdftex.def Info: ./Images/Feature 107 histogram.png  used on input line
@@ -4804,7 +4804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--246
 \OT1/cmr/m/n/10 ture 107
  []
 
-<./Images/Feature 108 histogram.png, id=298, 421.575pt x 316.0608pt>
+<./Images/Feature 108 histogram.png, id=313, 421.575pt x 316.0608pt>
 File: ./Images/Feature 108 histogram.png Graphic file (type png)
 <use ./Images/Feature 108 histogram.png>
 Package pdftex.def Info: ./Images/Feature 108 histogram.png  used on input line
@@ -4820,7 +4820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--247
 \OT1/cmr/m/n/10 ture 108
  []
 
-<./Images/Feature 109 histogram.png, id=299, 421.575pt x 316.0608pt>
+<./Images/Feature 109 histogram.png, id=314, 421.575pt x 316.0608pt>
 File: ./Images/Feature 109 histogram.png Graphic file (type png)
 <use ./Images/Feature 109 histogram.png>
 Package pdftex.def Info: ./Images/Feature 109 histogram.png  used on input line
@@ -4836,7 +4836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--248
 \OT1/cmr/m/n/10 ture 109
  []
 
-<./Images/Feature 110 histogram.png, id=300, 421.575pt x 316.0608pt>
+<./Images/Feature 110 histogram.png, id=315, 421.575pt x 316.0608pt>
 File: ./Images/Feature 110 histogram.png Graphic file (type png)
 <use ./Images/Feature 110 histogram.png>
 Package pdftex.def Info: ./Images/Feature 110 histogram.png  used on input line
@@ -4852,7 +4852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--249
 \OT1/cmr/m/n/10 ture 110
  []
 
-<./Images/Feature 111 histogram.png, id=301, 421.575pt x 316.0608pt>
+<./Images/Feature 111 histogram.png, id=316, 421.575pt x 316.0608pt>
 File: ./Images/Feature 111 histogram.png Graphic file (type png)
 <use ./Images/Feature 111 histogram.png>
 Package pdftex.def Info: ./Images/Feature 111 histogram.png  used on input line
@@ -4868,7 +4868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--250
 \OT1/cmr/m/n/10 ture 111
  []
 
-<./Images/Feature 112 histogram.png, id=302, 421.575pt x 316.0608pt>
+<./Images/Feature 112 histogram.png, id=317, 421.575pt x 316.0608pt>
 File: ./Images/Feature 112 histogram.png Graphic file (type png)
 <use ./Images/Feature 112 histogram.png>
 Package pdftex.def Info: ./Images/Feature 112 histogram.png  used on input line
@@ -4884,7 +4884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--251
 \OT1/cmr/m/n/10 ture 112
  []
 
-<./Images/Feature 113 histogram.png, id=303, 421.575pt x 316.0608pt>
+<./Images/Feature 113 histogram.png, id=318, 421.575pt x 316.0608pt>
 File: ./Images/Feature 113 histogram.png Graphic file (type png)
 <use ./Images/Feature 113 histogram.png>
 Package pdftex.def Info: ./Images/Feature 113 histogram.png  used on input line
@@ -4900,7 +4900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--252
 \OT1/cmr/m/n/10 ture 113
  []
 
-<./Images/Feature 114 histogram.png, id=304, 421.575pt x 316.0608pt>
+<./Images/Feature 114 histogram.png, id=319, 421.575pt x 316.0608pt>
 File: ./Images/Feature 114 histogram.png Graphic file (type png)
 <use ./Images/Feature 114 histogram.png>
 Package pdftex.def Info: ./Images/Feature 114 histogram.png  used on input line
@@ -4916,7 +4916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--253
 \OT1/cmr/m/n/10 ture 114
  []
 
-<./Images/Feature 115 histogram.png, id=305, 421.575pt x 316.0608pt>
+<./Images/Feature 115 histogram.png, id=320, 421.575pt x 316.0608pt>
 File: ./Images/Feature 115 histogram.png Graphic file (type png)
 <use ./Images/Feature 115 histogram.png>
 Package pdftex.def Info: ./Images/Feature 115 histogram.png  used on input line
@@ -4932,7 +4932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--254
 \OT1/cmr/m/n/10 ture 115
  []
 
-<./Images/Feature 116 histogram.png, id=306, 421.575pt x 316.0608pt>
+<./Images/Feature 116 histogram.png, id=321, 421.575pt x 316.0608pt>
 File: ./Images/Feature 116 histogram.png Graphic file (type png)
 <use ./Images/Feature 116 histogram.png>
 Package pdftex.def Info: ./Images/Feature 116 histogram.png  used on input line
@@ -4948,7 +4948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--255
 \OT1/cmr/m/n/10 ture 116
  []
 
-<./Images/Feature 117 histogram.png, id=307, 421.575pt x 316.0608pt>
+<./Images/Feature 117 histogram.png, id=322, 421.575pt x 316.0608pt>
 File: ./Images/Feature 117 histogram.png Graphic file (type png)
 <use ./Images/Feature 117 histogram.png>
 Package pdftex.def Info: ./Images/Feature 117 histogram.png  used on input line
@@ -4964,7 +4964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \OT1/cmr/m/n/10 ture 117
  []
 
-<./Images/Feature 118 histogram.png, id=308, 421.575pt x 316.0608pt>
+<./Images/Feature 118 histogram.png, id=323, 421.575pt x 316.0608pt>
 File: ./Images/Feature 118 histogram.png Graphic file (type png)
 <use ./Images/Feature 118 histogram.png>
 Package pdftex.def Info: ./Images/Feature 118 histogram.png  used on input line
@@ -4980,7 +4980,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \OT1/cmr/m/n/10 ture 118
  []
 
-<./Images/Feature 119 histogram.png, id=309, 421.575pt x 316.0608pt>
+<./Images/Feature 119 histogram.png, id=324, 421.575pt x 316.0608pt>
 File: ./Images/Feature 119 histogram.png Graphic file (type png)
 <use ./Images/Feature 119 histogram.png>
 Package pdftex.def Info: ./Images/Feature 119 histogram.png  used on input line
@@ -4996,7 +4996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--258
 \OT1/cmr/m/n/10 ture 119
  []
 
-<./Images/Feature 120 histogram.png, id=310, 421.575pt x 316.0608pt>
+<./Images/Feature 120 histogram.png, id=325, 421.575pt x 316.0608pt>
 File: ./Images/Feature 120 histogram.png Graphic file (type png)
 <use ./Images/Feature 120 histogram.png>
 Package pdftex.def Info: ./Images/Feature 120 histogram.png  used on input line
@@ -5012,7 +5012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--259
 \OT1/cmr/m/n/10 ture 120
  []
 
-<./Images/Feature 121 histogram.png, id=311, 421.575pt x 316.0608pt>
+<./Images/Feature 121 histogram.png, id=326, 421.575pt x 316.0608pt>
 File: ./Images/Feature 121 histogram.png Graphic file (type png)
 <use ./Images/Feature 121 histogram.png>
 Package pdftex.def Info: ./Images/Feature 121 histogram.png  used on input line
@@ -5028,7 +5028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--260
 \OT1/cmr/m/n/10 ture 121
  []
 
-<./Images/Feature 122 histogram.png, id=312, 421.575pt x 316.0608pt>
+<./Images/Feature 122 histogram.png, id=327, 421.575pt x 316.0608pt>
 File: ./Images/Feature 122 histogram.png Graphic file (type png)
 <use ./Images/Feature 122 histogram.png>
 Package pdftex.def Info: ./Images/Feature 122 histogram.png  used on input line
@@ -5044,7 +5044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--261
 \OT1/cmr/m/n/10 ture 122
  []
 
-<./Images/Feature 123 histogram.png, id=313, 421.575pt x 316.0608pt>
+<./Images/Feature 123 histogram.png, id=328, 421.575pt x 316.0608pt>
 File: ./Images/Feature 123 histogram.png Graphic file (type png)
 <use ./Images/Feature 123 histogram.png>
 Package pdftex.def Info: ./Images/Feature 123 histogram.png  used on input line
@@ -5060,7 +5060,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--262
 \OT1/cmr/m/n/10 ture 123
  []
 
-<./Images/Feature 124 histogram.png, id=314, 421.575pt x 316.0608pt>
+<./Images/Feature 124 histogram.png, id=329, 421.575pt x 316.0608pt>
 File: ./Images/Feature 124 histogram.png Graphic file (type png)
 <use ./Images/Feature 124 histogram.png>
 Package pdftex.def Info: ./Images/Feature 124 histogram.png  used on input line
@@ -5076,7 +5076,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--263
 \OT1/cmr/m/n/10 ture 124
  []
 
-<./Images/Feature 125 histogram.png, id=315, 421.575pt x 316.0608pt>
+<./Images/Feature 125 histogram.png, id=330, 421.575pt x 316.0608pt>
 File: ./Images/Feature 125 histogram.png Graphic file (type png)
 <use ./Images/Feature 125 histogram.png>
 Package pdftex.def Info: ./Images/Feature 125 histogram.png  used on input line
@@ -5092,7 +5092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--264
 \OT1/cmr/m/n/10 ture 125
  []
 
-<./Images/Feature 126 histogram.png, id=316, 421.575pt x 316.0608pt>
+<./Images/Feature 126 histogram.png, id=331, 421.575pt x 316.0608pt>
 File: ./Images/Feature 126 histogram.png Graphic file (type png)
 <use ./Images/Feature 126 histogram.png>
 Package pdftex.def Info: ./Images/Feature 126 histogram.png  used on input line
@@ -5108,7 +5108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--265
 \OT1/cmr/m/n/10 ture 126
  []
 
-<./Images/Feature 127 histogram.png, id=317, 421.575pt x 316.0608pt>
+<./Images/Feature 127 histogram.png, id=332, 421.575pt x 316.0608pt>
 File: ./Images/Feature 127 histogram.png Graphic file (type png)
 <use ./Images/Feature 127 histogram.png>
 Package pdftex.def Info: ./Images/Feature 127 histogram.png  used on input line
@@ -5167,7 +5167,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--266
 \OT1/cmr/m/n/10 127 his-
  []
 
-<./Images/Feature 128 histogram.png, id=318, 421.575pt x 316.0608pt>
+<./Images/Feature 128 histogram.png, id=333, 421.575pt x 316.0608pt>
 File: ./Images/Feature 128 histogram.png Graphic file (type png)
 <use ./Images/Feature 128 histogram.png>
 Package pdftex.def Info: ./Images/Feature 128 histogram.png  used on input line
@@ -5226,7 +5226,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \OT1/cmr/m/n/10 128 his-
  []
 
-<./Images/Feature 129 histogram.png, id=319, 421.575pt x 316.0608pt>
+<./Images/Feature 129 histogram.png, id=334, 421.575pt x 316.0608pt>
 File: ./Images/Feature 129 histogram.png Graphic file (type png)
 <use ./Images/Feature 129 histogram.png>
 Package pdftex.def Info: ./Images/Feature 129 histogram.png  used on input line
@@ -5285,7 +5285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \OT1/cmr/m/n/10 129 his-
  []
 
-<./Images/Feature 130 histogram.png, id=320, 421.575pt x 316.0608pt>
+<./Images/Feature 130 histogram.png, id=335, 421.575pt x 316.0608pt>
 File: ./Images/Feature 130 histogram.png Graphic file (type png)
 <use ./Images/Feature 130 histogram.png>
 Package pdftex.def Info: ./Images/Feature 130 histogram.png  used on input line
@@ -5344,7 +5344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--269
 \OT1/cmr/m/n/10 130 his-
  []
 
-<./Images/Feature 131 histogram.png, id=321, 421.575pt x 316.0608pt>
+<./Images/Feature 131 histogram.png, id=336, 421.575pt x 316.0608pt>
 File: ./Images/Feature 131 histogram.png Graphic file (type png)
 <use ./Images/Feature 131 histogram.png>
 Package pdftex.def Info: ./Images/Feature 131 histogram.png  used on input line
@@ -5403,7 +5403,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--270
 \OT1/cmr/m/n/10 131 his-
  []
 
-<./Images/Feature 132 histogram.png, id=322, 421.575pt x 316.0608pt>
+<./Images/Feature 132 histogram.png, id=337, 421.575pt x 316.0608pt>
 File: ./Images/Feature 132 histogram.png Graphic file (type png)
 <use ./Images/Feature 132 histogram.png>
 Package pdftex.def Info: ./Images/Feature 132 histogram.png  used on input line
@@ -5462,7 +5462,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--271
 \OT1/cmr/m/n/10 132 his-
  []
 
-<./Images/Feature 133 histogram.png, id=323, 421.575pt x 316.0608pt>
+<./Images/Feature 133 histogram.png, id=338, 421.575pt x 316.0608pt>
 File: ./Images/Feature 133 histogram.png Graphic file (type png)
 <use ./Images/Feature 133 histogram.png>
 Package pdftex.def Info: ./Images/Feature 133 histogram.png  used on input line
@@ -5521,7 +5521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--272
 \OT1/cmr/m/n/10 133 his-
  []
 
-<./Images/Feature 134 histogram.png, id=324, 421.575pt x 316.0608pt>
+<./Images/Feature 134 histogram.png, id=339, 421.575pt x 316.0608pt>
 File: ./Images/Feature 134 histogram.png Graphic file (type png)
 <use ./Images/Feature 134 histogram.png>
 Package pdftex.def Info: ./Images/Feature 134 histogram.png  used on input line
@@ -5580,7 +5580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--273
 \OT1/cmr/m/n/10 134 his-
  []
 
-<./Images/Feature 135 histogram.png, id=325, 421.575pt x 316.0608pt>
+<./Images/Feature 135 histogram.png, id=340, 421.575pt x 316.0608pt>
 File: ./Images/Feature 135 histogram.png Graphic file (type png)
 <use ./Images/Feature 135 histogram.png>
 Package pdftex.def Info: ./Images/Feature 135 histogram.png  used on input line
@@ -5639,7 +5639,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--274
 \OT1/cmr/m/n/10 135 his-
  []
 
-<./Images/Feature 136 histogram.png, id=326, 421.575pt x 316.0608pt>
+<./Images/Feature 136 histogram.png, id=341, 421.575pt x 316.0608pt>
 File: ./Images/Feature 136 histogram.png Graphic file (type png)
 <use ./Images/Feature 136 histogram.png>
 Package pdftex.def Info: ./Images/Feature 136 histogram.png  used on input line
@@ -5698,7 +5698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--275
 \OT1/cmr/m/n/10 136 his-
  []
 
-<./Images/Feature 137 histogram.png, id=327, 421.575pt x 316.0608pt>
+<./Images/Feature 137 histogram.png, id=342, 421.575pt x 316.0608pt>
 File: ./Images/Feature 137 histogram.png Graphic file (type png)
 <use ./Images/Feature 137 histogram.png>
 Package pdftex.def Info: ./Images/Feature 137 histogram.png  used on input line
@@ -5757,7 +5757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--276
 \OT1/cmr/m/n/10 137 his-
  []
 
-<./Images/Feature 138 histogram.png, id=328, 421.575pt x 316.0608pt>
+<./Images/Feature 138 histogram.png, id=343, 421.575pt x 316.0608pt>
 File: ./Images/Feature 138 histogram.png Graphic file (type png)
 <use ./Images/Feature 138 histogram.png>
 Package pdftex.def Info: ./Images/Feature 138 histogram.png  used on input line
@@ -5816,7 +5816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--277
 \OT1/cmr/m/n/10 138 his-
  []
 
-<./Images/Feature 139 histogram.png, id=329, 421.575pt x 316.0608pt>
+<./Images/Feature 139 histogram.png, id=344, 421.575pt x 316.0608pt>
 File: ./Images/Feature 139 histogram.png Graphic file (type png)
 <use ./Images/Feature 139 histogram.png>
 Package pdftex.def Info: ./Images/Feature 139 histogram.png  used on input line
@@ -5875,7 +5875,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \OT1/cmr/m/n/10 139 his-
  []
 
-<./Images/Feature 140 histogram.png, id=330, 421.575pt x 316.0608pt>
+<./Images/Feature 140 histogram.png, id=345, 421.575pt x 316.0608pt>
 File: ./Images/Feature 140 histogram.png Graphic file (type png)
 <use ./Images/Feature 140 histogram.png>
 Package pdftex.def Info: ./Images/Feature 140 histogram.png  used on input line
@@ -5934,7 +5934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--279
 \OT1/cmr/m/n/10 140 his-
  []
 
-<./Images/Feature 141 histogram.png, id=331, 421.575pt x 316.0608pt>
+<./Images/Feature 141 histogram.png, id=346, 421.575pt x 316.0608pt>
 File: ./Images/Feature 141 histogram.png Graphic file (type png)
 <use ./Images/Feature 141 histogram.png>
 Package pdftex.def Info: ./Images/Feature 141 histogram.png  used on input line
@@ -5993,7 +5993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \OT1/cmr/m/n/10 141 his-
  []
 
-<./Images/Feature 142 histogram.png, id=332, 421.575pt x 316.0608pt>
+<./Images/Feature 142 histogram.png, id=347, 421.575pt x 316.0608pt>
 File: ./Images/Feature 142 histogram.png Graphic file (type png)
 <use ./Images/Feature 142 histogram.png>
 Package pdftex.def Info: ./Images/Feature 142 histogram.png  used on input line
@@ -6052,7 +6052,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--281
 \OT1/cmr/m/n/10 142 his-
  []
 
-<./Images/Feature 143 histogram.png, id=333, 421.575pt x 316.0608pt>
+<./Images/Feature 143 histogram.png, id=348, 421.575pt x 316.0608pt>
 File: ./Images/Feature 143 histogram.png Graphic file (type png)
 <use ./Images/Feature 143 histogram.png>
 Package pdftex.def Info: ./Images/Feature 143 histogram.png  used on input line
@@ -6111,7 +6111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/10 143 his-
  []
 
-<./Images/Feature 144 histogram.png, id=334, 421.575pt x 316.0608pt>
+<./Images/Feature 144 histogram.png, id=349, 421.575pt x 316.0608pt>
 File: ./Images/Feature 144 histogram.png Graphic file (type png)
 <use ./Images/Feature 144 histogram.png>
 Package pdftex.def Info: ./Images/Feature 144 histogram.png  used on input line
@@ -6170,7 +6170,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 \OT1/cmr/m/n/10 144 his-
  []
 
-<./Images/Feature 145 histogram.png, id=335, 421.575pt x 316.0608pt>
+<./Images/Feature 145 histogram.png, id=350, 421.575pt x 316.0608pt>
 File: ./Images/Feature 145 histogram.png Graphic file (type png)
 <use ./Images/Feature 145 histogram.png>
 Package pdftex.def Info: ./Images/Feature 145 histogram.png  used on input line
@@ -6229,7 +6229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/10 145 his-
  []
 
-<./Images/Feature 146 histogram.png, id=336, 421.575pt x 316.0608pt>
+<./Images/Feature 146 histogram.png, id=351, 421.575pt x 316.0608pt>
 File: ./Images/Feature 146 histogram.png Graphic file (type png)
 <use ./Images/Feature 146 histogram.png>
 Package pdftex.def Info: ./Images/Feature 146 histogram.png  used on input line
@@ -6288,7 +6288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--285
 \OT1/cmr/m/n/10 146 his-
  []
 
-<./Images/Feature 147 histogram.png, id=337, 421.575pt x 316.0608pt>
+<./Images/Feature 147 histogram.png, id=352, 421.575pt x 316.0608pt>
 File: ./Images/Feature 147 histogram.png Graphic file (type png)
 <use ./Images/Feature 147 histogram.png>
 Package pdftex.def Info: ./Images/Feature 147 histogram.png  used on input line
@@ -6347,7 +6347,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--286
 \OT1/cmr/m/n/10 147 his-
  []
 
-<./Images/Feature 148 histogram.png, id=338, 421.575pt x 316.0608pt>
+<./Images/Feature 148 histogram.png, id=353, 421.575pt x 316.0608pt>
 File: ./Images/Feature 148 histogram.png Graphic file (type png)
 <use ./Images/Feature 148 histogram.png>
 Package pdftex.def Info: ./Images/Feature 148 histogram.png  used on input line
@@ -6406,7 +6406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--287
 \OT1/cmr/m/n/10 148 his-
  []
 
-<./Images/Feature 149 histogram.png, id=339, 421.575pt x 316.0608pt>
+<./Images/Feature 149 histogram.png, id=354, 421.575pt x 316.0608pt>
 File: ./Images/Feature 149 histogram.png Graphic file (type png)
 <use ./Images/Feature 149 histogram.png>
 Package pdftex.def Info: ./Images/Feature 149 histogram.png  used on input line
@@ -6465,7 +6465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--288
 \OT1/cmr/m/n/10 149 his-
  []
 
-<./Images/Feature 150 histogram.png, id=340, 421.575pt x 316.0608pt>
+<./Images/Feature 150 histogram.png, id=355, 421.575pt x 316.0608pt>
 File: ./Images/Feature 150 histogram.png Graphic file (type png)
 <use ./Images/Feature 150 histogram.png>
 Package pdftex.def Info: ./Images/Feature 150 histogram.png  used on input line
@@ -6564,7 +6564,7 @@ ture 91 histogram.png (PNG copy)> <./Images/Feature 92 histogram.png (PNG copy)
 re 96 histogram.png (PNG copy)> <./Images/Feature 97 histogram.png (PNG copy)> 
 <./Images/Feature 98 histogram.png (PNG copy)> <./Images/Feature 99 histogram.p
 ng (PNG copy)> <./Images/Feature 100 histogram.png (PNG copy)>]
-<./Images/Feature 151 histogram.png, id=396, 421.575pt x 316.0608pt>
+<./Images/Feature 151 histogram.png, id=411, 421.575pt x 316.0608pt>
 File: ./Images/Feature 151 histogram.png Graphic file (type png)
 <use ./Images/Feature 151 histogram.png>
 Package pdftex.def Info: ./Images/Feature 151 histogram.png  used on input line
@@ -6580,7 +6580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--298
 \OT1/cmr/m/n/10 ture 151
  []
 
-<./Images/Feature 152 histogram.png, id=397, 421.575pt x 316.0608pt>
+<./Images/Feature 152 histogram.png, id=412, 421.575pt x 316.0608pt>
 File: ./Images/Feature 152 histogram.png Graphic file (type png)
 <use ./Images/Feature 152 histogram.png>
 Package pdftex.def Info: ./Images/Feature 152 histogram.png  used on input line
@@ -6596,7 +6596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/10 ture 152
  []
 
-<./Images/Feature 153 histogram.png, id=398, 421.575pt x 316.0608pt>
+<./Images/Feature 153 histogram.png, id=413, 421.575pt x 316.0608pt>
 File: ./Images/Feature 153 histogram.png Graphic file (type png)
 <use ./Images/Feature 153 histogram.png>
 Package pdftex.def Info: ./Images/Feature 153 histogram.png  used on input line
@@ -6612,7 +6612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--300
 \OT1/cmr/m/n/10 ture 153
  []
 
-<./Images/Feature 154 histogram.png, id=399, 421.575pt x 316.0608pt>
+<./Images/Feature 154 histogram.png, id=414, 421.575pt x 316.0608pt>
 File: ./Images/Feature 154 histogram.png Graphic file (type png)
 <use ./Images/Feature 154 histogram.png>
 Package pdftex.def Info: ./Images/Feature 154 histogram.png  used on input line
@@ -6628,7 +6628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--301
 \OT1/cmr/m/n/10 ture 154
  []
 
-<./Images/Feature 155 histogram.png, id=400, 421.575pt x 316.0608pt>
+<./Images/Feature 155 histogram.png, id=415, 421.575pt x 316.0608pt>
 File: ./Images/Feature 155 histogram.png Graphic file (type png)
 <use ./Images/Feature 155 histogram.png>
 Package pdftex.def Info: ./Images/Feature 155 histogram.png  used on input line
@@ -6644,7 +6644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
 \OT1/cmr/m/n/10 ture 155
  []
 
-<./Images/Feature 156 histogram.png, id=401, 421.575pt x 316.0608pt>
+<./Images/Feature 156 histogram.png, id=416, 421.575pt x 316.0608pt>
 File: ./Images/Feature 156 histogram.png Graphic file (type png)
 <use ./Images/Feature 156 histogram.png>
 Package pdftex.def Info: ./Images/Feature 156 histogram.png  used on input line
@@ -6660,7 +6660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--303
 \OT1/cmr/m/n/10 ture 156
  []
 
-<./Images/Feature 157 histogram.png, id=402, 421.575pt x 316.0608pt>
+<./Images/Feature 157 histogram.png, id=417, 421.575pt x 316.0608pt>
 File: ./Images/Feature 157 histogram.png Graphic file (type png)
 <use ./Images/Feature 157 histogram.png>
 Package pdftex.def Info: ./Images/Feature 157 histogram.png  used on input line
@@ -6676,7 +6676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--304
 \OT1/cmr/m/n/10 ture 157
  []
 
-<./Images/Feature 158 histogram.png, id=403, 421.575pt x 316.0608pt>
+<./Images/Feature 158 histogram.png, id=418, 421.575pt x 316.0608pt>
 File: ./Images/Feature 158 histogram.png Graphic file (type png)
 <use ./Images/Feature 158 histogram.png>
 Package pdftex.def Info: ./Images/Feature 158 histogram.png  used on input line
@@ -6692,7 +6692,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--305
 \OT1/cmr/m/n/10 ture 158
  []
 
-<./Images/Feature 159 histogram.png, id=404, 421.575pt x 316.0608pt>
+<./Images/Feature 159 histogram.png, id=419, 421.575pt x 316.0608pt>
 File: ./Images/Feature 159 histogram.png Graphic file (type png)
 <use ./Images/Feature 159 histogram.png>
 Package pdftex.def Info: ./Images/Feature 159 histogram.png  used on input line
@@ -6708,7 +6708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--306
 \OT1/cmr/m/n/10 ture 159
  []
 
-<./Images/Feature 160 histogram.png, id=405, 421.575pt x 316.0608pt>
+<./Images/Feature 160 histogram.png, id=420, 421.575pt x 316.0608pt>
 File: ./Images/Feature 160 histogram.png Graphic file (type png)
 <use ./Images/Feature 160 histogram.png>
 Package pdftex.def Info: ./Images/Feature 160 histogram.png  used on input line
@@ -6724,7 +6724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--307
 \OT1/cmr/m/n/10 ture 160
  []
 
-<./Images/Feature 161 histogram.png, id=406, 421.575pt x 316.0608pt>
+<./Images/Feature 161 histogram.png, id=421, 421.575pt x 316.0608pt>
 File: ./Images/Feature 161 histogram.png Graphic file (type png)
 <use ./Images/Feature 161 histogram.png>
 Package pdftex.def Info: ./Images/Feature 161 histogram.png  used on input line
@@ -6740,7 +6740,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--308
 \OT1/cmr/m/n/10 ture 161
  []
 
-<./Images/Feature 162 histogram.png, id=407, 421.575pt x 316.0608pt>
+<./Images/Feature 162 histogram.png, id=422, 421.575pt x 316.0608pt>
 File: ./Images/Feature 162 histogram.png Graphic file (type png)
 <use ./Images/Feature 162 histogram.png>
 Package pdftex.def Info: ./Images/Feature 162 histogram.png  used on input line
@@ -6756,7 +6756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--309
 \OT1/cmr/m/n/10 ture 162
  []
 
-<./Images/Feature 163 histogram.png, id=408, 421.575pt x 316.0608pt>
+<./Images/Feature 163 histogram.png, id=423, 421.575pt x 316.0608pt>
 File: ./Images/Feature 163 histogram.png Graphic file (type png)
 <use ./Images/Feature 163 histogram.png>
 Package pdftex.def Info: ./Images/Feature 163 histogram.png  used on input line
@@ -6772,7 +6772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \OT1/cmr/m/n/10 ture 163
  []
 
-<./Images/Feature 164 histogram.png, id=409, 421.575pt x 316.0608pt>
+<./Images/Feature 164 histogram.png, id=424, 421.575pt x 316.0608pt>
 File: ./Images/Feature 164 histogram.png Graphic file (type png)
 <use ./Images/Feature 164 histogram.png>
 Package pdftex.def Info: ./Images/Feature 164 histogram.png  used on input line
@@ -6788,7 +6788,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--311
 \OT1/cmr/m/n/10 ture 164
  []
 
-<./Images/Feature 165 histogram.png, id=410, 421.575pt x 316.0608pt>
+<./Images/Feature 165 histogram.png, id=425, 421.575pt x 316.0608pt>
 File: ./Images/Feature 165 histogram.png Graphic file (type png)
 <use ./Images/Feature 165 histogram.png>
 Package pdftex.def Info: ./Images/Feature 165 histogram.png  used on input line
@@ -6804,7 +6804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--312
 \OT1/cmr/m/n/10 ture 165
  []
 
-<./Images/Feature 166 histogram.png, id=411, 421.575pt x 316.0608pt>
+<./Images/Feature 166 histogram.png, id=426, 421.575pt x 316.0608pt>
 File: ./Images/Feature 166 histogram.png Graphic file (type png)
 <use ./Images/Feature 166 histogram.png>
 Package pdftex.def Info: ./Images/Feature 166 histogram.png  used on input line
@@ -6820,7 +6820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \OT1/cmr/m/n/10 ture 166
  []
 
-<./Images/Feature 167 histogram.png, id=412, 421.575pt x 316.0608pt>
+<./Images/Feature 167 histogram.png, id=427, 421.575pt x 316.0608pt>
 File: ./Images/Feature 167 histogram.png Graphic file (type png)
 <use ./Images/Feature 167 histogram.png>
 Package pdftex.def Info: ./Images/Feature 167 histogram.png  used on input line
@@ -6836,7 +6836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \OT1/cmr/m/n/10 ture 167
  []
 
-<./Images/Feature 168 histogram.png, id=413, 421.575pt x 316.0608pt>
+<./Images/Feature 168 histogram.png, id=428, 421.575pt x 316.0608pt>
 File: ./Images/Feature 168 histogram.png Graphic file (type png)
 <use ./Images/Feature 168 histogram.png>
 Package pdftex.def Info: ./Images/Feature 168 histogram.png  used on input line
@@ -6852,7 +6852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--315
 \OT1/cmr/m/n/10 ture 168
  []
 
-<./Images/Feature 169 histogram.png, id=414, 421.575pt x 316.0608pt>
+<./Images/Feature 169 histogram.png, id=429, 421.575pt x 316.0608pt>
 File: ./Images/Feature 169 histogram.png Graphic file (type png)
 <use ./Images/Feature 169 histogram.png>
 Package pdftex.def Info: ./Images/Feature 169 histogram.png  used on input line
@@ -6868,7 +6868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--316
 \OT1/cmr/m/n/10 ture 169
  []
 
-<./Images/Feature 170 histogram.png, id=415, 421.575pt x 316.0608pt>
+<./Images/Feature 170 histogram.png, id=430, 421.575pt x 316.0608pt>
 File: ./Images/Feature 170 histogram.png Graphic file (type png)
 <use ./Images/Feature 170 histogram.png>
 Package pdftex.def Info: ./Images/Feature 170 histogram.png  used on input line
@@ -6884,7 +6884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--317
 \OT1/cmr/m/n/10 ture 170
  []
 
-<./Images/Feature 171 histogram.png, id=416, 421.575pt x 316.0608pt>
+<./Images/Feature 171 histogram.png, id=431, 421.575pt x 316.0608pt>
 File: ./Images/Feature 171 histogram.png Graphic file (type png)
 <use ./Images/Feature 171 histogram.png>
 Package pdftex.def Info: ./Images/Feature 171 histogram.png  used on input line
@@ -6900,7 +6900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--318
 \OT1/cmr/m/n/10 ture 171
  []
 
-<./Images/Feature 172 histogram.png, id=417, 421.575pt x 316.0608pt>
+<./Images/Feature 172 histogram.png, id=432, 421.575pt x 316.0608pt>
 File: ./Images/Feature 172 histogram.png Graphic file (type png)
 <use ./Images/Feature 172 histogram.png>
 Package pdftex.def Info: ./Images/Feature 172 histogram.png  used on input line
@@ -6916,7 +6916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--319
 \OT1/cmr/m/n/10 ture 172
  []
 
-<./Images/Feature 173 histogram.png, id=418, 421.575pt x 316.0608pt>
+<./Images/Feature 173 histogram.png, id=433, 421.575pt x 316.0608pt>
 File: ./Images/Feature 173 histogram.png Graphic file (type png)
 <use ./Images/Feature 173 histogram.png>
 Package pdftex.def Info: ./Images/Feature 173 histogram.png  used on input line
@@ -6932,7 +6932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--320
 \OT1/cmr/m/n/10 ture 173
  []
 
-<./Images/Feature 174 histogram.png, id=419, 421.575pt x 316.0608pt>
+<./Images/Feature 174 histogram.png, id=434, 421.575pt x 316.0608pt>
 File: ./Images/Feature 174 histogram.png Graphic file (type png)
 <use ./Images/Feature 174 histogram.png>
 Package pdftex.def Info: ./Images/Feature 174 histogram.png  used on input line
@@ -6948,7 +6948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--321
 \OT1/cmr/m/n/10 ture 174
  []
 
-<./Images/Feature 175 histogram.png, id=420, 421.575pt x 316.0608pt>
+<./Images/Feature 175 histogram.png, id=435, 421.575pt x 316.0608pt>
 File: ./Images/Feature 175 histogram.png Graphic file (type png)
 <use ./Images/Feature 175 histogram.png>
 Package pdftex.def Info: ./Images/Feature 175 histogram.png  used on input line
@@ -6964,7 +6964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--322
 \OT1/cmr/m/n/10 ture 175
  []
 
-<./Images/Feature 176 histogram.png, id=421, 421.575pt x 316.0608pt>
+<./Images/Feature 176 histogram.png, id=436, 421.575pt x 316.0608pt>
 File: ./Images/Feature 176 histogram.png Graphic file (type png)
 <use ./Images/Feature 176 histogram.png>
 Package pdftex.def Info: ./Images/Feature 176 histogram.png  used on input line
@@ -6980,7 +6980,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--323
 \OT1/cmr/m/n/10 ture 176
  []
 
-<./Images/Feature 177 histogram.png, id=422, 421.575pt x 316.0608pt>
+<./Images/Feature 177 histogram.png, id=437, 421.575pt x 316.0608pt>
 File: ./Images/Feature 177 histogram.png Graphic file (type png)
 <use ./Images/Feature 177 histogram.png>
 Package pdftex.def Info: ./Images/Feature 177 histogram.png  used on input line
@@ -7039,7 +7039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--324
 \OT1/cmr/m/n/10 177 his-
  []
 
-<./Images/Feature 178 histogram.png, id=423, 421.575pt x 316.0608pt>
+<./Images/Feature 178 histogram.png, id=438, 421.575pt x 316.0608pt>
 File: ./Images/Feature 178 histogram.png Graphic file (type png)
 <use ./Images/Feature 178 histogram.png>
 Package pdftex.def Info: ./Images/Feature 178 histogram.png  used on input line
@@ -7098,7 +7098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--325
 \OT1/cmr/m/n/10 178 his-
  []
 
-<./Images/Feature 179 histogram.png, id=424, 421.575pt x 316.0608pt>
+<./Images/Feature 179 histogram.png, id=439, 421.575pt x 316.0608pt>
 File: ./Images/Feature 179 histogram.png Graphic file (type png)
 <use ./Images/Feature 179 histogram.png>
 Package pdftex.def Info: ./Images/Feature 179 histogram.png  used on input line
@@ -7157,7 +7157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \OT1/cmr/m/n/10 179 his-
  []
 
-<./Images/Feature 180 histogram.png, id=425, 421.575pt x 316.0608pt>
+<./Images/Feature 180 histogram.png, id=440, 421.575pt x 316.0608pt>
 File: ./Images/Feature 180 histogram.png Graphic file (type png)
 <use ./Images/Feature 180 histogram.png>
 Package pdftex.def Info: ./Images/Feature 180 histogram.png  used on input line
@@ -7216,7 +7216,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--327
 \OT1/cmr/m/n/10 180 his-
  []
 
-<./Images/Feature 181 histogram.png, id=426, 421.575pt x 316.0608pt>
+<./Images/Feature 181 histogram.png, id=441, 421.575pt x 316.0608pt>
 File: ./Images/Feature 181 histogram.png Graphic file (type png)
 <use ./Images/Feature 181 histogram.png>
 Package pdftex.def Info: ./Images/Feature 181 histogram.png  used on input line
@@ -7275,7 +7275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--328
 \OT1/cmr/m/n/10 181 his-
  []
 
-<./Images/Feature 182 histogram.png, id=427, 421.575pt x 316.0608pt>
+<./Images/Feature 182 histogram.png, id=442, 421.575pt x 316.0608pt>
 File: ./Images/Feature 182 histogram.png Graphic file (type png)
 <use ./Images/Feature 182 histogram.png>
 Package pdftex.def Info: ./Images/Feature 182 histogram.png  used on input line
@@ -7334,7 +7334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--329
 \OT1/cmr/m/n/10 182 his-
  []
 
-<./Images/Feature 183 histogram.png, id=428, 421.575pt x 316.0608pt>
+<./Images/Feature 183 histogram.png, id=443, 421.575pt x 316.0608pt>
 File: ./Images/Feature 183 histogram.png Graphic file (type png)
 <use ./Images/Feature 183 histogram.png>
 Package pdftex.def Info: ./Images/Feature 183 histogram.png  used on input line
@@ -7393,7 +7393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--330
 \OT1/cmr/m/n/10 183 his-
  []
 
-<./Images/Feature 184 histogram.png, id=429, 421.575pt x 316.0608pt>
+<./Images/Feature 184 histogram.png, id=444, 421.575pt x 316.0608pt>
 File: ./Images/Feature 184 histogram.png Graphic file (type png)
 <use ./Images/Feature 184 histogram.png>
 Package pdftex.def Info: ./Images/Feature 184 histogram.png  used on input line
@@ -7452,7 +7452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--331
 \OT1/cmr/m/n/10 184 his-
  []
 
-<./Images/Feature 185 histogram.png, id=430, 421.575pt x 316.0608pt>
+<./Images/Feature 185 histogram.png, id=445, 421.575pt x 316.0608pt>
 File: ./Images/Feature 185 histogram.png Graphic file (type png)
 <use ./Images/Feature 185 histogram.png>
 Package pdftex.def Info: ./Images/Feature 185 histogram.png  used on input line
@@ -7511,7 +7511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--332
 \OT1/cmr/m/n/10 185 his-
  []
 
-<./Images/Feature 186 histogram.png, id=431, 421.575pt x 316.0608pt>
+<./Images/Feature 186 histogram.png, id=446, 421.575pt x 316.0608pt>
 File: ./Images/Feature 186 histogram.png Graphic file (type png)
 <use ./Images/Feature 186 histogram.png>
 Package pdftex.def Info: ./Images/Feature 186 histogram.png  used on input line
@@ -7570,7 +7570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--333
 \OT1/cmr/m/n/10 186 his-
  []
 
-<./Images/Feature 187 histogram.png, id=432, 421.575pt x 316.0608pt>
+<./Images/Feature 187 histogram.png, id=447, 421.575pt x 316.0608pt>
 File: ./Images/Feature 187 histogram.png Graphic file (type png)
 <use ./Images/Feature 187 histogram.png>
 Package pdftex.def Info: ./Images/Feature 187 histogram.png  used on input line
@@ -7629,7 +7629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--334
 \OT1/cmr/m/n/10 187 his-
  []
 
-<./Images/Feature 188 histogram.png, id=433, 421.575pt x 316.0608pt>
+<./Images/Feature 188 histogram.png, id=448, 421.575pt x 316.0608pt>
 File: ./Images/Feature 188 histogram.png Graphic file (type png)
 <use ./Images/Feature 188 histogram.png>
 Package pdftex.def Info: ./Images/Feature 188 histogram.png  used on input line
@@ -7688,7 +7688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--335
 \OT1/cmr/m/n/10 188 his-
  []
 
-<./Images/Feature 189 histogram.png, id=434, 421.575pt x 316.0608pt>
+<./Images/Feature 189 histogram.png, id=449, 421.575pt x 316.0608pt>
 File: ./Images/Feature 189 histogram.png Graphic file (type png)
 <use ./Images/Feature 189 histogram.png>
 Package pdftex.def Info: ./Images/Feature 189 histogram.png  used on input line
@@ -7747,7 +7747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--336
 \OT1/cmr/m/n/10 189 his-
  []
 
-<./Images/Feature 190 histogram.png, id=435, 421.575pt x 316.0608pt>
+<./Images/Feature 190 histogram.png, id=450, 421.575pt x 316.0608pt>
 File: ./Images/Feature 190 histogram.png Graphic file (type png)
 <use ./Images/Feature 190 histogram.png>
 Package pdftex.def Info: ./Images/Feature 190 histogram.png  used on input line
@@ -7806,7 +7806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \OT1/cmr/m/n/10 190 his-
  []
 
-<./Images/Feature 191 histogram.png, id=436, 421.575pt x 316.0608pt>
+<./Images/Feature 191 histogram.png, id=451, 421.575pt x 316.0608pt>
 File: ./Images/Feature 191 histogram.png Graphic file (type png)
 <use ./Images/Feature 191 histogram.png>
 Package pdftex.def Info: ./Images/Feature 191 histogram.png  used on input line
@@ -7865,7 +7865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--338
 \OT1/cmr/m/n/10 191 his-
  []
 
-<./Images/Feature 192 histogram.png, id=437, 421.575pt x 316.0608pt>
+<./Images/Feature 192 histogram.png, id=452, 421.575pt x 316.0608pt>
 File: ./Images/Feature 192 histogram.png Graphic file (type png)
 <use ./Images/Feature 192 histogram.png>
 Package pdftex.def Info: ./Images/Feature 192 histogram.png  used on input line
@@ -7924,7 +7924,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--339
 \OT1/cmr/m/n/10 192 his-
  []
 
-<./Images/Feature 193 histogram.png, id=438, 421.575pt x 316.0608pt>
+<./Images/Feature 193 histogram.png, id=453, 421.575pt x 316.0608pt>
 File: ./Images/Feature 193 histogram.png Graphic file (type png)
 <use ./Images/Feature 193 histogram.png>
 Package pdftex.def Info: ./Images/Feature 193 histogram.png  used on input line
@@ -7983,7 +7983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--340
 \OT1/cmr/m/n/10 193 his-
  []
 
-<./Images/Feature 194 histogram.png, id=439, 421.575pt x 316.0608pt>
+<./Images/Feature 194 histogram.png, id=454, 421.575pt x 316.0608pt>
 File: ./Images/Feature 194 histogram.png Graphic file (type png)
 <use ./Images/Feature 194 histogram.png>
 Package pdftex.def Info: ./Images/Feature 194 histogram.png  used on input line
@@ -8042,7 +8042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--341
 \OT1/cmr/m/n/10 194 his-
  []
 
-<./Images/Feature 195 histogram.png, id=440, 421.575pt x 316.0608pt>
+<./Images/Feature 195 histogram.png, id=455, 421.575pt x 316.0608pt>
 File: ./Images/Feature 195 histogram.png Graphic file (type png)
 <use ./Images/Feature 195 histogram.png>
 Package pdftex.def Info: ./Images/Feature 195 histogram.png  used on input line
@@ -8101,7 +8101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--342
 \OT1/cmr/m/n/10 195 his-
  []
 
-<./Images/Feature 196 histogram.png, id=441, 421.575pt x 316.0608pt>
+<./Images/Feature 196 histogram.png, id=456, 421.575pt x 316.0608pt>
 File: ./Images/Feature 196 histogram.png Graphic file (type png)
 <use ./Images/Feature 196 histogram.png>
 Package pdftex.def Info: ./Images/Feature 196 histogram.png  used on input line
@@ -8160,7 +8160,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--343
 \OT1/cmr/m/n/10 196 his-
  []
 
-<./Images/Feature 197 histogram.png, id=442, 421.575pt x 316.0608pt>
+<./Images/Feature 197 histogram.png, id=457, 421.575pt x 316.0608pt>
 File: ./Images/Feature 197 histogram.png Graphic file (type png)
 <use ./Images/Feature 197 histogram.png>
 Package pdftex.def Info: ./Images/Feature 197 histogram.png  used on input line
@@ -8219,7 +8219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--344
 \OT1/cmr/m/n/10 197 his-
  []
 
-<./Images/Feature 198 histogram.png, id=443, 421.575pt x 316.0608pt>
+<./Images/Feature 198 histogram.png, id=458, 421.575pt x 316.0608pt>
 File: ./Images/Feature 198 histogram.png Graphic file (type png)
 <use ./Images/Feature 198 histogram.png>
 Package pdftex.def Info: ./Images/Feature 198 histogram.png  used on input line
@@ -8278,7 +8278,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--345
 \OT1/cmr/m/n/10 198 his-
  []
 
-<./Images/Feature 199 histogram.png, id=444, 421.575pt x 316.0608pt>
+<./Images/Feature 199 histogram.png, id=459, 421.575pt x 316.0608pt>
 File: ./Images/Feature 199 histogram.png Graphic file (type png)
 <use ./Images/Feature 199 histogram.png>
 Package pdftex.def Info: ./Images/Feature 199 histogram.png  used on input line
@@ -8337,7 +8337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--346
 \OT1/cmr/m/n/10 199 his-
  []
 
-<./Images/Feature 200 histogram.png, id=445, 421.575pt x 316.0608pt>
+<./Images/Feature 200 histogram.png, id=460, 421.575pt x 316.0608pt>
 File: ./Images/Feature 200 histogram.png Graphic file (type png)
 <use ./Images/Feature 200 histogram.png>
 Package pdftex.def Info: ./Images/Feature 200 histogram.png  used on input line
@@ -8396,7 +8396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--347
 \OT1/cmr/m/n/10 200 his-
  []
 
-<./Images/Feature 201 histogram.png, id=446, 421.575pt x 316.0608pt>
+<./Images/Feature 201 histogram.png, id=461, 421.575pt x 316.0608pt>
 File: ./Images/Feature 201 histogram.png Graphic file (type png)
 <use ./Images/Feature 201 histogram.png>
 Package pdftex.def Info: ./Images/Feature 201 histogram.png  used on input line
@@ -8455,7 +8455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--348
 \OT1/cmr/m/n/10 201 his-
  []
 
-<./Images/Feature 202 histogram.png, id=447, 421.575pt x 316.0608pt>
+<./Images/Feature 202 histogram.png, id=462, 421.575pt x 316.0608pt>
 File: ./Images/Feature 202 histogram.png Graphic file (type png)
 <use ./Images/Feature 202 histogram.png>
 Package pdftex.def Info: ./Images/Feature 202 histogram.png  used on input line
@@ -8514,7 +8514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--349
 \OT1/cmr/m/n/10 202 his-
  []
 
-<./Images/Feature 203 histogram.png, id=448, 421.575pt x 316.0608pt>
+<./Images/Feature 203 histogram.png, id=463, 421.575pt x 316.0608pt>
 File: ./Images/Feature 203 histogram.png Graphic file (type png)
 <use ./Images/Feature 203 histogram.png>
 Package pdftex.def Info: ./Images/Feature 203 histogram.png  used on input line
@@ -8573,7 +8573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--350
 \OT1/cmr/m/n/10 203 his-
  []
 
-<./Images/Feature 204 histogram.png, id=449, 421.575pt x 316.0608pt>
+<./Images/Feature 204 histogram.png, id=464, 421.575pt x 316.0608pt>
 File: ./Images/Feature 204 histogram.png Graphic file (type png)
 <use ./Images/Feature 204 histogram.png>
 Package pdftex.def Info: ./Images/Feature 204 histogram.png  used on input line
@@ -8734,116 +8734,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--378
 
  []
 
-
-LaTeX Warning: File `./Images/Overview of images.png' not found on input line 3
-81.
-
-
-! Package pdftex.def Error: File `./Images/Overview of images.png' not found: u
-sing draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.381 ...xtwidth]{./Images/Overview of images.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<./Images/Overview of images HR.png, id=586, 372.79276pt x 298.11375pt>
+File: ./Images/Overview of images HR.png Graphic file (type png)
+<use ./Images/Overview of images HR.png>
+Package pdftex.def Info: ./Images/Overview of images HR.png  used on input line
+ 381.
+(pdftex.def)             Requested size: 430.31812pt x 344.12457pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 3
 85.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
 
  []
 
-<./Images/Overview of images HR.png, id=575, 372.79276pt x 298.11375pt>
-File: ./Images/Overview of images HR.png Graphic file (type png)
-<use ./Images/Overview of images HR.png>
-Package pdftex.def Info: ./Images/Overview of images HR.png  used on input line
- 391.
-(pdftex.def)             Requested size: 430.31812pt x 344.12457pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 3
-95.
+99.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+[8 <./Images/Overview of images HR.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+<./Images/PCA result.png, id=598, 421.575pt x 316.0608pt>
+File: ./Images/PCA result.png Graphic file (type png)
+<use ./Images/PCA result.png>
+Package pdftex.def Info: ./Images/PCA result.png  used on input line 411.
+(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 4
-09.
+15.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[9 <./Images/Overview of images HR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
-
- []
-
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-<./Images/PCA result.png, id=589, 421.575pt x 316.0608pt>
-File: ./Images/PCA result.png Graphic file (type png)
-<use ./Images/PCA result.png>
-Package pdftex.def Info: ./Images/PCA result.png  used on input line 421.
-(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
+<./Images/Salinas truth.png, id=604, 445.665pt x 247.52475pt>
+File: ./Images/Salinas truth.png Graphic file (type png)
+<use ./Images/Salinas truth.png>
+Package pdftex.def Info: ./Images/Salinas truth.png  used on input line 421.
+(pdftex.def)             Requested size: 430.31812pt x 239.0034pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 4
 25.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[10]
+[10 <./Images/PCA result.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 426--428
 
  []
 
-<./Images/Salinas truth.png, id=595, 445.665pt x 247.52475pt>
-File: ./Images/Salinas truth.png Graphic file (type png)
-<use ./Images/Salinas truth.png>
-Package pdftex.def Info: ./Images/Salinas truth.png  used on input line 431.
-(pdftex.def)             Requested size: 430.31812pt x 239.0034pt.
-File: ~/Documents/masters/bnw unit.png Graphic file (type png)
-<use ~/Documents/masters/bnw unit.png>
-Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 4
-35.
-(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[11 <./Images/PCA result.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
+Underfull \hbox (badness 10000) in paragraph at lines 434--436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--446
-
- []
-
-
-Overfull \hbox (2.00806pt too wide) in paragraph at lines 447--448
+Overfull \hbox (2.00806pt too wide) in paragraph at lines 437--438
 []\OT1/cmr/m/n/12 We see that the val-ues range from (min(min)) $\OMS/cmsy/m/n/
 12 ^^@\OT1/cmr/m/n/12 9$ to (max(max)) $8374$ with (max(min))
  []
@@ -8851,178 +8824,363 @@ Overfull \hbox (2.00806pt too wide) in paragraph at lines 447--448
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 4
-52.
+42.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[12 <./Images/Salinas truth.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+[11 <./Images/Salinas truth.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Underfull \hbox (badness 10000) in paragraph at lines 448--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
+Underfull \hbox (badness 10000) in paragraph at lines 451--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
 
  []
 
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
-Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-00.
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 4
+88.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[13]
-<./Images/Time trials.png, id=613, 421.575pt x 316.0608pt>
+[12]
+<./Images/Time trials.png, id=622, 421.575pt x 316.0608pt>
 File: ./Images/Time trials.png Graphic file (type png)
 <use ./Images/Time trials.png>
-Package pdftex.def Info: ./Images/Time trials.png  used on input line 506.
+Package pdftex.def Info: ./Images/Time trials.png  used on input line 500.
 (pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-39.
+33.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [14 <./Images/Time trials.png (PNG copy)>]
+ [13 <./Images/Time trials.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 540--542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--545
+Underfull \hbox (badness 10000) in paragraph at lines 545--547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--548
+Underfull \hbox (badness 10000) in paragraph at lines 548--550
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 551--553
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
-
- []
-
-<./Images/k-means.png, id=620, 421.575pt x 316.0608pt>
+<./Images/k-means.png, id=629, 620.3175pt x 504.08325pt>
 File: ./Images/k-means.png Graphic file (type png)
 <use ./Images/k-means.png>
-Package pdftex.def Info: ./Images/k-means.png  used on input line 560.
-(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
+Package pdftex.def Info: ./Images/k-means.png  used on input line 556.
+(pdftex.def)             Requested size: 430.31812pt x 349.68689pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-64.
+60.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[15]
-<./Images/Fuzzy c-means.png, id=626, 421.575pt x 316.0608pt>
+[14]
+<./Images/Fuzzy c-means.png, id=635, 421.575pt x 316.0608pt>
 File: ./Images/Fuzzy c-means.png Graphic file (type png)
 <use ./Images/Fuzzy c-means.png>
-Package pdftex.def Info: ./Images/Fuzzy c-means.png  used on input line 568.
+Package pdftex.def Info: ./Images/Fuzzy c-means.png  used on input line 564.
 (pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-72.
+68.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [16 <./Images/k-means.png (PNG copy)>]
-<./Images/Possibilistic c-means.png, id=632, 421.575pt x 316.0608pt>
+ [15 <./Images/k-means.png>]
+<./Images/Possibilistic c-means.png, id=642, 421.575pt x 316.0608pt>
 File: ./Images/Possibilistic c-means.png Graphic file (type png)
 <use ./Images/Possibilistic c-means.png>
 Package pdftex.def Info: ./Images/Possibilistic c-means.png  used on input line
- 576.
+ 572.
 (pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-80.
+76.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [17 <./Images/Fuzzy c-means.png (PNG copy)>]
-<./Images/Probabilistic c-means.png, id=638, 421.575pt x 316.0608pt>
+ [16 <./Images/Fuzzy c-means.png (PNG copy)>]
+<./Images/Probabilistic c-means.png, id=648, 421.575pt x 316.0608pt>
 File: ./Images/Probabilistic c-means.png Graphic file (type png)
 <use ./Images/Probabilistic c-means.png>
 Package pdftex.def Info: ./Images/Probabilistic c-means.png  used on input line
- 584.
+ 580.
 (pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 5
-88.
+84.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [18 <./Images/Possibilistic c-means.png (PNG copy)>]
-<./Images/Single link.png, id=645, 421.575pt x 316.0608pt>
+
+[17 <./Images/Possibilistic c-means.png (PNG copy)>]
+<./Images/Single link.png, id=654, 421.575pt x 316.0608pt>
 File: ./Images/Single link.png Graphic file (type png)
 <use ./Images/Single link.png>
-Package pdftex.def Info: ./Images/Single link.png  used on input line 593.
+Package pdftex.def Info: ./Images/Single link.png  used on input line 589.
 (pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
-<./Images/Single link tree.png, id=646, 923.1288pt x 501.072pt>
+<./Images/Single link tree.png, id=655, 923.1288pt x 501.072pt>
 File: ./Images/Single link tree.png Graphic file (type png)
 <use ./Images/Single link tree.png>
-Package pdftex.def Info: ./Images/Single link tree.png  used on input line 594.
+Package pdftex.def Info: ./Images/Single link tree.png  used on input line 590.
 
 (pdftex.def)             Requested size: 203.83417pt x 110.63376pt.
-<./Images/Complete link.png, id=647, 421.575pt x 316.0608pt>
+<./Images/Complete link.png, id=656, 421.575pt x 316.0608pt>
 File: ./Images/Complete link.png Graphic file (type png)
 <use ./Images/Complete link.png>
-Package pdftex.def Info: ./Images/Complete link.png  used on input line 604.
+Package pdftex.def Info: ./Images/Complete link.png  used on input line 600.
 (pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
-<./Images/Complete link tree.png, id=648, 915.42pt x 500.5902pt>
+<./Images/Complete link tree.png, id=657, 915.42pt x 500.5902pt>
 File: ./Images/Complete link tree.png Graphic file (type png)
 <use ./Images/Complete link tree.png>
 Package pdftex.def Info: ./Images/Complete link tree.png  used on input line 60
-5.
+1.
 (pdftex.def)             Requested size: 203.83417pt x 111.45926pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
-10.
+06.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [19 <./Images/Probabilistic c-means.png (PNG copy)> <./Images/Single link.png 
+ [18 <./Images/Probabilistic c-means.png (PNG copy)> <./Images/Single link.png 
 (PNG copy)> <./Images/Single link tree.png (PNG copy)>]
-<./Images/WPGMC.png, id=657, 421.575pt x 316.0608pt>
+<./Images/WPGMC.png, id=667, 421.575pt x 316.0608pt>
 File: ./Images/WPGMC.png Graphic file (type png)
 <use ./Images/WPGMC.png>
-Package pdftex.def Info: ./Images/WPGMC.png  used on input line 615.
+Package pdftex.def Info: ./Images/WPGMC.png  used on input line 611.
 (pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
-<./Images/WPGMC tree.png, id=658, 928.4286pt x 500.5902pt>
+<./Images/WPGMC tree.png, id=668, 928.4286pt x 500.5902pt>
 File: ./Images/WPGMC tree.png Graphic file (type png)
 <use ./Images/WPGMC tree.png>
-Package pdftex.def Info: ./Images/WPGMC tree.png  used on input line 616.
+Package pdftex.def Info: ./Images/WPGMC tree.png  used on input line 612.
 (pdftex.def)             Requested size: 203.83417pt x 109.90103pt.
-<./Images/Ward.png, id=659, 421.575pt x 316.0608pt>
+<./Images/Ward.png, id=669, 421.575pt x 316.0608pt>
 File: ./Images/Ward.png Graphic file (type png)
 <use ./Images/Ward.png>
-Package pdftex.def Info: ./Images/Ward.png  used on input line 626.
+Package pdftex.def Info: ./Images/Ward.png  used on input line 622.
 (pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
-<./Images/Ward tree.png, id=660, 912.0474pt x 500.5902pt>
+<./Images/Ward tree.png, id=670, 912.0474pt x 500.5902pt>
 File: ./Images/Ward tree.png Graphic file (type png)
 <use ./Images/Ward tree.png>
-Package pdftex.def Info: ./Images/Ward tree.png  used on input line 627.
+Package pdftex.def Info: ./Images/Ward tree.png  used on input line 623.
 (pdftex.def)             Requested size: 203.83417pt x 111.87173pt.
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
 Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
-32.
+28.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
- [20 <./Images/Complete link.png (PNG copy)> <./Images/Complete link tree.png (
+ [19 <./Images/Complete link.png (PNG copy)> <./Images/Complete link tree.png (
 PNG copy)> <./Images/WPGMC.png (PNG copy)> <./Images/WPGMC tree.png (PNG copy)>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 637--639
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--646
+Underfull \hbox (badness 10000) in paragraph at lines 632--634
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
+
+ []
+
+<./Images/warning.png, id=681, 533.5935pt x 45.771pt>
+File: ./Images/warning.png Graphic file (type png)
+<use ./Images/warning.png>
+Package pdftex.def Info: ./Images/warning.png  used on input line 641.
+(pdftex.def)             Requested size: 430.31812pt x 36.91365pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 649.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 649.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--653
+
+ []
+
+<./Images/error.png, id=682, 904.5795pt x 280.6485pt>
+File: ./Images/error.png Graphic file (type png)
+<use ./Images/error.png>
+Package pdftex.def Info: ./Images/error.png  used on input line 656.
+(pdftex.def)             Requested size: 430.31812pt x 133.50641pt.
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
+60.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+[20 <./Images/Ward.png (PNG copy)> <./Images/Ward tree.png (PNG copy)> <./Image
+s/warning.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
+
+ []
+
+<./Images/k-means 9.png, id=692, 421.575pt x 316.0608pt>
+File: ./Images/k-means 9.png Graphic file (type png)
+<use ./Images/k-means 9.png>
+Package pdftex.def Info: ./Images/k-means 9.png  used on input line 666.
+(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
+<./Images/Possibilistic c-means 9.png, id=693, 421.575pt x 316.0608pt>
+File: ./Images/Possibilistic c-means 9.png Graphic file (type png)
+<use ./Images/Possibilistic c-means 9.png>
+Package pdftex.def Info: ./Images/Possibilistic c-means 9.png  used on input li
+ne 674.
+(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
+78.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+[21 <./Images/error.png> <./Images/k-means 9.png (PNG copy)>]
+<./Images/Probabilistic c-means 9.png, id=701, 421.575pt x 316.0608pt>
+File: ./Images/Probabilistic c-means 9.png Graphic file (type png)
+<use ./Images/Probabilistic c-means 9.png>
+Package pdftex.def Info: ./Images/Probabilistic c-means 9.png  used on input li
+ne 682.
+(pdftex.def)             Requested size: 430.31812pt x 322.6237pt.
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
+86.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+ [22 <./Images/Possibilistic c-means 9.png (PNG copy)>]
+<./Images/Single link 9.png, id=708, 421.575pt x 316.0608pt>
+File: ./Images/Single link 9.png Graphic file (type png)
+<use ./Images/Single link 9.png>
+Package pdftex.def Info: ./Images/Single link 9.png  used on input line 691.
+(pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
+<./Images/Single link tree 9.png, id=709, 923.1288pt x 501.072pt>
+File: ./Images/Single link tree 9.png Graphic file (type png)
+<use ./Images/Single link tree 9.png>
+Package pdftex.def Info: ./Images/Single link tree 9.png  used on input line 69
+2.
+(pdftex.def)             Requested size: 203.83417pt x 110.63376pt.
+<./Images/Complete link 9.png, id=710, 421.575pt x 316.0608pt>
+File: ./Images/Complete link 9.png Graphic file (type png)
+<use ./Images/Complete link 9.png>
+Package pdftex.def Info: ./Images/Complete link 9.png  used on input line 702.
+(pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
+<./Images/Complete link tree 9.png, id=711, 915.42pt x 500.5902pt>
+File: ./Images/Complete link tree 9.png Graphic file (type png)
+<use ./Images/Complete link tree 9.png>
+Package pdftex.def Info: ./Images/Complete link tree 9.png  used on input line 
+703.
+(pdftex.def)             Requested size: 203.83417pt x 111.45926pt.
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 7
+08.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+ [23 <./Images/Probabilistic c-means 9.png (PNG copy)> <./Images/Single link 9.
+png (PNG copy)> <./Images/Single link tree 9.png (PNG copy)>]
+<./Images/WPGMC 9.png, id=720, 421.575pt x 316.0608pt>
+File: ./Images/WPGMC 9.png Graphic file (type png)
+<use ./Images/WPGMC 9.png>
+Package pdftex.def Info: ./Images/WPGMC 9.png  used on input line 713.
+(pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
+<./Images/WPGMC tree 9.png, id=721, 928.4286pt x 500.5902pt>
+File: ./Images/WPGMC tree 9.png Graphic file (type png)
+<use ./Images/WPGMC tree 9.png>
+Package pdftex.def Info: ./Images/WPGMC tree 9.png  used on input line 714.
+(pdftex.def)             Requested size: 203.83417pt x 109.90103pt.
+<./Images/Ward 9.png, id=722, 421.575pt x 316.0608pt>
+File: ./Images/Ward 9.png Graphic file (type png)
+<use ./Images/Ward 9.png>
+Package pdftex.def Info: ./Images/Ward 9.png  used on input line 724.
+(pdftex.def)             Requested size: 203.83417pt x 152.8215pt.
+<./Images/Ward tree 9.png, id=723, 912.0474pt x 500.5902pt>
+File: ./Images/Ward tree 9.png Graphic file (type png)
+<use ./Images/Ward tree 9.png>
+Package pdftex.def Info: ./Images/Ward tree 9.png  used on input line 725.
+(pdftex.def)             Requested size: 203.83417pt x 111.87173pt.
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 7
+30.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+ [24 <./Images/Complete link 9.png (PNG copy)> <./Images/Complete link tree 9.p
+ng (PNG copy)> <./Images/WPGMC 9.png (PNG copy)> <./Images/WPGMC tree 9.png (PN
+G copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 731--733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
+
+ []
+
+File: ~/Documents/masters/bnw unit.png Graphic file (type png)
+<use ~/Documents/masters/bnw unit.png>
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 7
+49.
+(pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
+[25 <./Images/Ward 9.png (PNG copy)> <./Images/Ward tree 9.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--760
 
  []
 
 ! Misplaced alignment tab character &.
-l.647 ...dis, S., Pikrakis, A., Koutroumbas, K., &
+l.761 ...dis, S., Pikrakis, A., Koutroumbas, K., &
                                                    Cavouras, D. (2010). Intr...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -9032,36 +9190,31 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
+Underfull \hbox (badness 10000) in paragraph at lines 761--763
 
  []
 
 File: ~/Documents/masters/bnw unit.png Graphic file (type png)
 <use ~/Documents/masters/bnw unit.png>
-Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 6
-50.
+Package pdftex.def Info: ~/Documents/masters/bnw unit.png  used on input line 7
+64.
 (pdftex.def)             Requested size: 29.66028pt x 38.39275pt.
-[21 <./Images/Ward.png (PNG copy)> <./Images/Ward tree.png (PNG copy)>]
-(./project.aux)
+[26] (./project.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: 65C3BAB192C4FC5DF8824F437BF71EEE;2854.
+(rerunfilecheck)             Checksum: 85DD835B739A06C66998F1D73E0C8272;3262.
  ) 
 Here is how much of TeX's memory you used:
- 35705 strings out of 476182
- 841892 string characters out of 5795595
+ 35798 strings out of 476182
+ 844096 string characters out of 5795595
  1992975 words of memory out of 5000000
- 56937 multiletter control sequences out of 15000+600000
- 564705 words of font info for 59 fonts, out of 8000000 for 9000
+ 57007 multiletter control sequences out of 15000+600000
+ 564536 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,16n,107p,1308b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,107p,1308b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
@@ -9071,12 +9224,11 @@ st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt12.pfb>
-Output written on project.pdf (22 pages, 4780337 bytes).
+ts/cm/cmti12.pfb>
+Output written on project.pdf (27 pages, 5648483 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 275 named destinations out of 1000 (max. 500000)
- 1286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 854 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 299 named destinations out of 1000 (max. 500000)
+ 1375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

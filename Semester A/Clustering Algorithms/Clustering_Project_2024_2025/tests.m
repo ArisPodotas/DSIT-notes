@@ -350,11 +350,11 @@ figure(62), scatter3(x.Y(1,U(:,8)>=cutoff), x.Y(2,U(:,8)>=cutoff), x.Y(3,U(:,8)>
 figure(62), scatter3(x.Y(1,U(:,9)>=cutoff), x.Y(2,U(:,9)>=cutoff), x.Y(3,U(:,9)>=cutoff), 's', "MarkerFaceColor","#EDB120") 
 figure(62), scatter3(theta(1,:), theta(2,:), theta(3,:),'k+')
 figure(62), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
-figure(62), title('Possibilis clustering')
+figure(62), title('Possibilistic clustering')
 figure(62), xlabel('Component 1')
 figure(62), ylabel('Component 2')
 figure(62), zlabel('Component 3')
-saveas(62, './Images/Possibilis c-means 9.png')
+saveas(62, './Images/Possibilistic c-means 9.png')
 % Probabilis
 [ap, cp, mv, mc, iter, diffvec] = GMDAS(x.Y, init_theta, cov, 0.0001, 100, 72);
 figure(63)
@@ -371,11 +371,11 @@ figure(63), scatter3(x.Y(1,cp(:,8)>=cutoff), x.Y(2,cp(:,8)>=cutoff), x.Y(3,cp(:,
 figure(63), scatter3(x.Y(1,cp(:,9)>=cutoff), x.Y(2,cp(:,9)>=cutoff), x.Y(3,cp(:,9)>=cutoff), 's', "MarkerFaceColor","#EDB120") 
 figure(63), scatter3(mv(1,:), mv(2,:), mv(3,:),'k+')
 figure(63), scatter3(init_theta(1,:), init_theta(2,:), init_theta(3,:),'kx')
-figure(63), title('Probabilis clustering')
+figure(63), title('Probabilistic clustering')
 figure(63), xlabel('Component 1')
 figure(63), ylabel('Component 2')
 figure(63), zlabel('Component 3')
-saveas(63, './Images/Probabilis c-means 9.png')
+saveas(63, './Images/Probabilistic c-means 9.png')
 % single link
 Z = linkage(x.Y','single','euclidean');
 cl_label = cluster(Z,'maxclust',9);
