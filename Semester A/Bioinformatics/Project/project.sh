@@ -10,19 +10,19 @@
 # prefetch SRR452931
 # mv ./SRR452931/SRR452931.sra ./
 # rm ./SRR452931/
-# fastq-dump -v --split-3 SRR452931
+# fastq-dump -v --split-3 SRR452931 >> output.log
 # prefetch SRR524934
 # mv ./SRR524934/SRR524934.sra ./
 # rm ./SRR524934/
-# fastq-dump -v --split-3 SRR524934
+# fastq-dump -v --split-3 SRR524934 >> output.log
 # prefetch SRR524936
 # mv ./SRR524936/SRR524936.sra ./
 # rm ./SRR524936/
-# fastq-dump -v --split-3 SRR524936
+# fastq-dump -v --split-3 SRR524936 >> output.log
 # prefetch SRR524939
 # mv ./SRR524939/SRR524939.sra ./
 # rm ./SRR524939/
-# fastq-dump -v --split-3 SRR524939
+# fastq-dump -v --split-3 SRR524939 >> output.log
 
 # Getting the genome
 # wget -a https://hgdownload.cse.ucsc.edu/goldenpath/hg18/bigZips/hg18.chrom.sizes
