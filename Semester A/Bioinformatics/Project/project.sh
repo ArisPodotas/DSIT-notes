@@ -25,8 +25,8 @@
 # fastq-dump -v --split-3 SRR524939 >> output.log
 
 # Getting the genome
-# wget -a https://hgdownload.cse.ucsc.edu/goldenpath/hg18/bigZips/hg18.chrom.sizes
-# wget -a https://hgdownload.cse.ucsc.edu/goldenpath/hg18/bigZips/hg18.fa.gz
+# wget https://hgdownload.cse.ucsc.edu/goldenpath/hg18/bigZips/hg18.chrom.sizes
+# wget https://hgdownload.cse.ucsc.edu/goldenpath/hg18/bigZips/hg18.fa.gz
 #gzip -d hg18.fa.gz
 
 # bowtie-build hg18.fa hg18
