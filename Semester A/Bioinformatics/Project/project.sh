@@ -31,6 +31,12 @@
 
 # bowtie-build hg18.fa hg18
 
+# Trimmming ends
+trim_galore --gzip --fastqc -j 4 SRR452931.fastq.gz
+trim_galore --gzip --fastqc -j 4 SRR524934.fastq.gz
+trim_galore --gzip --fastqc -j 4 SRR524936.fastq.gz
+trim_galore --gzip --fastqc -j 4 SRR524939.fastq.gz
+
 # Paths
 mkdir $1
 mkdir $2

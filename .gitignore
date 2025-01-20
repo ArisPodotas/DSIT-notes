@@ -15,23 +15,19 @@ enrolling/
 Semester A/Bioinformatics/EX6/*
 Semester A/Bioinformatics/Project/unin
 Semester A/Bioinformatics/Project/install.sh
-Semester A/Bioinformatics/Project/hg18.chrom.sizes.txt
-Semester A/Bioinformatics/Project/hg18.fa.gz
-Semester A/Bioinformatics/Project/hg18.1.ebwt
-Semester A/Bioinformatics/Project/hg18.2.ebwt
-Semester A/Bioinformatics/Project/hg18.3.ebwt
-Semester A/Bioinformatics/Project/hg18.4.ebwt
+Semester A/Bioinformatics/Project/*.ebwt
+Semester A/Bioinformatics/Project/*.zip
+Semester A/Bioinformatics/Project/*.html
+Semester A/Bioinformatics/Project/*.txt
 Semester A/Bioinformatics/Project/*.sra
-Semester A/Bioinformatics/Project/hg18.rev.1.ebwt
-Semester A/Bioinformatics/Project/hg18.rev.2.ebwt
 Semester A/Bioinformatics/Project/*.fastq
 Semester A/Bioinformatics/Project/*.gz
-Semester A/Bioinformatics/Project/hg18.fa
-Semester A/Bioinformatics/Project/SRR452931.fastq.gz
+Semester A/Bioinformatics/Project/*.fa
 Semester A/Bioinformatics/Project/project ITBI.pdf
 Semester A/Bioinformatics/Project/sratoolkit.3.1.1-win64/
 Semester A/Clustering Algorithms/Clustering_Project_2024_2025/Images/
 Semester A/Clustering Algorithms/Clustering_Project_2024_2025/process.mat
 Semester A/Clustering Algorithms/Clustering_Project_2024_2025/clustered.mat
 Semester A/Machine learning/Machine Learning 1st Assignment 2024-2025/*.png
+Semester
 
